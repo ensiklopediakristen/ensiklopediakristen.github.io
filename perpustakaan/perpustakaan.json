@@ -7,10 +7,10 @@
         "readLink": "/perpustakaan/kitab-henokh/kitab-henokh.html"
     },
     {
-        "title": "Kitab Contoh",
+        "title": "Buku Baru",
         "author": "Pangkal Iman",
-        "cover": "/perpustakaan/kitab-contoh/img.webp",
-        "description": "Kitab Contoh adalah teks apokrif yang berasal dari tradisi Yahudi, yang menggambarkan visi-visi Henokh tentang surga dan penghakiman ilahi.",
-        "readLink": "/perpustakaan/kitab-contoh/kitab-contoh.html"
+        "cover": "/perpustakaan/perpustakaan.webp",
+        "description": "Sedang dalam pengerjaan.",
+        "readLink": "#"
     }
 ]
