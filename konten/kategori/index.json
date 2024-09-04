@@ -1,0 +1,14 @@
+[
+    {
+        "name": "nama_tuhan",
+        "type": "directory"
+    },
+    {
+        "name": "mahkluk_mitologi",
+        "type": "directory"
+    },
+    {
+        "name": "konsep",
+        "type": "directory"
+    }
+]
