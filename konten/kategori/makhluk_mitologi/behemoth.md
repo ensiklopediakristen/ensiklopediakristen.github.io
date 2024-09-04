@@ -2,11 +2,7 @@
 
 ![Ilustrasi Gambar Makhluk Mitologi Behemoth](konten/img/makhluk_mitologi/behemoth.jpg)
 
-___
-
-## Pengantar
-
-**Behemoth** adalah makhluk besar yang muncul dalam Kitab Ayub dalam Alkitab Ibrani dan sering diinterpretasikan sebagai simbol kekuatan Allah yang tak terbatas dalam penciptaan. Behemoth, bersama dengan Leviathan, menggambarkan keagungan dan kekuasaan Tuhan atas semua ciptaan, baik di darat maupun di laut. Dalam konteks Kristen, Behemoth sering dilihat sebagai representasi dari kuasa duniawi yang besar namun terbatas dibandingkan dengan kekuatan Tuhan.
+Behemoth adalah makhluk besar yang muncul dalam Kitab Ayub dalam Alkitab Ibrani dan sering diinterpretasikan sebagai simbol kekuatan Allah yang tak terbatas dalam penciptaan. Behemoth, bersama dengan Leviathan, menggambarkan keagungan dan kekuasaan Tuhan atas semua ciptaan, baik di darat maupun di laut. Dalam konteks Kristen, Behemoth sering dilihat sebagai representasi dari kuasa duniawi yang besar namun terbatas dibandingkan dengan kekuatan Tuhan.
 
 ## Etimologi dan Asal Usul
 
