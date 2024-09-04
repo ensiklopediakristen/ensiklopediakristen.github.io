@@ -6,7 +6,7 @@ ___
 
 ## Pengantar
 
-*Behemoth* adalah makhluk besar yang muncul dalam Kitab Ayub dalam Alkitab Ibrani dan sering diinterpretasikan sebagai simbol kekuatan Allah yang tak terbatas dalam penciptaan. Behemoth, bersama dengan Leviathan, menggambarkan keagungan dan kekuasaan Tuhan atas semua ciptaan, baik di darat maupun di laut. Dalam konteks Kristen, Behemoth sering dilihat sebagai representasi dari kuasa duniawi yang besar namun terbatas dibandingkan dengan kekuatan Tuhan.
+**Behemoth** adalah makhluk besar yang muncul dalam Kitab Ayub dalam Alkitab Ibrani dan sering diinterpretasikan sebagai simbol kekuatan Allah yang tak terbatas dalam penciptaan. Behemoth, bersama dengan Leviathan, menggambarkan keagungan dan kekuasaan Tuhan atas semua ciptaan, baik di darat maupun di laut. Dalam konteks Kristen, Behemoth sering dilihat sebagai representasi dari kuasa duniawi yang besar namun terbatas dibandingkan dengan kekuatan Tuhan.
 
 ## Etimologi dan Asal Usul
 
@@ -16,7 +16,8 @@ Dalam bahasa Ibrani, bentuk jamak yang digunakan bisa juga menunjukkan keagungan
 
 ## Deskripsi dalam Kitab Ayub
 
-Behemoth disebutkan dalam *Kitab Ayub 40:15-24*, di mana Allah berbicara langsung kepada Ayub, menyoroti keagungan ciptaan-Nya. Deskripsi Behemoth menekankan kekuatannya:
+Behemoth disebutkan dalam **Kitab Ayub 40:15-24**, di mana Allah berbicara langsung kepada Ayub, menyoroti keagungan ciptaan-Nya. Deskripsi Behemoth menekankan kekuatannya:
+
 > **Ayub 40:15-17**
 > _"Perhatikanlah Kuda Nil (Behemoth yang diterjemahkan jadi kuda nil), yang telah Kubuat seperti juga Engkau; ia makan rumput seperti lembu._
 > _Perhatikanlah tenaga di pinggangnya, kekuatan pada urat-urat perutnya!_
@@ -26,9 +27,13 @@ Deskripsi ini memberikan gambaran tentang makhluk yang sangat besar dan kuat, ta
 
 ## Interpretasi dalam Tradisi Yahudi dan Kristen
 
-Dalam **tradisi Yahudi**, Behemoth sering kali disandingkan dengan Leviathan, dan keduanya dipercaya akan bertarung pada akhir zaman. Menurut beberapa tafsiran, Behemoth mewakili kekuatan darat, sementara Leviathan melambangkan kekuatan laut. Pertempuran epik antara keduanya sering dilihat sebagai simbol dari konflik antara kekuatan baik dan jahat, atau antara ketertiban dan kekacauan dalam alam semesta.
+### Dalam Tradisi Yahudi
 
-Dalam **teologi Kristen**, Behemoth memiliki arti rohani yang lebih dalam. Ia dipandang sebagai simbol dari kekuatan duniawi yang, meskipun sangat besar, tetap berada di bawah kendali dan otoritas Allah. Kisah Behemoth dalam Kitab Ayub mengingatkan umat percaya bahwa segala sesuatu di dunia, baik yang terlihat maupun yang tidak terlihat, diciptakan dan dikendalikan oleh Tuhan. Dalam konteks ini, Behemoth juga dapat dilihat sebagai representasi dari dosa atau godaan duniawi yang besar, yang hanya dapat diatasi melalui iman kepada Tuhan.
+Behemoth sering kali disandingkan dengan Leviathan, dan keduanya dipercaya akan bertarung pada akhir zaman. Menurut beberapa tafsiran, Behemoth mewakili kekuatan darat, sementara Leviathan melambangkan kekuatan laut. Pertempuran epik antara keduanya sering dilihat sebagai simbol dari konflik antara kekuatan baik dan jahat, atau antara ketertiban dan kekacauan dalam alam semesta.
+
+### Dalam Teologi Kristen
+
+Behemoth memiliki arti rohani yang lebih dalam. Ia dipandang sebagai simbol dari kekuatan duniawi yang, meskipun sangat besar, tetap berada di bawah kendali dan otoritas Allah. Kisah Behemoth dalam Kitab Ayub mengingatkan umat percaya bahwa segala sesuatu di dunia, baik yang terlihat maupun yang tidak terlihat, diciptakan dan dikendalikan oleh Tuhan. Dalam konteks ini, Behemoth juga dapat dilihat sebagai representasi dari dosa atau godaan duniawi yang besar, yang hanya dapat diatasi melalui iman kepada Tuhan.
 
 Beberapa teolog Kristen menganggap Behemoth sebagai peringatan bagi manusia akan kelemahan mereka dibandingkan dengan kekuatan Allah. Kisah ini mengajarkan kerendahan hati dan pengakuan atas kedaulatan Allah dalam setiap aspek kehidupan.
 
