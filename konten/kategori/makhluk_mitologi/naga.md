@@ -14,7 +14,7 @@ Kata "naga" dalam bahasa Ibrani disebut "**תנין**" (_Tannin_), yang sering d
 
 ### Perjanjian Lama
 
-Dalam Perjanjian Lama, naga sering muncul dalam konteks mitologis dan simbolis. Salah satu referensi paling terkenal adalah Lewiatan (_Leviathan_), naga laut yang disebutkan dalam kitab **Ayub (Ayub 40:20)**, **Mazmur (Mazmur 74:14)**, dan **Yesaya 27:1**. Lewiatan (_Leviathan_) melambangkan kekuatan kekacauan yang bertentangan dengan ciptaan Tuhan. Dalam Mazmur, Tuhan digambarkan meremukkan kepala Lewiatan (_Leviathan_) sebagai tindakan simbolis atas kemenangan-Nya terhadap kekacauan.
+Dalam Perjanjian Lama, naga sering muncul dalam konteks mitologis dan simbolis. Salah satu referensi paling terkenal adalah Lewiatan (_Leviathan_), naga laut yang disebutkan dalam kitab **Ayub 40:20**, **Mazmur 74:14**, dan **Yesaya 27:1**. Lewiatan (_Leviathan_) melambangkan kekuatan kekacauan yang bertentangan dengan ciptaan Tuhan. Dalam Mazmur, Tuhan digambarkan meremukkan kepala Lewiatan (_Leviathan_) sebagai tindakan simbolis atas kemenangan-Nya terhadap kekacauan.
 
 Naga juga muncul dalam kitab **Yehezkiel 29:3**, di mana Firaun Mesir disamakan dengan "naga besar" yang terbaring di tengah sungai Nil. Penggambaran ini menunjukkan kekuatan dan keangkuhan Firaun, yang pada akhirnya akan ditaklukkan oleh Tuhan.
 
