@@ -1,0 +1,59 @@
+.icon_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_toggle_on {
+    background-image: url('../icons/toggle_on.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 1.6em;
+    height: 1.6em;
+}
+
+.icon_toggle_off {
+    background-image: url('../icons/toggle_off.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 1.6em;
+    height: 1.6em;
+}
+
+.icon_close {
+    background-image: url('../icons/close.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;    
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.icon_cancel {
+    background-image: url('../icons/cancel.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;    
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.icon_light {
+    background-image: url('../icons/light.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;    
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.icon_dark {
+    background-image: url('../icons/dark.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;    
+    width: 1.3em;
+    height: 1.3em;
+}
