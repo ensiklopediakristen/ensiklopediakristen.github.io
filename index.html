@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensiklopedia Kristen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <h1>Ensiklopedia Kristen</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="perpustakaan/perpustakaan.html">Perpustakaan</a></li>
+                </ul>
+            </nav>                
+        </div>
+    </header>
+    
+    <div id="search-container">
+        <input type="text" id="search-box" placeholder="Cari artikel..." />
+        <ul id="search-results"></ul>
+    </div>
+    
+    <main class="container" id="main-container">
+        <main id="main-content">
+            <div id="content">
+            <!-- Konten Markdown akan di-render di sini -->
+            </div>
+        </main>
+    
+        <aside id="sidebar">
+            <h3>Daftar Artikel</h3>
+            <ul id="sidebar-content">
+                <!-- Sidebar Links akan diisi oleh wiki.js -->
+            </ul>
+        </aside>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Ensiklopedia Kristen.</p>
+        </div>
+    </footer>
+
+    <script src="marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
