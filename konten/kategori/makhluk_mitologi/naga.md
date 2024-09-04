@@ -45,7 +45,7 @@ Naga dalam budaya Yahudi dan Kristen sering kali melambangkan kejahatan, kekacau
 ## Lihat Juga
 
 - [Lewiatan](konten/kategori/makhluk_mitologi/lewiatan.md)
-- [Naga](konten/kategori/makhluk_mitologi/naga.md)
+- [Behemoth](konten/kategori/makhluk_mitologi/behemoth.md)
 - [Ziz](konten/kategori/makhluk_mitologi/ziz.md)
 - [Rahab]
 - [Kitab Wahyu]
@@ -60,7 +60,7 @@ Naga dalam budaya Yahudi dan Kristen sering kali melambangkan kejahatan, kekacau
 
 ---
 
-## Kategori
+## Kategori:
 | Mitologi Yahudi | Mitologi Kristen | Makhluk Mitologis dalam Alkitab | Simbolisme dalam Agama | Teologi Kristen | Teologi Yahudi | Literatur Kristen Abad Pertengahan | Studi Alkitab |
 
 ---
