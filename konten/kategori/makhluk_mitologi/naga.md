@@ -1,39 +1,66 @@
----
+# Naga (_Tannin_) dalam Budaya Yahudi dan Kristen
 
-# Naga dalam Literatur Yahudi
+![Ilustrasi Gambar Makhluk Mitologi Naga](konten/img/makhluk_mitologi/naga.jpg)
 
-![gambar naga](konten/img/makhluk_mitologi/naga.jpg)
+## Pendahuluan
 
-Naga dalam literatur Yahudi sering kali diidentifikasi dengan makhluk mitologis seperti *Tannin* dan *Leviatan*. Meskipun tidak digambarkan sebagai naga seperti dalam mitologi Eropa atau Asia, makhluk-makhluk ini memiliki ciri-ciri yang serupa, seperti ukuran besar, kekuatan luar biasa, dan sering dikaitkan dengan air atau laut. Dalam konteks Yahudi, naga atau makhluk sejenis sering kali melambangkan kekuatan kekacauan yang harus diatasi oleh kekuatan ilahi.
+Naga adalah makhluk mitologis yang sering muncul dalam berbagai budaya di seluruh dunia. Dalam tradisi Yahudi dan Kristen, naga sering kali dianggap sebagai simbol kekuatan jahat atau kekuatan spiritual yang harus dilawan. Penggambaran naga dalam kedua tradisi ini memiliki akar yang dalam dan kaya akan makna simbolis, serta memainkan peran penting dalam literatur dan mitologi keagamaan.
 
 ## Etimologi
-Istilah *Tannin* (תַּנִּין‎) dalam bahasa Ibrani biasanya diterjemahkan sebagai "naga" atau "monster laut". Kata ini sering digunakan dalam Alkitab Ibrani untuk merujuk pada makhluk laut besar yang mengerikan, yang terkadang diidentifikasi sebagai sejenis ular atau monster besar. Kata ini berhubungan dengan akar kata yang berarti "membelit" atau "melingkar," mencerminkan karakteristik fisik yang sering kali dikaitkan dengan naga.
 
-## Naga dalam Alkitab Ibrani
+Kata "naga" dalam bahasa Ibrani disebut "**תנין**" (_Tannin_), yang sering diterjemahkan sebagai "monster laut" atau "_ular besar_". Dalam Alkitab, istilah ini muncul beberapa kali untuk merujuk pada makhluk yang sering dikaitkan dengan kekacauan dan kekuatan destruktif. Dalam bahasa Yunani, kata "**δράκων**" (_drákōn_) juga digunakan untuk merujuk pada naga, dan ini diterjemahkan ke dalam bahasa Inggris sebagai "_dragon_."
 
-- **Kitab Kejadian**: Dalam Kejadian 1:21, Tuhan menciptakan makhluk-makhluk besar laut, termasuk *Tanninim*, yang sering kali diinterpretasikan sebagai naga atau monster laut besar. Ini menunjukkan bahwa makhluk-makhluk ini dianggap sebagai bagian dari ciptaan Tuhan yang luas dan beraneka ragam.
-- **Kitab Keluaran**: Dalam Keluaran 7:9-12, ketika tongkat Musa berubah menjadi ular (Tannin) di hadapan Firaun, ada penafsiran bahwa ular tersebut bukan hanya sekadar ular biasa tetapi makhluk besar dan mengerikan, yang mengindikasikan kekuatan Tuhan yang luar biasa.
-- **Kitab Yesaya**: Dalam Yesaya 27:1, Tuhan dikatakan akan menghukum *Leviatan*, ular melingkar yang besar, dan *Tannin* yang berada di laut. Ini merupakan simbol dari kekuasaan Tuhan atas kekuatan kekacauan yang diwakili oleh makhluk-makhluk ini.
+## Naga dalam Alkitab
 
-## Naga dalam Mitologi dan Sastra Yahudi
+### Perjanjian Lama
 
-- **Tradisi Rabinik**: Dalam literatur rabinik, *Tannin* sering kali dibahas dalam konteks mitos penciptaan dan sebagai simbol kekuatan destruktif yang dikendalikan oleh Tuhan. *Tannin* juga dikaitkan dengan makhluk mitologis lainnya seperti *Behemoth* dan *Ziz*, yang sering kali dianggap sebagai perwujudan kekuatan alam yang liar dan tidak terkendali.
-  
-- **Kabbalah**: Dalam tradisi Kabbalah, simbolisme naga dan makhluk laut sering digunakan untuk menjelaskan konsep spiritual yang mendalam. Naga kadang-kadang melambangkan kekuatan gelap yang harus dikalahkan untuk mencapai pencerahan spiritual, mencerminkan pergumulan antara kekuatan baik dan jahat dalam jiwa manusia.
+Dalam Perjanjian Lama, naga sering muncul dalam konteks mitologis dan simbolis. Salah satu referensi paling terkenal adalah Lewiatan (_Leviathan_), naga laut yang disebutkan dalam kitab **Ayub (Ayub 40:20)**, **Mazmur (Mazmur 74:14)**, dan **Yesaya 27:1**. Lewiatan (_Leviathan_) melambangkan kekuatan kekacauan yang bertentangan dengan ciptaan Tuhan. Dalam Mazmur, Tuhan digambarkan meremukkan kepala Lewiatan (_Leviathan_) sebagai tindakan simbolis atas kemenangan-Nya terhadap kekacauan.
+
+Naga juga muncul dalam kitab **Yehezkiel 29:3**, di mana Firaun Mesir disamakan dengan "naga besar" yang terbaring di tengah sungai Nil. Penggambaran ini menunjukkan kekuatan dan keangkuhan Firaun, yang pada akhirnya akan ditaklukkan oleh Tuhan.
+
+### Perjanjian Baru
+
+Dalam Perjanjian Baru, naga paling dikenal melalui kitab **Wahyu**. Dalam Wahyu 12, naga merah besar dengan tujuh kepala dan sepuluh tanduk muncul sebagai simbol dari Setan atau Iblis. Naga ini digambarkan berusaha untuk memakan anak yang baru lahir, yang merupakan simbol dari Yesus Kristus. Namun, naga tersebut akhirnya dikalahkan oleh malaikat Mikhael dan dilemparkan ke bumi, yang menggambarkan kemenangan kekuatan Ilahi atas kejahatan.
+
+## Naga dalam Mitologi dan Sastra
+
+Dalam mitologi Yahudi, naga sering dihubungkan dengan makhluk yang disebut **Rahab**. Rahab, seperti Leviathan, adalah simbol dari kekacauan dan laut, dan sering kali dilihat sebagai musuh Tuhan dalam mitos penciptaan. Rahab juga disebutkan dalam beberapa literatur Yahudi kuno sebagai representasi dari bangsa-bangsa musuh Israel.
+
+Sastra Kristen abad pertengahan sering menggambarkan naga sebagai makhluk yang harus dikalahkan oleh para santo atau pahlawan. Salah satu contoh paling terkenal adalah kisah **Santo Georgius dan Naga**, di mana Santo Georgius, seorang prajurit Romawi, membunuh seekor naga untuk menyelamatkan seorang putri dan kota dari kehancuran. Kisah ini melambangkan kemenangan iman Kristen atas kejahatan.
 
 ## Simbolisme dan Interpretasi
-Dalam literatur Yahudi, naga dan makhluk serupa sering kali dilihat sebagai representasi dari kekuatan kekacauan yang ada di dunia, yang harus dikalahkan oleh kekuatan ilahi. Naga melambangkan tantangan besar yang harus dihadapi oleh manusia dengan bantuan Tuhan. Dalam beberapa interpretasi, naga juga melambangkan kejahatan atau ego yang harus ditundukkan untuk mencapai keseimbangan spiritual.
+
+Naga dalam budaya Yahudi dan Kristen sering kali melambangkan kejahatan, kekacauan, dan kekuatan yang menentang Tuhan. Dalam banyak interpretasi teologis, naga dianggap sebagai representasi dari Setan atau kekuatan jahat yang mencoba menghancurkan ciptaan Tuhan dan menghalangi rencana keselamatan-Nya. Namun, simbolisme naga juga bisa dilihat sebagai panggilan bagi umat manusia untuk tetap waspada dan teguh dalam iman, karena meskipun kekuatan jahat tampak kuat, pada akhirnya mereka akan dikalahkan oleh Tuhan.
+
+### Referensi
+
+1. **Ayub 41:1, Alkitab**. Dikutip dari teks Kitab Ayub dalam Perjanjian Lama.
+2. **Wahyu 12:3-4, Alkitab**. Kitab Wahyu dalam Perjanjian Baru.
+3. **Dennis, Geoffrey W.** *Encyclopedia of Jewish Myth, Magic, and Mysticism*. Llewellyn Worldwide, 2007.
+4. **Pagels, Elaine.** *The Book of Revelation: A Biography*. Princeton University Press, 2018.
+5. **Blenkinsopp, Joseph.** *Creation, Un-Creation, Re-Creation: A Discursive Commentary on Genesis 1-11*. Bloomsbury T&T Clark, 2011.
+6. **Aune, David E.** *Revelation 6-16, Volume 52B*. Word Biblical Commentary, Zondervan, 1998.
+7. **Heidel, Alexander.** *The Babylonian Genesis: The Story of Creation*. University of Chicago Press, 1951.
 
 ## Lihat Juga
-- [Leviathan](konten/kategori/makhluk_mitologi/lewiatan.md)
-- [Behemoth](konten/kategori/makhluk_mitologi/behemoth.md)
+
+- [Lewiatan](konten/kategori/makhluk_mitologi/lewiatan.md)
+- [Naga](konten/kategori/makhluk_mitologi/naga.md)
 - [Ziz](konten/kategori/makhluk_mitologi/ziz.md)
+- [Rahab]
+- [Kitab Wahyu]
+- [Santo Georgius dan Naga]
+
+## Pranala Luar
+
+- [Jewish Virtual Library - Leviathan](https://www.jewishvirtuallibrary.org/leviathan)
+- [Bible Hub - Leviathan in the Bible](https://biblehub.com/topical/l/leviathan.htm)
+- [Britannica - Dragon in Christianity](https://www.britannica.com/topic/dragon-mythological-creature)
+- [Catholic Online - Saint George](https://www.catholic.org/saints/saint.php?saint_id=280)
 
 ---
 
-## Catatan:
-- Setiap bagian dari artikel ini disusun untuk mencerminkan gaya ensiklopedis dengan referensi yang kredibel.
-- Struktur artikel mengikuti format yang lazim, termasuk bagian seperti "Lihat Juga", "Referensi", dan "Pranala Luar" untuk memudahkan pembaca menemukan informasi terkait.
+## Kategori
+Mitologi Yahudi | Mitologi Kristen | Makhluk Mitologis dalam Alkitab | Simbolisme dalam Agama | Teologi Kristen | Teologi Yahudi | Literatur Kristen Abad Pertengahan | Studi Alkitab
 
 ---
-
