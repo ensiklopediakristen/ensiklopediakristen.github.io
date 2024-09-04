@@ -8,7 +8,7 @@ Naga adalah makhluk mitologis yang sering muncul dalam berbagai budaya di seluru
 
 ## Etimologi
 
-Kata "naga" dalam bahasa Ibrani disebut "**תנין**" (_Tannin_), yang sering diterjemahkan sebagai "monster laut" atau "_ular besar_". Dalam Alkitab, istilah ini muncul beberapa kali untuk merujuk pada makhluk yang sering dikaitkan dengan kekacauan dan kekuatan destruktif. Dalam bahasa Yunani, kata "**δράκων**" (_drákōn_) juga digunakan untuk merujuk pada naga, dan ini diterjemahkan ke dalam bahasa Inggris sebagai "_dragon_."
+Kata "naga" dalam bahasa Ibrani disebut "**תנין**" (_Tannin_), yang sering diterjemahkan sebagai "monster laut" atau "ular besar". Dalam Alkitab, istilah ini muncul beberapa kali untuk merujuk pada makhluk yang sering dikaitkan dengan kekacauan dan kekuatan destruktif. Dalam bahasa Yunani, kata "**δράκων**" (_drákōn_) juga digunakan untuk merujuk pada naga, dan ini diterjemahkan ke dalam bahasa Inggris sebagai "_dragon_."
 
 ## Naga dalam Alkitab
 
