@@ -61,6 +61,6 @@ Naga dalam budaya Yahudi dan Kristen sering kali melambangkan kejahatan, kekacau
 ---
 
 ## Kategori
-Mitologi Yahudi | Mitologi Kristen | Makhluk Mitologis dalam Alkitab | Simbolisme dalam Agama | Teologi Kristen | Teologi Yahudi | Literatur Kristen Abad Pertengahan | Studi Alkitab
+| Mitologi Yahudi | Mitologi Kristen | Makhluk Mitologis dalam Alkitab | Simbolisme dalam Agama | Teologi Kristen | Teologi Yahudi | Literatur Kristen Abad Pertengahan | Studi Alkitab |
 
 ---
