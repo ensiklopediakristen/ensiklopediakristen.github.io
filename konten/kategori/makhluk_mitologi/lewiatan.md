@@ -14,7 +14,7 @@ Nama *Lewiatan* berasal dari kata Ibrani *לִוְיָתָן* (Liwyatan), yang k
 
 ## Lewiatan dalam Kitab Suci
 
-Lewiatan disebutkan beberapa kali dalam Alkitab, dengan deskripsi yang menonjol muncul dalam **Kitab Ayub 40:20 - 41:25**. Di sini, Lewiatan digambarkan sebagai makhluk laut yang menakutkan dan tak tertandingi, dengan tubuh yang tak tertembus oleh senjata manusia:
+Lewiatan disebutkan beberapa kali dalam Alkitab, dengan deskripsi yang menonjol muncul dalam **Ayub 40:20-28, Ayub 41:1-25**. Di sini, Lewiatan digambarkan sebagai makhluk laut yang menakutkan dan tak tertandingi, dengan tubuh yang tak tertembus oleh senjata manusia:
 
 > **Ayub 40:20 (TB)** "*Dapatkah engkau menarik buaya (lewiatan) dengan kail, atau mengimpit lidahnya dengan tali?*"
 
@@ -52,7 +52,7 @@ Lewiatan adalah simbol yang kuat dari kekuatan destruktif dan kekacauan, namun d
 
 ## Referensi
 
-1. Kitab Ayub 41:1-34, Alkitab Ibrani.
+1. Kitab Ayub 40:20-28, Ayub 41:1-25, Alkitab Ibrani.
 2. Encyclopaedia Britannica. "Leviathan." Diakses pada 2024.
 3. Brown, F., Driver, S. R., Briggs, C. A. *A Hebrew and English Lexicon of the Old Testament*. Clarendon Press.
 4. Jewish Virtual Library. "Leviathan in Jewish Tradition."
