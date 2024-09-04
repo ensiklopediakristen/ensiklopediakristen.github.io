@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Kitab Henokh",
+        "author": "Pangkal Iman",
+        "cover": "/perpustakaan/kitab-henokh/kitab-henokh.webp",
+        "description": "Kitab Henokh adalah teks apokrif yang berasal dari tradisi Yahudi, yang menggambarkan visi-visi Henokh tentang surga dan penghakiman ilahi.",
+        "readLink": "/perpustakaan/kitab-henokh/kitab-henokh.html"
+    },
+    {
+        "title": "Kitab Contoh",
+        "author": "Pangkal Iman",
+        "cover": "/perpustakaan/kitab-contoh/img.webp",
+        "description": "Kitab Contoh adalah teks apokrif yang berasal dari tradisi Yahudi, yang menggambarkan visi-visi Henokh tentang surga dan penghakiman ilahi.",
+        "readLink": "/perpustakaan/kitab-contoh/kitab-contoh.html"
+    }
+]
