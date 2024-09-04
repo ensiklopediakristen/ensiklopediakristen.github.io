@@ -261,3 +261,15 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
     });
 });
+
+// Tema mode gelap dan terang
+document.getElementById('toggle-theme').addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode');
+
+    // Ubah teks tombol berdasarkan mode saat ini
+    if (document.body.classList.contains('dark-mode')) {
+        this.classList = 'icon_dark';
+    } else {
+        this.classList = 'icon_light';
+    }
+});
