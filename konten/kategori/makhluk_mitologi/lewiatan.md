@@ -4,9 +4,7 @@
 
 ![gambar ilustrasi makhluk mitologi lewiatan](konten/img/makhluk_mitologi/lewiatan.jpg)
 
-## Pengantar
-
-*Lewiatan* adalah makhluk laut raksasa yang sering disebut dalam teks-teks kuno, terutama dalam Alkitab Ibrani. Makhluk ini dikenal sebagai simbol kekacauan dan kekuatan destruktif yang sangat besar. Dalam teologi Yahudi dan Kristen, Lewiatan kerap diidentifikasi sebagai personifikasi kejahatan yang menantang kekuasaan Tuhan. Lewiatan juga memiliki peran penting dalam mitologi dan literatur apokrif, dan sering dijadikan metafora dalam budaya modern untuk menggambarkan kekuatan yang tak terkendali.
+**Lewiatan** adalah makhluk laut raksasa yang sering disebut dalam teks-teks kuno, terutama dalam Alkitab Ibrani. Makhluk ini dikenal sebagai simbol kekacauan dan kekuatan destruktif yang sangat besar. Dalam teologi Yahudi dan Kristen, Lewiatan kerap diidentifikasi sebagai personifikasi kejahatan yang menantang kekuasaan Tuhan. Lewiatan juga memiliki peran penting dalam mitologi dan literatur apokrif, dan sering dijadikan metafora dalam budaya modern untuk menggambarkan kekuatan yang tak terkendali.
 
 ## Etimologi dan Asal Usul
 
