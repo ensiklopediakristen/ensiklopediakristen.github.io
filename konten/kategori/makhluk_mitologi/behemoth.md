@@ -77,6 +77,7 @@ Behemoth adalah simbol dari kekuatan luar biasa yang, meskipun mengagumkan dan m
 
 ---
 
-**Kategori**: Mitologi Yahudi | Makhluk Mitologi | Simbolisme Religius | Etimologi Alkitab
+## Kategori
+| Mitologi Yahudi | Makhluk Mitologi | Simbolisme Religius | Etimologi Alkitab |
 
 ---
