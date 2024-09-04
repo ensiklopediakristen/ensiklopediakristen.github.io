@@ -20,7 +20,7 @@ Naga juga muncul dalam kitab **Yehezkiel 29:3**, di mana Firaun Mesir disamakan 
 
 ### Perjanjian Baru
 
-Dalam Perjanjian Baru, naga paling dikenal melalui kitab **Wahyu**. Dalam Wahyu 12, naga merah besar dengan tujuh kepala dan sepuluh tanduk muncul sebagai simbol dari Setan atau Iblis. Naga ini digambarkan berusaha untuk memakan anak yang baru lahir, yang merupakan simbol dari Yesus Kristus. Namun, naga tersebut akhirnya dikalahkan oleh malaikat Mikhael dan dilemparkan ke bumi, yang menggambarkan kemenangan kekuatan Ilahi atas kejahatan.
+Dalam Perjanjian Baru, naga paling dikenal melalui kitab Wahyu. Dalam **Wahyu 12**, naga merah besar dengan tujuh kepala dan sepuluh tanduk muncul sebagai simbol dari Setan atau Iblis. Naga ini digambarkan berusaha untuk memakan anak yang baru lahir, yang merupakan simbol dari Yesus Kristus. Namun, naga tersebut akhirnya dikalahkan oleh malaikat Mikhael dan dilemparkan ke bumi, yang menggambarkan kemenangan kekuatan Ilahi atas kejahatan.
 
 ## Naga dalam Mitologi dan Sastra
 
