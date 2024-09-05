@@ -1,7 +1,5 @@
 # Naga (_Tannin_) dalam Budaya Yahudi dan Kristen
 
----
-
 ![Ilustrasi Gambar Makhluk Mitologi Naga](konten/img/makhluk_mitologi/naga.jpg)
 
 ## Pendahuluan

@@ -1,12 +1,12 @@
-# Lewiatan (Leviathan)
-
 ---
 
-![gambar ilustrasi makhluk mitologi lewiatan](konten/img/makhluk_mitologi/lewiatan.jpg)
+# Lewiatan (Leviathan)
 
-## Pendahuluan
+![gambar lewiatan](konten/img/makhluk_mitologi/lewiatan.jpg)
 
-Lewiatan adalah makhluk laut raksasa yang sering disebut dalam teks-teks kuno, terutama dalam Alkitab Ibrani. Makhluk ini dikenal sebagai simbol kekacauan dan kekuatan destruktif yang sangat besar. Dalam teologi Yahudi dan Kristen, Lewiatan kerap diidentifikasi sebagai personifikasi kejahatan yang menantang kekuasaan Tuhan. Lewiatan juga memiliki peran penting dalam mitologi dan literatur apokrif, dan sering dijadikan metafora dalam budaya modern untuk menggambarkan kekuatan yang tak terkendali.
+## Pengantar
+
+*Lewiatan* adalah makhluk laut raksasa yang sering disebut dalam teks-teks kuno, terutama dalam Alkitab Ibrani. Makhluk ini dikenal sebagai simbol kekacauan dan kekuatan destruktif yang sangat besar. Dalam teologi Yahudi dan Kristen, Lewiatan kerap diidentifikasi sebagai personifikasi kejahatan yang menantang kekuasaan Tuhan. Lewiatan juga memiliki peran penting dalam mitologi dan literatur apokrif, dan sering dijadikan metafora dalam budaya modern untuk menggambarkan kekuatan yang tak terkendali.
 
 ## Etimologi dan Asal Usul
 
@@ -14,15 +14,15 @@ Nama *Lewiatan* berasal dari kata Ibrani *לִוְיָתָן* (Liwyatan), yang k
 
 ## Lewiatan dalam Kitab Suci
 
-Lewiatan disebutkan beberapa kali dalam Alkitab, dengan deskripsi yang menonjol muncul dalam **Ayub 40:20-28, Ayub 41:1-25**. Di sini, Lewiatan digambarkan sebagai makhluk laut yang menakutkan dan tak tertandingi, dengan tubuh yang tak tertembus oleh senjata manusia:
+Lewiatan disebutkan beberapa kali dalam Alkitab, dengan deskripsi yang menonjol muncul dalam *Kitab Ayub 40:20 - 41:25*. Di sini, Lewiatan digambarkan sebagai makhluk laut yang menakutkan dan tak tertandingi, dengan tubuh yang tak tertembus oleh senjata manusia:
 
 > **Ayub 40:20 (TB)** "*Dapatkah engkau menarik buaya (lewiatan) dengan kail, atau mengimpit lidahnya dengan tali?*"
 
 > **Ayub 41:6 (TB)** "*Punggungnya adalah perisai-perisai yang bersusun, terlekat rapat seperti meterai.*"
 
-> **Ayub 41:16-17 (TB)** "*Bila ia bangkit, maka semua yang berkuasa menjadi gentar, menjadi bingung karena ketakutan. Bila ia diserang dengan pedang, ia tidak mempan, demikian juga dengan tombak, seligi atau lembing.*"
+> **Ayub 41:25-26 (TB)** "*Bila ia bangkit, maka semua yang berkuasa menjadi gentar, menjadi bingung karena ketakutan. Bila ia diserang dengan pedang, ia tidak mempan, demikian juga dengan tombak, seligi atau lembing.*"
 
-Selain dalam Kitab Ayub, Lewiatan juga disebutkan dalam *Mazmur 74:14*, di mana dikatakan bahwa Tuhan "*meremukkan kepala-kepala Lewiatan*" sebagai tanda kemenangan-Nya atas kekuatan-kekuatan kekacauan. Dalam **Yesaya 27:1**, Lewiatan digambarkan sebagai "ular yang meluncur (cepat)" dan "ular yang melingkar," yang akan dibunuh oleh Tuhan pada hari kiamat, simbol dari kemenangan Tuhan atas kejahatan.
+Selain dalam Kitab Ayub, Lewiatan juga disebutkan dalam *Mazmur 74:14*, di mana dikatakan bahwa Tuhan "menghancurkan kepala Lewiatan" sebagai tanda kemenangan-Nya atas kekuatan-kekuatan kekacauan. Dalam *Yesaya 27:1*, Lewiatan digambarkan sebagai "ular yang meluncur (cepat)" dan "ular yang melingkar," yang akan dibunuh oleh Tuhan pada hari kiamat, simbol dari kemenangan Tuhan atas kejahatan.
 
 ## Interpretasi dalam Tradisi Yahudi dan Kristen
 
@@ -52,7 +52,7 @@ Lewiatan adalah simbol yang kuat dari kekuatan destruktif dan kekacauan, namun d
 
 ## Referensi
 
-1. Kitab Ayub 40:20-28, Ayub 41:1-25, Alkitab Ibrani.
+1. Kitab Ayub 41:1-34, Alkitab Ibrani.
 2. Encyclopaedia Britannica. "Leviathan." Diakses pada 2024.
 3. Brown, F., Driver, S. R., Briggs, C. A. *A Hebrew and English Lexicon of the Old Testament*. Clarendon Press.
 4. Jewish Virtual Library. "Leviathan in Jewish Tradition."
@@ -73,7 +73,7 @@ Lewiatan adalah simbol yang kuat dari kekuatan destruktif dan kekacauan, namun d
 - [Lewiatan dalam Teks-Teks Yahudi di Sefaria](https://www.sefaria.org/topics/leviathan)
 - [Lewiatan dalam Alkitab dari GotQuestions](https://www.gotquestions.org/Leviathan.html)
 
-## Kategori
+## Kategori:
 | Mitologi Yahudi | Makhluk Mitologi | Simbolisme Religius | Etimologi Alkitab |
 
----
+--

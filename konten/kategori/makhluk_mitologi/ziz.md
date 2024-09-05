@@ -1,7 +1,5 @@
 # Ziz: Makhluk Mitologi dalam Budaya Yahudi
 
----
-
 ![Ilustrasi Gambar Makhluk Mitologi Ziz](konten/img/makhluk_mitologi/ziz.jpg)
 
 ## Pendahuluan
