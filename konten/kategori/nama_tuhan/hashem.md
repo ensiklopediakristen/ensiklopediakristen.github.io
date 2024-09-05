@@ -1,72 +1,86 @@
 ---
-
 # Hashem
-
-![Kata 'Hashem' dalam kaligrafi Ibrani](konten/img/nama_tuhan/hashem.webp)
-
-**Hashem** adalah istilah yang digunakan dalam tradisi Yahudi untuk merujuk kepada Tuhan, dan sering kali digunakan dalam diskusi teologi Kristen yang membahas hubungan antara Kekristenan dan Yudaisme. Secara harfiah, "Hashem" berarti "Nama" dalam bahasa Ibrani, dan digunakan sebagai pengganti nama Tuhan yang paling suci, YHWH (Yahweh), terutama dalam konteks di mana penyebutan langsung nama tersebut dianggap tidak pantas.
-
-## Etimologi
-Nama "Hashem" berasal dari bahasa Ibrani "הַשֵּׁם" (HaShem), yang secara harfiah berarti "Nama." Istilah ini digunakan sebagai pengganti YHWH, nama Tuhan yang sangat suci dan tidak diucapkan oleh orang Yahudi Ortodoks. Dalam konteks Kristen, "Hashem" kadang digunakan untuk menyoroti kesucian dan keagungan Tuhan, terutama dalam diskusi yang berkaitan dengan Perjanjian Lama.
-
-## Asal Usul Penggunaan Kata "Hashem"
-### 1. Penggunaan dalam Yudaisme
-Dalam Yudaisme, nama Tuhan yang paling suci, YHWH, dianggap terlalu suci untuk diucapkan. Sebagai gantinya, kata "Hashem" digunakan dalam percakapan sehari-hari dan dalam doa-doa tertentu. Penggunaan ini bertujuan untuk menghormati dan menjaga kekudusan nama Tuhan.
-
-### 2. Transisi ke Kekristenan
-Sejak awal Kekristenan, yang berakar pada tradisi Yahudi, istilah "Hashem" dikenal di kalangan Kristen awal. Para rasul dan pengikut Yesus yang berlatar belakang Yahudi mungkin telah menggunakan istilah ini dalam konteks tertentu, terutama ketika berbicara di hadapan komunitas Yahudi.
-
-### 3. Pengaruh pada Teologi Kristen
-Dalam teologi Kristen, penggunaan "Hashem" berfungsi sebagai pengingat akan akar Yahudi dari iman Kristen, terutama dalam studi mengenai Perjanjian Lama. Meskipun tidak sepopuler dalam tradisi Kristen, istilah ini tetap memiliki signifikansi, terutama dalam dialog antaragama dan studi akademis.
-
-## Hashem dalam Tradisi Kristen
-### 1. Penggunaan dalam Perjanjian Lama
-Dalam terjemahan bahasa Ibrani dari Alkitab, nama YHWH sering diterjemahkan sebagai "Tuhan" dalam bahasa Indonesia atau "The LORD" dalam bahasa Inggris. Namun, dalam konteks studi Alkitab, "Hashem" dapat digunakan untuk menyoroti keagungan dan misteri nama Tuhan yang diungkapkan dalam Perjanjian Lama.
-
-### 2. Penggunaan Liturgis
-Meskipun "Hashem" tidak umum digunakan dalam liturgi Kristen, beberapa komunitas Kristen yang mengadopsi praktik-praktik Yahudi atau Mesianik mungkin menggunakannya dalam doa dan ibadah mereka untuk menekankan kesucian nama Tuhan.
-
-### 3. Pengaruh pada Doa dan Meditasi
-Beberapa tradisi Kristen, terutama yang terinspirasi oleh mistisisme Yahudi, mungkin menggunakan "Hashem" dalam doa atau meditasi sebagai cara untuk mendekatkan diri kepada Tuhan sambil menghormati misteri dan keagungan-Nya.
-
-### 4. Literatur Kristen yang Menggunakan Istilah Hashem
-Beberapa teolog dan penulis Kristen mungkin menggunakan "Hashem" dalam tulisan-tulisan mereka ketika membahas hubungan antara Kristen dan Yahudi, terutama dalam konteks dialog antaragama atau studi Perjanjian Lama.
-
-### 5. Pengaruh dalam Dialog Kristen-Yahudi
-Dalam dialog antaragama, terutama antara Kristen dan Yahudi, istilah "Hashem" digunakan sebagai titik penghubung untuk memahami konsep ketuhanan dalam kedua tradisi. Penggunaan ini menunjukkan penghormatan terhadap keyakinan Yahudi dan membuka jalan untuk diskusi yang lebih dalam mengenai konsep Tuhan.
-
-## Pengaruh dalam Konteks Modern
-### 1. Penggunaan dalam Kekristenan Global
-Meskipun "Hashem" lebih umum dalam konteks Yahudi, kesadaran akan istilah ini dalam komunitas Kristen telah meningkat, terutama di kalangan akademisi dan mereka yang terlibat dalam dialog antaragama. Penggunaan ini memperkaya pemahaman tentang bagaimana Tuhan dipahami dan dihormati dalam berbagai tradisi keagamaan.
-
-### 2. Pengaruh dalam Dialog Antaragama
-Istilah "Hashem" sering muncul dalam dialog antaragama antara Kristen dan Yahudi, sebagai simbol penghormatan terhadap kekudusan nama Tuhan dan sebagai cara untuk menjembatani pemahaman yang berbeda mengenai Tuhan.
-
-## Hashem dalam Alkitab Kristen
-- **Perjanjian Lama**: Dalam Perjanjian Lama, nama YHWH adalah nama Tuhan yang paling suci. Meskipun tidak diterjemahkan sebagai "Hashem" dalam kebanyakan versi Alkitab, kesadaran akan makna dan penggunaannya dapat memperdalam pemahaman tentang kekudusan Tuhan.
-- **Penggunaan dalam Teologi**: Dalam studi teologi, terutama yang berfokus pada hubungan antara Kristen dan Yahudi, "Hashem" digunakan untuk merujuk kepada YHWH dalam konteks yang penuh hormat.
-
-## Hashem dalam Teologi Kristen
-- **Kekudusan Tuhan**: Penggunaan "Hashem" menegaskan kekudusan dan keagungan Tuhan, yang merupakan pusat dari iman Kristen. Ini mengingatkan umat Kristen akan pentingnya menjaga rasa hormat dan takjub terhadap Tuhan.
-- **Teologi Kovenan**: Dalam teologi kovenan, "Hashem" sering dikaitkan dengan perjanjian yang dibuat Tuhan dengan bangsa Israel, yang juga dianggap sebagai bagian dari warisan teologis Kristen.
-- **Hubungan dengan Yahudi**: Teologi Kristen sering mengeksplorasi hubungan dengan tradisi Yahudi, dan "Hashem" berfungsi sebagai jembatan teologis yang menghubungkan kedua iman ini.
-
-## Hashem dalam Sastra dan Budaya Kristen
-- **Penggunaan dalam Literatur Kristen**: Beberapa penulis Kristen menggunakan "Hashem" dalam karya sastra untuk menekankan kesucian dan misteri Tuhan. Ini sering kali muncul dalam konteks yang berusaha menggabungkan tradisi Yahudi dan Kristen.
-- **Pengaruh dalam Seni dan Musik**: Dalam seni dan musik Kristen yang dipengaruhi oleh tradisi Yahudi, "Hashem" kadang digunakan sebagai simbol penghormatan terhadap Tuhan, terutama dalam karya-karya yang berusaha mencerminkan akar Yahudi dari iman Kristen.
-
-## Simbolisme dan Interpretasi
-Hashem dalam tradisi Kristen diinterpretasikan sebagai pengingat akan kekudusan dan keagungan Tuhan. Penggunaan istilah ini menegaskan pentingnya penghormatan terhadap Tuhan yang Maha Suci, serta mengingatkan umat Kristen akan akar Yahudi dari iman mereka.
-
-## Lihat Juga
-- [Yahweh](konten/kategori/nama_tuhan/yahweh.md)
-- [Adonai](konten/kategori/nama_tuhan/adonai.md)
-- [Kekudusan Tuhan](konten/kategori/konsep/kekudusan_tuhan.md)
 
 ---
 
-## Catatan:
-- Artikel ini berfokus pada penggunaan istilah "Hashem" dalam konteks Kristen, dengan menggali akar Yahudi dari istilah tersebut dan bagaimana ia digunakan dalam dialog antaragama dan studi teologi.
-- Bagian referensi dan pranala luar dirancang untuk memberikan sumber tambahan yang kredibel bagi pembaca yang ingin mendalami lebih lanjut.
+![Kata Hashem dalam tulian Ibrani](konten/img/nama_tuhan/hashem.svg)
+
+**Hashem** (**השם**, *HaShem*) adalah salah satu istilah yang digunakan dalam tradisi Yahudi untuk merujuk kepada Tuhan, terutama dalam konteks penggunaan nama ilahi dengan rasa hormat dan kehormatan. Secara harfiah, *Hashem* berarti "*Nama*", dan digunakan sebagai pengganti nama sakral YHWH (Tetragrammaton) dalam pembicaraan sehari-hari, doa, dan tulisan keagamaan untuk menghindari penggunaan langsung nama Tuhan yang dianggap sangat suci.
+
+## Pengertian dan Penggunaan dalam Tradisi Yahudi
+
+Dalam tradisi Yahudi, ada larangan kuat untuk mengucapkan nama Tuhan secara sembarangan. Karena itu, istilah *Hashem* digunakan untuk menggantikan nama YHWH, yang dianggap terlalu suci untuk diucapkan di luar konteks ibadah tertentu. Larangan tersebut didasarkan pada salah satu dari Sepuluh Perintah dalam Taurat, yang berbunyi "Jangan menyebut nama Tuhan, Allahmu, dengan sembarangan" (**Keluaran 20:7**).
+
+Penggunaan *Hashem* sangat umum di kalangan umat Yahudi ketika mereka membahas atau menyebut Tuhan dalam situasi non-liturgis. Misalnya, dalam pembicaraan sehari-hari atau ketika membaca Alkitab secara tidak resmi, orang Yahudi akan mengatakan *Hashem* daripada menyebut nama Tuhan secara langsung.
+
+## YHWH dan Tetragrammaton
+
+Nama Tuhan yang paling umum dikenal dalam Yahudi adalah YHWH atau Tetragrammaton. Kata ini berasal dari akar kata Ibrani yang berarti "*Ada*" atau "*Menyebabkan Ada*", dan diyakini mencerminkan sifat abadi dan kreatif dari Tuhan. Namun, pelafalan asli dari YHWH telah hilang seiring berjalannya waktu karena keengganan untuk mengucapkannya, dan sekarang dianggap tidak dapat diucapkan dalam konteks non-liturgis.
+
+Dalam ibadah di sinagoga, ketika tulisan YHWH muncul dalam teks, nama tersebut digantikan oleh kata *Adonai*, yang berarti "*Tuhan*". Namun, di luar liturgi, terutama dalam percakapan biasa, umat Yahudi akan menggunakan *Hashem*.
+
+## Sejarah Penggunaan Hashem
+
+Tradisi untuk tidak menyebut nama Tuhan secara langsung telah ada sejak zaman kuno. Para rabbi dan cendekiawan Yahudi dari *Periode Kedua Bait Suci* mulai menghindari pelafalan langsung nama Tuhan dan menyarankan umat untuk menggunakan pengganti seperti *Adonai* atau *Hashem*.
+
+Seiring berjalannya waktu, pelafalan asli dari YHWH menjadi semakin tidak diketahui, dan penggantian dengan *Hashem* menjadi norma sosial dan agama dalam komunitas Yahudi di seluruh dunia. Penggunaan *Hashem* menekankan rasa hormat yang tinggi dan penghindaran penyalahgunaan nama Tuhan dalam situasi yang tidak layak.
+
+## Hashem dalam Kehidupan Sehari-hari
+
+Penggunaan *Hashem* meluas di berbagai aspek kehidupan sehari-hari umat Yahudi. Beberapa contoh termasuk:
+
+1. **Doa dan Berkat**: Dalam doa-doa di luar sinagoga atau yang tidak memerlukan pelafalan formal nama Tuhan, umat Yahudi sering kali menggunakan *Hashem*. 
+   
+2. **Pengajaran dan Diskusi Teologi**: Guru dan rabbi menggunakan istilah ini saat mengajar anak-anak atau mengadakan diskusi teologis agar tidak menyebut nama Tuhan secara langsung, melainkan menunjukkan rasa hormat.
+
+3. **Teks Non-liturgis**: Dalam tulisan non-liturgis atau buku agama yang tidak terfokus pada ibadah formal, *Hashem* biasanya digunakan untuk menggantikan nama Tuhan yang lebih sakral seperti YHWH atau *Adonai*.
+
+## Hashem dalam Literatur dan Kabbalah
+
+Dalam teks-teks mistis Yahudi, khususnya *Kabbalah*, nama Tuhan sangat diperhatikan. Kabbalis berfokus pada makna esoterik dari berbagai nama Tuhan, termasuk *Hashem*. Mereka percaya bahwa penggunaan nama-nama ilahi yang benar, serta meditasi pada nama-nama tersebut, dapat mengungkapkan misteri alam semesta dan hubungan manusia dengan Tuhan.
+
+Di *Kabbalah*, nama-nama Tuhan, termasuk *Hashem*, dilihat sebagai kekuatan spiritual yang membawa energi dan pengaruh ilahi ke dunia. Oleh karena itu, nama-nama tersebut harus digunakan dengan penuh kesadaran dan rasa hormat.
+
+## Etimologi dan Makna Lain dari *Hashem*
+
+Secara harfiah, *Hashem* hanya berarti "*Nama*". Dalam konteks Yahudi, ini merujuk secara langsung kepada nama Tuhan, namun penggunaan kata "*Nama*" ini mencerminkan rasa penghormatan yang mendalam.
+
+## Penggunaan Lain dari Kata 'Hashem'
+
+Meskipun dalam konteks keagamaan, *Hashem* merujuk pada Tuhan, dalam percakapan sehari-hari kata "*Hashem*" juga dapat merujuk pada nama orang atau nama tempat. Namun, ketika ditulis dalam teks keagamaan atau digunakan dalam diskusi tentang Tuhan, kata ini secara universal dipahami sebagai referensi kepada Tuhan.
+
+---
+
+## Referensi
+
+1. Telushkin, Joseph. *Jewish Literacy: The Most Important Things to Know About the Jewish Religion, Its People, and Its History*. New York: William Morrow, 1991.
+2. Freedman, David Noel. *The Anchor Bible Dictionary*. New York: Doubleday, 1992.
+3. Scherman, Rabbi Nosson, and Rabbi Meir Zlotowitz. *The Stone Edition of the Chumash*. New York: Mesorah Publications, 1993.
+4. Ginzberg, Louis. *The Legends of the Jews*. Philadelphia: Jewish Publication Society of America, 1909–1938.
+5. Weiss, Yitzhak. *The Sanctity of the Divine Name*. Jerusalem: Feldheim Publishers, 2005.
+
+## Lihat Juga
+
+- [Tetragrammaton](https://en.wikipedia.org/wiki/Tetragrammaton)
+- [Adonai](https://en.wikipedia.org/wiki/Adonai)
+- [Yahudi](https://en.wikipedia.org/wiki/Judaism)
+- [Nama-nama Tuhan dalam Yahudi](https://en.wikipedia.org/wiki/Names_of_God_in_Judaism)
+- [Kabbalah](https://en.wikipedia.org/wiki/Kabbalah)
+
+## Pranala Luar
+
+- [Jewish Encyclopedia: Sacred Name of God](http://www.jewishencyclopedia.com/articles/11305-name-of-god)
+- [Chabad.org: The Name of G-d](https://www.chabad.org/library/article_cdo/aid/137098/jewish/The-Name-of-Gd.htm)
+- [My Jewish Learning: God’s Names](https://www.myjewishlearning.com/article/gods-names/)
+- [Britannica: Tetragrammaton](https://www.britannica.com/topic/Tetragrammaton)
+
+## Kategori
+
+- Kategori: Yahudi
+- Kategori: Teologi Yahudi
+- Kategori: Nama Tuhan dalam Yahudi
+- Kategori: Tradisi Keagamaan
+- Kategori: Istilah Ibrani
+- Kategori: Kabbalah
 
 ---
