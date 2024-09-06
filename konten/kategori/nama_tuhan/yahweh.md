@@ -41,8 +41,11 @@ Beberapa terjemahan Alkitab Kristen menggantikan Yahweh dengan "*Tuhan*" dalam t
 
 ## Perbedaan Penggunaan Yahweh dalam Yudaisme dan Kekristenan
 
-- **Yudaisme**: Yahweh adalah nama Tuhan yang suci dan tak terucapkan. Orang Yahudi menggunakan pengganti seperti *Adonai* atau *Hashem* saat membaca teks Alkitab.
-- **Kekristenan**: Dalam Kekristenan, Yahweh sering dipandang sebagai Tuhan yang sama yang disebut dalam Perjanjian Lama, tetapi nama tersebut lebih sering diganti dengan *Lord* atau *God* dalam Alkitab Kristen.
+### Yudaisme
+Yahweh adalah nama Tuhan yang suci dan tak terucapkan. Orang Yahudi menggunakan pengganti seperti *Adonai* atau *Hashem* saat membaca teks Alkitab.
+
+### Kekristenan
+Dalam Kekristenan, Yahweh sering dipandang sebagai Tuhan yang sama yang disebut dalam Perjanjian Lama, tetapi nama tersebut lebih sering diganti dengan *Lord* atau *God* dalam Alkitab Kristen.
 
 ## Yahweh dan Hubungan dengan Nama Tuhan Lainnya
 
@@ -50,9 +53,11 @@ Nama Yahweh sering digunakan bersama dengan nama lain untuk Tuhan, seperti *El S
 
 ## Penggunaan Yahweh dalam Ibadah Modern
 
-Dalam Yudaisme modern, nama Yahweh jarang digunakan dalam ibadah sehari-hari. Sebaliknya, nama *Adonai* atau *Hashem* digunakan dalam doa dan pembacaan Alkitab. Meskipun demikian, Yahweh tetap menjadi nama penting dalam tradisi Yahudi, terutama dalam kajian teologi dan liturgi.
+### Dalam Yudaisme modern
+Nama Yahweh jarang digunakan dalam ibadah sehari-hari. Sebaliknya, nama *Adonai* atau *Hashem* digunakan dalam doa dan pembacaan Alkitab. Meskipun demikian, Yahweh tetap menjadi nama penting dalam tradisi Yahudi, terutama dalam kajian teologi dan liturgi.
 
-Dalam Kekristenan, beberapa denominasi atau gerakan, seperti *Kristen Mesianik*, masih menggunakan nama Yahweh dalam ibadah dan doa, menekankan hubungan antara Kekristenan dan akar Ibrani dari iman tersebut. Namun, dalam banyak gereja modern, penggunaan Yahweh digantikan dengan istilah yang lebih umum seperti Tuhan atau Allah.
+### Dalam Kekristenan
+Beberapa denominasi atau gerakan, seperti *Kristen Mesianik*, masih menggunakan nama Yahweh dalam ibadah dan doa, menekankan hubungan antara Kekristenan dan akar Ibrani dari iman tersebut. Namun, dalam banyak gereja modern, penggunaan Yahweh digantikan dengan istilah yang lebih umum seperti Tuhan atau Allah.
 
 ## Kesimpulan
 
@@ -63,24 +68,17 @@ Nama Yahweh mencerminkan sifat Tuhan yang abadi, yang ada di luar ruang dan wakt
 ---
 
 ## Referensi
+
 1. Harris, R. Laird. "Theological Wordbook of the Old Testament." Moody Publishers, 1980.
 2. Botterweck, G. Johannes, and Helmer Ringgren, eds. "Theological Dictionary of the Old Testament." Eerdmans Publishing, 1974.
 3. Freedman, David Noel, ed. "Anchor Bible Dictionary." Doubleday, 1992.
 
 ## Lihat Juga
-- [YHWH](konten/kategori/nama_tuhan/YHWH.md)
-- [Elohim](konten/kategori/nama_tuhan/elohim.md)
-- [Adonai](konten/kategori/nama_tuhan/adonai.md)
-- [Hashem](konten/kategori/nama_tuhan/hashem.md)
 
 ## Pranala Luar
+
 - [Jewish Encyclopedia: Yahweh](http://www.jewishencyclopedia.com/articles/11305-yahweh)
 - [Bible Hub: Yahweh dalam Alkitab](https://biblehub.com/)
 - [Bible Gateway: Alkitab dalam berbagai bahasa](https://www.biblegateway.com/)
-
----
-
-## Kategori:
-Teologi Yahudi, Teologi Kristen, Nama Tuhan, Perjanjian Lama, Yudaisme-Kristen
 
 ---

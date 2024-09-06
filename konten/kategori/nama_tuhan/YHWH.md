@@ -10,11 +10,11 @@
 
 ## Etimologi
 
-Nama YHWH diyakini berasal dari akar kata Ibrani "**היה**" (*hayah*) yang berarti "*menjadi*" atau "*ada.*" Interpretasi ini mendukung pemahaman bahwa YHWH adalah Allah yang "*ada*" atau "*yang selalu ada.*" Dalam **Keluaran 3:14**, Tuhan memperkenalkan diri-Nya kepada Musa dengan mengatakan, "**אהיה אשר אהיה** (*Ehyeh Asher Ehyeh*)" yang berarti "*Aku adalah Aku*" atau "*Aku akan menjadi apa yang Aku kehendaki.*" Ungkapan ini mengandung makna teologis bahwa Allah adalah entitas yang tidak berubah dan melampaui ruang serta waktu.
+Nama YHWH diyakini berasal dari akar kata Ibrani "היה" (*hayah*) yang berarti "*menjadi*" atau "*ada.*" Interpretasi ini mendukung pemahaman bahwa YHWH adalah Allah yang "*ada*" atau "*yang selalu ada.*" Dalam **Keluaran 3:14**, Tuhan memperkenalkan diri-Nya kepada Musa dengan mengatakan, "אהיה אשר אהיה (*Ehyeh Asher Ehyeh*)" yang berarti "*Aku adalah Aku*" atau "*Aku akan menjadi apa yang Aku kehendaki.*" Ungkapan ini mengandung makna teologis bahwa Allah adalah entitas yang tidak berubah dan melampaui ruang serta waktu.
 
 ## YHWH dalam Alkitab
 
-YHWH muncul lebih dari 6.800 kali dalam Alkitab Ibrani, menjadikannya nama Allah yang paling sering digunakan. Nama ini pertama kali diperkenalkan kepada Musa dalam **Keluaran 3:15** di mana Tuhan berkata, "itulah nama-Ku untuk selama-lamanya dan itulah sebutan-Ku turun-temurun." 
+YHWH muncul lebih dari 6.800 kali dalam Alkitab Ibrani, menjadikannya nama Allah yang paling sering digunakan. Nama ini pertama kali diperkenalkan kepada Musa dalam **Keluaran 3:15** di mana Tuhan berkata, "*itulah nama-Ku untuk selama-lamanya dan itulah sebutan-Ku turun-temurun*." 
 
 Dalam **Kejadian 2:4**, YHWH disebut sebagai pencipta langit dan bumi, menekankan peran Tuhan sebagai pencipta segala sesuatu. Dalam narasi Alkitab, penggunaan YHWH biasanya menandai momen penting dalam hubungan antara Tuhan dan umat-Nya, terutama dalam konteks perjanjian dan penyelamatan.
 
@@ -52,13 +52,7 @@ Dalam budaya populer, YHWH kadang-kadang muncul dalam literatur, film, dan musik
 
 ## Lihat Juga
 
-- [Tetragrammaton](https://en.wikipedia.org/wiki/Tetragrammaton)
-- [Adonai](konten/kategori/nama_tuhan/adonai.md)
-- [Elohim](konten/kategori/nama_tuhan/elohim.md)
-- [Yahweh](konten/kategori/nama_tuhan/yahweh.md)
-- [Inkarnasi](konten/kategori/konsep/inkarnasi.md)
-- [Hashem](konten/kategori/nama_tuhan/hashem.md)
-- [Trinitas](konten/kategori/konsep/trinitas.md)
+- [Tetragrammaton]
 - [Keluaran 3:14]
 - [Shema Yisrael]
 
@@ -68,10 +62,5 @@ Dalam budaya populer, YHWH kadang-kadang muncul dalam literatur, film, dan musik
 - [My Jewish Learning - The Name of God](https://www.myjewishlearning.com/article/the-name-of-god-yhwh/)
 - [Britannica - YHWH](https://www.britannica.com/topic/Yahweh)
 - [Bible Gateway - Exodus 3:14](https://www.biblegateway.com/passage/?search=Exodus+3%3A14)
-
----
-
-## Kategori
-| Nama-nama Tuhan dalam Yahudi | Teologi Yahudi | Studi Alkitab | Simbolisme dalam Agama | Sejarah Yahudi |
 
 ---
