@@ -6,60 +6,12 @@ document.addEventListener('DOMContentLoaded', async function () {
     const mainContainer = document.getElementById('main-container');
     let currentFile = '';
 
-    // Fungsi untuk memperbarui meta tag
-    function updateMetaTags(title, description, imageUrl) {
-        // Update title
-        document.title = title;
-
-        // Update meta description
-        const metaDescription = document.querySelector('meta[name="description"]');
-        if (metaDescription) {
-            metaDescription.setAttribute('content', description);
-        }
-
-        // Update Open Graph tags
-        const ogTitle = document.querySelector('meta[property="og:title"]');
-        if (ogTitle) {
-            ogTitle.setAttribute('content', title);
-        }
-
-        const ogDescription = document.querySelector('meta[property="og:description"]');
-        if (ogDescription) {
-            ogDescription.setAttribute('content', description);
-        }
-
-        const ogImage = document.querySelector('meta[property="og:image"]');
-        if (ogImage && imageUrl) {
-            ogImage.setAttribute('content', imageUrl);
-        }
-
-        // Update Schema.org data
-        const schemaScript = document.querySelector('script[type="application/ld+json"]');
-        if (schemaScript) {
-            const schemaData = JSON.parse(schemaScript.innerHTML);
-            schemaData.name = title;
-            schemaData.description = description;
-            if (imageUrl) {
-                schemaData.image = imageUrl;
-            }
-            schemaScript.innerHTML = JSON.stringify(schemaData, null, 2);
-        }
-    }
-
     async function loadMarkdown(file) {
         if (currentFile === file) return;
         currentFile = file;
 
         try {
             let markdown = await fetch(file).then(response => response.text());
-
-            // Tentukan judul dan deskripsi berdasarkan file yang di-load
-            const title = file.replace('.md', '').replace(/_/g, ' ');
-            const description = `Baca artikel ${title} di Ensiklopedia Kristen.`;
-            const imageUrl = 'https://ensiklopedikristen.github.io/logo.jpg'; // Sesuaikan jika ada gambar spesifik
-
-            // Update meta tags
-            updateMetaTags(title, description, imageUrl);
 
             if (file === 'konten/beranda.md') {
                 const recentPosts = await getRecentPosts();
@@ -87,6 +39,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             scrollToTop();
             updateURL(file);
             addMarkdownLinksListener();
+            updateTitleFromContent(); // Update title setelah konten di-render
         } catch (error) {
             mainContent.innerHTML = `<p>Error loading content: ${error}</p>`;
         }
@@ -117,6 +70,15 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         if (history.state && history.state.path === filePath) return;
         history.pushState({ path: filePath }, '', url);
+    }
+
+    function updateTitleFromContent() {
+        const h1 = mainContent.querySelector('h1');
+        if (h1) {
+            document.title = h1.textContent; // Ambil judul dari H1
+        } else {
+            document.title = "Ensiklopedia Kristen"; // Default title jika H1 tidak ada
+        }
     }
 
     async function createSidebarList(dir, parentElement) {
@@ -271,18 +233,36 @@ document.addEventListener('DOMContentLoaded', async function () {
     berandaLink.appendChild(berandaAnchor);
     sidebarContent.appendChild(berandaLink);
 
-    // Inisialisasi sidebar dan load beranda pada saat pertama kali
-    createSidebarList('konten', sidebarContent);
+    const kategoriLink = document.createElement('li');
+    const kategoriSpan = document.createElement('span');
+    const kategoriSublistCount = await countSublist('konten/kategori');
+    kategoriSpan.textContent = `kategori (${kategoriSublistCount} artikel)`;
+    kategoriSpan.style.cursor = 'pointer';
 
-    // Load halaman beranda ketika pertama kali halaman diakses
-    const urlParams = new URLSearchParams(window.location.search);
-    const initialPage = urlParams.get('page') || 'konten/beranda.md';
-    loadMarkdown(initialPage);
+    kategoriSpan.addEventListener('click', function (event) {
+        event.stopPropagation();
+        const sublist = kategoriLink.querySelector('ul');
+        if (sublist) {
+            sublist.classList.toggle('hidden');
+            kategoriSpan.classList.toggle('expanded');
+        } else {
+            const ul = document.createElement('ul');
+            createSidebarList('konten/kategori', ul);
+            kategoriLink.appendChild(ul);
+            kategoriSpan.classList.add('expanded');
+        }
+    });
 
-    // Handle navigasi browser (back/forward)
+    kategoriLink.appendChild(kategoriSpan);
+    sidebarContent.appendChild(kategoriLink);
+
     window.addEventListener('popstate', function (event) {
         if (event.state && event.state.path) {
             loadMarkdown(event.state.path);
         }
     });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialPage = urlParams.get('page') || 'konten/beranda.md';
+    loadMarkdown(initialPage);
 });
