@@ -1,5 +1,9 @@
 [
     {
+        "name": "aliran_agama",
+        "type": "directory"
+    },
+    {
         "name": "konsep",
         "type": "directory"
     },
