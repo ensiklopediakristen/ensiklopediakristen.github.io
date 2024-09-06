@@ -8,6 +8,7 @@ body {
     position: relative;
     background: white;
     font-family: 'Open Sans', sans-serif;
+    width: 100vw;
     max-width: 1024px;
     min-height: 96vh;
     margin: 0 auto;
