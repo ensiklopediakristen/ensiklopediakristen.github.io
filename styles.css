@@ -100,6 +100,34 @@ nav ul li a:hover {
     flex-wrap: nowrap;
 }
 
+#content H1{
+    color: #0073aa;
+    font-size: 1.5rem;
+}
+
+#content H2{
+    color: #004668;
+    font-size: 1.3rem;
+}
+
+#content H3{
+    color: #4a0300;
+    font-size: 1.1rem;
+}
+
+#content H4{
+    font-size: 1rem;
+}
+
+#content p{
+    font-size: 1rem;
+}
+
+#content a{
+    text-decoration: none;
+    color: #942b00;
+}
+
 aside {
     width: 250px;
     max-height: 100vh;
