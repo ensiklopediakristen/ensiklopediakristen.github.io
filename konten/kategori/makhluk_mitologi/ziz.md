@@ -38,20 +38,11 @@ Kisah ini muncul dalam literatur apokaliptik Yahudi, yang menggambarkan akhir du
 
 ## Lihat Juga
 
-- [Lewiatan](konten/kategori/makhluk_mitologi/lewiatan.md)
-- [Behemoth](konten/kategori/makhluk_mitologi/behemoth.md)
-- [Naga](konten/kategori/makhluk_mitologi/naga.md)
-
 ## Pranala Luar
 
 - [Jewish Virtual Library - Ziz](https://www.jewishvirtuallibrary.org/ziz)
 - [Chabad - The Leviathan, Behemoth, and Ziz](https://www.chabad.org/library/article_cdo/aid/5146886/jewish/The-Leviathan-Behemoth-and-Ziz.htm)
 - [Encyclopedia Britannica - Mythological Creatures in Judaism](https://www.britannica.com/topic/Judaism/Mythology-and-legends)
 - [My Jewish Learning - Ziz](https://www.myjewishlearning.com/article/ziz/)
-
----
-
-## Kategori:
-| Mitologi Yahudi | Makhluk Mitologis dalam Tradisi Yahudi | Simbolisme dalam Agama | Literatur Yahudi | Studi Alkitab |
 
 ---

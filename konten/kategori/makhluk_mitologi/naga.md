@@ -44,9 +44,6 @@ Naga dalam budaya Yahudi dan Kristen sering kali melambangkan kejahatan, kekacau
 
 ## Lihat Juga
 
-- [Lewiatan](konten/kategori/makhluk_mitologi/lewiatan.md)
-- [Behemoth](konten/kategori/makhluk_mitologi/behemoth.md)
-- [Ziz](konten/kategori/makhluk_mitologi/ziz.md)
 - [Rahab]
 - [Kitab Wahyu]
 - [Santo Georgius dan Naga]
@@ -57,10 +54,5 @@ Naga dalam budaya Yahudi dan Kristen sering kali melambangkan kejahatan, kekacau
 - [Bible Hub - Leviathan in the Bible](https://biblehub.com/topical/l/leviathan.htm)
 - [Britannica - Dragon in Christianity](https://www.britannica.com/topic/dragon-mythological-creature)
 - [Catholic Online - Saint George](https://www.catholic.org/saints/saint.php?saint_id=280)
-
----
-
-## Kategori:
-| Mitologi Yahudi | Mitologi Kristen | Makhluk Mitologis dalam Alkitab | Simbolisme dalam Agama | Teologi Kristen | Teologi Yahudi | Literatur Kristen Abad Pertengahan | Studi Alkitab |
 
 ---

@@ -59,9 +59,6 @@ Lewiatan adalah simbol yang kuat dari kekuatan destruktif dan kekacauan, namun d
 
 ## Lihat Juga
 
-- [Behemoth](konten/kategori/makhluk_mitologi/behemoth.md)
-- [Naga](konten/kategori/makhluk_mitologi/naga.md)
-- [Ziz](konten/kategori/makhluk_mitologi/ziz.md)
 - [Kitab Ayub]
 - [Kitab Henokh]
 
@@ -73,7 +70,4 @@ Lewiatan adalah simbol yang kuat dari kekuatan destruktif dan kekacauan, namun d
 - [Lewiatan dalam Teks-Teks Yahudi di Sefaria](https://www.sefaria.org/topics/leviathan)
 - [Lewiatan dalam Alkitab dari GotQuestions](https://www.gotquestions.org/Leviathan.html)
 
-## Kategori:
-| Mitologi Yahudi | Makhluk Mitologi | Simbolisme Religius | Etimologi Alkitab |
-
---
+---

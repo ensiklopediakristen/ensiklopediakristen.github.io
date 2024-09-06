@@ -57,9 +57,6 @@ Behemoth adalah simbol dari kekuatan luar biasa yang, meskipun mengagumkan dan m
 
 ## Lihat Juga
 
-- [Lewiatan](konten/kategori/makhluk_mitologi/lewiatan.md)
-- [Naga](konten/kategori/makhluk_mitologi/naga.md)
-- [Ziz](konten/kategori/makhluk_mitologi/ziz.md)
 - [Kitab Ayub]
 - [Kitab Henokh]
 
@@ -69,9 +66,5 @@ Behemoth adalah simbol dari kekuatan luar biasa yang, meskipun mengagumkan dan m
 - *Behemoth dalam Alkitab dari GotQuestions*: [Behemoth in the Bible - GotQuestions](https://www.gotquestions.org/behemoth.html)
 - *Interpretasi Kristen tentang Behemoth di Bible Study Tools*: [Behemoth in the Bible - Bible Study Tools](https://www.biblestudytools.com/dictionary/behemoth/)
 - *Behemoth dalam Apokrifa di Early Jewish Writings*: [The Book of Enoch and Behemoth - Early Jewish Writings](http://www.earlyjewishwritings.com/1enoch.html)
-
----
-
-**Kategori**: Mitologi Yahudi | Makhluk Mitologi | Simbolisme Religius | Etimologi Alkitab
 
 ---
