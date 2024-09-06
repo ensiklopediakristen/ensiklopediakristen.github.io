@@ -6,12 +6,60 @@ document.addEventListener('DOMContentLoaded', async function () {
     const mainContainer = document.getElementById('main-container');
     let currentFile = '';
 
+    // Fungsi untuk memperbarui meta tag
+    function updateMetaTags(title, description, imageUrl) {
+        // Update title
+        document.title = title;
+
+        // Update meta description
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute('content', description);
+        }
+
+        // Update Open Graph tags
+        const ogTitle = document.querySelector('meta[property="og:title"]');
+        if (ogTitle) {
+            ogTitle.setAttribute('content', title);
+        }
+
+        const ogDescription = document.querySelector('meta[property="og:description"]');
+        if (ogDescription) {
+            ogDescription.setAttribute('content', description);
+        }
+
+        const ogImage = document.querySelector('meta[property="og:image"]');
+        if (ogImage && imageUrl) {
+            ogImage.setAttribute('content', imageUrl);
+        }
+
+        // Update Schema.org data
+        const schemaScript = document.querySelector('script[type="application/ld+json"]');
+        if (schemaScript) {
+            const schemaData = JSON.parse(schemaScript.innerHTML);
+            schemaData.name = title;
+            schemaData.description = description;
+            if (imageUrl) {
+                schemaData.image = imageUrl;
+            }
+            schemaScript.innerHTML = JSON.stringify(schemaData, null, 2);
+        }
+    }
+
     async function loadMarkdown(file) {
         if (currentFile === file) return;
         currentFile = file;
 
         try {
             let markdown = await fetch(file).then(response => response.text());
+
+            // Tentukan judul dan deskripsi berdasarkan file yang di-load
+            const title = file.replace('.md', '').replace(/_/g, ' ');
+            const description = `Baca artikel ${title} di Ensiklopedia Kristen.`;
+            const imageUrl = 'https://ensiklopedikristen.github.io/logo.jpg'; // Sesuaikan jika ada gambar spesifik
+
+            // Update meta tags
+            updateMetaTags(title, description, imageUrl);
 
             if (file === 'konten/beranda.md') {
                 const recentPosts = await getRecentPosts();
@@ -142,38 +190,39 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     async function searchWiki(keyword) {
-    searchResults.innerHTML = '';
-    const lowerKeyword = keyword.toLowerCase();
+        searchResults.innerHTML = '';
+        const lowerKeyword = keyword.toLowerCase();
 
-    async function searchInDir(dir) {
-        const data = await fetch(`${dir}/index.json`).then(response => response.json());
-        for (const item of data) {
-            if (item.type === 'file') {
-                const fileNameWithoutExt = item.name.replace('.md', '').toLowerCase();
-                if (fileNameWithoutExt.includes(lowerKeyword)) {
-                    const li = document.createElement('li');
-                    const a = document.createElement('a');
-                    a.href = "#";
-                    a.textContent = fileNameWithoutExt.replace(/_/g, ' ');
-                    a.addEventListener('click', function (event) {
-                        event.preventDefault();
-                        loadMarkdown(`${dir}/${item.name}`);
-                        searchResults.innerHTML = '';
-                        searchBox.value = '';
-                        mainContainer.classList.remove('hidden');
-                        searchResults.classList.add('hidden');
-                    });
-                    li.appendChild(a);
-                    searchResults.appendChild(li);
+        async function searchInDir(dir) {
+            const data = await fetch(`${dir}/index.json`).then(response => response.json());
+            for (const item of data) {
+                if (item.type === 'file') {
+                    const fileNameWithoutExt = item.name.replace('.md', '').toLowerCase();
+                    if (fileNameWithoutExt.includes(lowerKeyword)) {
+                        const li = document.createElement('li');
+                        const a = document.createElement('a');
+                        a.href = "#";
+                        a.textContent = fileNameWithoutExt.replace(/_/g, ' ');
+                        a.addEventListener('click', function (event) {
+                            event.preventDefault();
+                            loadMarkdown(`${dir}/${item.name}`);
+                            searchResults.innerHTML = '';
+                            searchBox.value = '';
+                            mainContainer.classList.remove('hidden');
+                            searchResults.classList.add('hidden');
+                        });
+                        li.appendChild(a);
+                        searchResults.appendChild(li);
+                    }
+                } else if (item.type === 'directory') {
+                    await searchInDir(`${dir}/${item.name}`);
                 }
-            } else if (item.type === 'directory') {
-                await searchInDir(`${dir}/${item.name}`);
             }
         }
+
+        await searchInDir('konten');
     }
 
-    await searchInDir('konten');
-}
     async function getRecentPosts() {
         const allPosts = [];
 
@@ -222,54 +271,18 @@ document.addEventListener('DOMContentLoaded', async function () {
     berandaLink.appendChild(berandaAnchor);
     sidebarContent.appendChild(berandaLink);
 
-    const kategoriLink = document.createElement('li');
-    const kategoriSpan = document.createElement('span');
-    const kategoriSublistCount = await countSublist('konten/kategori');
-    kategoriSpan.textContent = `kategori (${kategoriSublistCount} artikel)`;
-    kategoriSpan.style.cursor = 'pointer';
+    // Inisialisasi sidebar dan load beranda pada saat pertama kali
+    createSidebarList('konten/kategori', sidebarContent);
 
-    kategoriSpan.addEventListener('click', function (event) {
-        event.stopPropagation();
-        const sublist = kategoriLink.querySelector('ul');
-        if (sublist) {
-            sublist.classList.toggle('hidden');
-            kategoriSpan.classList.toggle('expanded');
-        } else {
-            const ul = document.createElement('ul');
-            createSidebarList('konten/kategori', ul);
-            kategoriLink.appendChild(ul);
-            kategoriSpan.classList.add('expanded');
-        }
-    });
-
-    kategoriLink.appendChild(kategoriSpan);
-    sidebarContent.appendChild(kategoriLink);
-
+    // Load halaman beranda ketika pertama kali halaman diakses
     const urlParams = new URLSearchParams(window.location.search);
-    const page = urlParams.get('page');
-    if (page) {
-        loadMarkdown(page);
-    } else {
-        loadMarkdown('konten/beranda.md');
-    }
+    const initialPage = urlParams.get('page') || 'konten/beranda.md';
+    loadMarkdown(initialPage);
 
+    // Handle navigasi browser (back/forward)
     window.addEventListener('popstate', function (event) {
         if (event.state && event.state.path) {
             loadMarkdown(event.state.path);
-        } else {
-            loadMarkdown('konten/beranda.md');
         }
     });
-});
-
-// Tema mode gelap dan terang
-document.getElementById('toggle-theme').addEventListener('click', function () {
-    document.body.classList.toggle('dark-mode');
-
-    // Ubah teks tombol berdasarkan mode saat ini
-    if (document.body.classList.contains('dark-mode')) {
-        this.classList = 'icon_dark';
-    } else {
-        this.classList = 'icon_light';
-    }
 });
