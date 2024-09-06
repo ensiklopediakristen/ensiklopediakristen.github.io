@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     sidebarContent.appendChild(berandaLink);
 
     // Inisialisasi sidebar dan load beranda pada saat pertama kali
-    createSidebarList('konten/kategori', sidebarContent);
+    createSidebarList('konten', sidebarContent);
 
     // Load halaman beranda ketika pertama kali halaman diakses
     const urlParams = new URLSearchParams(window.location.search);
