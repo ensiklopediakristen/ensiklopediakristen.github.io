@@ -2,7 +2,7 @@
 
 ---
 
-**Elohim** adalah salah satu nama paling umum yang digunakan untuk Tuhan dalam Alkitab Ibrani, juga ditemukan dalam Alkitab Kristen, terutama di Perjanjian Lama. Kata ini memiliki sejarah yang kaya dan beragam, serta memainkan peran penting dalam teologi Yahudi dan Kristen. Artikel ini akan menjelaskan asal usul, makna, sejarah, dan penggunaan kata Elohim dalam Kekristenan dan Yudaisme, serta relevansinya hingga saat ini.
+**Elohim** adalah salah satu nama paling umum yang digunakan untuk Tuhan dalam Alkitab Ibrani, juga ditemukan dalam Alkitab Kristen, terutama di Perjanjian Lama. Kata ini memiliki sejarah yang kaya dan beragam, serta memainkan peran penting dalam teologi Yahudi dan Kristen. Berikut ini adalah asal usul, makna, sejarah, dan penggunaan kata Elohim dalam Kekristenan dan Yudaisme, serta relevansinya hingga saat ini.
 
 ![Elohim, nama Tuhan dalam Alkitab Ibrani dan Kristen](konten/img/nama_tuhan/elohim.svg)
 
@@ -29,9 +29,9 @@ Selain sebagai nama untuk Tuhan, Elohim juga bisa merujuk kepada makhluk surgawi
 
 ### Elohim dalam Teologi Kristen
 
-Dalam teologi Kristen, Elohim sering dipandang sebagai salah satu nama yang menunjukkan sifat Allah sebagai pencipta dan penguasa tertinggi. Penggunaan Elohim juga dikaitkan dengan konsep Trinitas dalam Kekristenan, di mana Tuhan dipahami sebagai satu entitas dengan tiga pribadi: Bapa, Putra, dan Roh Kudus.
+Dalam teologi Kristen, Elohim sering dipandang sebagai salah satu nama yang menunjukkan sifat Allah sebagai pencipta dan penguasa tertinggi. Penggunaan Elohim juga dikaitkan dengan konsep [Trinitas](konten/kategori/konsep/trinitas.md) dalam Kekristenan, di mana Tuhan dipahami sebagai satu entitas dengan tiga pribadi: Bapa, Putra, dan Roh Kudus.
 
-Banyak teolog Kristen menghubungkan bentuk jamak Elohim dengan doktrin Trinitas, meskipun pemahaman ini berkembang lebih lanjut dalam Perjanjian Baru dan tidak berasal dari teologi Yahudi.
+Banyak teolog Kristen menghubungkan bentuk jamak Elohim dengan doktrin [Trinitas](konten/kategori/konsep/trinitas.md), meskipun pemahaman ini berkembang lebih lanjut dalam Perjanjian Baru dan tidak berasal dari teologi Yahudi.
 
 ### Elohim dalam Yudaisme
 
@@ -44,7 +44,7 @@ Dalam Yudaisme, Elohim dianggap sebagai nama yang sangat penting, tetapi sepenuh
 
 ## Elohim dan Hubungan dengan Nama Tuhan Lainnya
 
-Elohim sering kali digunakan bersama dengan nama-nama lain untuk Tuhan, seperti YHWH (*Yahweh*), *Adonai*, dan *El Shaddai*. Kombinasi seperti YHWH *Elohim* (*Tuhan Allah*) menunjukkan keesaan Tuhan dan kekuasaan-Nya.
+Elohim sering kali digunakan bersama dengan nama-nama lain untuk Tuhan, seperti [YHWH](konten/kategori/nama_tuhan/YHWH.md) (*[Yahweh](konten/kategori/nama_tuhan/yahweh.md)*), *[Adonai](konten/kategori/nama_tuhan/adonai)*, dan *El Shaddai*. Kombinasi seperti [YHWH](konten/kategori/nama_tuhan/YHWH.md) *Elohim* (*Tuhan Allah*) menunjukkan keesaan Tuhan dan kekuasaan-Nya.
 
 ## Penggunaan Elohim dalam Doa dan Liturgi Modern
 
@@ -52,7 +52,7 @@ Dalam liturgi modern, nama Elohim masih digunakan dalam berbagai bentuk ibadah, 
 
 ## Kesimpulan
 
-Elohim adalah nama penting untuk Tuhan yang digunakan dalam Alkitab Ibrani dan Alkitab Kristen. Meskipun bentuknya jamak, Elohim hampir selalu merujuk kepada Tuhan yang tunggal. Dalam Yudaisme, Elohim adalah nama penting yang menegaskan keesaan Tuhan, sementara dalam Kekristenan, penggunaannya sering dikaitkan dengan konsep Trinitas. Sampai saat ini, Elohim tetap menjadi salah satu nama Tuhan yang paling dihormati, mencerminkan kebesaran dan kekuasaan Tuhan atas seluruh ciptaan.
+Elohim adalah nama penting untuk Tuhan yang digunakan dalam Alkitab Ibrani dan Alkitab Kristen. Meskipun bentuknya jamak, Elohim hampir selalu merujuk kepada Tuhan yang tunggal. Dalam Yudaisme, Elohim adalah nama penting yang menegaskan keesaan Tuhan, sementara dalam Kekristenan, penggunaannya sering dikaitkan dengan konsep [Trinitas](konten/kategori/konsep/trinitas.md). Sampai saat ini, Elohim tetap menjadi salah satu nama Tuhan yang paling dihormati, mencerminkan kebesaran dan kekuasaan Tuhan atas seluruh ciptaan.
 
 ---
 
@@ -62,8 +62,9 @@ Elohim adalah nama penting untuk Tuhan yang digunakan dalam Alkitab Ibrani dan A
 3. Levine, Etan. "Elohim and the Gods of the Bible." Brill, 2001.
 
 ## Lihat Juga
-- [Adonai](konten/kategori/nana_tuhan/adonai.md)
+- [Trinitas](konten/kategori/konsep/trinitas.md)
 - [YHWH](konten/kategori/nama_tuhan/YHWH.md)
+- [Adonai](konten/kategori/nana_tuhan/adonai.md)
 - [Allah](konten/kategori/nama_tuhan/allah.md)
 - [Yahweh](konten/kategori/nama_tuhan/yahweh.md)
 - [Hashem](konten/kategori/nama_tuhan/hashem.md)
@@ -76,6 +77,6 @@ Elohim adalah nama penting untuk Tuhan yang digunakan dalam Alkitab Ibrani dan A
 ---
 
 ## Kategori:
-| Teologi Kristen | Nama Tuhan | Bahasa Ibrani | Yahudi-Kristen |
+Teologi Kristen, Nama Tuhan, Bahasa Ibrani, Yahudi-Kristen.
 
 ---

@@ -2,13 +2,13 @@
 
 ---
 
-**Yahweh** (יהוה) adalah salah satu nama paling suci dan penting yang digunakan untuk merujuk kepada Tuhan dalam Alkitab Ibrani. Nama ini memiliki sejarah yang kaya dan merupakan inti dari teologi Yahudi serta memainkan peran penting dalam Kekristenan. Artikel ini akan membahas asal usul, makna, sejarah, dan penggunaan nama Yahweh dalam konteks agama Yahudi dan Kristen, serta bagaimana nama ini tetap relevan dalam tradisi keagamaan hingga saat ini.
+**Yahweh** (יהוה) adalah salah satu nama paling suci dan penting yang digunakan untuk merujuk kepada Tuhan dalam Alkitab Ibrani. Nama ini memiliki sejarah yang kaya dan merupakan inti dari teologi Yahudi serta memainkan peran penting dalam Kekristenan. Bagaimana asal usul, makna, sejarah, dan penggunaan nama Yahweh dalam konteks agama Yahudi dan Kristen, serta bagaimana nama ini tetap relevan dalam tradisi keagamaan hingga saat ini?
 
 ![Yahweh, nama Tuhan dalam Alkitab Ibrani dan Kristen](konten/img/nama_tuhan/YHWH.svg)
 
 ## Pengertian dan Etimologi Yahweh
 
-Nama **Yahweh** berasal dari huruf-huruf Ibrani *Yod-He-Vav-He* (יהוה), yang dikenal sebagai *Tetragrammaton*. Kata ini secara tradisional dianggap terlalu suci untuk diucapkan dalam Yudaisme, sehingga orang Yahudi menggantinya dengan kata *Adonai* (*Tuhan*) atau *Hashem**(*Nama-Nya*) dalam doa dan pembacaan Alkitab.
+Nama Yahweh berasal dari huruf-huruf Ibrani *Yod-He-Vav-He* (יהוה), yang dikenal sebagai *Tetragrammaton*. Kata ini secara tradisional dianggap terlalu suci untuk diucapkan dalam Yudaisme, sehingga orang Yahudi menggantinya dengan kata *Adonai* (*Tuhan*) atau *Hashem*(*Nama-Nya*) dalam doa dan pembacaan Alkitab.
 
 ### Asal Usul Nama Yahweh
 
@@ -68,6 +68,7 @@ Nama Yahweh mencerminkan sifat Tuhan yang abadi, yang ada di luar ruang dan wakt
 3. Freedman, David Noel, ed. "Anchor Bible Dictionary." Doubleday, 1992.
 
 ## Lihat Juga
+- [YHWH](konten/kategori/nama_tuhan/YHWH.md)
 - [Elohim](konten/kategori/nama_tuhan/elohim.md)
 - [Adonai](konten/kategori/nama_tuhan/adonai.md)
 - [Hashem](konten/kategori/nama_tuhan/hashem.md)
@@ -80,6 +81,6 @@ Nama Yahweh mencerminkan sifat Tuhan yang abadi, yang ada di luar ruang dan wakt
 ---
 
 ## Kategori:
-| Teologi Yahudi | Teologi Kristen | Nama Tuhan | Perjanjian Lama | Yudaisme-Kristen |
+Teologi Yahudi, Teologi Kristen, Nama Tuhan, Perjanjian Lama, Yudaisme-Kristen
 
 ---
