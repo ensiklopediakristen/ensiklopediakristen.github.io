@@ -27,15 +27,15 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 10px;
-    font-size: 2.5rem;
+header .logo img{
+    width: 4rem;
+    height: 4rem;
 }
 
-header .slogan{
-    font-style: italic;
-    font-size: 0.8rem;
-    color: beige;
+header .logo p{
+    margin: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 nav {
@@ -225,6 +225,13 @@ img {
     margin: auto;
 }
 
+.h1perpustakaan{
+    font-size: 1.5rem;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+
 /* Footer */
 footer {
     position: absolute;
@@ -288,3 +295,4 @@ footer p {
 .book button:hover {
     background-color: #323232;
 }
+
