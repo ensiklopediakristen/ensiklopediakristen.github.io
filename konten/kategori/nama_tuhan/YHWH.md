@@ -4,8 +4,6 @@
 
 ![Ilustrasi Nama YHWH dalam Huruf Ibrani](konten/img/nama_tuhan/YHWH.svg)
 
-## Pendahuluan
-
 **YHWH** adalah nama Allah yang paling suci dalam tradisi Yahudi, sering disebut sebagai *Tetragrammaton*, yang berarti "*empat huruf*" dalam bahasa Yunani. Nama ini terdiri dari empat huruf Ibrani: **י** (*Yod*), **ה** (*He*), **ו** (*Vav*), **ה** (*He*). YHWH dianggap sebagai nama pribadi Allah yang diwahyukan kepada Musa di Gunung Sinai, dan karena kesuciannya, nama ini tidak pernah diucapkan dalam liturgi Yahudi. Sebagai pengganti, digunakan nama *Adonai* atau *Hashem* (yang berarti "*Nama*"). Dalam teologi Yahudi, YHWH adalah simbol kehadiran ilahi yang meliputi seluruh alam semesta dan waktu.
 
 ## Etimologi
@@ -42,25 +40,5 @@ Penggunaan nama YHWH telah menjadi topik kontroversial dalam berbagai tradisi ag
 adalam ibadah dan teologi, tradisi Yahudi tetap menjaga ketat larangan untuk mengucapkan nama ini. Penggunaan nama ini dalam konteks non-liturgis atau oleh mereka yang tidak memahami maknanya dianggap tidak pantas oleh banyak komunitas Yahudi.
 
 Dalam budaya populer, YHWH kadang-kadang muncul dalam literatur, film, dan musik, sering kali sebagai simbol dari kekuatan ilahi yang misterius. Namun, penggunaan ini sering kali diatur oleh sensitivitas terhadap tradisi Yahudi yang lebih tua dan lebih mendalam.
-
-## Referensi
-
-1. **Scholz, Susanne.** *Sacred Witness: Rape in the Hebrew Bible*. Fortress Press, 2010. Buku ini membahas konteks teologis penggunaan nama YHWH dalam teks-teks Alkitab.
-2. **Kittel, Gerhard; Friedrich, Gerhard.** *Theological Dictionary of the New Testament*. Eerdmans, 1964. Kamus ini memberikan wawasan mendalam tentang etimologi dan penggunaan nama YHWH dalam Alkitab.
-3. **Cross, Frank Moore.** *Canaanite Myth and Hebrew Epic: Essays in the History of the Religion of Israel*. Harvard University Press, 1973. Buku ini membahas asal usul YHWH dan hubungannya dengan dewa-dewa Kanaan.
-4. **Scholem, Gershom.** *The Name of God and the Linguistic Theory of the Kabbala*. Kabbalah Press, 1971. Buku ini mengeksplorasi makna mistis dari YHWH dalam tradisi Kabbalah Yahudi.
-
-## Lihat Juga
-
-- [Tetragrammaton]
-- [Keluaran 3:14]
-- [Shema Yisrael]
-
-## Pranala Luar
-
-- [Jewish Virtual Library - YHWH](https://www.jewishvirtuallibrary.org/yhwh)
-- [My Jewish Learning - The Name of God](https://www.myjewishlearning.com/article/the-name-of-god-yhwh/)
-- [Britannica - YHWH](https://www.britannica.com/topic/Yahweh)
-- [Bible Gateway - Exodus 3:14](https://www.biblegateway.com/passage/?search=Exodus+3%3A14)
 
 ---

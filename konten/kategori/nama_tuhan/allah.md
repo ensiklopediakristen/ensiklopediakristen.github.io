@@ -53,17 +53,3 @@ Nama "*Allah*" dalam Kekristenan memiliki sejarah panjang yang mendahului kedata
 Penggunaan "*Allah*" dalam Kekristenan terus menjadi bagian dari identitas dan bahasa mereka, serta mencerminkan sejarah panjang interaksi antara berbagai agama di wilayah Arab. Perbedaan ini, meskipun seringkali memicu perdebatan, menunjukkan keberagaman dalam cara Tuhan dipahami dan disembah oleh umat manusia di seluruh dunia.
 
 ---
-
-## Referensi
-1. Griffith, Sidney H. "The Church in the Shadow of the Mosque: Christians and Muslims in the World of Islam." Princeton University Press, 2008.
-2. Thomas, David. "Christians at the Heart of Islamic Rule: Church Life and Scholarship in 'Abbasid Iraq." Brill, 2003.
-3. *Alkitab dalam Terjemahan Arab* - Manuskrip abad ke-6.
-
-## Lihat Juga
-
-## Pranala Luar
-- [Bible Gateway - Alkitab Online dalam berbagai Bahasa](https://www.biblegateway.com/)
-- [Catholic Encyclopedia - Artikel tentang Allah](https://www.newadvent.org/cathen/)
-- [Gereja Koptik](https://www.copticchurch.net)
-
----

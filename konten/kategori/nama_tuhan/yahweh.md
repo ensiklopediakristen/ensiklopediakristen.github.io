@@ -66,19 +66,3 @@ Yahweh adalah nama Tuhan yang sangat penting dan suci, yang memiliki akar mendal
 Nama Yahweh mencerminkan sifat Tuhan yang abadi, yang ada di luar ruang dan waktu, serta merupakan pusat dari perjanjian antara Tuhan dan umat Israel. Hingga saat ini, Yahweh tetap menjadi simbol kekudusan dan kebesaran Tuhan dalam berbagai tradisi keagamaan.
 
 ---
-
-## Referensi
-
-1. Harris, R. Laird. "Theological Wordbook of the Old Testament." Moody Publishers, 1980.
-2. Botterweck, G. Johannes, and Helmer Ringgren, eds. "Theological Dictionary of the Old Testament." Eerdmans Publishing, 1974.
-3. Freedman, David Noel, ed. "Anchor Bible Dictionary." Doubleday, 1992.
-
-## Lihat Juga
-
-## Pranala Luar
-
-- [Jewish Encyclopedia: Yahweh](http://www.jewishencyclopedia.com/articles/11305-yahweh)
-- [Bible Hub: Yahweh dalam Alkitab](https://biblehub.com/)
-- [Bible Gateway: Alkitab dalam berbagai bahasa](https://www.biblegateway.com/)
-
----

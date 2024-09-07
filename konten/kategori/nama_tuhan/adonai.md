@@ -58,20 +58,3 @@ Adonai adalah salah satu nama penting yang digunakan dalam Alkitab Ibrani dan Al
 Sejak zaman kuno hingga hari ini, Adonai terus digunakan dalam liturgi, doa, dan pujian, baik dalam tradisi Yahudi maupun Kristen. Nama ini tidak hanya mencerminkan penghormatan kepada Tuhan, tetapi juga mengakui hubungan yang dalam antara Tuhan sebagai Penguasa dan manusia sebagai ciptaan-Nya.
 
 ---
-
-## Referensi
-1. Kohlenberger, John R. "The Hebrew-English Concordance to the Old Testament." Zondervan, 1998.
-2. Botterweck, G. Johannes, and Helmer Ringgren, eds. "Theological Dictionary of the Old Testament." Eerdmans Publishing, 1974.
-3. Levine, Etan. "Adonai: A Study of the Use of Lord in Biblical Texts." Brill Academic Publishers, 2001.
-
-## Lihat Juga
-
-- [Tetragrammaton]
-- [Yahudi Mesianik]
-
-## Pranala Luar
-- [Jewish Encyclopedia - Adonai](http://www.jewishencyclopedia.com/)
-- [Bible Gateway - Terjemahan Alkitab](https://www.biblegateway.com/)
-- [Hebrew Bible Online](https://www.hebrew-bible.net)
-
----

@@ -52,26 +52,3 @@ Secara harfiah, *Hashem* hanya berarti "*Nama*". Dalam konteks Yahudi, ini meruj
 Meskipun dalam konteks keagamaan, Hashem merujuk pada Tuhan, dalam percakapan sehari-hari kata "*Hashem*" juga dapat merujuk pada nama orang atau nama tempat. Namun, ketika ditulis dalam teks keagamaan atau digunakan dalam diskusi tentang Tuhan, kata ini secara universal dipahami sebagai referensi kepada Tuhan.
 
 ---
-
-## Referensi
-
-1. Telushkin, Joseph. *Jewish Literacy: The Most Important Things to Know About the Jewish Religion, Its People, and Its History*. New York: William Morrow, 1991.
-2. Freedman, David Noel. *The Anchor Bible Dictionary*. New York: Doubleday, 1992.
-3. Scherman, Rabbi Nosson, and Rabbi Meir Zlotowitz. *The Stone Edition of the Chumash*. New York: Mesorah Publications, 1993.
-4. Ginzberg, Louis. *The Legends of the Jews*. Philadelphia: Jewish Publication Society of America, 1909–1938.
-5. Weiss, Yitzhak. *The Sanctity of the Divine Name*. Jerusalem: Feldheim Publishers, 2005.
-
-## Lihat Juga
-
-- [Tetragrammaton]
-- [Nama-nama Tuhan dalam Yahudi]
-- [Kabbalah]
-
-## Pranala Luar
-
-- [Jewish Encyclopedia: Sacred Name of God](http://www.jewishencyclopedia.com/articles/11305-name-of-god)
-- [Chabad.org: The Name of G-d](https://www.chabad.org/library/article_cdo/aid/137098/jewish/The-Name-of-Gd.htm)
-- [My Jewish Learning: God’s Names](https://www.myjewishlearning.com/article/gods-names/)
-- [Britannica: Tetragrammaton](https://www.britannica.com/topic/Tetragrammaton)
-
----

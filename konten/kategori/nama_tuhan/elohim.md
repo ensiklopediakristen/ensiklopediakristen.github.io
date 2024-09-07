@@ -55,17 +55,3 @@ Dalam liturgi modern, nama Elohim masih digunakan dalam berbagai bentuk ibadah, 
 Elohim adalah nama penting untuk Tuhan yang digunakan dalam Alkitab Ibrani dan Alkitab Kristen. Meskipun bentuknya jamak, Elohim hampir selalu merujuk kepada Tuhan yang tunggal. Dalam Yudaisme, Elohim adalah nama penting yang menegaskan keesaan Tuhan, sementara dalam Kekristenan, penggunaannya sering dikaitkan dengan konsep Trinitas. Sampai saat ini, Elohim tetap menjadi salah satu nama Tuhan yang paling dihormati, mencerminkan kebesaran dan kekuasaan Tuhan atas seluruh ciptaan.
 
 ---
-
-## Referensi
-1. Kohlenberger, John R. "The Hebrew-English Concordance to the Old Testament." Zondervan, 1998.
-2. Botterweck, G. Johannes, and Helmer Ringgren, eds. "Theological Dictionary of the Old Testament." Eerdmans Publishing, 1974.
-3. Levine, Etan. "Elohim and the Gods of the Bible." Brill, 2001.
-
-## Lihat Juga
-
-## Pranala Luar
-- [Bible Hub: Elohim dalam Alkitab](https://biblehub.com/)
-- [Jewish Encyclopedia: Elohim](http://www.jewishencyclopedia.com/articles/5789-elohim)
-- [Bible Gateway: Alkitab dalam berbagai bahasa](https://www.biblegateway.com/)
-
----
