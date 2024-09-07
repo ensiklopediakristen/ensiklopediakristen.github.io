@@ -31,28 +31,3 @@ Sastra Kristen abad pertengahan sering menggambarkan naga sebagai makhluk yang h
 ## Simbolisme dan Interpretasi
 
 Naga dalam budaya Yahudi dan Kristen sering kali melambangkan kejahatan, kekacauan, dan kekuatan yang menentang Tuhan. Dalam banyak interpretasi teologis, naga dianggap sebagai representasi dari Setan atau kekuatan jahat yang mencoba menghancurkan ciptaan Tuhan dan menghalangi rencana keselamatan-Nya. Namun, simbolisme naga juga bisa dilihat sebagai panggilan bagi umat manusia untuk tetap waspada dan teguh dalam iman, karena meskipun kekuatan jahat tampak kuat, pada akhirnya mereka akan dikalahkan oleh Tuhan.
-
-### Referensi
-
-1. **Ayub 41:1, Alkitab**. Dikutip dari teks Kitab Ayub dalam Perjanjian Lama.
-2. **Wahyu 12:3-4, Alkitab**. Kitab Wahyu dalam Perjanjian Baru.
-3. **Dennis, Geoffrey W.** *Encyclopedia of Jewish Myth, Magic, and Mysticism*. Llewellyn Worldwide, 2007.
-4. **Pagels, Elaine.** *The Book of Revelation: A Biography*. Princeton University Press, 2018.
-5. **Blenkinsopp, Joseph.** *Creation, Un-Creation, Re-Creation: A Discursive Commentary on Genesis 1-11*. Bloomsbury T&T Clark, 2011.
-6. **Aune, David E.** *Revelation 6-16, Volume 52B*. Word Biblical Commentary, Zondervan, 1998.
-7. **Heidel, Alexander.** *The Babylonian Genesis: The Story of Creation*. University of Chicago Press, 1951.
-
-## Lihat Juga
-
-- [Rahab]
-- [Kitab Wahyu]
-- [Santo Georgius dan Naga]
-
-## Pranala Luar
-
-- [Jewish Virtual Library - Leviathan](https://www.jewishvirtuallibrary.org/leviathan)
-- [Bible Hub - Leviathan in the Bible](https://biblehub.com/topical/l/leviathan.htm)
-- [Britannica - Dragon in Christianity](https://www.britannica.com/topic/dragon-mythological-creature)
-- [Catholic Online - Saint George](https://www.catholic.org/saints/saint.php?saint_id=280)
-
----

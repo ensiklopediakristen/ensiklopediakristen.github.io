@@ -26,7 +26,7 @@ Deskripsi ini memberikan gambaran tentang makhluk yang sangat besar dan kuat, ta
 
 ## Interpretasi dalam Tradisi Yahudi dan Kristen
 
-Dalam **tradisi Yahudi**, Behemoth sering kali disandingkan dengan Leviathan, dan keduanya dipercaya akan bertarung pada akhir zaman. Menurut beberapa tafsiran, Behemoth mewakili kekuatan darat, sementara Leviathan melambangkan kekuatan laut. Pertempuran epik antara keduanya sering dilihat sebagai simbol dari konflik antara kekuatan baik dan jahat, atau antara ketertiban dan kekacauan dalam alam semesta.
+Dalam **tradisi Yahudi**, Behemoth sering kali disandingkan dengan Leviathan, dan keduanya dipercaya akan bertarung pada akhir zaman. Menurut beberapa tafsiran, Behemoth mewakili kekuatan darat, sementara Lewiatan (*Leviathan*) melambangkan kekuatan laut. Pertempuran epik antara keduanya sering dilihat sebagai simbol dari konflik antara kekuatan baik dan jahat, atau antara ketertiban dan kekacauan dalam alam semesta. Bersama behemoth, selain lewiatan ada juga Ziz yang mewakili kekuatan di udara atas.
 
 Dalam **teologi Kristen**, Behemoth memiliki arti rohani yang lebih dalam. Ia dipandang sebagai simbol dari kekuatan duniawi yang, meskipun sangat besar, tetap berada di bawah kendali dan otoritas Allah. Kisah Behemoth dalam Kitab Ayub mengingatkan umat percaya bahwa segala sesuatu di dunia, baik yang terlihat maupun yang tidak terlihat, diciptakan dan dikendalikan oleh Tuhan. Dalam konteks ini, Behemoth juga dapat dilihat sebagai representasi dari dosa atau godaan duniawi yang besar, yang hanya dapat diatasi melalui iman kepada Tuhan.
 
@@ -45,26 +45,5 @@ Misalnya, dalam permainan video seperti *Final Fantasy*, Behemoth adalah salah s
 ## Kesimpulan
 
 Behemoth adalah simbol dari kekuatan luar biasa yang, meskipun mengagumkan dan menakutkan, tetap berada di bawah kedaulatan Tuhan. Dalam konteks Yahudi dan Kristen, Behemoth mengingatkan umat beriman akan kuasa dan kedaulatan Allah atas seluruh ciptaan. Sebagai bagian dari narasi Kitab Ayub, Behemoth juga berfungsi sebagai peringatan tentang keterbatasan manusia dan perlunya bergantung sepenuhnya kepada Tuhan.
-
----
-
-## Referensi
-
-1. Kitab Ayub 40:15-24, Alkitab Ibrani.
-2. Brown, F., Driver, S. R., Briggs, C. A. *A Hebrew and English Lexicon of the Old Testament*. Clarendon Press.
-3. Pritchard, J. B. (ed.), *Ancient Near Eastern Texts Relating to the Old Testament*. Princeton University Press.
-4. *The Book of Enoch*. Translated by R.H. Charles. Oxford: Clarendon Press.
-
-## Lihat Juga
-
-- [Kitab Ayub]
-- [Kitab Henokh]
-
-## Pranala Luar
-
-- *Behemoth dalam Encyclopedia.com*: [Behemoth - Encyclopedia.com](https://www.encyclopedia.com/religion/dictionaries-thesauruses-pictures-and-press-releases/behemoth)
-- *Behemoth dalam Alkitab dari GotQuestions*: [Behemoth in the Bible - GotQuestions](https://www.gotquestions.org/behemoth.html)
-- *Interpretasi Kristen tentang Behemoth di Bible Study Tools*: [Behemoth in the Bible - Bible Study Tools](https://www.biblestudytools.com/dictionary/behemoth/)
-- *Behemoth dalam Apokrifa di Early Jewish Writings*: [The Book of Enoch and Behemoth - Early Jewish Writings](http://www.earlyjewishwritings.com/1enoch.html)
 
 ---

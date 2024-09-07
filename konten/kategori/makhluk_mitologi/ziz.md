@@ -36,7 +36,7 @@ Kisah ini muncul dalam literatur apokaliptik Yahudi, yang menggambarkan akhir du
 4. **Schwartz, Howard.** *Tree of Souls: The Mythology of Judaism*. Oxford University Press, 2004.
 5. **Ginzberg, Louis.** *The Legends of the Jews, Volume II*. Jewish Publication Society, 1909.
 
-## Lihat Juga
+## Tautan Internal
 
 ## Pranala Luar
 

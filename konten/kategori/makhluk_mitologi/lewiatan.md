@@ -49,25 +49,3 @@ Dalam permainan video seperti *Final Fantasy* dan *Dungeons & Dragons*, Lewiatan
 Lewiatan adalah simbol yang kuat dari kekuatan destruktif dan kekacauan, namun dalam tradisi Yahudi dan Kristen, ia juga melambangkan keunggulan Tuhan atas semua ciptaan, termasuk kekuatan-kekuatan yang tampaknya tak terkendali. Kisah Lewiatan mengingatkan umat beriman akan kemenangan Tuhan atas kejahatan dan kekuatan yang menantang kedaulatan-Nya. Melalui mitologi dan literatur, Lewiatan tetap menjadi simbol yang kuat, baik dalam konteks religius maupun budaya modern.
 
 ---
-
-## Referensi
-
-1. Kitab Ayub 41:1-34, Alkitab Ibrani.
-2. Encyclopaedia Britannica. "Leviathan." Diakses pada 2024.
-3. Brown, F., Driver, S. R., Briggs, C. A. *A Hebrew and English Lexicon of the Old Testament*. Clarendon Press.
-4. Jewish Virtual Library. "Leviathan in Jewish Tradition."
-
-## Lihat Juga
-
-- [Kitab Ayub]
-- [Kitab Henokh]
-
-## Pranala Luar
-
-- [Lewiatan dalam Encyclopaedia Britannica](https://www.britannica.com/topic/Leviathan-biblical-creature)
-- [Analisis Lewiatan dalam Jewish Virtual Library](https://www.jewishvirtuallibrary.org/leviathan-and-behemoth)
-- [Interpretasi Kristen tentang Lewiatan di Bible Study Tools](https://www.biblestudytools.com/dictionary/leviathan/)
-- [Lewiatan dalam Teks-Teks Yahudi di Sefaria](https://www.sefaria.org/topics/leviathan)
-- [Lewiatan dalam Alkitab dari GotQuestions](https://www.gotquestions.org/Leviathan.html)
-
----
