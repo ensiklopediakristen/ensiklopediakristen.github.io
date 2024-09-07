@@ -201,7 +201,7 @@ aside ul ul.hidden {
     }
 
     #main-content {
-        width: 100%;
+        width: 100%;    
         padding: 10px;
     }
 }
@@ -212,38 +212,59 @@ aside ul ul.hidden {
 }
 
 /* Recent Posts */
-.recent-posts-title {
+.beranda-title {
     font-size: 1.2em;
     color: #2c3e50;
     margin-bottom: 10px;
+    background: #ecf0f1;
+    padding: 5px;
 }
 
-.recent-posts-list {
+.beranda-list {
     list-style: none;
     margin: 0;
-    padding: 10px;
-    background-color: #ecf0f1;
     border-radius: 5px;
     text-transform: capitalize;
+    padding: 0;
 }
 
-.recent-post-item {
-    margin-bottom: 8px;
-    display: inline-block;
+.beranda-link {
+    text-decoration: none;    
+    background-color: #fafafa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
 }
 
-.recent-post-link {
-    color: #2980b9;
-    font-weight: bold;
-    text-decoration: none;
-    border-left: 0.15em solid black;
-    padding-left: 0.5em;
-    margin-right: 1em;
+.beranda-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
-.recent-post-link:hover {
+.beranda-link div img{
+    width: 20%;
+    max-width: 240px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    margin-right: 20px;
+    border-radius: 3px;
+    margin-left: 0;
+}
+
+.beranda-link p{
+    margin-top: 0;
+    color: black;
+    font-weight: lighter;
+}
+
+
+.beranda-link:hover {
     color: #e74c3c;
-    text-decoration: underline;
 }
 
 img {
@@ -324,4 +345,3 @@ footer p {
 .book button:hover {
     background-color: #323232;
 }
-

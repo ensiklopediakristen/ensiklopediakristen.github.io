@@ -7,52 +7,117 @@ document.addEventListener('DOMContentLoaded', async function () {
     let currentFile = '';
 
     async function loadMarkdown(file) {
-        if (currentFile === file) return;
-        currentFile = file;
+    if (currentFile === file) return;
+    currentFile = file;
 
-        try {
-            let markdown = await fetch(file).then(response => response.text());
-            const folderName = file.split('/').slice(-2, -1)[0]; // Mengambil nama folder dari path
+    try {
+        let markdown = await fetch(file).then(response => response.text());
+        const folderName = file.split('/').slice(-2, -1)[0]; // Mengambil nama folder dari path
 
-            let categoryContent = '';
-            if (file !== 'konten/beranda.md') {
-                categoryContent += `<h2>Kategori: <a href="#" class="category-link" data-category="${folderName}" style="text-transform:capitalize">${folderName.replace(/_/g, ' ')}</a></h2>`;
+        let categoryContent = '';
+        if (file !== 'konten/beranda.md') {
+            categoryContent += `<h2>Kategori: <a href="#" class="category-link" data-category="${folderName}" style="text-transform:capitalize">${folderName.replace(/_/g, ' ')}</a></h2>`;
+        }
+
+        if (file === 'konten/beranda.md') {
+            // Mendapatkan artikel terbaru
+            const recentPosts = await getRecentPosts();
+            let recentPostsHTML = '<h2 class="beranda-title">Artikel Terbaru</h2><ul class="beranda-list">';
+            for (const post of recentPosts) {
+                const postMarkdown = await fetch(post.dir + '/' + post.name).then(response => response.text());
+                const postContent = marked.parse(postMarkdown);
+
+                // Extract the title and content
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(postContent, 'text/html');
+                const h1 = doc.querySelector('h1');
+                const firstParagraph = doc.querySelector('p');
+
+                let excerpt = '';
+                if (firstParagraph) {
+                    const text = firstParagraph.textContent;
+                    const words = text.split(/\s+/);
+                    excerpt = words.slice(0, 15).join(' ') + '...';
+                }
+
+                const postName = post.name.replace('.md', '').replace(/_/g, ' ');
+                recentPostsHTML += `
+                    <li class="beranda-item">
+                        <a href="#" class="beranda-link" data-file="${post.dir}/${post.name}">
+                            <div class="beranda-box">
+                                ${firstParagraph ? `<img src="${doc.querySelector('img') ? doc.querySelector('img').src : ''}" alt="Gambar Artikel">` : ''}
+                                ${h1 ? h1.textContent : postName}<br>
+                            </div>
+                            <p>${excerpt}</p>
+                        </a>
+                    </li>`;
+            }
+            recentPostsHTML += '</ul>';
+            
+            // Mendapatkan semua file markdown
+            const allFiles = await getAllMarkdownFiles();
+
+            // Memilih artikel acak berdasarkan tanggal
+            const randomPost = getRandomPostForToday(allFiles);
+            const randomPostMarkdown = await fetch(randomPost.dir + '/' + randomPost.name).then(response => response.text());
+            const randomPostContent = marked.parse(randomPostMarkdown);
+
+            // Extract content from random post
+            const randomDoc = new DOMParser().parseFromString(randomPostContent, 'text/html');
+            const randomH1 = randomDoc.querySelector('h1');
+            const randomFirstParagraph = randomDoc.querySelector('p');
+            const randomImg = randomDoc.querySelector('img');
+
+            let randomExcerpt = '';
+            if (randomFirstParagraph) {
+                const randomText = randomFirstParagraph.textContent;
+                const randomWords = randomText.split(/\s+/);
+                randomExcerpt = randomWords.slice(0, 15).join(' ') + '...';
             }
 
-            if (file === 'konten/beranda.md') {
-                const recentPosts = await getRecentPosts();
-                let recentPostsHTML = '<h2 class="recent-posts-title">Artikel Terbaru</h2><ul class="recent-posts-list">';
-                recentPosts.forEach(post => {
-                    const postName = post.name.replace('.md', '').replace(/_/g, ' ');
-                    recentPostsHTML += `<li class="recent-post-item"><a href="#" class="recent-post-link" data-file="${post.dir}/${post.name}">${postName}</a></li>`;
-                });
-                recentPostsHTML += '</ul>';
-                mainContent.innerHTML = recentPostsHTML + marked.parse(markdown) + categoryContent;
-            } else {
-                mainContent.innerHTML = marked.parse(markdown) + categoryContent;
-            }
+            const randomPostName = randomPost.name.replace('.md', '').replace(/_/g, ' ');
 
-            await linkifyKeywords();
-            scrollToTop();
-            updateURL(file);
-            addMarkdownLinksListener();
-            updateTitleFromContent();
+            // Menampilkan artikel acak
+            let randomPostHTML = `
+                <h2 class="beranda-title">Artikel Pilihan Hari Ini</h2>
+                <div class="beranda-item">
+                    <a href="#" class="beranda-link" data-file="${randomPost.dir}/${randomPost.name}">
+                        <div class="beranda-box">
+                            ${randomImg ? `<img src="${randomImg.src}" alt="Gambar Artikel">` : ''}
+                            ${randomH1 ? randomH1.textContent : randomPostName}<br>
+                        </div>
+                        <p>${randomExcerpt}</p>
+                    </a>
+                </div>`;
 
-            document.querySelectorAll('.category-link').forEach(link => {
-                link.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    const category = this.getAttribute('data-category');
-                    showArticlesByCategory(category);
-                });
+            mainContent.innerHTML = marked.parse(markdown) + randomPostHTML + recentPostsHTML + categoryContent;
+        } else {
+            mainContent.innerHTML = marked.parse(markdown) + categoryContent;
+        }
+
+        await linkifyKeywords();
+        scrollToTop();
+        updateURL(file);
+        addMarkdownLinksListener();
+        updateTitleFromContent();
+
+        // Event listener untuk kategori
+        document.querySelectorAll('.category-link').forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                const category = this.getAttribute('data-category');
+                showArticlesByCategory(category);
             });
+        });
 
-            document.querySelectorAll('a[data-file]').forEach(link => {
-                link.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    const targetFile = this.getAttribute('data-file');
-                    loadMarkdown(targetFile);
-                });
+        // Event listener untuk artikel terbaru atau random
+        document.querySelectorAll('a[data-file]').forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                const targetFile = this.getAttribute('data-file');
+                loadMarkdown(targetFile);
             });
+        });
 
         } catch (error) {
             mainContent.innerHTML = `<p>Error loading content: ${error.message}</p>`;
@@ -73,8 +138,15 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
         return articles;
     }
+    
+    
 
     async function linkifyKeywords() {
+    // Cek apakah halaman yang sedang dibuka adalah beranda
+    if (currentFile === 'konten/beranda.md') {
+        return; // Jangan jalankan fungsi linkify jika di halaman beranda
+    }
+
     const keywords = await getAllMarkdownFiles();
     const currentFileName = currentFile.split('/').pop().replace('.md', '').replace(/_/g, ' ').toLowerCase();
     const exceptionWords = ["kudus", "kekudusan", "suci", "kesucian"];
@@ -154,28 +226,29 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     function replaceOutsideLinksAndImages(htmlContent, phrase, filePath) {
-    const escapedPhrase = phrase.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');  // Escape karakter khusus di frasa
-    const phraseRegex = new RegExp(`(\\b${escapedPhrase}\\b)`, 'gi');  // 'g' untuk global, 'i' untuk case-insensitive
+        const escapedPhrase = phrase.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');  // Escape karakter khusus di frasa
+        const phraseRegex = new RegExp(`(\\b${escapedPhrase}\\b)`, 'gi');  // 'g' untuk global, 'i' untuk case-insensitive
 
-    return htmlContent.replace(/(<a [^>]*>.*?<\/a>)|(<img [^>]*>)|([^<]+)/g, function (match, aTag, imgTag, textContent) {
-        if (aTag || imgTag) return match; // Jangan ganti konten dalam tag <a> atau <img>
-        if (textContent) {
-            // Pengecualian manual untuk "kekudusan Allah"
-            const specialPhrase = textContent.match(/kekudusan Allah/gi);
-            if (specialPhrase) {
-                return textContent.replace(/kekudusan Allah/gi, `<a href="#" data-file="konten/kategori/konsep/kekudusan_tuhan.md">Kekudusan Allah</a>`);
-            }
+        return htmlContent.replace(/(<a [^>]*>.*?<\/a>)|(<img [^>]*>)|([^<]+)/g, function (match, aTag, imgTag, textContent) {
+            if (aTag || imgTag) return match; // Jangan ganti konten dalam tag <a> atau <img>
+            if (textContent) {
+                // Pengecualian manual untuk "kekudusan Allah"
+                const specialPhrase = textContent.match(/kekudusan Allah/gi);
+                if (specialPhrase) {
+                    return textContent.replace(/kekudusan Allah/gi, `<a href="#" data-file="konten/kategori/konsep/kekudusan_tuhan.md">Kekudusan Allah</a>`);
+                }
 
-            // Cari dan simpan frasa asli sesuai dengan huruf besar/kecil yang ada di konten
-            const originalPhrase = textContent.match(phraseRegex);
-            if (originalPhrase) {
-                // Gunakan frasa asli yang ditemukan dari konten saat mengganti dengan tautan
-                return textContent.replace(phraseRegex, `<a href="#" data-file="${filePath}">${originalPhrase[0]}</a>`);
+                // Cari dan simpan frasa asli sesuai dengan huruf besar/kecil yang ada di konten
+                const originalPhrase = textContent.match(phraseRegex);
+                if (originalPhrase) {
+                    // Gunakan frasa asli yang ditemukan dari konten saat mengganti dengan tautan
+                    return textContent.replace(phraseRegex, `<a href="#" data-file="${filePath}">${originalPhrase[0]}</a>`);
+                }
             }
-        }
-        return match;
-    });
-}
+            return match;
+        });
+    }
+
     async function getAllMarkdownFiles() {
         const allFiles = [];
         async function fetchDirectory(dir) {
@@ -287,19 +360,19 @@ document.addEventListener('DOMContentLoaded', async function () {
             const allFiles = await getAllMarkdownFiles();
             // Sorting files based on the most recent modification (you may need to modify this based on your backend or file structure)
             const sortedFiles = allFiles.sort((a, b) => b.name.localeCompare(a.name)); // Replace with actual sorting logic
-            return sortedFiles.slice(0, 10); // Limit to 10 recent posts
+            return sortedFiles.slice(0, 3); // Limit to 3 recent posts
         } catch (error) {
             console.error('Error fetching recent posts: ', error.message);
         }
         return recentPosts;
     }
-
-    // Handle back/forward navigation
-    window.addEventListener('popstate', function (event) {
-        if (event.state && event.state.path) {
-            loadMarkdown(event.state.path);
-        }
-    });
+    
+        function getRandomPostForToday(allFiles) {
+        const today = new Date();
+        const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24); // Menghitung hari ke berapa dalam setahun
+        const randomIndex = dayOfYear % allFiles.length; // Menggunakan modulus agar selalu mendapatkan artikel berbeda setiap hari
+        return allFiles[randomIndex];
+    }
 
     // Load the initial page based on URL parameters
     const params = new URLSearchParams(window.location.search);
@@ -309,7 +382,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     // Create the sidebar list
     createSidebarList('konten', sidebarContent);
 
-    // Search functionality (if applicable)
+    // Search functionality
     searchBox.addEventListener('input', async function () {
         const query = searchBox.value.toLowerCase();
         const allFiles = await getAllMarkdownFiles();
@@ -324,6 +397,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             resultLink.addEventListener('click', function (event) {
                 event.preventDefault();
                 loadMarkdown(`${result.dir}/${result.name}`);
+                searchBox.value = ''; // Clear the search input
+                searchResults.innerHTML = ''; // Clear the search results
             });
             resultItem.appendChild(resultLink);
             searchResults.appendChild(resultItem);
