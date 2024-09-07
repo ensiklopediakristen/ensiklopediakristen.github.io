@@ -74,23 +74,3 @@ Mereka tetap merayakan hari-hari raya Yahudi, seperti Pesach (Paskah), Yom Kippu
 Yahudi Mesianik merupakan gerakan keagamaan yang unik karena memadukan warisan iman Yahudi dengan keyakinan pada Yesus sebagai Mesias. Melalui sejarah panjang yang dimulai dari masa Kekristenan awal hingga perkembangan modern di abad ke-20 dan ke-21, Yahudi Mesianik telah menjadi rumah bagi banyak orang Yahudi yang menemukan makna dalam ajaran Yesus tanpa harus meninggalkan identitas budaya dan agama mereka. Gerakan ini juga menunjukkan bahwa iman kepada Yesus dapat diintegrasikan dengan penghormatan terhadap tradisi Yahudi, yang terus dipraktikkan dengan penuh penghargaan terhadap Torah dan hari-hari raya Yahudi. Bagi banyak orang, Yahudi Mesianik menawarkan pemahaman baru tentang hubungan antara Allah, umat-Nya, dan penggenapan nubuatan Mesianik dalam Yesus Kristus, sambil tetap terbuka untuk dialog yang membangun dengan tradisi agama lain.
 
 ---
-
-## Referensi
-
-1. **David H. Stern**, *Jewish New Testament Commentary*, Clarksville: Jewish New Testament Publications, 1992.  
-2. **Dan Cohn-Sherbok**, *Messianic Judaism*, London: Continuum International Publishing Group, 2000.  
-3. **Rich Robinson**, *Christ in the Passover*, Chicago: Moody Publishers, 1987.  
-4. **Stan Telchin**, *Betrayed!*, Minneapolis: Chosen Books, 1981.  
-5. **Ariel, Yaakov**, *Evangelizing the Chosen People: Missions to the Jews in America, 1880-2000*, Chapel Hill: University of North Carolina Press, 2000.
-
-## Lihat Juga
-
-## Pranala Luar
-
-1. [Jewish Voice Ministries International](https://www.jewishvoice.org)
-2. [Messianic Jewish Alliance of America - MJAA](https://www.mjaa.org)
-3. [Chosen People Ministries](https://www.chosenpeople.com)
-4. [Jews for Jesus](https://www.jewsforjesus.org)
-5. [One For Israel Ministry](https://www.oneforisrael.org)
-6. [International Messianic Jewish Alliance](https://www.imja.org)
-7. [Complete Jewish Bible - David H. Stern](https://www.biblegateway.com/versions/Complete-Jewish-Bible-CJB/)
