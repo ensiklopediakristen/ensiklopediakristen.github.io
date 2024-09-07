@@ -1,10 +1,10 @@
 # Naga (_Tannin_) dalam Budaya Yahudi dan Kristen
 
-![Ilustrasi Gambar Makhluk Mitologi Naga](konten/img/makhluk_mitologi/naga.jpg)
-
-## Pendahuluan
+---
 
 Naga adalah makhluk mitologis yang sering muncul dalam berbagai budaya di seluruh dunia. Dalam tradisi Yahudi dan Kristen, naga sering kali dianggap sebagai simbol kekuatan jahat atau kekuatan spiritual yang harus dilawan. Penggambaran naga dalam kedua tradisi ini memiliki akar yang dalam dan kaya akan makna simbolis, serta memainkan peran penting dalam literatur dan mitologi keagamaan.
+
+![Ilustrasi Gambar Makhluk Mitologi Naga](konten/img/makhluk_mitologi/naga.jpg)
 
 ## Etimologi
 

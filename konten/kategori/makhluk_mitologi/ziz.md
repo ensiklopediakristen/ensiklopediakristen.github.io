@@ -1,10 +1,10 @@
 # Ziz: Makhluk Mitologi dalam Budaya Yahudi
 
-![Ilustrasi Gambar Makhluk Mitologi Ziz](konten/img/makhluk_mitologi/ziz.jpg)
-
-## Pendahuluan
+---
 
 Ziz adalah makhluk mitologi yang muncul dalam tradisi Yahudi dan dikenal sebagai raksasa burung yang menguasai langit. Dalam literatur rabinik, Ziz sering dibandingkan dengan Lewiatan (_Leviathan_), penguasa laut, dan Behemoth, penguasa darat. Bersama-sama, ketiga makhluk ini melambangkan kekuasaan Tuhan atas seluruh ciptaan. Ziz bukan hanya sekadar makhluk mitologis, tetapi juga memiliki makna simbolis yang dalam, mewakili kekuatan alam dan ketertiban kosmik.
+
+![Ilustrasi Gambar Makhluk Mitologi Ziz](konten/img/makhluk_mitologi/ziz.jpg)
 
 ## Etimologi
 
