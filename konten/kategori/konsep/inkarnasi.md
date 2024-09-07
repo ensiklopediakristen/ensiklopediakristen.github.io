@@ -1,5 +1,7 @@
 # Inkarnasi Yesus: Makna, Tujuan, dan Relevansi Bagi Kehidupan Kristen
 
+---
+
 **Inkarnasi** adalah salah satu doktrin paling mendasar dalam iman Kristen yang menegaskan bahwa Yesus Kristus, Sang Anak Allah, menjadi manusia. Kata "inkarnasi" berasal dari bahasa Latin *incarnatio*, yang berarti "menjadi daging". Dalam pengertian teologis, inkarnasi merujuk pada fakta bahwa Yesus, yang sepenuhnya Allah, mengambil bentuk manusia dan hidup di dunia ini. Artikel ini akan membahas makna teologis dari inkarnasi, tujuan Allah mengutus Yesus dalam rupa manusia, serta relevansi doktrin ini bagi kehidupan orang percaya saat ini.
 
 ![Gambar Yesus Kristus yang menunjukkan belas kasihan dan kuasa-Nya sebagai Allah dan manusia yang inkarnasi, menyembuhkan orang sakit.](konten/img/konsep/inkarnasi.webp)

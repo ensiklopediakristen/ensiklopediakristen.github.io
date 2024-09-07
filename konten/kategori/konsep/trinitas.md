@@ -1,5 +1,7 @@
 **Trinitas: Pengertian, Makna, dan Relevansi dalam Kehidupan Kristen**
 
+---
+
 Doktrin **Trinitas** adalah konsep fundamental dalam iman Kristen yang menyatakan bahwa Allah adalah satu dalam esensi, tetapi tiga dalam pribadi: Bapa, Anak, dan Roh Kudus. Meski istilah "Trinitas" tidak secara eksplisit disebutkan dalam Alkitab, konsep ini didasarkan pada berbagai ayat yang mengungkapkan bahwa Bapa, Anak, dan Roh Kudus adalah satu dalam keberadaan, tetapi masing-masing memiliki peran dan kepribadian yang berbeda.
 
 ![ilustrasi gambaran konsep trinitas](konten/img/konsep/trinitas.svg)

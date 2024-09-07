@@ -1,5 +1,7 @@
 # Kekudusan Tuhan: Memahami Karakter Allah yang Maha Kudus
 
+---
+
 Kekudusan Tuhan adalah salah satu sifat utama Allah yang membedakan-Nya dari segala ciptaan. Dalam teologi Kristen, Kekudusan Tuhan tidak hanya menunjukkan ketidaktercelaan moral-Nya, tetapi juga menunjuk pada keunikan dan kemuliaan-Nya yang tak tertandingi. Konsep ini begitu penting, sehingga memahami kekudusan Tuhan akan membawa kita pada pengertian yang lebih mendalam tentang hubungan manusia dengan Sang Pencipta. 
 
 ## Definisi Kekudusan Tuhan
@@ -87,3 +89,5 @@ Memahami kekudusan Allah akan membawa kita pada rasa hormat dan kagum yang lebih
 
 > **Yesaya 57:15 (TB)**
 > Sebab beginilah firman Yang Mahatinggi dan Yang Mahamulia, yang bersemayam untuk selamanya dan Yang Mahakudus nama-Nya: "Aku bersemayam di tempat tinggi dan di tempat kudus tetapi juga bersama-sama orang yang remuk dan rendah hati, untuk menghidupkan semangat orang-orang yang rendah hati dan untuk menghidupkan hati orang-orang yang remuk. 
+
+---

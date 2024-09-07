@@ -95,3 +95,5 @@ Dosa dalam teologi Kristen mencakup lebih dari sekadar pelanggaran hukum; ia men
 Dengan memercayakan hidup kepada Kristus, manusia dapat dipulihkan dari dosa dan memiliki hubungan yang benar dengan Tuhan. Pertobatan harian dan kehidupan dalam iman menjadi bagian integral dari kehidupan Kristen, sebagai respons terhadap anugerah keselamatan yang ditawarkan Allah.
 
 ---
+
+kekudusan Allah

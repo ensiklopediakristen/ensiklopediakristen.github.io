@@ -1,5 +1,7 @@
 # Kekudusan: Panggilan dan Proses dalam Kehidupan Kristen
 
+---
+
 Kekudusan adalah salah satu sifat utama Allah dan merupakan panggilan bagi setiap orang percaya. Dalam seluruh Alkitab, Allah menyatakan diri-Nya sebagai kudus, dan umat-Nya dipanggil untuk hidup dalam kekudusan. Kekudusan bukan hanya tentang moralitas atau perilaku etis, tetapi lebih dalam lagi, ini adalah tanggapan kita terhadap anugerah Allah dan pekerjaan Roh Kudus yang menguduskan kita.
 
 ![Gambar ilustrasi tentang kekudusan](konten/img/konsep/kekudusan.webp)
