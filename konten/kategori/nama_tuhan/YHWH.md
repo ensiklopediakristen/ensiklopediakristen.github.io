@@ -2,9 +2,9 @@
 
 ---
 
-![Ilustrasi Nama YHWH dalam Huruf Ibrani](konten/img/nama_tuhan/YHWH.svg)
-
 **YHWH** adalah nama Allah yang paling suci dalam tradisi Yahudi, sering disebut sebagai *Tetragrammaton*, yang berarti "*empat huruf*" dalam bahasa Yunani. Nama ini terdiri dari empat huruf Ibrani: **י** (*Yod*), **ה** (*He*), **ו** (*Vav*), **ה** (*He*). YHWH dianggap sebagai nama pribadi Allah yang diwahyukan kepada Musa di Gunung Sinai, dan karena kesuciannya, nama ini tidak pernah diucapkan dalam liturgi Yahudi. Sebagai pengganti, digunakan nama *Adonai* atau *Hashem* (yang berarti "*Nama*"). Dalam teologi Yahudi, YHWH adalah simbol kehadiran ilahi yang meliputi seluruh alam semesta dan waktu.
+
+![Ilustrasi Nama YHWH dalam Huruf Ibrani](konten/img/nama_tuhan/YHWH.svg)
 
 ## Etimologi
 
