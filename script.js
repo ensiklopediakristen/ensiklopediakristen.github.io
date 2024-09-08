@@ -355,17 +355,56 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     async function getRecentPosts() {
-        const recentPosts = [];
-        try {
-            const allFiles = await getAllMarkdownFiles();
-            // Sorting files based on the most recent modification (you may need to modify this based on your backend or file structure)
-            const sortedFiles = allFiles.sort((a, b) => b.name.localeCompare(a.name)); // Replace with actual sorting logic
-            return sortedFiles.slice(0, 3); // Limit to 3 recent posts
-        } catch (error) {
-            console.error('Error fetching recent posts: ', error.message);
+    const recentPosts = [];
+    try {
+        const allFiles = await getAllMarkdownFiles();
+        const metadataMap = new Map();
+
+        for (const file of allFiles) {
+            const jsonUrl = `${file.dir}/index.json`;
+
+            const response = await fetch(jsonUrl);
+
+            if (!response.ok) {
+                console.error(`Error fetching JSON for ${file.dir}: ${response.status} ${response.statusText}`);
+                continue;
+            }
+
+            let metadata;
+            try {
+                metadata = await response.json();
+            } catch (error) {
+                console.error(`Error parsing JSON for ${file.dir}: ${error.message}`);
+                continue;
+            }
+
+            metadata.forEach(item => {
+                if (item.type === 'file' && item.name.endsWith('.md')) {
+                    const date = new Date(item.date);
+                    const filePath = `${file.dir}/${item.name}`;
+
+                    // Simpan metadata ke dalam Map untuk menghindari duplikasi
+                    if (!metadataMap.has(filePath)) {
+                        metadataMap.set(filePath, {
+                            name: item.name,
+                            dir: file.dir,
+                            date: date
+                        });
+                    }
+                }
+            });
         }
-        return recentPosts;
+
+        // Mengubah Map ke array dan mengurutkan berdasarkan tanggal terbaru
+        const sortedFiles = Array.from(metadataMap.values()).sort((a, b) => b.date - a.date);
+
+        // Ambil 3 artikel terbaru
+        return sortedFiles.slice(0, 10);
+    } catch (error) {
+        console.error('Error fetching recent posts: ', error.message);
     }
+    return recentPosts;
+}
     
         function getRandomPostForToday(allFiles) {
         const today = new Date();
