@@ -4,7 +4,11 @@
         "type": "directory"
     },
     {
-        "name": "konsep",
+        "name": "alkitab",
+        "type": "directory"
+    },
+    {
+        "name": "iman_kristen",
         "type": "directory"
     },
     {
@@ -13,6 +17,10 @@
     },
     {
         "name": "nama_tuhan",
+        "type": "directory"
+    },
+    {
+        "name": "tradisi_agama",
         "type": "directory"
     }
 ]
