@@ -4,7 +4,7 @@
 
 Inkarnasi adalah salah satu doktrin sentral dalam iman Kristen, di mana Allah, melalui Yesus Kristus, menjadi manusia untuk menyelamatkan dunia. Pengertian ini berasal dari kata Latin *"incarnatio"*, yang berarti “menjadi daging.” Dalam konteks ini, Inkarnasi merujuk kepada fakta bahwa Yesus, yang adalah Allah yang kekal, mengambil bentuk manusia dan hidup di dunia. Inkarnasi adalah perwujudan kasih Tuhan yang mengatasi jurang antara manusia yang berdosa dan Allah yang kudus.
 
-![Gambar Yesus Kristus yang menunjukkan belas kasihan dan kuasa-Nya sebagai Allah dan manusia yang inkarnasi, menyembuhkan orang sakit.](konten/img/konsep/inkarnasi.webp)
+![Gambar Yesus Kristus yang menunjukkan belas kasihan dan kuasa-Nya sebagai Allah dan manusia yang inkarnasi, menyembuhkan orang sakit.](konten/img/iman_kristen/inkarnasi.webp)
 
 ## Inkarnasi dalam Alkitab
 

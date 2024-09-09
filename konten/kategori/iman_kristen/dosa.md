@@ -2,7 +2,7 @@
 
 Dosa adalah salah satu konsep yang paling sentral dalam Alkitab, karena berhubungan langsung dengan hubungan manusia dengan Tuhan. Dosa tidak hanya melibatkan tindakan moral yang salah, tetapi juga keadaan keberadaan manusia yang menjauh dari Tuhan. Pemahaman tentang dosa dan konsekuensinya memberikan landasan teologis untuk memahami kebutuhan manusia akan keselamatan melalui Kristus.
 
-![Gambar ilustrasi penulisan kata dosa dalam bahasa Ibrani dan Yunani](konten/img/konsep/dosa.svg)
+![Gambar ilustrasi penulisan kata dosa dalam bahasa Ibrani dan Yunani](konten/img/iman_kristen/dosa.svg)
 
 ## Definisi Dosa dalam Alkitab
 

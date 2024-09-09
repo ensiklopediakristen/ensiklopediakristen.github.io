@@ -4,7 +4,7 @@
 
 Kekudusan adalah salah satu sifat utama Allah dan merupakan panggilan bagi setiap orang percaya. Dalam seluruh Alkitab, Allah menyatakan diri-Nya sebagai kudus, dan umat-Nya dipanggil untuk hidup dalam kekudusan. Kekudusan bukan hanya tentang moralitas atau perilaku etis, tetapi lebih dalam lagi, ini adalah tanggapan kita terhadap anugerah Allah dan pekerjaan Roh Kudus yang menguduskan kita.
 
-![Gambar ilustrasi tentang kekudusan](konten/img/konsep/kekudusan.webp)
+![Gambar ilustrasi tentang kekudusan](konten/img/iman_kristen/kekudusan.webp)
 
 > *Sebab Akulah TUHAN, Allahmu, maka haruslah kamu menguduskan dirimu dan haruslah kamu kudus, sebab Aku ini kudus.*
 > **Imamat 11:44 (TB)**

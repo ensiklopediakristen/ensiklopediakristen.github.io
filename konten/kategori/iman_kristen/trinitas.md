@@ -4,7 +4,7 @@
 
 **Trinitas** adalah salah satu konsep teologis yang paling penting dalam Kekristenan, yang mengajarkan bahwa Tuhan adalah satu esensi dalam tiga pribadi yang berbeda: Bapa, Anak (Yesus Kristus), dan Roh Kudus. Meskipun kata "Trinitas" tidak ditemukan secara eksplisit dalam Alkitab, doktrin ini berkembang dari pemahaman mendalam tentang narasi dan ajaran Kitab Suci. Konsep Trinitas menjadi landasan utama dalam pemahaman umat Kristen tentang hakikat Tuhan dan bagaimana Dia berinteraksi dengan dunia.
 
-![ilustrasi gambaran konsep trinitas](konten/img/konsep/trinitas.svg)
+![ilustrasi gambaran konsep trinitas](konten/img/iman_kristen/trinitas.svg)
 
 ## Etimologi Trinitas: Asal Usul dan Pengembangan
 

@@ -4,7 +4,7 @@
 
 Kekudusan Tuhan adalah salah satu sifat utama Allah yang membedakan-Nya dari segala ciptaan. Dalam teologi Kristen, Kekudusan Tuhan tidak hanya menunjukkan ketidaktercelaan moral-Nya, tetapi juga menunjuk pada keunikan dan kemuliaan-Nya yang tak tertandingi. Konsep ini begitu penting, sehingga memahami kekudusan Tuhan akan membawa kita pada pengertian yang lebih mendalam tentang hubungan manusia dengan Sang Pencipta. 
 
-![Ilustrasi gambaran tentang kekudusan Tuhan](konten/img/konsep/kekudusan_tuhan.webp)
+![Ilustrasi gambaran tentang kekudusan Tuhan](konten/img/iman_kristen/kekudusan_tuhan.webp)
 
 ## Definisi Kekudusan Tuhan
 
