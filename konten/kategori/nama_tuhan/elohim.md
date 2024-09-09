@@ -1,57 +1,81 @@
-# Elohim: Makna, Sejarah, dan Penggunaan Nama Tuhan dalam Alkitab Ibrani dan Kristen
+# Elohim: Konsep dan Maknanya dalam Alkitab
 
 ---
 
-**Elohim** adalah salah satu nama paling umum yang digunakan untuk Tuhan dalam Alkitab Ibrani, juga ditemukan dalam Alkitab Kristen, terutama di Perjanjian Lama. Kata ini memiliki sejarah yang kaya dan beragam, serta memainkan peran penting dalam teologi Yahudi dan Kristen. Berikut ini adalah asal usul, makna, sejarah, dan penggunaan kata Elohim dalam Kekristenan dan Yudaisme, serta relevansinya hingga saat ini.
+**Elohim** (אֱלֹהִים) adalah salah satu istilah penting dalam bahasa Ibrani yang digunakan dalam Alkitab untuk merujuk kepada Tuhan. Kata ini pertama kali muncul dalam **Kejadian 1:1**, "Pada mulanya Allah menciptakan langit dan bumi" (TB). Meskipun sering diterjemahkan sebagai “Allah”, istilah **Elohim** memiliki cakupan yang lebih luas, yang tidak hanya mengacu kepada Tuhan tetapi juga digunakan untuk merujuk pada makhluk spiritual lainnya, seperti malaikat atau roh-roh.
 
 ![Elohim, nama Tuhan dalam Alkitab Ibrani dan Kristen](konten/img/nama_tuhan/elohim.svg)
 
-## Pengertian dan Etimologi Elohim
+## Etimologi Elohim
+Secara etimologis, **Elohim** berasal dari akar kata **El** (אֵל) yang berarti "kekuatan" atau "kuasa". **El** adalah istilah yang umum digunakan di Timur Dekat kuno untuk menyebut dewa atau kekuatan ilahi. **Elohim** merupakan bentuk jamak dari **El**, tetapi sering dipakai untuk merujuk kepada Tuhan dalam bentuk tunggal, yang menegaskan keagungan dan kebesaran-Nya.
 
-Kata Elohim (אֱלֹהִים) berasal dari bahasa Ibrani dan merupakan bentuk jamak dari Eloah (אֱלוֹהַּ), yang berarti "*Tuhan*" atau "*dewa.*" Meskipun bentuknya jamak, Elohim hampir selalu digunakan untuk merujuk pada Tuhan yang tunggal dalam Alkitab, dikenal sebagai penggunaan *jamak penghormatan* atau *pluralis maiestatis*, yang menunjukkan kebesaran Tuhan.
+Dalam pemahaman Alkitab, meskipun **elohim** bisa merujuk kepada berbagai makhluk spiritual, hanya **TUHAN (YHWH, יהוה)** yang merupakan satu-satunya **Elohim** yang benar dan tertinggi. Penggunaan bentuk jamak ini menegaskan bahwa **TUHAN** memiliki kekuasaan dan otoritas yang melampaui semua makhluk lainnya.
 
-### Asal Usul Kata Elohim
-
-Dalam konteks Alkitab Ibrani, penggunaan Elohim mencerminkan Tuhan sebagai Penguasa tertinggi dan pencipta alam semesta. Meskipun dalam politeisme bentuk jamak sering merujuk pada banyak dewa, dalam monoteisme Yahudi dan Kristen, Elohim selalu merujuk pada Tuhan yang Esa. Penggunaan ini menegaskan keunikan teologis Elohim.
+---
 
 ## Penggunaan Elohim dalam Alkitab
 
-Elohim adalah salah satu kata paling sering digunakan untuk menyebut Tuhan dalam Alkitab Ibrani dan Perjanjian Lama. Dalam **Kejadian 1:1**, ayat pembukaan Alkitab, disebutkan: "Pada mulanya Allah (*Elohim*) menciptakan langit dan bumi." Ini memperlihatkan peran Elohim sebagai pencipta langit dan bumi.
+Istilah **Elohim** sering digunakan untuk merujuk kepada **TUHAN (YHWH, יהוה)**, Tuhan yang menciptakan langit dan bumi. 
 
-Beberapa contoh penting penggunaan Elohim dalam Alkitab termasuk:
-- **Kejadian 1:26**: "Berfirmanlah Allah (*Elohim*): 'Baiklah Kita menjadikan manusia menurut gambar dan rupa Kita.'"
-- **Keluaran 3:6**: "Akulah Allah (*Elohim*) ayahmu, Allah Abraham, Allah Ishak, dan Allah Yakub."
-- **Mazmur 46:1**: "Allah (*Elohim*) itu bagi kita tempat perlindungan dan kekuatan."
+> *Mazmur Asaf. Allah berdiri dalam sidang ilahi, di antara para allah Ia menghakimi*
+> — **Mazmur 82:1 (TB)**
 
-Selain sebagai nama untuk Tuhan, Elohim juga bisa merujuk kepada makhluk surgawi atau dewa-dewa dalam konteks lain, seperti di **Mazmur 82:1**, di mana Elohim merujuk pada sidang ilahi.
+Dalam **Mazmur 82 : 1** Di sini, "para allah" (elohim) merujuk pada makhluk spiritual yang lebih rendah dibandingkan dengan **TUHAN (YHWH, יהוה)**.
 
-## Elohim dalam Teologi Kristen dan Yudaisme
+Meskipun ada banyak **elohim** (makhluk spiritual), hanya **TUHAN (YHWH, יהוה)** yang memiliki kuasa penuh atas semua ciptaan, baik di alam semesta maupun di alam spiritual. Dalam **Ulangan 4:35** menunjukkan keyakinan monoteistik bahwa **TUHAN** adalah satu-satunya Tuhan yang berdaulat atas segala makhluk.
 
-### Elohim dalam Teologi Kristen
+> *Engkau diberi melihatnya untuk mengetahui, bahwa TUHANlah Allah, tidak ada yang lain kecuali Dia.*
+> — **Ulangan 4:35 (TB)**
 
-Dalam teologi Kristen, Elohim sering dipandang sebagai salah satu nama yang menunjukkan sifat Allah sebagai pencipta dan penguasa tertinggi. Penggunaan Elohim juga dikaitkan dengan konsep Trinitas dalam Kekristenan, di mana Tuhan dipahami sebagai satu entitas dengan tiga pribadi: Bapa, Putra, dan Roh Kudus.
+---
 
-Banyak teolog Kristen menghubungkan bentuk jamak Elohim dengan doktrin Trinitas, meskipun pemahaman ini berkembang lebih lanjut dalam Perjanjian Baru dan tidak berasal dari teologi Yahudi.
+## TUHAN (YHWH, יהוה) sebagai Elohim Tertinggi
 
-### Elohim dalam Yudaisme
+**TUHAN (YHWH, יהוה)** adalah nama pribadi Tuhan yang paling suci dalam Alkitab Ibrani. Empat huruf ini dikenal sebagai **Tetragrammaton**, yang berarti "Empat Huruf" dalam bahasa Yunani. Nama ini diambil dari akar kata Ibrani **היה** (hayah), yang berarti "menjadi" atau "ada", menunjukkan bahwa **TUHAN** adalah Tuhan yang selalu ada dan yang kekal.
 
-Dalam Yudaisme, Elohim dianggap sebagai nama yang sangat penting, tetapi sepenuhnya dalam konteks monoteistik. Penggunaan jamak dipahami sebagai bentuk penghormatan, bukan pluralitas pribadi. Elohim digunakan dalam berbagai doa dan liturgi Yahudi, khususnya dalam konteks penciptaan dan kekuasaan Tuhan atas alam semesta.
+Dalam tradisi Yahudi, nama **YHWH** dianggap sangat suci sehingga tidak diucapkan secara langsung. Sebagai gantinya, mereka menggunakan istilah **Adonai** (אֲדֹנָי), yang berarti "Tuhan" atau "Tuan". Oleh karena itu, dalam banyak terjemahan Alkitab, nama **TUHAN (YHWH, יהוה)** sering diterjemahkan sebagai "TUHAN" dalam huruf kapital.
 
-## Perbedaan Penggunaan Elohim dalam Yudaisme dan Kekristenan
+---
 
-- **Yudaisme**: Elohim adalah nama monoteistik untuk Tuhan, digunakan tanpa konsep pluralitas pribadi.
-- **Kekristenan**: Meskipun Kekristenan mengadopsi Elohim dari tradisi Yahudi, penggunaannya sering dikaitkan dengan doktrin Trinitas.
+## Elohim dan Alam Spiritual
+Alkitab mengakui keberadaan dunia spiritual yang penuh dengan makhluk-makhluk yang tidak terlihat. Istilah **Elohim** sering kali digunakan untuk menggambarkan makhluk-makhluk spiritual ini, termasuk malaikat, roh jahat, dan roh orang mati. Meskipun disebut **elohim**, mereka semua tunduk pada kekuasaan dan otoritas **TUHAN (YHWH, יהוה)**.
 
-## Elohim dan Hubungan dengan Nama Tuhan Lainnya
+Sebagai contoh, dalam **Kejadian 1:26**, **TUHAN (YHWH, יהוה)** berkata, "Baiklah Kita menjadikan manusia menurut gambar dan rupa Kita" (TB). Kata "Kita" di sini bisa dipahami sebagai percakapan antara **TUHAN** dan makhluk spiritual lainnya yang hadir dalam sidang ilahi. Namun, yang harus diperhatikan adalah bahwa hanya **TUHAN (YHWH, יהוה)** yang memiliki kuasa penuh dalam penciptaan, dan makhluk spiritual lainnya hanyalah ciptaan-Nya.
 
-Elohim sering kali digunakan bersama dengan nama-nama lain untuk Tuhan, seperti YHWH (*Yahweh*), *Adonai*, dan *El Shaddai*. Kombinasi seperti YHWH *Elohim* (*Tuhan Allah*) menunjukkan keesaan Tuhan dan kekuasaan-Nya.
+---
 
-## Penggunaan Elohim dalam Doa dan Liturgi Modern
+## Sidang Ilahi dan Penghakiman
 
-Dalam liturgi modern, nama Elohim masih digunakan dalam berbagai bentuk ibadah, terutama di komunitas *Kristen Mesianik* dan gereja-gereja konservatif. Meskipun dalam banyak gereja istilah seperti "*God*" atau "*Lord*" lebih umum, Elohim tetap penting dalam tradisi liturgi tertentu, khususnya dalam konteks penciptaan dan pemerintahan Tuhan.
+Konsep **sidang ilahi** (עֲדַת־אֵל, `adat El) adalah salah satu tema penting dalam Alkitab. Sidang ilahi adalah pertemuan makhluk spiritual yang dipimpin oleh **TUHAN (YHWH, יהוה)**. **Mazmur 82** menggambarkan **TUHAN** yang berdiri di tengah-tengah sidang ilahi dan menghakimi para makhluk spiritual.
+
+> *Mazmur Asaf. Allah berdiri dalam sidang ilahi, di antara para allah Ia menghakimi: 
+"Berapa lama lagi kamu menghakimi dengan lalim dan memihak kepada orang fasik? Sela*
+> — **Mazmur 82:1-2 (TB)**
+
+Makhluk-makhluk spiritual ini memiliki tanggung jawab di hadapan **TUHAN (YHWH, יהוה)**, dan mereka yang gagal menjalankan tugas mereka dengan adil akan dihakimi. Ini menegaskan bahwa meskipun ada banyak makhluk spiritual yang disebut **elohim**, semuanya tunduk pada kekuasaan **TUHAN** yang adalah **Elohim** tertinggi.
+
+---
+
+## Elohim dan Pemberontakan Makhluk Spiritual
+
+Selain malaikat yang setia kepada **TUHAN (YHWH, יהוה)**, Alkitab juga mengakui adanya makhluk spiritual yang memberontak melawan otoritas **TUHAN**. Beberapa makhluk spiritual ini, yang juga disebut **elohim**, memilih untuk menentang **TUHAN** dan menciptakan kekacauan di dunia. Mereka sering diidentifikasi sebagai roh jahat atau dewa-dewa palsu.
+
+Namun, **Mazmur 82:6-7** memperingatkan bahwa para makhluk ini, meskipun disebut **elohim**, tidak akan lolos dari hukuman Tuhan: "Aku sendiri telah berfirman: 'Kamu adalah allah (elohim), dan anak-anak Yang Mahatinggi kamu sekalian. Namun seperti manusia kamu akan mati, dan seperti salah seorang pembesar kamu akan tewas'" (TB). Meskipun mereka disebut **elohim**, mereka tetap makhluk yang terbatas, dan pada akhirnya akan dihukum oleh **TUHAN (YHWH, יהוה)**.
+
+---
+
+## Elohim dalam Tatanan Penciptaan
+
+Semua makhluk spiritual, baik yang setia maupun yang memberontak, diciptakan oleh **TUHAN (YHWH, יהוה)**. Mereka diciptakan untuk tujuan tertentu dan ada dalam kendali penuh dari kehendak Tuhan. Meskipun beberapa **elohim** memberontak, mereka tidak dapat menggagalkan rencana **TUHAN**. **TUHAN (YHWH, יהוה)** memegang kendali penuh atas alam semesta, baik fisik maupun spiritual, dan Dia adalah satu-satunya Tuhan yang layak disembah.
+
+Sebagai **Elohim** tertinggi, **TUHAN (YHWH, יהוה)** menciptakan dan memelihara segala sesuatu. Semua makhluk spiritual, baik yang setia maupun yang jahat, pada akhirnya akan dihakimi oleh **TUHAN** sesuai dengan perbuatan mereka.
+
+---
 
 ## Kesimpulan
 
-Elohim adalah nama penting untuk Tuhan yang digunakan dalam Alkitab Ibrani dan Alkitab Kristen. Meskipun bentuknya jamak, Elohim hampir selalu merujuk kepada Tuhan yang tunggal. Dalam Yudaisme, Elohim adalah nama penting yang menegaskan keesaan Tuhan, sementara dalam Kekristenan, penggunaannya sering dikaitkan dengan konsep Trinitas. Sampai saat ini, Elohim tetap menjadi salah satu nama Tuhan yang paling dihormati, mencerminkan kebesaran dan kekuasaan Tuhan atas seluruh ciptaan.
+Istilah **Elohim** (אֱלֹהִים) dalam Alkitab tidak hanya merujuk kepada **TUHAN (YHWH, יהוה)** tetapi juga mencakup makhluk spiritual lainnya, seperti malaikat dan roh-roh. Namun, hanya **TUHAN (YHWH, יהוה)** yang merupakan **Elohim** tertinggi, pencipta, dan penguasa segala sesuatu. Makhluk spiritual lainnya tunduk kepada otoritas-Nya dan berada di bawah kendali-Nya.
+
+Meskipun ada banyak makhluk spiritual yang disebut **elohim**, mereka semua diciptakan oleh **TUHAN (YHWH, יהוה)** dan berada dalam kekuasaan-Nya. Pada akhirnya, hanya **TUHAN (YHWH, יהוה)** yang layak disembah dan ditaati, dan Dia akan menghakimi semua makhluk sesuai dengan perbuatan mereka.
 
 ---

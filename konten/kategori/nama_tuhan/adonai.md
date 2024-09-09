@@ -12,22 +12,31 @@ Kata Adonai berasal dari bahasa Ibrani, dan merupakan bentuk jamak dari kata "Ad
 
 Penggunaan bentuk jamak ini juga menunjukkan penghormatan yang sangat tinggi, karena dalam banyak budaya kuno, bentuk jamak sering digunakan untuk memperkuat rasa hormat terhadap individu yang berkuasa.
 
+---
+
 ## Sejarah dan Penggunaan dalam Alkitab
 
 Adonai muncul pertama kali dalam Alkitab Ibrani, yang kemudian menjadi bagian dari Perjanjian Lama dalam Alkitab Kristen. Kata ini sering digunakan sebagai pengganti dari *Tetragrammaton* (YHWH), nama Tuhan yang dianggap terlalu suci untuk diucapkan dalam tradisi Yahudi. Setiap kali muncul Tetragrammaton, pembaca Alkitab Yahudi menggantinya dengan Adonai untuk menghindari penyebutan langsung nama Tuhan.
 
-Penggunaan Adonai dalam teks Alkitab melambangkan kedudukan Tuhan sebagai Penguasa tertinggi dan memperlihatkan hubungan antara Tuhan dan manusia sebagai hamba-hamba-Nya. Beberapa contoh penggunaan Adonai dalam Alkitab Ibrani meliputi:
+Penggunaan Adonai dalam teks Alkitab melambangkan kedudukan Tuhan sebagai Penguasa tertinggi dan memperlihatkan hubungan antara Tuhan dan manusia sebagai hamba-hamba-Nya. Beberapa contoh penggunaan Adonai dalam Alkitab Ibrani dalam **Kejadian 15:2** dan **Mazmur 8:1**:
 
-- **Kejadian 15:2**: Di mana Abram berkata, "Ya Tuhan ALLAH (*Adonai*), apakah yang akan Engkau berikan kepadaku?"
-- **Mazmur 8:1**: "Ya TUHAN, Tuhan kami (Adonai), betapa mulianya nama-Mu di seluruh bumi!"
+> *Ya Tuhan ALLAH (*Adonai*), apakah yang akan Engkau berikan kepadaku?*
+> — **Kejadian 15:2**
+
+> *Ya TUHAN, Tuhan kami (Adonai), betapa mulianya nama-Mu di seluruh bumi!*
+> — **Mazmur 8:1**
 
 Dalam konteks ini, Adonai digunakan untuk mengakui Tuhan sebagai pemilik dan penguasa seluruh alam semesta.
+
+---
 
 ## Adonai sebagai Pengganti YHWH
 
 Dalam tradisi Yahudi, YHWH adalah nama Tuhan yang paling suci dan tidak diucapkan karena rasa hormat. Sebagai gantinya, ketika membaca teks-teks suci, orang Yahudi akan mengucapkan "*Adonai*" setiap kali muncul nama YHWH. Ini adalah bentuk penghormatan dan penghindaran dari penyebutan nama Tuhan yang dianggap terlalu sakral.
 
 Sampai saat ini, tradisi ini tetap dipertahankan oleh banyak kelompok Yahudi, dan menjadi bagian integral dalam pemahaman Yahudi tentang Tuhan. Dalam Kekristenan, meskipun nama YHWH tidak dianggap tabu, banyak versi Alkitab masih menggantinya dengan "*Lord*" (*Tuhan*) atau "*Adonai*" dalam beberapa terjemahan.
+
+---
 
 ## Perbedaan Penggunaan dalam Yahudi dan Kristen
 
@@ -45,11 +54,15 @@ Dalam teologi Kristen, nama Adonai menggarisbawahi konsep Tuhan sebagai Penguasa
 
 Nama ini juga sering digunakan dalam liturgi Kristen yang mengakui Tuhan sebagai "*Tuan*" atas semua aspek kehidupan. Banyak hymne dan doa Kristen menggabungkan gelar Adonai dengan konsep keselamatan melalui Yesus Kristus.
 
+---
+
 ## Penggunaan Adonai dalam Liturgi Modern
 
 Meskipun lebih umum digunakan dalam tradisi Yahudi, beberapa gereja Kristen, terutama yang berfokus pada penggunaan bahasa asli, tetap menggunakan **Adonai** dalam liturgi mereka. Dalam pujian, doa, dan bacaan Alkitab, Adonai digunakan sebagai pengakuan terhadap Tuhan sebagai Penguasa tertinggi.
 
 Gerakan *Kristen Mesianik*, yang memadukan elemen-elemen dari Yudaisme dan Kekristenan, sering kali menggunakan Adonai dalam doa-doa mereka, menyatukan penggunaan liturgis Yahudi dan teologi Kristen. Penggunaan ini mencerminkan penghormatan yang mendalam kepada Tuhan, sambil tetap menegaskan keyakinan akan Yesus Kristus sebagai Mesias.
+
+---
 
 ## Kesimpulan
 
