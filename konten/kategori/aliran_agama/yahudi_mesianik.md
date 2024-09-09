@@ -1,76 +1,111 @@
-# Yahudi Mesianik: Sejarah, Kepercayaan, dan Tokoh Penting
+# Yahudi Mesianik: Pengertian, Keyakinan, dan Sejarah
 
 ---
 
-**Yahudi Mesianik** adalah sebuah gerakan keagamaan yang berkembang di antara orang Yahudi yang meyakini Yesus, atau Yeshua dalam bahasa Ibrani, sebagai Mesias yang dijanjikan dalam Tanakh (Kitab Suci Ibrani). Gerakan ini memadukan tradisi Yahudi dengan keyakinan akan keselamatan melalui Yesus Kristus, seperti yang diajarkan dalam Perjanjian Baru. Meskipun berbagi akar dengan Yudaisme dan Kekristenan, Yahudi Mesianik memiliki karakteristik unik yang membedakannya dari kedua tradisi tersebut. Komunitas Yahudi Mesianik mempertahankan praktik keagamaan Yahudi seperti merayakan Sabat dan hari raya Yahudi, namun juga mengakui Yesus sebagai penggenapan nubuatan Mesianik. Melalui artikel ini, kita akan mengeksplorasi sejarah, tokoh-tokoh penting, dan keyakinan teologis Yahudi Mesianik, serta pengaruhnya dalam dunia modern.
+Yahudi Mesianik adalah sebuah gerakan agama yang memadukan kepercayaan Yahudi tradisional dengan pengakuan akan Yesus sebagai Mesias dan Juruselamat. Para penganut Yahudi Mesianik tetap mempertahankan identitas Yahudi mereka, sambil menerima Yesus (dalam bahasa Ibrani, *Yeshua*) sebagai Mesias yang dinubuatkan dalam Kitab Suci Ibrani (*Tanakh*) dan sebagai Anak Tuhan yang menyelamatkan umat manusia dari dosa.
 
 ![ilustrasi gambar logo Mesianik](konten/img/aliran_agama/yahudi_mesianik.svg)
 
+## Pengertian Yahudi Mesianik
+
+Yahudi Mesianik percaya bahwa Yesus adalah Mesias yang dijanjikan dalam Kitab Suci Ibrani, namun berbeda dengan agama Kristen tradisional, mereka tetap mempertahankan banyak praktik dan identitas Yahudi. Penganut Yahudi Mesianik melaksanakan hari Sabat pada hari Sabtu, mengikuti kalender Yahudi, dan merayakan hari-hari raya Yahudi seperti *Paskah*, *Rosh Hashanah*, dan *Yom Kippur*. Pada saat yang sama, mereka percaya pada Yesus sebagai penggenapan nubuat tentang Mesias, dan mengakui ajaran Perjanjian Baru.
+
+---
+
+## Etimologi dan Istilah
+
+Istilah "*Mesianik*" berasal dari kata *Mesias* (dalam bahasa Ibrani: *Mashiach*, מָשִׁיחַ), yang berarti "*yang diurapi*". Dalam konteks Yahudi, Mesias adalah seorang raja atau pemimpin yang diurapi oleh Tuhan untuk membebaskan dan memimpin bangsa Israel. Penganut Yahudi Mesianik percaya bahwa Yesus adalah Mesias yang diurapi ini, yang datang ke dunia untuk menyelamatkan umat manusia, bukan hanya dari perbudakan politik, tetapi terutama dari dosa.
+
+Meskipun mereka percaya pada Yesus, Yahudi Mesianik menolak istilah "*Kristen*" karena mereka merasa bahwa istilah tersebut lebih berhubungan dengan budaya dan praktik-praktik non-Yahudi yang berkembang dalam Kekristenan.
+
+---
+
 ## Sejarah Yahudi Mesianik
 
-Gerakan Yahudi Mesianik modern berakar dari upaya misi Kristen untuk menjangkau orang Yahudi di Eropa dan Amerika Serikat pada abad ke-19, meskipun akarnya dapat ditelusuri kembali ke masa Kekristenan mula-mula. Selama era Perjanjian Baru (sekitar abad pertama Masehi), banyak dari pengikut Yesus adalah orang Yahudi, dan komunitas Yahudi Kristen ini mempertahankan identitas Yahudi mereka sementara percaya bahwa Yesus adalah Mesias yang dijanjikan.
+Gerakan Yahudi Mesianik modern dimulai pada akhir abad ke-19, meskipun akarnya bisa ditelusuri kembali ke awal Kekristenan. Pada abad pertama Masehi, banyak orang Yahudi yang menjadi pengikut Yesus dan mengakui-Nya sebagai Mesias, namun tetap mempertahankan identitas dan praktik Yahudi mereka. Para pengikut Yesus pada masa itu sering disebut sebagai "*sekte Nazaret*" atau "orang-orang Jalan" (*Kisah Para Rasul 24:5*), dan mereka merupakan bagian dari komunitas Yahudi yang lebih besar.
 
-Namun, seiring waktu, Kekristenan dan Yudaisme terpisah secara teologis dan budaya, dan kebanyakan orang Yahudi yang menjadi Kristen sering kali dipaksa untuk meninggalkan identitas Yahudi mereka. Hal ini berubah pada abad ke-19 ketika para penginjil Kristen mulai menekankan perlunya menjangkau orang Yahudi tanpa melepaskan aspek-aspek identitas Yahudi mereka.
+> _Telah nyata kepada kami, bahwa orang ini adalah penyakit sampar, seorang yang menimbulkan kekacauan di antara semua orang Yahudi di seluruh dunia yang beradab, dan bahwa ia adalah seorang tokoh dari **sekte orang Nasrani**._
+> —**Kisah Para Rasul 24:5 (TB)**
 
-### Periode Awal: Abad Pertama hingga Abad ke-19
-Pada masa awal Kekristenan, para pengikut Yesus—termasuk para rasul seperti Petrus dan Paulus—adalah orang Yahudi yang memandang Yesus sebagai penggenapan nubuatan dalam Tanakh. Dalam **Kisah Para Rasul 2**, misalnya, kita membaca bagaimana orang Yahudi dari berbagai bangsa mendengar pesan Injil dalam bahasa mereka sendiri pada Hari Pentakosta, yang menjadi salah satu tonggak sejarah Kekristenan awal.
+Namun, setelah kehancuran Bait Suci pada tahun 70 Masehi dan ketegangan yang meningkat antara orang-orang Yahudi dan pengikut Yesus, Kekristenan dan Yudaisme mulai berkembang secara terpisah. Pada abad-abad berikutnya, gerakan Kristen berkembang di luar konteks Yahudi, dan banyak tradisi Yahudi ditinggalkan oleh gereja-gereja Kristen.
 
-Namun, mulai sekitar abad ke-2 Masehi, hubungan antara orang Yahudi yang memeluk Yesus dan komunitas Yahudi yang menolak Yesus sebagai Mesias menjadi tegang. Pada tahun 70 M dan 135 M, setelah pemberontakan Yahudi melawan Kekaisaran Romawi, orang-orang Yahudi tersebar ke seluruh dunia, dan hubungan mereka dengan Kekristenan menjadi semakin terpisah.
+Gerakan Yahudi Mesianik modern dimulai kembali pada akhir abad ke-19, khususnya di Amerika Serikat dan Eropa Timur, di mana orang-orang Yahudi yang percaya kepada Yesus mulai mengidentifikasi diri mereka sebagai "*Yahudi Mesianik*". Mereka ingin mempertahankan identitas Yahudi mereka sambil mengakui Yesus sebagai Mesias. Pada abad ke-20, gerakan ini semakin berkembang, terutama setelah Perang Dunia II dan berdirinya negara Israel pada tahun 1948.
 
-### Abad ke-19: Awal Gerakan Yahudi Mesianik Modern
-Gerakan Yahudi Mesianik modern bermula pada abad ke-19 di Eropa dan Amerika Utara. Salah satu peristiwa penting terjadi pada tahun 1866, ketika **Joseph Rabinowitz**, seorang penginjil Yahudi di Moldova, mendirikan salah satu jemaat Yahudi Mesianik pertama. Pada saat yang sama di Inggris, *Asosiasi Yahudi Ibrani Kristen* didirikan pada tahun 1866, dengan tujuan menjangkau orang Yahudi dengan pesan Yesus sebagai Mesias. Gerakan ini mendapat momentum di kalangan Yahudi yang tinggal di Eropa Timur dan Amerika Serikat.
+---
 
-Pada akhir abad ke-19 dan awal abad ke-20, gerakan misi Kristen di Amerika Serikat berkembang pesat, dengan munculnya organisasi seperti *The American Board of Missions to the Jews* (didirikan pada tahun 1894). Organisasi ini berusaha untuk menjangkau komunitas Yahudi di Amerika Utara dan Eropa, dengan mendirikan sinagoge Mesianik dan sekolah-sekolah Alkitab.
+## Keyakinan Utama Yahudi Mesianik
 
-### Abad ke-20: Lahirnya Yahudi Mesianik sebagai Gerakan Terpisah
-Pada abad ke-20, Yahudi Mesianik berkembang menjadi gerakan yang lebih terorganisir. Pada tahun 1915, *Asosiasi Yahudi Ibrani Kristen Amerika* dibentuk di Amerika Serikat. Meski gerakan ini awalnya merupakan bagian dari gereja-gereja Kristen Injili, para pengikut Yahudi Mesianik mulai mencari identitas yang lebih independen. Pada tahun 1967, setelah Perang Enam Hari di Israel, gerakan Yahudi Mesianik mendapat momentum baru, terutama di kalangan Yahudi diaspora yang mulai melihat peran Yesus sebagai Mesias yang lebih relevan dalam konteks kebangkitan nasional Israel.
+### 1. Kepercayaan pada Yesus sebagai Mesias
 
-Pada tahun 1975, *Messianic Jewish Alliance of America* (MJAA) dibentuk, yang menjadi salah satu organisasi terbesar dan paling penting dalam gerakan Yahudi Mesianik. MJAA berperan besar dalam membentuk struktur dan jaringan komunitas Yahudi Mesianik di seluruh dunia, terutama di Amerika Serikat dan Israel.
+   Yahudi Mesianik percaya bahwa Yesus adalah Mesias yang dijanjikan dalam Tanakh. Nubuat-nubuat tentang Mesias dalam Kitab Suci Ibrani, seperti yang ditemukan dalam *Yesaya 53*, dianggap sebagai penggenapan melalui kehidupan, kematian, dan kebangkitan Yesus. Mereka percaya bahwa Yesus adalah Anak Tuhan yang datang untuk menebus umat manusia dari dosa, dan melalui iman kepada-Nya, seseorang dapat menerima keselamatan.
 
-### Abad ke-21: Pertumbuhan dan Kontroversi
-Pada abad ke-21, gerakan Yahudi Mesianik terus tumbuh, terutama di Amerika Serikat dan Israel. Ada lebih dari 250.000 penganut Yahudi Mesianik di seluruh dunia, dengan komunitas besar di kota-kota besar seperti New York, Los Angeles, dan Tel Aviv. Di Israel, gerakan Yahudi Mesianik mengalami pertumbuhan yang signifikan meskipun menghadapi tantangan dari komunitas Yahudi Ortodoks yang memandang mereka sebagai ancaman terhadap identitas Yahudi.
+### 2. Pengakuan pada Tanakh dan Perjanjian Baru
 
-Beberapa sinagoge Mesianik besar telah didirikan di Israel, seperti *Adat Yeshua* di Yerusalem, yang merupakan salah satu sinagoge Yahudi Mesianik terbesar di negara tersebut. Meskipun demikian, Yahudi Mesianik masih menghadapi penolakan dari kelompok Yahudi tradisional dan bahkan beberapa denominasi Kristen.
+   Penganut Yahudi Mesianik menerima Tanakh (Alkitab Ibrani) sebagai Firman Tuhan, tetapi mereka juga menerima Perjanjian Baru sebagai kelanjutan dan penggenapan dari Tanakh. Mereka menganggap Yesus sebagai penggenapan dari hukum dan nubuat-nubuat dalam Kitab Suci Ibrani, bukan sebagai pembatalan atau penghapusan hukum Yahudi.
 
-## Tokoh Penting dalam Gerakan Yahudi Mesianik
+### 3. Ketaatan pada Hukum Taurat
 
-### 1. Joseph Rabinowitz (1837-1899)
-   Salah satu pelopor dalam gerakan Yahudi Mesianik modern, Rabinowitz mendirikan sinagoge Mesianik pertama di Kishinev, Moldova, pada tahun 1884. Ia sering disebut sebagai "Luther Yahudi" karena pandangannya yang progresif mengenai identitas Yahudi dan Yesus sebagai Mesias.
+   Meskipun percaya bahwa keselamatan datang melalui iman kepada Yesus, Yahudi Mesianik tetap menghormati Hukum Taurat (*Torah*) dan mengikuti tradisi Yahudi seperti sunat, pemeliharaan Sabat, dan perayaan hari-hari raya Yahudi. Mereka melihat praktik-praktik ini sebagai bagian dari identitas Yahudi yang penting, bukan sebagai syarat keselamatan, tetapi sebagai cara untuk hidup sesuai dengan perjanjian Tuhan dengan Israel.
 
-### 2. David H. Stern (lahir 1935)
-   Penulis terkemuka dari gerakan Yahudi Mesianik yang terkenal karena karyanya, *Jewish New Testament Commentary* dan *Complete Jewish Bible*, yang menggabungkan Alkitab Perjanjian Lama dan Perjanjian Baru dengan pandangan Yahudi Mesianik.
+### 4. Identitas Yahudi yang Ditegaskan
 
-### 3. Moishe Rosen (1932-2010)
-   Pendiri organisasi misi *Jews for Jesus*, Rosen adalah salah satu tokoh paling menonjol dalam menyebarkan gerakan Yahudi Mesianik di Amerika Serikat. Ia mendirikan Jews for Jesus pada tahun 1973 dan berperan penting dalam memperkenalkan konsep Yahudi Mesianik ke dunia Kristen.
+   Penganut Yahudi Mesianik menekankan bahwa kepercayaan kepada Yesus tidak membatalkan identitas Yahudi mereka. Sebaliknya, mereka melihat iman kepada Yesus sebagai penggenapan dari identitas Yahudi mereka. Mereka menolak gagasan bahwa seorang Yahudi yang percaya kepada Yesus meninggalkan Yudaisme dan menjadi Kristen.
 
-### 4. Stan Telchin (1924-2013)
-   Penulis buku terkenal *Betrayed!* yang mengisahkan perjalanan pribadinya sebagai seorang Yahudi yang menerima Yesus sebagai Mesias. Buku ini menjadi salah satu karya penting dalam literatur Yahudi Mesianik.
+### 5. Pemberitaan Injil kepada Orang Yahudi 
 
-## Kepercayaan Teologis
+   Salah satu misi utama gerakan Yahudi Mesianik adalah menyampaikan kabar baik tentang Yesus kepada sesama orang Yahudi. Mereka berusaha menunjukkan bahwa iman kepada Yesus adalah bagian yang sah dari iman Yahudi, dan bahwa Yesus adalah Mesias yang telah lama ditunggu oleh bangsa Israel.
 
-Secara teologis, Yahudi Mesianik menerima inti kepercayaan Kristen Injili namun juga tetap merayakan hari-hari raya Yahudi dan juga menghormati ajaran Torah
+---
 
-### Mesias
-Keyakinan bahwa Yesus adalah penggenapan dari nubuatan Mesianik dalam Tanakh dan bahwa Dia akan datang kembali.
+## Perayaan dan Ibadah Yahudi Mesianik
 
-### Keselamatan
-Keselamatan diperoleh melalui iman kepada Yesus Kristus, yang mati dan bangkit untuk menebus dosa manusia.
+Ibadah Yahudi Mesianik sering kali mirip dengan kebaktian sinagoga tradisional, namun dengan tambahan elemen-elemen yang mengakui Yesus sebagai Mesias. Mereka menggunakan doa-doa Yahudi, membaca Torah, dan mengikuti tradisi ibadah Yahudi, namun juga menyanyikan pujian dan lagu-lagu tentang Yesus. Hari-hari raya Yahudi seperti *Paskah*, *Shavuot* (Pentakosta), dan *Sukkot* dirayakan dengan makna tambahan yang merujuk pada penggenapan nubuat Mesianik oleh Yesus.
 
-### Torah
-Yahudi Mesianik menghormati dan mengikuti ajaran Torah (Hukum Yahudi) tetapi memahami Torah dalam konteks ajaran Yesus.
+Misalnya, pada perayaan *Paskah*, Yahudi Mesianik melihat Yesus sebagai "Anak Domba Paskah" yang dikorbankan untuk menyelamatkan umat manusia dari dosa, sebagaimana diungkapkan dalam **1 Korintus 5:7.**
 
-### Perayaan Yahudi
-Mereka tetap merayakan hari-hari raya Yahudi, seperti Pesach (Paskah), Yom Kippur, dan Rosh Hashanah, tetapi memberi makna baru yang terpusat pada Yesus sebagai Mesias.
+> *Buanglah ragi yang lama itu, supaya kamu menjadi adonan yang baru, sebab kamu memang tidak beragi. Sebab anak domba Paskah kita juga telah disembelih, yaitu Kristus.*
+> —**1 Korintus 5:7 (TB)**
 
-## Tanggal Penting dalam Sejarah Yahudi Mesianik
+---
 
-- **33 M**: Penyaliban dan kebangkitan Yesus Kristus, tonggak utama bagi pengikut Yahudi yang percaya kepada-Nya sebagai Mesias.
-- **70 M**: Penghancuran Bait Suci Kedua di Yerusalem, yang mengakibatkan diaspora Yahudi besar-besaran dan mulai memisahkan Kekristenan dari Yudaisme.
-- **1866**: Pembentukan Asosiasi Yahudi Ibrani Kristen di Inggris, awal formal gerakan Yahudi Mesianik modern.
-- **1975**: Pembentukan Messianic Jewish Alliance of America (MJAA), yang menjadi organisasi terbesar bagi komunitas Yahudi Mesianik di Amerika.
+## Kontroversi tentang Yahudi Mesianik
+
+Salah satu kontroversi yang paling sering dikaitkan dengan gerakan Yahudi Mesianik adalah tuduhan sinkretisme—penggabungan unsur-unsur dari dua atau lebih tradisi agama yang berbeda. Dalam konteks ini, banyak pemimpin Yahudi tradisional dan teolog Kristen menganggap Yahudi Mesianik sebagai bentuk sinkretisme karena mereka mencoba menggabungkan unsur-unsur dari Yudaisme dan Kekristenan.
+
+### Perspektif Yahudi
+
+Dari sudut pandang Yahudi Ortodoks dan Reformasi, Yahudi Mesianik dianggap bermasalah karena mereka mengakui Yesus sebagai Mesias dan bahkan Tuhan, sesuatu yang bertentangan dengan ajaran inti Yudaisme. Menurut Yudaisme, Mesias yang dijanjikan belum datang, dan mereka melihat pengakuan Yesus sebagai Mesias sebagai pengkhianatan terhadap keyakinan Yahudi tradisional. Oleh karena itu, banyak komunitas Yahudi memandang Yahudi Mesianik bukan sebagai bagian dari Yudaisme, melainkan sebagai bagian dari upaya proselitisme Kristen yang mencoba untuk mengasimilasi orang-orang Yahudi ke dalam Kekristenan.
+
+Para pemimpin Yahudi tradisional juga mengkritik bagaimana Yahudi Mesianik mempertahankan praktik-praktik Yahudi, seperti merayakan Sabat dan hari-hari raya Yahudi, tetapi menafsirkannya dalam terang ajaran Perjanjian Baru. Mereka menganggap pendekatan ini sebagai bentuk manipulasi simbol-simbol dan praktik-praktik suci Yahudi untuk mengajarkan keyakinan non-Yahudi, sehingga memperkuat tuduhan sinkretisme.
+
+### Perspektif Kristen
+
+Di sisi lain, banyak denominasi Kristen juga memandang gerakan Yahudi Mesianik sebagai praktik sinkretisme. Kekristenan, terutama dalam Protestan dan Katolik, mengajarkan bahwa Yesus telah menggenapi hukum Taurat, dan karenanya praktik-praktik seperti memelihara Sabat pada hari Sabtu atau merayakan hari-hari raya Yahudi dianggap tidak diperlukan bagi orang Kristen. Bagi beberapa teolog Kristen, Yahudi Mesianik dianggap mencampur ajaran Perjanjian Baru dengan tradisi Perjanjian Lama secara tidak tepat, sehingga menciptakan percampuran doktrinal yang dianggap membingungkan.
+
+Beberapa kelompok Kristen juga menilai bahwa dengan mempertahankan identitas Yahudi yang kuat, Yahudi Mesianik tidak sepenuhnya mengikuti ajaran Perjanjian Baru yang menyatakan bahwa di dalam Yesus, tidak ada lagi perbedaan antara Yahudi dan non-Yahudi (**Galatia 3:28**). Oleh karena itu, Yahudi Mesianik sering kali dianggap sebagai campuran yang tidak sah dari dua agama yang berbeda.
+
+> *Dalam hal ini tidak ada orang Yahudi atau orang Yunani, tidak ada hamba atau orang merdeka, tidak ada laki-laki atau perempuan, karena kamu semua adalah satu di dalam Kristus Yesus.*
+> —**Galatia 3:28 (TB)**
+
+### Sinkretisme atau Penggenapan?
+
+Meskipun banyak tuduhan sinkretisme, penganut Yahudi Mesianik sendiri menolak anggapan bahwa mereka mencampur dua agama. Mereka melihat ajaran mereka sebagai penggenapan dari Yudaisme, bukan sinkretisme. Menurut mereka, Yesus adalah Mesias yang dijanjikan oleh Tanakh, dan dengan menerima Yesus sebagai Mesias, mereka tidak meninggalkan Yudaisme, melainkan menjalani iman Yahudi yang sepenuhnya terpenuhi dalam Kristus.
+
+Dalam pandangan Yahudi Mesianik, Yesus datang bukan untuk menghapus Hukum Taurat, tetapi untuk menggenapinya (**Matius 5:17**), sehingga mereka tetap mematuhi perintah-perintah Taurat sambil mengakui keselamatan melalui Yesus.
+
+> *"Janganlah kamu menyangka, bahwa Aku datang untuk meniadakan hukum Taurat atau kitab para nabi. Aku datang bukan untuk meniadakannya, melainkan untuk menggenapinya.*
+> —**Matius 5:17 (TB)**
+
+Bagi mereka, memelihara Sabat dan merayakan hari-hari raya Yahudi adalah cara untuk menjalani iman mereka, bukan sinkretisme, melainkan integrasi dari iman kepada Yesus dengan warisan Yahudi yang tetap mereka pertahankan.
+
+Bagi Yahudi Mesianik, integrasi ini tidak dianggap sebagai pencampuran yang tidak sah, tetapi sebagai sebuah manifestasi yang sah dari iman mereka. Mereka percaya bahwa pengakuan Yesus sebagai Mesias tidak mengubah hukum-hukum Yahudi, melainkan melengkapi dan menggenapinya. Dalam pandangan mereka, praktik-praktik Yahudi yang dipertahankan adalah cara untuk menghormati dan menjalankan perjanjian Tuhan dengan Israel sambil mengakui Yesus sebagai penggenapan dari nubuat-nubuat tersebut.
+
+---
 
 ## Kesimpulan
 
-Yahudi Mesianik merupakan gerakan keagamaan yang unik karena memadukan warisan iman Yahudi dengan keyakinan pada Yesus sebagai Mesias. Melalui sejarah panjang yang dimulai dari masa Kekristenan awal hingga perkembangan modern di abad ke-20 dan ke-21, Yahudi Mesianik telah menjadi rumah bagi banyak orang Yahudi yang menemukan makna dalam ajaran Yesus tanpa harus meninggalkan identitas budaya dan agama mereka. Gerakan ini juga menunjukkan bahwa iman kepada Yesus dapat diintegrasikan dengan penghormatan terhadap tradisi Yahudi, yang terus dipraktikkan dengan penuh penghargaan terhadap Torah dan hari-hari raya Yahudi. Bagi banyak orang, Yahudi Mesianik menawarkan pemahaman baru tentang hubungan antara Allah, umat-Nya, dan penggenapan nubuatan Mesianik dalam Yesus Kristus, sambil tetap terbuka untuk dialog yang membangun dengan tradisi agama lain.
+Kontroversi mengenai Yahudi Mesianik dan tuduhan sinkretisme mencerminkan ketegangan yang ada antara upaya untuk mempertahankan identitas Yahudi sambil menerima Yesus sebagai Mesias. Dari sudut pandang Yudaisme dan Kekristenan, gerakan ini sering dianggap sebagai upaya mencampurkan unsur-unsur dari dua agama yang berbeda, sehingga menimbulkan kebingungan dan kritik.
+
+Namun, bagi penganut Yahudi Mesianik, mereka tidak melihat diri mereka sebagai sinkretis, melainkan sebagai bagian dari rencana Allah untuk Israel yang terpenuhi dalam pribadi Yesus. Mereka meyakini bahwa penggabungan iman kepada Yesus dengan praktik Yahudi adalah ekspresi sah dari iman mereka, yang melihat Yesus sebagai penggenapan dari nubuat-nubuat dalam Tanakh.
 
 ---
