@@ -248,7 +248,7 @@ aside ul ul.hidden {
 
 .beranda-link div img{
     width: 20%;
-    max-width: 240px;
+    max-width: 240px;    
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
     margin-right: 20px;
@@ -262,6 +262,11 @@ aside ul ul.hidden {
     font-weight: lighter;
 }
 
+blockquote{
+    border-left: solid #e3e3e3 5px;
+    padding-left: 1rem;
+    margin-left: 0;
+}
 
 .beranda-link:hover {
     color: #e74c3c;
@@ -270,7 +275,7 @@ aside ul ul.hidden {
 img {
     display: block;
     width: 60%;
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     margin: auto;
 }
