@@ -274,6 +274,37 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
     }, 300)); // Run search only after the user has stopped typing for 300ms
 
+    // Fungsi untuk menampilkan artikel berdasarkan kategori
+async function showArticlesByCategory(category) {
+    const allFiles = await getAllMarkdownFiles();
+    const filteredFiles = allFiles.filter(file => file.dir.split('/').pop() === category);
+
+    if (filteredFiles.length === 0) {
+        mainContent.innerHTML = `<p>Tidak ada artikel dalam kategori ini.</p>`;
+        return;
+    }
+
+    let categoryContent = `<h2>Artikel dalam Kategori: ${category.replace(/_/g, ' ').toUpperCase()}</h2><ul>`;
+    for (const file of filteredFiles) {
+        const fileName = file.name.replace('.md', '').replace(/_/g, ' ');
+        categoryContent += `<li><a href="#" data-file="${file.dir}/${file.name}">${fileName}</a></li>`;
+    }
+    categoryContent += '</ul>';
+    
+    mainContent.innerHTML = categoryContent;
+
+    // Tambahkan event listener ke tautan artikel
+    mainContent.querySelectorAll('a[data-file]').forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            loadMarkdown(this.getAttribute('data-file'));
+        });
+    });
+
+    scrollToTop();
+    updateURL(`konten/kategori/${category}.md`);
+}
+    
     // Other utility functions
     function scrollToTop() {
         window.scrollTo({ top: 0});
