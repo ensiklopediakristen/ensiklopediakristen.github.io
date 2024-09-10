@@ -280,12 +280,90 @@ img {
     margin: auto;
 }
 
+/* =================================== */
+
+/* Gaya dasar tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Garis pada semua tabel */
+table, th, td {
+    border: 1px solid #a2a9b1;
+}
+
+/* Gaya header tabel */
+th {
+    background-color: #f2f2f2;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+    color: #202122;
+    background: #d5f4ff;
+    border-bottom: 2px solid #a2a9b1;
+}
+
+/* Gaya sel tubuh tabel */
+td {
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+    color: #202122;
+}
+
+/* Pewarnaan baris bergantian */
+tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+/* Hover efek pada baris */
+tr:hover {
+    background-color: #eaeaea;
+}
+
+/* Tabel striping warna yang lebih terang */
+table.wikitable-striped tr:nth-child(odd) td {
+    background-color: #f9f9f9;
+}
+
+table.wikitable-striped tr:nth-child(even) td {
+    background-color: #ffffff;
+}
+
+/* Gaya teks untuk referensi atau catatan kaki di dalam tabel */
+table td.ref, table td.note {
+    font-size: smaller;
+    color: #555;
+}
+
+/* Gaya border untuk tabel yang lebih kecil */
+table.bordered {
+    border: 2px solid #a2a9b1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Membuat teks dalam tabel lebih kecil */
+table th, table td {
+    font-size: 14px;
+}
+
+/* Centering tabel dengan lebar otomatis */
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =================================== */
+
 .h1perpustakaan{
     font-size: 1.5rem;
     margin: 20px;
     margin-bottom: 0;
 }
-
 
 /* Footer */
 footer {
