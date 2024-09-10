@@ -8,6 +8,10 @@
         "type": "directory"
     },
     {
+        "name": "atribut",
+        "type": "directory"
+    },
+    {
         "name": "istilah",
         "type": "directory"
     },
