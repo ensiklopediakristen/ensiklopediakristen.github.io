@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (file === 'konten/beranda.md') {
             // Mendapatkan artikel terbaru
             // Mendapatkan artikel terbaru
-const recentPosts = await getRecentPosts();
-let recentPostsHTML = '<h2 class="beranda-title">Artikel Terbaru</h2><ul class="beranda-list">';
-for (const post of recentPosts) {
-    const postMarkdown = await fetch(post.dir + '/' + post.name).then(response => response.text());
-    const postContent = marked.parse(postMarkdown);
+            const recentPosts = await getRecentPosts();
+            let recentPostsHTML = '<h2 class="beranda-title">Artikel Terbaru</h2><ul class="beranda-list">';
+            for (const post of recentPosts) {
+                const postMarkdown = await fetch(post.dir + '/' + post.name).then(response => response.text());
+                const postContent = marked.parse(postMarkdown);
 
     // Parse konten markdown menjadi dokumen HTML
     const parser = new DOMParser();
@@ -71,8 +71,8 @@ for (const post of recentPosts) {
                 <p>${excerpt}</p>
             </a>
         </li>`;
-}
-recentPostsHTML += '</ul>';
+    }
+    recentPostsHTML += '</ul>';
 
             
             // Mendapatkan semua file markdown
@@ -84,6 +84,7 @@ recentPostsHTML += '</ul>';
             const randomPostContent = marked.parse(randomPostMarkdown);
 
             // Extract content from random post
+            // Extract content from random post
             const randomDoc = new DOMParser().parseFromString(randomPostContent, 'text/html');
             const randomH1 = randomDoc.querySelector('h1');
             const randomFirstParagraph = randomDoc.querySelector('p');
@@ -94,6 +95,8 @@ recentPostsHTML += '</ul>';
                 const randomText = randomFirstParagraph.textContent;
                 const randomWords = randomText.split(/\s+/);
                 randomExcerpt = randomWords.slice(0, 15).join(' ') + '...';
+            } else {
+                randomExcerpt = 'No valid excerpt found'; // Menggunakan fallback jika tidak ditemukan paragraf yang valid
             }
 
             const randomPostName = randomPost.name.replace('.md', '').replace(/_/g, ' ');
