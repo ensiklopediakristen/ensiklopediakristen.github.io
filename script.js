@@ -21,38 +21,59 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         if (file === 'konten/beranda.md') {
             // Mendapatkan artikel terbaru
-            const recentPosts = await getRecentPosts();
-            let recentPostsHTML = '<h2 class="beranda-title">Artikel Terbaru</h2><ul class="beranda-list">';
-            for (const post of recentPosts) {
-                const postMarkdown = await fetch(post.dir + '/' + post.name).then(response => response.text());
-                const postContent = marked.parse(postMarkdown);
+            // Mendapatkan artikel terbaru
+const recentPosts = await getRecentPosts();
+let recentPostsHTML = '<h2 class="beranda-title">Artikel Terbaru</h2><ul class="beranda-list">';
+for (const post of recentPosts) {
+    const postMarkdown = await fetch(post.dir + '/' + post.name).then(response => response.text());
+    const postContent = marked.parse(postMarkdown);
 
-                // Extract the title and content
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(postContent, 'text/html');
-                const h1 = doc.querySelector('h1');
-                const firstParagraph = doc.querySelector('p');
+    // Parse konten markdown menjadi dokumen HTML
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(postContent, 'text/html');
+    const h1 = doc.querySelector('h1');
 
-                let excerpt = '';
-                if (firstParagraph) {
-                    const text = firstParagraph.textContent;
-                    const words = text.split(/\s+/);
-                    excerpt = words.slice(0, 15).join(' ') + '...';
-                }
+    // Temukan elemen <h2> pertama
+    const firstH2 = doc.querySelector('h2');
 
-                const postName = post.name.replace('.md', '').replace(/_/g, ' ');
-                recentPostsHTML += `
-                    <li class="beranda-item">
-                        <a href="#" class="beranda-link" data-file="${post.dir}/${post.name}">
-                            <div class="beranda-box">
-                                ${firstParagraph ? `<img src="${doc.querySelector('img') ? doc.querySelector('img').src : ''}" alt="Gambar Artikel">` : ''}
-                                ${h1 ? h1.textContent : postName}<br>
-                            </div>
-                            <p>${excerpt}</p>
-                        </a>
-                    </li>`;
+    let firstParagraph = null;
+    if (firstH2) {
+        // Temukan elemen setelah <h2>
+        let sibling = firstH2.nextElementSibling;
+
+        // Loop sampai menemukan paragraf <p> yang valid
+        while (sibling) {
+            if (sibling.tagName === 'P' && !sibling.closest('table')) {
+                firstParagraph = sibling;
+                break;
             }
-            recentPostsHTML += '</ul>';
+            sibling = sibling.nextElementSibling;
+        }
+    }
+
+    let excerpt = '';
+    if (firstParagraph) {
+        const text = firstParagraph.textContent;
+        const words = text.split(/\s+/);
+        excerpt = words.slice(0, 15).join(' ') + '...';
+    } else {
+        excerpt = 'No valid excerpt found';
+    }
+
+    const postName = post.name.replace('.md', '').replace(/_/g, ' ');
+    recentPostsHTML += `
+        <li class="beranda-item">
+            <a href="#" class="beranda-link" data-file="${post.dir}/${post.name}">
+                <div class="beranda-box">
+                    ${doc.querySelector('img') ? `<img src="${doc.querySelector('img').src}" alt="Gambar Artikel">` : ''}
+                    ${h1 ? h1.textContent : postName}<br>
+                </div>
+                <p>${excerpt}</p>
+            </a>
+        </li>`;
+}
+recentPostsHTML += '</ul>';
+
             
             // Mendapatkan semua file markdown
             const allFiles = await getAllMarkdownFiles();
@@ -399,7 +420,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const sortedFiles = Array.from(metadataMap.values()).sort((a, b) => b.date - a.date);
 
         // Ambil 3 artikel terbaru
-        return sortedFiles.slice(0, 10);
+        return sortedFiles.slice(0, 3);
     } catch (error) {
         console.error('Error fetching recent posts: ', error.message);
     }
