@@ -256,7 +256,7 @@ recentPostsHTML += '</ul>';
                 // Pengecualian manual untuk "kekudusan Allah"
                 const specialPhrase = textContent.match(/kekudusan Allah/gi);
                 if (specialPhrase) {
-                    return textContent.replace(/kekudusan Allah/gi, `<a href="#" data-file="konten/kategori/istilah/kekudusan_tuhan.md">Kekudusan Allah</a>`);
+                    return textContent.replace(/kekudusan Allah/gi, `<a href="#" data-file="konten/kategori/atribut/kekudusan_tuhan.md">Kekudusan Allah</a>`);
                 }
 
                 // Cari dan simpan frasa asli sesuai dengan huruf besar/kecil yang ada di konten
