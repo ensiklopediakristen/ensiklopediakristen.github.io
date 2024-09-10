@@ -16,6 +16,10 @@
         "type": "directory"
     },
     {
+        "name": "konsep",
+        "type": "directory"
+    },
+    {
         "name": "makhluk_mitologi",
         "type": "directory"
     },
