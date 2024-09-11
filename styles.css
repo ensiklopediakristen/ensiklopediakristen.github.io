@@ -98,7 +98,7 @@ nav ul li a:hover {
 /* Layout */
 .container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;    
 }
 
 #content H1{
@@ -350,7 +350,7 @@ table.bordered {
 
 /* Membuat teks dalam tabel lebih kecil */
 table th, table td {
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 /* Centering tabel dengan lebar otomatis */
