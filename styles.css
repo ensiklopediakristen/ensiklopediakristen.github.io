@@ -272,6 +272,8 @@ blockquote{
     color: #e74c3c;
 }
 
+/* =================================== */
+
 img {
     display: block;
     width: 60%;
@@ -380,6 +382,8 @@ footer {
 footer p {
     font-size: 0.9rem;
 }
+
+/* =================================== */
 
 /* Book Grid */
 .book-grid {

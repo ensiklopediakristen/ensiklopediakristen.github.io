@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
 
         if (file === 'konten/beranda.md') {
-            // Mendapatkan artikel terbaru
+
             // Mendapatkan artikel terbaru
             const recentPosts = await getRecentPosts();
             let recentPostsHTML = '<h2 class="beranda-title">Artikel Terbaru</h2><ul class="beranda-list">';
@@ -28,52 +28,51 @@ document.addEventListener('DOMContentLoaded', async function () {
                 const postMarkdown = await fetch(post.dir + '/' + post.name).then(response => response.text());
                 const postContent = marked.parse(postMarkdown);
 
-    // Parse konten markdown menjadi dokumen HTML
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(postContent, 'text/html');
-    const h1 = doc.querySelector('h1');
+            // Parse konten markdown menjadi dokumen HTML
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(postContent, 'text/html');
+            const h1 = doc.querySelector('h1');
 
-    // Temukan elemen <h2> pertama
-    const firstH2 = doc.querySelector('h2');
+            // Temukan elemen <h2> pertama
+            const firstH2 = doc.querySelector('h2');
 
-    let firstParagraph = null;
-    if (firstH2) {
-        // Temukan elemen setelah <h2>
-        let sibling = firstH2.nextElementSibling;
+            let firstParagraph = null;
+            if (firstH2) {
+                // Temukan elemen setelah <h2>
+                let sibling = firstH2.nextElementSibling;
 
-        // Loop sampai menemukan paragraf <p> yang valid
-        while (sibling) {
-            if (sibling.tagName === 'P' && !sibling.closest('table')) {
-                firstParagraph = sibling;
-                break;
+                // Loop sampai menemukan paragraf <p> yang valid
+                while (sibling) {
+                    if (sibling.tagName === 'P' && !sibling.closest('table')) {
+                        firstParagraph = sibling;
+                        break;
+                    }
+                    sibling = sibling.nextElementSibling;
+                }
             }
-            sibling = sibling.nextElementSibling;
-        }
-    }
 
-    let excerpt = '';
-    if (firstParagraph) {
-        const text = firstParagraph.textContent;
-        const words = text.split(/\s+/);
-        excerpt = words.slice(0, 15).join(' ') + '...';
-    } else {
-        excerpt = 'No valid excerpt found';
-    }
+            let excerpt = '';
+            if (firstParagraph) {
+                const text = firstParagraph.textContent;
+                const words = text.split(/\s+/);
+                excerpt = words.slice(0, 15).join(' ') + '...';
+            } else {
+                excerpt = 'No valid excerpt found';
+            }
 
-    const postName = post.name.replace('.md', '').replace(/_/g, ' ');
-    recentPostsHTML += `
-        <li class="beranda-item">
-            <a href="#" class="beranda-link" data-file="${post.dir}/${post.name}">
-                <div class="beranda-box">
-                    ${doc.querySelector('img') ? `<img src="${doc.querySelector('img').src}" alt="Gambar Artikel">` : ''}
-                    ${h1 ? h1.textContent : postName}<br>
-                </div>
-                <p>${excerpt}</p>
-            </a>
-        </li>`;
-    }
-    recentPostsHTML += '</ul>';
-
+            const postName = post.name.replace('.md', '').replace(/_/g, ' ');
+            recentPostsHTML += `
+                <li class="beranda-item">
+                    <a href="#" class="beranda-link" data-file="${post.dir}/${post.name}">
+                        <div class="beranda-box">
+                            ${doc.querySelector('img') ? `<img src="${doc.querySelector('img').src}" alt="Gambar Artikel">` : ''}
+                            ${h1 ? h1.textContent : postName}<br>
+                        </div>
+                        <p>${excerpt}</p>
+                    </a>
+                </li>`;
+            }
+            recentPostsHTML += '</ul>';
             
             // Mendapatkan semua file markdown
             const allFiles = await getAllMarkdownFiles();
@@ -84,35 +83,48 @@ document.addEventListener('DOMContentLoaded', async function () {
             const randomPostContent = marked.parse(randomPostMarkdown);
 
             // Extract content from random post
-            // Extract content from random post
             const randomDoc = new DOMParser().parseFromString(randomPostContent, 'text/html');
             const randomH1 = randomDoc.querySelector('h1');
-            const randomFirstParagraph = randomDoc.querySelector('p');
-            const randomImg = randomDoc.querySelector('img');
+            const randomFirstH2 = randomDoc.querySelector('h2');
 
-            let randomExcerpt = '';
-            if (randomFirstParagraph) {
-                const randomText = randomFirstParagraph.textContent;
-                const randomWords = randomText.split(/\s+/);
-                randomExcerpt = randomWords.slice(0, 15).join(' ') + '...';
-            } else {
-                randomExcerpt = 'No valid excerpt found'; // Menggunakan fallback jika tidak ditemukan paragraf yang valid
+            let randomFirstParagraph = null;
+            if (randomFirstH2) {
+                // Temukan elemen setelah <h2>
+                let sibling = randomFirstH2.nextElementSibling;
+
+                // Loop sampai menemukan paragraf <p> yang valid
+                while (sibling) {
+                if (sibling.tagName === 'P' && !sibling.closest('table')) {
+                        randomFirstParagraph = sibling;
+                        break;
+                    }
+                    sibling = sibling.nextElementSibling;
+                }
             }
 
-            const randomPostName = randomPost.name.replace('.md', '').replace(/_/g, ' ');
+let randomExcerpt = '';
+if (randomFirstParagraph) {
+    const randomText = randomFirstParagraph.textContent;
+    const randomWords = randomText.split(/\s+/);
+    randomExcerpt = randomWords.slice(0, 15).join(' ') + '...';
+} else {
+    randomExcerpt = 'No valid excerpt found';
+}
 
-            // Menampilkan artikel acak
-            let randomPostHTML = `
-                <h2 class="beranda-title">Artikel Pilihan Hari Ini</h2>
-                <div class="beranda-item">
-                    <a href="#" class="beranda-link" data-file="${randomPost.dir}/${randomPost.name}">
-                        <div class="beranda-box">
-                            ${randomImg ? `<img src="${randomImg.src}" alt="Gambar Artikel">` : ''}
-                            ${randomH1 ? randomH1.textContent : randomPostName}<br>
-                        </div>
-                        <p>${randomExcerpt}</p>
-                    </a>
-                </div>`;
+const randomPostName = randomPost.name.replace('.md', '').replace(/_/g, ' ');
+
+// Menampilkan artikel acak
+let randomPostHTML = `
+    <h2 class="beranda-title">Artikel Pilihan Hari Ini</h2>
+    <div class="beranda-item">
+        <a href="#" class="beranda-link" data-file="${randomPost.dir}/${randomPost.name}">
+            <div class="beranda-box">
+                ${randomDoc.querySelector('img') ? `<img src="${randomDoc.querySelector('img').src}" alt="Gambar Artikel">` : ''}
+                ${randomH1 ? randomH1.textContent : randomPostName}<br>
+            </div>
+            <p>${randomExcerpt}</p>
+        </a>
+    </div>`;
 
             mainContent.innerHTML = marked.parse(markdown) + randomPostHTML + recentPostsHTML + categoryContent;
         } else {
@@ -259,7 +271,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 // Pengecualian manual untuk "kekudusan Allah"
                 const specialPhrase = textContent.match(/kekudusan Allah/gi);
                 if (specialPhrase) {
-                    return textContent.replace(/kekudusan Allah/gi, `<a href="#" data-file="konten/kategori/atribut/kekudusan_tuhan.md">Kekudusan Allah</a>`);
+                    return textContent.replace(/kekudusan Allah/gi, `<a href="#" data-file="konten/kategori/sifat_tuhan/kekudusan_tuhan.md">Kekudusan Allah</a>`);
                 }
 
                 // Cari dan simpan frasa asli sesuai dengan huruf besar/kecil yang ada di konten
