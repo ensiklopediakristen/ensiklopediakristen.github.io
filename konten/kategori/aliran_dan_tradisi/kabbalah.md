@@ -2,7 +2,7 @@
 
 ---
 
-![Gambar ilustrasi kelompok kabbalah yang sedang berkumpul](konten/img/aliran_dan_tradisi/kabbalah.webp)
+![Gambar ilustrasi kelompok kabbalah yang sedang berkumpul](konten/img/aliran_dan_tradisi/kabbalah.jpg)
 
 | **Atribut** | Kabbalah |
 |---|---|
