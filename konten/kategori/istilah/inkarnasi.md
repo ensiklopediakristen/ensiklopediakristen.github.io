@@ -2,7 +2,7 @@
 
 ---
 
-![Gambar Yesus Kristus yang menunjukkan belas kasihan dan kuasa-Nya sebagai Allah dan manusia yang inkarnasi, menyembuhkan orang sakit.](konten/img/istilah/inkarnasi.webp)
+![Gambar Yesus Kristus yang menunjukkan belas kasihan dan kuasa-Nya sebagai Allah dan manusia yang inkarnasi, menyembuhkan orang sakit.](konten/img/istilah/inkarnasi.jpg)
 
 | **Nama Istilah** | Inkarnasi |
 |---|---|

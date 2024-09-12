@@ -2,7 +2,7 @@
 
 ---
 
-![Gambar ilustrasi tentang kekudusan](konten/img/istilah/kekudusan.webp)
+![Gambar ilustrasi tentang kekudusan](konten/img/istilah/kekudusan.jpg)
 
 | **Nama Istilah** | Kekudusan |
 |---|---|

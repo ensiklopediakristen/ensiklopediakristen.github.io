@@ -1,6 +1,6 @@
 # **Kekudusan Tuhan: Sifat Allah yang Tak Tercela dan Terpisah dari Dosa**
 
-![Ilustrasi gambaran tentang kekudusan Tuhan](konten/img/istilah/kekudusan_tuhan.webp)
+![Ilustrasi gambaran tentang kekudusan Tuhan](konten/img/istilah/kekudusan_tuhan.jpg)
 
 | **Atribut** | Kekudusan Tuhan |
 |---|---|
