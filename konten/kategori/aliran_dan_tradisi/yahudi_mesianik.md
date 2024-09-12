@@ -4,6 +4,7 @@
 
 ![ilustrasi gambar logo Mesianik](konten/img/aliran_dan_tradisi/yahudi_mesianik.svg)
 
+
 | **Atribut** | **Yahudi Mesianik** |
 |---|---|
 | **Jenis** | Gerakan Keagamaan |
