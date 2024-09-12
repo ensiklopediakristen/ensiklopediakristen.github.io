@@ -238,6 +238,7 @@ aside ul ul.hidden {
     margin-top: 10px;
     border-radius: 5px;
     font-weight: bolder;
+    font-size: 1.1rem;
 }
 
 .beranda-box{
@@ -260,12 +261,7 @@ aside ul ul.hidden {
     margin-top: 0;
     color: black;
     font-weight: lighter;
-}
-
-blockquote{
-    border-left: solid #e3e3e3 5px;
-    padding-left: 1rem;
-    margin-left: 0;
+    font-size: 1rem !important;
 }
 
 .beranda-link:hover {
@@ -273,6 +269,12 @@ blockquote{
 }
 
 /* =================================== */
+
+blockquote{
+    border-left: solid #e3e3e3 5px;
+    padding-left: 1rem;
+    margin-left: 0;
+}
 
 img {
     display: block;
