@@ -26,7 +26,7 @@ Dalam konteks Alkitab, Behemoth sering dilihat sebagai simbol dari kekuasaan dan
 
 Behemoth disebutkan dalam **Ayub 40:15-24**, di mana Tuhan berbicara langsung kepada Ayub mengenai ciptaan-Nya yang luar biasa. Behemoth diperkenalkan sebagai contoh makhluk ciptaan yang memiliki kekuatan dan keagungan yang tidak bisa disamai oleh manusia.
 
-> *Perhatikanlah kuda Nil (בַּהֲמוֹת, bahămôṯ), yang telah Kubuat seperti juga engkau. Ia makan rumput seperti lembu.*
+> *Perhatikanlah kuda Nil (**בַּהֲמוֹת**, bahămôṯ), yang telah Kubuat seperti juga engkau. Ia makan rumput seperti lembu.*
 > *Perhatikanlah tenaga di pinggangnya, kekuatan pada urat-urat perutnya!*  
 > — **Ayub 40:10-11 (TB)**
 
@@ -43,7 +43,7 @@ Behemoth memiliki beberapa karakteristik yang digambarkan dalam Alkitab, yang me
 
 - **Makan rumput seperti sapi**: **Ayub 40:10** menyebutkan bahwa Behemoth makan rumput, mirip dengan herbivora lainnya.
 
-> *"Perhatikanlah kuda Nil, yang telah Kubuat seperti juga engkau. Ia makan rumput seperti lembu.*
+> *"Perhatikanlah kuda Nil (**בַּהֲמוֹת**, bahămôṯ), yang telah Kubuat seperti juga engkau. Ia makan rumput seperti lembu.*
 > — **Ayub 40:10 (TB)**
   
 - **Kekuatan ada di pinggang dan otot perutnya**: **Ayub 40:11** Ini menunjukkan bahwa Behemoth adalah makhluk yang sangat kuat secara fisik, dengan daya tahan yang luar biasa.

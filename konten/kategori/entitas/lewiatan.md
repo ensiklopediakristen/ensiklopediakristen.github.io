@@ -28,7 +28,7 @@ Lewiatan disebutkan di beberapa bagian Alkitab, yang memberikan deskripsi tentan
 
 Lewiatan disebut secara terperinci dalam **Ayub 40-41**, di mana Allah menantang Ayub untuk mempertimbangkan kekuatan makhluk ini, yang tidak dapat dikendalikan oleh manusia. Deskripsi Lewiatan dalam Ayub menggambarkannya sebagai makhluk yang memiliki kulit bersisik keras, yang dapat menghembuskan api, dan tak terkalahkan oleh senjata manusia.
 
-> *Dapatkah engkau menarik buaya (לויתן, Liwyāṯān) dengan kail, atau mengimpit lidahnya dengan tali?*
+> *Dapatkah engkau menarik buaya (**לויתן**, Liwyāṯān) dengan kail, atau mengimpit lidahnya dengan tali?*
 > *Dapatkah engkau mengenakan tali rotan pada hidungnya, mencocok rahangnya dengan kaitan?*  
 > — **Ayub 40:20-21 (TB)**
 
@@ -38,7 +38,7 @@ Lewiatan dijelaskan memiliki tubuh yang kuat, bernafas api, dan tidak bisa dihad
 
 Dalam **Mazmur 74:14**, Lewiatan disebutkan sebagai musuh yang dikalahkan oleh Allah, mengisyaratkan simbolisme kekuasaan Allah atas kekuatan-kekuatan jahat.
 
-> *Engkaulah yang meremukkan kepala-kepala Lewiatan, yang memberikannya menjadi makanan penghuni-penghuni padang belantara.*  
+> *Engkaulah yang meremukkan kepala-kepala **Lewiatan**, yang memberikannya menjadi makanan penghuni-penghuni padang belantara.*  
 > — **Mazmur 74:14 (TB)**
 
 Ini menggambarkan Allah sebagai penakluk kekuatan besar, yang bahkan Lewiatan pun tunduk di bawah kuasa-Nya.
@@ -47,7 +47,7 @@ Ini menggambarkan Allah sebagai penakluk kekuatan besar, yang bahkan Lewiatan pu
 
 Dalam **Yesaya 27:1**, Lewiatan dipandang sebagai simbol dari musuh-musuh Allah, yang pada akhirnya akan dihancurkan pada hari penghakiman.
 
-> *Pada waktu itu TUHAN akan melaksanakan hukuman dengan pedang-Nya yang keras, besar dan kuat atas Lewiatan, ular yang meluncur, atas Lewiatan, ular yang melingkar, dan Ia akan membunuh ular naga yang di laut.*  
+> *Pada waktu itu TUHAN akan melaksanakan hukuman dengan pedang-Nya yang keras, besar dan kuat atas Lewiatan, ular yang meluncur, atas **Lewiatan**, ular yang melingkar, dan Ia akan membunuh ular naga yang di laut.*  
 > — **Yesaya 27:1 (TB)**
 
 Lewiatan di sini digambarkan sebagai kekuatan jahat yang akan dihancurkan oleh Allah, menunjukkan kuasa Allah yang mutlak atas segala kekuatan di dunia.
