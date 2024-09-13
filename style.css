@@ -10,7 +10,7 @@ body {
   position: relative;
   width: 100vw;
   max-width: 1024px;
-  min-height: 96vh;
+  min-height: 100vh;
   margin: 0 auto;
   padding-bottom: 4em;
 }
@@ -77,7 +77,7 @@ header input[type="text"] {
 
 #content {
   flex-grow: 1;
-  padding: 20px;
+  padding: 10px;
 }
 
 #main-content {
@@ -193,4 +193,91 @@ footer {
     max-width: 400px;
     height: auto;
     margin: auto;
+}
+
+
+/* ============================== */
+
+/* Container untuk elemen pencarian */
+#search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Input pencarian */
+#search-input {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Hasil pencarian */
+#search-results {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#search-results.hidden {
+  display: none;
+}
+
+/* Style untuk hasil pencarian */
+#search-results ul {
+  list-style: none;
+  padding: 0;
+}
+
+#search-results ul li {
+  margin-bottom: 10px;
+}
+
+#search-results ul li a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+#search-results ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsif untuk tablet dan ponsel */
+@media screen and (max-width: 768px) {
+  /* Atur tata letak elemen pencarian menjadi vertikal */
+  #search-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Input pencarian menyesuaikan lebar penuh */
+  #search-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Tombol pencarian menyesuaikan lebar penuh */
+  #search-button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Ukuran font dan padding lebih kecil untuk layar kecil */
+  #search-input, #search-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #search-button {
+    padding: 8px 16px;
+  }
 }

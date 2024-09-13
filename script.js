@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Daftar artikel tanpa kategori
   const articles = [
-    { title: "Beranda", file: "markdown/beranda.md", slug: "beranda" }
+    { title: "Beranda", file: "markdown/beranda.md", category: "Beranda", slug: "beranda" }
   ];
 
   // Daftar kategori dan artikel
@@ -19,14 +19,36 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "Istilah",
       articles: [
-        { title: "Trinitas", file: "markdown/trinitas.md", slug: "trinitas" },
-        { title: "Kekudusan", file: "markdown/kekudusan.md", slug: "kekudusan" }
+        { title: "Ziz", file: "markdown/ziz.md", slug: "ziz" },
+        { title: "Kekudusan", file: "markdown/kekudusan.md", slug: "kekudusan" },
+        { title: "Kekudusan Tuhan", file: "markdown/kekudusan_tuhan.md", slug: "kekudusan_tuhan" }
       ]
     }
   ];
 
   const articleList = document.getElementById("article-list");
   const mainContent = document.getElementById("main-content");
+
+  // Fungsi untuk memperbarui atau menambahkan meta tag SEO
+  function updateMetaTags(title, description, keywords) {
+    document.title = title;
+
+    let metaDescription = document.querySelector("meta[name='description']");
+    if (!metaDescription) {
+      metaDescription = document.createElement("meta");
+      metaDescription.name = "description";
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = description;
+
+    let metaKeywords = document.querySelector("meta[name='keywords']");
+    if (!metaKeywords) {
+      metaKeywords = document.createElement("meta");
+      metaKeywords.name = "keywords";
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.content = keywords;
+  }
 
   // Fungsi untuk mendapatkan semua kata kunci dari artikel
   function getKeywords() {
@@ -48,42 +70,37 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Fungsi untuk mengganti kata kunci dengan link secara otomatis (case-insensitive)
-function linkifyContent() {
-  const keywords = getKeywords();
+  function linkifyContent() {
+    const keywords = getKeywords();
+    const paragraphs = mainContent.querySelectorAll("p");
 
-  // Seleksi semua elemen <p> di dalam konten utama
-  const paragraphs = mainContent.querySelectorAll("p");
+    // Urutkan kata kunci berdasarkan panjang (dari yang terpanjang ke terpendek)
+    const sortedKeywords = Object.entries(keywords).sort((a, b) => b[0].length - a[0].length);
 
-  paragraphs.forEach(paragraph => {
-    // Pastikan tidak ada elemen <img> di dalam <p> sebelum menerapkan linkify
-    if (!paragraph.querySelector("img")) {
-      let text = paragraph.innerHTML;
+    paragraphs.forEach(paragraph => {
+      if (!paragraph.querySelector("img")) {
+        let text = paragraph.innerHTML;
 
-      // Hanya terapkan linkify pada teks di dalam elemen <p>
-      for (const [keyword, slug] of Object.entries(keywords)) {
-        const regex = new RegExp(`\\b${keyword}\\b`, "gi");
-        text = text.replace(regex, `<a href="#${slug}" class="keyword-link">${keyword}</a>`);
+        // Lakukan replacement berdasarkan urutan yang sudah di-sort
+        sortedKeywords.forEach(([keyword, slug]) => {
+          const regex = new RegExp(`(?<!>)\\b${keyword}\\b(?!<)`, "gi");
+          text = text.replace(regex, `<a href="#${slug}" class="keyword-link">${keyword}</a>`);
+        });
+
+        paragraph.innerHTML = text;
       }
-
-      paragraph.innerHTML = text;  // Ganti isi <p> dengan teks yang sudah di-linkify
-    }
-  });
-
-  // Tambahkan event listener ke link yang dihasilkan oleh linkify
-  const keywordLinks = mainContent.querySelectorAll(".keyword-link");
-  keywordLinks.forEach(link => {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      const slug = this.getAttribute("href").replace("#", "");
-
-      // Scroll ke atas terlebih dahulu
-      window.scrollTo(0, 0);
-
-      // Setelah scroll, muat artikel berdasarkan slug
-      loadArticleBySlug(slug);
     });
-  });
-}
+
+    const keywordLinks = mainContent.querySelectorAll(".keyword-link");
+    keywordLinks.forEach(link => {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        const slug = this.getAttribute("href").replace("#", "");
+        window.scrollTo(0, 0);
+        loadArticleBySlug(slug);
+      });
+    });
+  }
 
 
   // Fungsi memuat artikel berdasarkan slug
@@ -110,7 +127,6 @@ function linkifyContent() {
       });
     }
 
-    // Tampilkan pesan jika artikel tidak ditemukan
     if (!articleFound) {
       mainContent.innerHTML = `<h2>Artikel tidak ditemukan</h2>`;
     }
@@ -143,7 +159,6 @@ function linkifyContent() {
 
   const ulCategoryList = document.createElement("ul");
   ulCategoryList.classList.add("hidden");
-
   articleList.appendChild(liHeadCategory);
   articleList.appendChild(ulCategoryList);
 
@@ -164,7 +179,6 @@ function linkifyContent() {
     liCategory.appendChild(ulSublist);
     ulCategoryList.appendChild(liCategory);
 
-    // Expand/collapse kategori
     categoryTitle.addEventListener("click", () => {
       ulSublist.classList.toggle("hidden");
       liCategory.classList.toggle("expanded");
@@ -187,11 +201,7 @@ function linkifyContent() {
   function lazyLoadArticle(event) {
     event.preventDefault();
     const { file, category, slug } = event.target.dataset;
-
-    // Scroll ke atas terlebih dahulu
     window.scrollTo(0, 0);
-
-    // Muat markdown setelah scroll
     window.location.hash = slug;
     loadMarkdown(file, category);
   }
@@ -203,13 +213,25 @@ function linkifyContent() {
       .then(text => {
         const renderedContent = md.render(text);
         mainContent.innerHTML = renderedContent;
-
-        // Terapkan linkify hanya pada elemen <p>
         linkifyContent();
+
+        const articleTitle = mainContent.querySelector("h1") ? mainContent.querySelector("h1").textContent : file;
+
+        let articleDescription = "";
+        const firstH2 = mainContent.querySelector("h2");
+        if (firstH2) {
+          const nextParagraph = firstH2.nextElementSibling;
+          if (nextParagraph && nextParagraph.tagName.toLowerCase() === "p") {
+            articleDescription = nextParagraph.textContent.substring(0, 150);
+          }
+        }
+
+        const articleKeywords = category ? category : "artikel, ensiklopedia, istilah";
+        updateMetaTags(articleTitle, articleDescription, articleKeywords);
 
         if (category) {
           const categoryInfo = document.createElement("div");
-          categoryInfo.innerHTML = `Termasuk dalam kategori: <a href="#" class="category-link">${category}</a>`;
+          categoryInfo.innerHTML = `kategori: <a href="#" class="category-link">${category}</a>`;
           mainContent.appendChild(categoryInfo);
 
           const categoryLink = categoryInfo.querySelector(".category-link");
@@ -237,6 +259,79 @@ function linkifyContent() {
 
     mainContent.appendChild(ulCategoryArticles);
   }
+
+//======================================
+
+  // Tambahkan elemen pencarian di atas main-content
+  const searchContainer = document.createElement("div");
+  searchContainer.innerHTML = `
+    <input type="text" id="search-input" placeholder="Cari artikel...">
+    <div id="search-results" class="hidden"></div>
+  `;
+  mainContent.parentNode.insertBefore(searchContainer, mainContent);
+
+  // Fungsi untuk menangani pencarian artikel
+  function searchArticles(query) {
+    const results = [];
+
+    // Cari di artikel tanpa kategori
+    articles.forEach(article => {
+      if (article.title.toLowerCase().includes(query.toLowerCase())) {
+        results.push(article);
+      }
+    });
+
+    // Cari di kategori
+    categories.forEach(category => {
+      category.articles.forEach(article => {
+        if (article.title.toLowerCase().includes(query.toLowerCase())) {
+          results.push(article);
+        }
+      });
+    });
+
+    return results;
+  }
+
+  // Fungsi untuk menampilkan hasil pencarian
+  function displaySearchResults(query) {
+    const searchResults = document.getElementById("search-results");
+    const results = searchArticles(query);
+    searchResults.innerHTML = ""; // Kosongkan hasil pencarian sebelumnya
+
+    if (results.length === 0) {
+      searchResults.innerHTML = `<p>Tidak ada artikel yang ditemukan.</p>`;
+    } else {
+      const ul = document.createElement("ul");
+      results.forEach(article => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.textContent = article.title;
+        a.href = `#${article.slug}`;
+        a.addEventListener("click", (event) => {
+          event.preventDefault();
+          loadArticleBySlug(article.slug);
+          searchResults.classList.add("hidden"); // Sembunyikan hasil setelah artikel dibuka
+        });
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+      searchResults.appendChild(ul);
+    }
+
+    searchResults.classList.remove("hidden");
+  }
+
+  // Event listener untuk pencarian saat pengguna mengetik
+  document.getElementById("search-input").addEventListener("input", () => {
+    const query = document.getElementById("search-input").value;
+    if (query.length > 2) {
+      displaySearchResults(query);
+    } else {
+      document.getElementById("search-results").classList.add("hidden");
+    }
+  });
+
 
   // Muat artikel berdasarkan hash di URL
   const currentHash = window.location.hash.replace("#", "");
