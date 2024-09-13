@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +7,15 @@
   <script>
     (function() {
       var path = window.location.pathname;
-
+      
       // Menghapus karakter awal "/" dari path jika ada
       if (path.startsWith("/")) {
         path = path.substring(1);
       }
-
-      // Alihkan ke root dengan query parameter yang menyimpan path artikel
+      
+      // Jika path bukan kosong, arahkan ke root dengan query parameter
       if (path) {
-        window.location.replace("/?article=" + path);
+        window.location.replace("/?article=" + encodeURIComponent(path));
       } else {
         window.location.replace("/");
       }
