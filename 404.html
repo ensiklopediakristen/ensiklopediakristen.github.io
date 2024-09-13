@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="refresh" content="0; url=/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
   <script>
-    // Alihkan ulang ke index.html dan biarkan JavaScript menangani routing
-    window.location.href = "/" + window.location.pathname;
+    // Mengambil URL path yang salah dan mengarahkannya kembali ke root dengan path yang tetap
+    (function() {
+      var path = window.location.pathname;
+      
+      // Jika path bukan root, redirect ke root dan tambahkan path tersebut ke hash
+      if (path !== "/") {
+        window.location.replace("/#" + path);
+      }
+    })();
   </script>
 </head>
 <body>
-  <p>Redirecting...</p>
+  <h1>Redirecting...</h1>
+  <p>If you are not redirected, <a href="/">click here</a>.</p>
 </body>
 </html>
