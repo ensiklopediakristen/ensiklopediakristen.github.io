@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Daftar artikel (contoh) dengan kategori terkait
   const articles = [
-    { title: "Beranda", file: "markdown/beranda.md", category: null, path: "/" }
+    { title: "Beranda", file: "markdown/beranda.md", category: null, slug: "beranda" }
   ];
 
   // Daftar kategori dan artikel
@@ -12,15 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "Entitas",
       articles: [
-        { title: "Mesias", file: "markdown/mesias.md", path: "/mesias" },
-        { title: "Sidang Ilahi", file: "markdown/sidang_ilahi.md", path: "/sidang_ilahi" }
+        { title: "Mesias", file: "markdown/mesias.md", slug: "mesias" },
+        { title: "Sidang Ilahi", file: "markdown/sidang_ilahi.md", slug: "sidang_ilahi" }
       ]
     },
     {
       title: "Istilah",
       articles: [
-        { title: "Trinitas", file: "markdown/trinitas.md", path: "/trinitas" },
-        { title: "Kekudusan", file: "markdown/kekudusan.md", path: "/kekudusan" }
+        { title: "Trinitas", file: "markdown/trinitas.md", slug: "trinitas" },
+        { title: "Kekudusan", file: "markdown/kekudusan.md", slug: "kekudusan" }
       ]
     }
   ];
@@ -28,100 +28,34 @@ document.addEventListener("DOMContentLoaded", function () {
   const articleList = document.getElementById("article-list");
   const mainContent = document.getElementById("main-content");
 
-  // Fungsi untuk memuat dan menampilkan konten markdown dan kategori terkait
-  function loadMarkdown(file, category, path) {
-    fetch(file)
-      .then((response) => response.text())
-      .then((text) => {
-        mainContent.innerHTML = md.render(text);
-
-        // Tambahkan kategori di bawah artikel yang dimuat
-        if (category) {
-          const categoryInfo = document.createElement("div");
-          categoryInfo.innerHTML = `Termasuk dalam kategori: <a href="#" class="category-link">${category}</a>`;
-          mainContent.appendChild(categoryInfo);
-
-          // Tambahkan event listener untuk kategori yang diklik
-          const categoryLink = categoryInfo.querySelector(".category-link");
-          categoryLink.addEventListener("click", (e) => {
-            e.preventDefault();
-            showCategoryArticles(category);
-          });
-        }
-
-        // Ubah URL tanpa reload halaman
-        if (path) {
-          history.pushState({ file, category }, null, path);
-        }
-      })
-      .catch((error) => console.error("Error loading markdown:", error));
-  }
-
-  // Lazy load fungsi untuk memuat konten markdown hanya saat diperlukan
-  function lazyLoadArticle(event) {
-    event.preventDefault();
-    const file = event.target.dataset.file;
-    const category = event.target.dataset.category;
-    const path = event.target.dataset.path;
-    loadMarkdown(file, category, path);
-  }
-
-  // Fungsi untuk menampilkan artikel berdasarkan URL
-  function loadArticleFromURL() {
-    const currentPath = window.location.pathname;
-
+  // Fungsi untuk memuat konten markdown berdasarkan slug
+  function loadArticleBySlug(slug) {
     let articleFound = false;
 
-    // Cek apakah path cocok dengan salah satu artikel
-    articles.forEach((article) => {
-      if (article.path === currentPath) {
-        loadMarkdown(article.file, article.category, article.path);
+    // Periksa di artikel tanpa kategori
+    articles.forEach(article => {
+      if (article.slug === slug) {
+        loadMarkdown(article.file, article.category);
         articleFound = true;
       }
     });
 
-    // Jika belum ditemukan, cek artikel di dalam kategori
+    // Periksa di kategori
     if (!articleFound) {
-      categories.forEach((category) => {
-        category.articles.forEach((article) => {
-          if (article.path === currentPath) {
-            loadMarkdown(article.file, category.title, article.path);
+      categories.forEach(category => {
+        category.articles.forEach(article => {
+          if (article.slug === slug) {
+            loadMarkdown(article.file, category.title);
             articleFound = true;
           }
         });
       });
     }
 
-    // Jika artikel tidak ditemukan, load halaman default (Beranda)
     if (!articleFound) {
-      loadMarkdown("markdown/beranda.md", null, "/");
+      // Jika tidak ditemukan, tampilkan pesan error
+      mainContent.innerHTML = `<h2>Artikel tidak ditemukan</h2>`;
     }
-  }
-
-  // Menampilkan daftar artikel dalam kategori
-  function showCategoryArticles(categoryTitle) {
-    mainContent.innerHTML = `<h2>Daftar Artikel dalam Kategori: ${categoryTitle}</h2>`;
-    const ulCategoryArticles = document.createElement("ul");
-
-    // Cari artikel dalam kategori yang sesuai
-    categories.forEach((category) => {
-      if (category.title === categoryTitle) {
-        category.articles.forEach((article) => {
-          const li = document.createElement("li");
-          const a = document.createElement("a");
-          a.textContent = article.title;
-          a.href = article.path; // Gunakan path artikel
-          a.dataset.file = article.file; // Lazy load file
-          a.dataset.category = category.title; // Simpan informasi kategori
-          a.dataset.path = article.path; // Simpan informasi path
-          a.addEventListener("click", lazyLoadArticle); // Lazy load saat diklik
-          li.appendChild(a);
-          ulCategoryArticles.appendChild(li);
-        });
-      }
-    });
-
-    mainContent.appendChild(ulCategoryArticles);
   }
 
   // Memasukkan artikel 'Beranda' di luar kategori
@@ -129,10 +63,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const li = document.createElement("li");
     const a = document.createElement("a");
     a.textContent = article.title;
-    a.href = article.path; // Gunakan path artikel
+    a.href = `#${article.slug}`;
     a.dataset.file = article.file; // Lazy load file
     a.dataset.category = article.category; // Set kategori jika ada
-    a.dataset.path = article.path; // Set path artikel
+    a.dataset.slug = article.slug; // Set slug
     a.addEventListener("click", lazyLoadArticle); // Lazy load saat diklik
     li.appendChild(a);
     articleList.appendChild(li);
@@ -165,10 +99,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const liArticle = document.createElement("li");
       const aArticle = document.createElement("a");
       aArticle.textContent = article.title;
-      aArticle.href = article.path; // Gunakan path artikel
+      aArticle.href = `#${article.slug}`;
       aArticle.dataset.file = article.file; // Lazy load file
       aArticle.dataset.category = category.title; // Simpan informasi kategori
-      aArticle.dataset.path = article.path; // Simpan path artikel
+      aArticle.dataset.slug = article.slug; // Set slug
       aArticle.addEventListener("click", lazyLoadArticle); // Lazy load saat diklik
       liArticle.appendChild(aArticle);
       ulSublist.appendChild(liArticle);
@@ -202,15 +136,74 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Menangani event ketika tombol "Back" atau "Forward" di browser diklik
-  window.addEventListener("popstate", (event) => {
-    if (event.state) {
-      loadMarkdown(event.state.file, event.state.category, window.location.pathname);
-    } else {
-      loadArticleFromURL(); // Muat ulang berdasarkan URL saat ini jika tidak ada state
-    }
-  });
+  // Lazy load fungsi untuk memuat konten markdown hanya saat diperlukan
+  function lazyLoadArticle(event) {
+    event.preventDefault();
+    const file = event.target.dataset.file;
+    const category = event.target.dataset.category;
+    const slug = event.target.dataset.slug;
 
-  // Load artikel berdasarkan URL saat ini (misalnya jika halaman di-refresh)
-  loadArticleFromURL();
+    // Ubah URL hash sesuai dengan artikel yang diklik
+    window.location.hash = slug;
+    loadMarkdown(file, category);
+  }
+
+  // Fungsi untuk memuat dan menampilkan konten markdown dan kategori terkait
+  function loadMarkdown(file, category) {
+    fetch(file)
+      .then((response) => response.text())
+      .then((text) => {
+        mainContent.innerHTML = md.render(text);
+
+        // Tambahkan kategori di bawah artikel yang dimuat
+        if (category) {
+          const categoryInfo = document.createElement("div");
+          categoryInfo.innerHTML = `Termasuk dalam kategori: <a href="#" class="category-link">${category}</a>`;
+          mainContent.appendChild(categoryInfo);
+
+          // Tambahkan event listener untuk kategori yang diklik
+          const categoryLink = categoryInfo.querySelector(".category-link");
+          categoryLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            showCategoryArticles(category);
+          });
+        }
+      })
+      .catch((error) => console.error("Error loading markdown:", error));
+  }
+
+  // Fungsi untuk menampilkan artikel dalam kategori
+  function showCategoryArticles(categoryTitle) {
+    mainContent.innerHTML = `<h2>Daftar Artikel dalam Kategori: ${categoryTitle}</h2>`;
+    const ulCategoryArticles = document.createElement("ul");
+
+    // Cari artikel dalam kategori yang sesuai
+    categories.forEach((category) => {
+      if (category.title === categoryTitle) {
+        category.articles.forEach((article) => {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.textContent = article.title;
+          a.href = `#${article.slug}`;
+          a.dataset.file = article.file; // Lazy load file
+          a.dataset.slug = article.slug; // Set slug
+          a.addEventListener("click", lazyLoadArticle); // Lazy load saat diklik
+          li.appendChild(a);
+          ulCategoryArticles.appendChild(li);
+        });
+      }
+    });
+
+    mainContent.appendChild(ulCategoryArticles);
+  }
+
+  // Memeriksa apakah ada hash di URL saat halaman dimuat
+  const currentHash = window.location.hash.replace("#", "");
+  if (currentHash) {
+    loadArticleBySlug(currentHash); // Muat artikel berdasarkan slug di hash
+  } else {
+    // Jika tidak ada hash, muat artikel default (contoh: Beranda)
+    window.location.hash = "beranda";
+    loadMarkdown("markdown/beranda.md");
+  }
 });
