@@ -2,29 +2,41 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inisialisasi markdown-it
   const md = window.markdownit();
 
-  // Daftar artikel tanpa kategori
-  const articles = [
-    { title: "Beranda", file: "markdown/beranda.md", category: "Beranda", slug: "beranda" }
-  ];
+  // Muat JSON untuk artikel dan kategori
+  fetch('index.json')
+    .then(response => response.json())
+    .then(data => {
+      const articles = data.articles;
+      const categories = data.categories;
 
-  // Daftar kategori dan artikel
-  const categories = [
-    {
-      title: "Entitas",
-      articles: [
-        { title: "Mesias", file: "markdown/mesias.md", slug: "mesias" },
-        { title: "Sidang Ilahi", file: "markdown/sidang_ilahi.md", slug: "sidang_ilahi" }
-      ]
-    },
-    {
-      title: "Istilah",
-      articles: [
-        { title: "Ziz", file: "markdown/ziz.md", slug: "ziz" },
-        { title: "Kekudusan", file: "markdown/kekudusan.md", slug: "kekudusan" },
-        { title: "Kekudusan Tuhan", file: "markdown/kekudusan_tuhan.md", slug: "kekudusan_tuhan" }
-      ]
-    }
-  ];
+function getArticleDetails(file) {
+  return fetch(file)
+    .then(response => response.text())
+    .then(text => {
+      const renderedContent = md.render(text);
+      const tempDiv = document.createElement("div");
+      tempDiv.innerHTML = renderedContent;
+
+      // Ambil judul (h1)
+      const title = tempDiv.querySelector("h1") ? tempDiv.querySelector("h1").textContent : "Judul tidak tersedia";
+
+      // Ambil gambar pertama (img)
+      const img = tempDiv.querySelector("img") ? tempDiv.querySelector("img").src : null;
+
+      // Ambil excerpt (15 kata dari paragraf pertama di bawah h2)
+      let excerpt = "";
+      const firstH2 = tempDiv.querySelector("h2");
+      if (firstH2) {
+        const nextParagraph = firstH2.nextElementSibling;
+        if (nextParagraph && nextParagraph.tagName.toLowerCase() === "p") {
+          const words = nextParagraph.textContent.split(" ").slice(0, 15).join(" ");
+          excerpt = words + "...";
+        }
+      }
+
+      return { title, img, excerpt };
+    });
+}
 
   const articleList = document.getElementById("article-list");
   const mainContent = document.getElementById("main-content");
@@ -208,41 +220,105 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Fungsi untuk memuat dan menampilkan markdown
   function loadMarkdown(file, category) {
-    fetch(file)
-      .then(response => response.text())
-      .then(text => {
-        const renderedContent = md.render(text);
-        mainContent.innerHTML = renderedContent;
-        linkifyContent();
+  fetch(file)
+    .then(response => response.text())
+    .then(text => {
+      const renderedContent = md.render(text);
+      mainContent.innerHTML = renderedContent;
+      linkifyContent();
 
-        const articleTitle = mainContent.querySelector("h1") ? mainContent.querySelector("h1").textContent : file;
+      const articleTitle = mainContent.querySelector("h1") ? mainContent.querySelector("h1").textContent : file;
 
-        let articleDescription = "";
-        const firstH2 = mainContent.querySelector("h2");
-        if (firstH2) {
-          const nextParagraph = firstH2.nextElementSibling;
-          if (nextParagraph && nextParagraph.tagName.toLowerCase() === "p") {
-            articleDescription = nextParagraph.textContent.substring(0, 150);
-          }
+      let articleDescription = "";
+      const firstH2 = mainContent.querySelector("h2");
+      if (firstH2) {
+        const nextParagraph = firstH2.nextElementSibling;
+        if (nextParagraph && nextParagraph.tagName.toLowerCase() === "p") {
+          articleDescription = nextParagraph.textContent.substring(0, 150);
         }
+      }
 
-        const articleKeywords = category ? category : "artikel, ensiklopedia, istilah";
-        updateMetaTags(articleTitle, articleDescription, articleKeywords);
+      const articleKeywords = category ? category : "artikel, ensiklopedia, istilah";
+      updateMetaTags(articleTitle, articleDescription, articleKeywords);
 
-        if (category) {
-          const categoryInfo = document.createElement("div");
-          categoryInfo.innerHTML = `kategori: <a href="#" class="category-link">${category}</a>`;
-          mainContent.appendChild(categoryInfo);
+      // Tampilkan artikel terbaru jika di halaman Beranda
+      if (file === "markdown/beranda.md") {
+        const recentArticles = getRecentArticles();
+        const recentArticlesList = document.createElement("div");
+        recentArticlesList.innerHTML = `<h2>Artikel Terbaru</h2>`;
+        
+        const ul = document.createElement("div");
 
-          const categoryLink = categoryInfo.querySelector(".category-link");
-          categoryLink.addEventListener("click", (e) => {
-            e.preventDefault();
-            showCategoryArticles(category);
+        // Proses setiap artikel terbaru untuk mendapatkan detail
+        recentArticles.forEach(article => {
+          getArticleDetails(article.file).then(details => {
+            const li = document.createElement("p");
+
+            const titleElement = document.createElement("h3");
+            titleElement.textContent = details.title;
+            li.appendChild(titleElement);
+
+            if (details.img) {
+              const imgElement = document.createElement("img");
+              imgElement.src = details.img;
+              imgElement.alt = details.title;
+              imgElement.style.width = "100px"; // Sesuaikan ukuran gambar
+              imgElement.style.margin = "0";
+              li.appendChild(imgElement);
+            }
+
+            const excerptElement = document.createElement("p");
+            excerptElement.textContent = details.excerpt;
+            li.appendChild(excerptElement);
+
+            const linkElement = document.createElement("a");
+            linkElement.textContent = "Baca Selengkapnya";
+            linkElement.href = `#${article.slug}`;
+            linkElement.addEventListener("click", (event) => {
+              event.preventDefault();
+              loadArticleBySlug(article.slug);
+              window.scrollTo(0, 0);
+            });
+            li.appendChild(linkElement);
+
+            ul.appendChild(li);
           });
-        }
-      })
-      .catch(error => console.error("Error loading markdown:", error));
-  }
+        });
+
+        recentArticlesList.appendChild(ul);
+        mainContent.appendChild(recentArticlesList);
+      }
+
+      if (category) {
+        const categoryInfo = document.createElement("div");
+        categoryInfo.innerHTML = `kategori: <a href="#" class="category-link">${category}</a>`;
+        mainContent.appendChild(categoryInfo);
+
+        const categoryLink = categoryInfo.querySelector(".category-link");
+        categoryLink.addEventListener("click", (e) => {
+          e.preventDefault();
+          showCategoryArticles(category);
+        });
+      }
+    })
+    .catch(error => console.error("Error loading markdown:", error));
+}
+
+function getRecentArticles() {
+  const allArticles = [...articles];
+
+  // Gabungkan artikel dari kategori
+  categories.forEach(category => {
+    allArticles.push(...category.articles);
+  });
+
+  // Urutkan artikel berdasarkan tanggal (dari yang terbaru)
+  allArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  // Ambil 3 artikel terbaru
+  return allArticles.slice(0, 3);
+}
+
 
   // Tampilkan daftar artikel berdasarkan kategori
   function showCategoryArticles(categoryTitle) {
@@ -259,16 +335,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     mainContent.appendChild(ulCategoryArticles);
   }
-
-//======================================
-
-  // Tambahkan elemen pencarian di atas main-content
-  const searchContainer = document.createElement("div");
-  searchContainer.innerHTML = `
-    <input type="text" id="search-input" placeholder="Cari artikel...">
-    <div id="search-results" class="hidden"></div>
-  `;
-  mainContent.parentNode.insertBefore(searchContainer, mainContent);
 
   // Fungsi untuk menangani pencarian artikel
   function searchArticles(query) {
@@ -332,7 +398,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-
   // Muat artikel berdasarkan hash di URL
   const currentHash = window.location.hash.replace("#", "");
   if (currentHash) {
@@ -341,4 +406,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.hash = "beranda";
     loadMarkdown("markdown/beranda.md");
   }
+})
+    .catch(error => console.error("Error loading data:", error));
 });

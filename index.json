@@ -1,16 +1,54 @@
 {
+  "articles": [
+    { "title": "Beranda", "file": "markdown/beranda.md", "category": "Beranda", "slug": "beranda"}
+  ],
   "categories": [
     {
-      "category": "Umum",
+      "title": "Aliran & Tradisi",
       "articles": [
-        { "title": "Beranda", "file": "markdown/beranda.md" }
+        { "title": "Kabbalah", "file": "markdown/kabbalah.md", "slug": "kabbalah", "date": "2024-04-01 13:05:05" },
+        { "title": "Yahudi Mesianik", "file": "markdown/yahudi_mesianik.md", "slug": "yahudimesianik", "date": "2024-06-21 10:26:30" }
       ]
     },
     {
-      "category": "Artikel Khusus",
+      "title": "Alkitab",
       "articles": [
-        { "title": "Mesias", "file": "mesias/mesias.md" },
-        { "title": "Sidang Ilahi", "file": "sidang_ilahi/sidang_ilahi.md" }
+        { "title": "Kitab Ayub", "file": "markdown/kitab_ayub.md", "slug": "kitabayub", "date": "2024-05-15 01:35:50" }
+      ]
+    },
+    {
+      "title": "Entitas",
+      "articles": [
+        { "title": "Behemoth", "file": "markdown/behemoth.md", "slug": "behemoth", "date": "2024-06-26 15:46:12" },
+        { "title": "Kerub", "file": "markdown/kerub.md", "slug": "kerub", "date": "2024-07-01 01:10:21" },
+        { "title": "Lewiatan", "file": "markdown/lewiatan.md", "slug": "lewiatan", "date": "2024-04-27 21:01:43" },
+        { "title": "Melkisedek", "file": "markdown/melkisedek.md", "slug": "melkisedek", "date": "2024-08-11 19:46:10" },
+        { "title": "Mesias", "file": "markdown/mesias.md", "slug": "mesias", "date": "2024-01-01 12:18:05" },
+        { "title": "Naga", "file": "markdown/naga.md", "slug": "naga", "date": "2024-03-11 00:07:05" },
+        { "title": "Sidang Ilahi", "file": "markdown/sidang_ilahi.md", "slug": "sidangilahi", "date": "2024-08-11 09:20:10" },
+        { "title": "Ziz", "file": "markdown/ziz.md", "slug": "ziz", "date": "2024-09-01 14:24:53" }
+      ]
+    },
+    {
+      "title": "Istilah",
+      "articles": [
+        { "title": "Dosa", "file": "markdown/dosa.md", "slug": "dosa", "date": "2024-04-30 14:15:20" },
+        { "title": "Inkarnasi", "file": "markdown/inkarnasi.md", "slug": "inkarnasi", "date": "2024-09-01 01:06:23" },
+        { "title": "Kekudusan", "file": "markdown/kekudusan.md", "slug": "kekudusan", "date": "2024-08-17 15:39:18" },
+        { "title": "Kekudusan Allah", "file": "markdown/kekudusan_tuhan.md", "slug": "kekudusanallah", "date": "2024-06-11 09:01:00" },
+        { "title": "Kekudusan Tuhan", "file": "markdown/kekudusan_tuhan.md", "slug": "kekudusantuhan", "date": "2024-06-11 08:01:00" },
+        { "title": "Trinitas", "file": "markdown/trinitas.md", "slug": "trinitas", "date": "2024-03-24 01:20:21" }
+      ]
+    },
+    {
+      "title": "Nama Tuhan",
+      "articles": [
+        { "title": "Allah", "file": "markdown/allah.md", "slug": "allah", "date": "2024-07-12 12:30:08" },
+        { "title": "Elohim", "file": "markdown/elohim.md", "slug": "elohim", "date": "2024-03-01 19:27:30" },
+        { "title": "Hashem", "file": "markdown/hashem.md", "slug": "hashem", "date": "2024-04-08 08:20:18" },
+        { "title": "Tetragrammaton", "file": "markdown/tetragrammaton.md", "slug": "tetragrammaton", "date": "2024-04-25 21:41:35" },
+        { "title": "Yahweh", "file": "markdown/yahweh.md", "slug": "yahweh", "date": "2024-06-21 23:40:21" },
+        { "title": "YHWH", "file": "markdown/yhwh.md", "slug": "yhwh", "date": "2024-09-22 07:18:20" }
       ]
     }
   ]
