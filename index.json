@@ -1,38 +1,17 @@
-[
+{
+  "categories": [
     {
-        "name": "behemoth.md",
-        "type": "file",
-        "date": "2024-08-15"
+      "category": "Umum",
+      "articles": [
+        { "title": "Beranda", "file": "markdown/beranda.md" }
+      ]
     },
     {
-        "name": "lewiatan.md",
-        "type": "file",
-        "date": "2024-08-01"
-    },
-    {
-        "name": "melkisedek.md",
-        "type": "file",
-        "date": "2024-09-10"
-    },
-    {
-        "name": "mesias.md",
-        "type": "file",
-        "date": "2024-09-09"
-    },
-    {
-        "name": "naga.md",
-        "type": "file",
-        "date": "2024-08-25"
-    },
-    {
-        "name": "sidang_ilahi.md",
-        "type": "file",
-        "date": "2024-09-09"
-    },
-    {
-        "name": "ziz.md",
-        "type": "file",
-        "date": "2024-08-30"
+      "category": "Artikel Khusus",
+      "articles": [
+        { "title": "Mesias", "file": "mesias/mesias.md" },
+        { "title": "Sidang Ilahi", "file": "sidang_ilahi/sidang_ilahi.md" }
+      ]
     }
-    
-]
+  ]
+}
