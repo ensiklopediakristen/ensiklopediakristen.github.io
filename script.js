@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inisialisasi markdown-it
   const md = window.markdownit();
 
-  // Daftar artikel (contoh) dengan kategori terkait
+  // Daftar artikel tanpa kategori
   const articles = [
-    { title: "Beranda", file: "markdown/beranda.md", category: null, slug: "beranda" }
+    { title: "Beranda", file: "markdown/beranda.md", slug: "beranda" }
   ];
 
   // Daftar kategori dan artikel
@@ -28,11 +28,69 @@ document.addEventListener("DOMContentLoaded", function () {
   const articleList = document.getElementById("article-list");
   const mainContent = document.getElementById("main-content");
 
-  // Fungsi untuk memuat konten markdown berdasarkan slug
+  // Fungsi untuk mendapatkan semua kata kunci dari artikel
+  function getKeywords() {
+    const keywords = {};
+
+    // Tambahkan kata kunci dari artikel tanpa kategori
+    articles.forEach(article => {
+      keywords[article.title] = article.slug;
+    });
+
+    // Tambahkan kata kunci dari kategori
+    categories.forEach(category => {
+      category.articles.forEach(article => {
+        keywords[article.title] = article.slug;
+      });
+    });
+
+    return keywords;
+  }
+
+  // Fungsi untuk mengganti kata kunci dengan link secara otomatis (case-insensitive)
+function linkifyContent() {
+  const keywords = getKeywords();
+
+  // Seleksi semua elemen <p> di dalam konten utama
+  const paragraphs = mainContent.querySelectorAll("p");
+
+  paragraphs.forEach(paragraph => {
+    // Pastikan tidak ada elemen <img> di dalam <p> sebelum menerapkan linkify
+    if (!paragraph.querySelector("img")) {
+      let text = paragraph.innerHTML;
+
+      // Hanya terapkan linkify pada teks di dalam elemen <p>
+      for (const [keyword, slug] of Object.entries(keywords)) {
+        const regex = new RegExp(`\\b${keyword}\\b`, "gi");
+        text = text.replace(regex, `<a href="#${slug}" class="keyword-link">${keyword}</a>`);
+      }
+
+      paragraph.innerHTML = text;  // Ganti isi <p> dengan teks yang sudah di-linkify
+    }
+  });
+
+  // Tambahkan event listener ke link yang dihasilkan oleh linkify
+  const keywordLinks = mainContent.querySelectorAll(".keyword-link");
+  keywordLinks.forEach(link => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const slug = this.getAttribute("href").replace("#", "");
+
+      // Scroll ke atas terlebih dahulu
+      window.scrollTo(0, 0);
+
+      // Setelah scroll, muat artikel berdasarkan slug
+      loadArticleBySlug(slug);
+    });
+  });
+}
+
+
+  // Fungsi memuat artikel berdasarkan slug
   function loadArticleBySlug(slug) {
     let articleFound = false;
 
-    // Periksa di artikel tanpa kategori
+    // Cari di artikel tanpa kategori
     articles.forEach(article => {
       if (article.slug === slug) {
         loadMarkdown(article.file, article.category);
@@ -40,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Periksa di kategori
+    // Cari di kategori
     if (!articleFound) {
       categories.forEach(category => {
         category.articles.forEach(article => {
@@ -52,116 +110,108 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
+    // Tampilkan pesan jika artikel tidak ditemukan
     if (!articleFound) {
-      // Jika tidak ditemukan, tampilkan pesan error
       mainContent.innerHTML = `<h2>Artikel tidak ditemukan</h2>`;
     }
   }
 
-  // Memasukkan artikel 'Beranda' di luar kategori
-  articles.forEach((article) => {
+  // Fungsi untuk membuat item daftar artikel
+  function createArticleItem(article, category) {
     const li = document.createElement("li");
     const a = document.createElement("a");
     a.textContent = article.title;
     a.href = `#${article.slug}`;
-    a.dataset.file = article.file; // Lazy load file
-    a.dataset.category = article.category; // Set kategori jika ada
-    a.dataset.slug = article.slug; // Set slug
-    a.addEventListener("click", lazyLoadArticle); // Lazy load saat diklik
+    a.dataset.file = article.file;
+    a.dataset.category = category;
+    a.dataset.slug = article.slug;
+    a.addEventListener("click", lazyLoadArticle);
     li.appendChild(a);
-    articleList.appendChild(li);
+    return li;
+  }
+
+  // Tambahkan artikel tanpa kategori ke daftar
+  articles.forEach(article => {
+    articleList.appendChild(createArticleItem(article, article.category));
   });
 
-  // Membuat headlist untuk "Kategori" setelah 'Beranda'
+  // Membuat headlist kategori dan sublist-nya
   const liHeadCategory = document.createElement("li");
   const headCategoryTitle = document.createElement("span");
-  headCategoryTitle.textContent = "> Kategori"; // Awalnya tanda ">" untuk headlist kategori yang belum di-expand
+  headCategoryTitle.textContent = "> Kategori";
   liHeadCategory.appendChild(headCategoryTitle);
 
-  // Sublist untuk menyimpan daftar kategori
   const ulCategoryList = document.createElement("ul");
-  ulCategoryList.classList.add("hidden"); // Kategori disembunyikan secara default
+  ulCategoryList.classList.add("hidden");
 
-  articleList.appendChild(liHeadCategory); // Tambahkan headlist kategori ke articleList setelah 'Beranda'
-  articleList.appendChild(ulCategoryList); // Tambahkan ul sublist untuk kategori di bawah headlist
+  articleList.appendChild(liHeadCategory);
+  articleList.appendChild(ulCategoryList);
 
-  // Membuat item untuk setiap kategori di dalam headlist "Kategori"
-  categories.forEach((category) => {
+  // Membuat item untuk setiap kategori dan artikel di dalamnya
+  categories.forEach(category => {
     const liCategory = document.createElement("li");
     const categoryTitle = document.createElement("span");
-    categoryTitle.textContent = `> ${category.title}`; // Awalnya tanda ">" untuk kategori yang belum di-expand
+    categoryTitle.textContent = `> ${category.title}`;
     liCategory.appendChild(categoryTitle);
 
-    // Membuat sublist untuk artikel dalam kategori dan sembunyikan secara default
     const ulSublist = document.createElement("ul");
-    ulSublist.classList.add("hidden"); // Tambahkan kelas 'hidden' untuk menyembunyikan sublist
-    category.articles.forEach((article) => {
-      const liArticle = document.createElement("li");
-      const aArticle = document.createElement("a");
-      aArticle.textContent = article.title;
-      aArticle.href = `#${article.slug}`;
-      aArticle.dataset.file = article.file; // Lazy load file
-      aArticle.dataset.category = category.title; // Simpan informasi kategori
-      aArticle.dataset.slug = article.slug; // Set slug
-      aArticle.addEventListener("click", lazyLoadArticle); // Lazy load saat diklik
-      liArticle.appendChild(aArticle);
-      ulSublist.appendChild(liArticle);
+    ulSublist.classList.add("hidden");
+
+    category.articles.forEach(article => {
+      ulSublist.appendChild(createArticleItem(article, category.title));
     });
 
     liCategory.appendChild(ulSublist);
     ulCategoryList.appendChild(liCategory);
 
-    // Tambahkan event listener untuk expand/collapse sublist saat kategori diklik
+    // Expand/collapse kategori
     categoryTitle.addEventListener("click", () => {
-      ulSublist.classList.toggle("hidden");  // Toggle kelas 'hidden' untuk sublist artikel
-      liCategory.classList.toggle("expanded");  // Toggle kelas 'expanded' untuk kategori
-      // Ubah tanda ">" jadi "v" jika expand, atau sebaliknya
-      if (liCategory.classList.contains("expanded")) {
-        categoryTitle.textContent = `v ${category.title}`;
-      } else {
-        categoryTitle.textContent = `> ${category.title}`;
-      }
+      ulSublist.classList.toggle("hidden");
+      liCategory.classList.toggle("expanded");
+      categoryTitle.textContent = liCategory.classList.contains("expanded")
+        ? `v ${category.title}`
+        : `> ${category.title}`;
     });
   });
 
-  // Tambahkan event listener untuk expand/collapse daftar kategori saat headlist "Kategori" diklik
+  // Expand/collapse daftar kategori
   headCategoryTitle.addEventListener("click", () => {
-    ulCategoryList.classList.toggle("hidden"); // Toggle kelas 'hidden' untuk daftar kategori
-    liHeadCategory.classList.toggle("expanded"); // Toggle kelas 'expanded' untuk headlist kategori
-    // Ubah tanda ">" jadi "v" jika expand, atau sebaliknya
-    if (liHeadCategory.classList.contains("expanded")) {
-      headCategoryTitle.textContent = "v Kategori";
-    } else {
-      headCategoryTitle.textContent = "> Kategori";
-    }
+    ulCategoryList.classList.toggle("hidden");
+    liHeadCategory.classList.toggle("expanded");
+    headCategoryTitle.textContent = liHeadCategory.classList.contains("expanded")
+      ? "v Kategori"
+      : "> Kategori";
   });
 
-  // Lazy load fungsi untuk memuat konten markdown hanya saat diperlukan
+  // Fungsi lazy load artikel
   function lazyLoadArticle(event) {
     event.preventDefault();
-    const file = event.target.dataset.file;
-    const category = event.target.dataset.category;
-    const slug = event.target.dataset.slug;
+    const { file, category, slug } = event.target.dataset;
 
-    // Ubah URL hash sesuai dengan artikel yang diklik
+    // Scroll ke atas terlebih dahulu
+    window.scrollTo(0, 0);
+
+    // Muat markdown setelah scroll
     window.location.hash = slug;
     loadMarkdown(file, category);
   }
 
-  // Fungsi untuk memuat dan menampilkan konten markdown dan kategori terkait
+  // Fungsi untuk memuat dan menampilkan markdown
   function loadMarkdown(file, category) {
     fetch(file)
-      .then((response) => response.text())
-      .then((text) => {
-        mainContent.innerHTML = md.render(text);
+      .then(response => response.text())
+      .then(text => {
+        const renderedContent = md.render(text);
+        mainContent.innerHTML = renderedContent;
 
-        // Tambahkan kategori di bawah artikel yang dimuat
+        // Terapkan linkify hanya pada elemen <p>
+        linkifyContent();
+
         if (category) {
           const categoryInfo = document.createElement("div");
           categoryInfo.innerHTML = `Termasuk dalam kategori: <a href="#" class="category-link">${category}</a>`;
           mainContent.appendChild(categoryInfo);
 
-          // Tambahkan event listener untuk kategori yang diklik
           const categoryLink = categoryInfo.querySelector(".category-link");
           categoryLink.addEventListener("click", (e) => {
             e.preventDefault();
@@ -169,27 +219,18 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         }
       })
-      .catch((error) => console.error("Error loading markdown:", error));
+      .catch(error => console.error("Error loading markdown:", error));
   }
 
-  // Fungsi untuk menampilkan artikel dalam kategori
+  // Tampilkan daftar artikel berdasarkan kategori
   function showCategoryArticles(categoryTitle) {
     mainContent.innerHTML = `<h2>Daftar Artikel dalam Kategori: ${categoryTitle}</h2>`;
     const ulCategoryArticles = document.createElement("ul");
 
-    // Cari artikel dalam kategori yang sesuai
-    categories.forEach((category) => {
+    categories.forEach(category => {
       if (category.title === categoryTitle) {
-        category.articles.forEach((article) => {
-          const li = document.createElement("li");
-          const a = document.createElement("a");
-          a.textContent = article.title;
-          a.href = `#${article.slug}`;
-          a.dataset.file = article.file; // Lazy load file
-          a.dataset.slug = article.slug; // Set slug
-          a.addEventListener("click", lazyLoadArticle); // Lazy load saat diklik
-          li.appendChild(a);
-          ulCategoryArticles.appendChild(li);
+        category.articles.forEach(article => {
+          ulCategoryArticles.appendChild(createArticleItem(article, category.title));
         });
       }
     });
@@ -197,12 +238,11 @@ document.addEventListener("DOMContentLoaded", function () {
     mainContent.appendChild(ulCategoryArticles);
   }
 
-  // Memeriksa apakah ada hash di URL saat halaman dimuat
+  // Muat artikel berdasarkan hash di URL
   const currentHash = window.location.hash.replace("#", "");
   if (currentHash) {
-    loadArticleBySlug(currentHash); // Muat artikel berdasarkan slug di hash
+    loadArticleBySlug(currentHash);
   } else {
-    // Jika tidak ada hash, muat artikel default (contoh: Beranda)
     window.location.hash = "beranda";
     loadMarkdown("markdown/beranda.md");
   }
