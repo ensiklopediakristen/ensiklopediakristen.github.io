@@ -30,17 +30,17 @@ header input[type="text"] {
   border: none;
 }
 
-button{
-    padding: 5px;
-    border-radius: 5px;
-    margin: 10px;
-    background: darkgray;
+button {
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+  background: darkgray;
 }
 
-button a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 #wrapper {
@@ -112,113 +112,115 @@ button a{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#main-content h1{
-    color: #008099;
-    font-size: 1.5rem;
+#main-content h1 {
+  color: #008099;
+  font-size: 1.5rem;
 }
 
 #main-content h1,
-#main-content h2{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+#main-content h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-#main-content h2{
-    color: #002b49;
-    background: honeydew;
-    font-size: 1.1rem;
-    padding: 0.5rem;
+#main-content h2 {
+  color: #002b49;
+  background: honeydew;
+  font-size: 1.1rem;
+  padding: 0.5rem;
 }
 
 #main-content h4,
-#main-content h3{
-    margin-bottom: 1rem;
+#main-content h3 {
+  margin-bottom: 1rem;
 }
 
-#main-content h3{
-    font-size: 1rem;
-    color: #064946;
+#main-content h3 {
+  font-size: 1rem;
+  color: #064946;
 }
 
-#main-content p{
-    margin-bottom: 1rem;
+#main-content p {
+  margin-bottom: 1rem;
 }
 
-#main-content hr{
-    margin-bottom: 1rem;
+#main-content hr {
+  margin-bottom: 1rem;
 }
 
 #main-content img {
-    display: block;
-    width: 60%;
-    max-width: 400px;
-    height: auto;
-    margin: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+  display: block;
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
-#main-content a{
-    text-decoration: none;
-    color: #6b0028;
+#main-content a {
+  text-decoration: none;
+  color: #6b0028;
 }
 
-#main-content ul{
-    margin-bottom: 1rem;
+#main-content ul {
+  margin-bottom: 1rem;
 }
 
-#main-content ol{
-    margin-bottom: 1rem;
-    padding-left: 2rem;
+#main-content ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
 }
 
-#main-content table{
-    margin-bottom: 1rem;
+#main-content table {
+  margin-bottom: 1rem;
 }
 
-#main-content blockquote{
-    margin: 1rem;
-    border-left: solid #e3e3e3 5px;
-    padding-left: 1rem;
-    margin-left: 0;
+#main-content blockquote {
+  margin: 1rem;
+  border-left: solid #e3e3e3 5px;
+  padding-left: 1rem;
+  margin-left: 0;
 }
 
-#main-content ul{
-    padding-left: 1.4rem;
+#main-content ul {
+  padding-left: 1.4rem;
 }
 
 /* Garis pada semua tabel */
-#main-content table{
-    border-collapse: collapse;
+#main-content table {
+  border-collapse: collapse;
 }
 
-#main-content table, th, td {
-    border: 2px solid #a2a9b1;
+#main-content table,
+th,
+td {
+  border: 2px solid #a2a9b1;
 }
 
 /* Gaya header tabel */
 #main-content th {
-    background-color: #f2f2f2;
-    padding: 8px;
-    text-align: left;
-    font-weight: bold;
-    color: #202122;
-    background: #d5f4ff;
-    border-bottom: 2px solid #a2a9b1;
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
+  color: #202122;
+  background: #d5f4ff;
+  border-bottom: 2px solid #a2a9b1;
 }
 
 /* Gaya sel tubuh tabel */
 #main-content td {
-    padding: 8px;
-    text-align: left;
-    vertical-align: top;
-    color: #202122;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+  color: #202122;
 }
 
 #sidebar {
   background-color: honeydew;
   color: #002b49;
-  min-width: 250px;  
+  min-width: 250px;
   width: 20%;
   padding: 20px;
 }
@@ -251,7 +253,7 @@ button a{
   display: none;
 }
 
-.expanded > span {
+.expanded>span {
   font-weight: bold;
 }
 
@@ -284,9 +286,9 @@ footer {
   }
 }
 
-
 /* Responsif untuk tablet dan ponsel */
 @media screen and (max-width: 768px) {
+
   /* Atur tata letak elemen pencarian menjadi vertikal */
   #search-container {
     flex-direction: column;
@@ -306,8 +308,10 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+
   /* Ukuran font dan padding lebih kecil untuk layar kecil */
-  #search-input, #search-button {
+  #search-input,
+  #search-button {
     font-size: 14px;
     padding: 8px;
   }
@@ -317,42 +321,44 @@ footer {
   }
 }
 
-.recent-articles li, .random-article{
-    list-style-type: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+.recent-articles li,
+.random-article {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
-.recent-articles{
-    margin-left: -1.5rem;
+.recent-articles {
+  margin-left: -1.5rem;
 }
 
-.terbaru{
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.terbaru {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.recent-articles li h3{
-    font-size: 1rem;
+.recent-articles li h3 {
+  font-size: 1rem;
 }
 
-.random-article h2{
-    margin-left: -10px;
-    margin-right: -10px;
+.random-article h2 {
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
-.random-article h3{
-    font-size: 1rem;
+.random-article h3 {
+  font-size: 1rem;
 }
 
-.recent-articles li p, .random-article p{
-    margin-top: 10px;
+.recent-articles li p,
+.random-article p {
+  margin-top: 10px;
 }
 
-.kategori-info{
-    margin-top: 10px;
-    font-weight: bold;
+.kategori-info {
+  margin-top: 10px;
+  font-weight: bold;
 }

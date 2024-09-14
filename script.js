@@ -450,8 +450,8 @@ document.addEventListener("DOMContentLoaded", function() {
           });
         });
       }
-
-      function getRecentArticles() {
+      //fungsi untuk .menampilkan artikel terbaru
+      function getRecentArticles(page = 1, articlesPerPage = 10) {
         const allArticles = [...articles];
         // Gabungkan artikel dari kategori
         categories.forEach(category => {
@@ -461,8 +461,158 @@ document.addEventListener("DOMContentLoaded", function() {
         const filteredArticles = allArticles.filter(article => article.file !== "beranda.md");
         // Urutkan artikel berdasarkan tanggal (dari yang terbaru)
         filteredArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
-        // Ambil 10 artikel terbaru
-        return filteredArticles.slice(0, 10);
+        // Tentukan batas pagination
+        const startIndex = (page - 1) * articlesPerPage;
+        const endIndex = startIndex + articlesPerPage;
+        return {
+          articles: filteredArticles.slice(startIndex, endIndex),
+          totalPages: Math.ceil(filteredArticles.length / articlesPerPage),
+        };
+      }
+
+      function displayPagination(currentPage, totalPages) {
+        const paginationDiv = document.createElement("div");
+        paginationDiv.classList.add("pagination");
+        for (let i = 1; i <= totalPages; i++) {
+          const pageLink = document.createElement("a");
+          pageLink.textContent = i;
+          pageLink.href = `#page-${i}`;
+          if (i === currentPage) {
+            pageLink.classList.add("active"); // Tandai halaman saat ini
+          }
+          pageLink.addEventListener("click", (event) => {
+            event.preventDefault();
+            displayArticlesByPage(i);
+            window.scrollTo(0, 0);
+          });
+          paginationDiv.appendChild(pageLink);
+        }
+        mainContent.appendChild(paginationDiv);
+      }
+
+      function loadMarkdown(file, category) {
+        fetch(file)
+          .then(response => response.text())
+          .then(text => {
+            const renderedContent = md.render(text);
+            mainContent.innerHTML = renderedContent;
+            linkifyContent();
+            const articleTitle = mainContent.querySelector("h1") ? mainContent.querySelector("h1").textContent : file;
+            let articleDescription = "";
+            const firstH2 = mainContent.querySelector("h2");
+            if (firstH2) {
+              const nextParagraph = firstH2.nextElementSibling;
+              if (nextParagraph && nextParagraph.tagName.toLowerCase() === "p") {
+                articleDescription = nextParagraph.textContent.substring(0, 150);
+              }
+            }
+            const articleKeywords = category ? category : "artikel, ensiklopedia, istilah";
+            updateMetaTags(articleTitle, articleDescription, articleKeywords);
+            // Tampilkan artikel acak dan pagination di halaman beranda
+            if (file === "beranda.md") {
+              displayRandomArticle()
+                .then(() => {
+                  // Tampilkan pagination artikel terbaru
+                  displayPaginatedArticles(1);
+                });
+            } else if (category) {
+              const categoryInfo = document.createElement("div");
+              categoryInfo.classList = 'kategori-info'
+              categoryInfo.innerHTML = `Kategori: <a href="#" class="category-link">${category}</a>`;
+              mainContent.appendChild(categoryInfo);
+              const categoryLink = categoryInfo.querySelector(".category-link");
+              categoryLink.addEventListener("click", (e) => {
+                e.preventDefault();
+                showCategoryArticles(category);
+              });
+            }
+          })
+          .catch(error => console.error("Error loading markdown:", error));
+      }
+      // Fungsi pagination untuk menampilkan 10 artikel per halaman
+      function displayPaginatedArticles(page) {
+        const articlesPerPage = 10;
+        const allArticles = getAllArticlesExcludingHome(); // Ambil semua artikel, kecuali beranda
+        const totalPages = Math.ceil(allArticles.length / articlesPerPage);
+        const paginatedArticles = allArticles.slice((page - 1) * articlesPerPage, page * articlesPerPage);
+        const recentArticlesList = document.createElement("div");
+        recentArticlesList.innerHTML = `<h2>Daftar Artikel</h2>`;
+        const ul = document.createElement("ul");
+        ul.classList.add("recent-articles");
+        paginatedArticles.forEach(article => {
+          getArticleDetails(article.file).then(details => {
+            const li = document.createElement("li");
+            const titleElement = document.createElement("h3");
+            titleElement.textContent = details.title;
+            li.appendChild(titleElement);
+            if (details.img) {
+              const imgElement = document.createElement("img");
+              imgElement.src = details.img;
+              imgElement.alt = details.title;
+              imgElement.style.width = "100px";
+              imgElement.style.margin = "0";
+              li.appendChild(imgElement);
+            }
+            const excerptElement = document.createElement("p");
+            excerptElement.textContent = details.excerpt;
+            li.appendChild(excerptElement);
+            const linkElement = document.createElement("a");
+            linkElement.textContent = "Baca Selengkapnya";
+            linkElement.href = `#${article.slug}`;
+            linkElement.addEventListener("click", (event) => {
+              event.preventDefault();
+              loadArticleBySlug(article.slug);
+              window.scrollTo(0, 0);
+            });
+            li.appendChild(linkElement);
+            ul.appendChild(li);
+          });
+        });
+        recentArticlesList.appendChild(ul);
+        mainContent.appendChild(recentArticlesList);
+        // Tambahkan pagination controls
+        displayPaginationControls(page, totalPages);
+      }
+
+      function displayPaginationControls(currentPage, totalPages) {
+        const paginationControls = document.createElement("div");
+        paginationControls.classList.add("pagination-controls");
+        if (currentPage > 1) {
+          const prevButton = document.createElement("button");
+          prevButton.textContent = "Sebelumnya";
+          prevButton.addEventListener("click", () => {
+            loadPaginatedArticles(currentPage - 1);
+          });
+          paginationControls.appendChild(prevButton);
+        }
+        if (currentPage < totalPages) {
+          const nextButton = document.createElement("button");
+          nextButton.textContent = "Selanjutnya";
+          nextButton.addEventListener("click", () => {
+            loadPaginatedArticles(currentPage + 1);
+          });
+          paginationControls.appendChild(nextButton);
+        }
+        mainContent.appendChild(paginationControls);
+      }
+      // Fungsi untuk mendapatkan semua artikel kecuali beranda
+      function getAllArticlesExcludingHome() {
+        const allArticles = [...articles];
+        categories.forEach(category => {
+          allArticles.push(...category.articles);
+        });
+        return allArticles.filter(article => article.file !== "beranda.md");
+      }
+
+      function loadPaginatedArticles(page) {
+        // Bersihkan konten yang ada sebelum menampilkan artikel dengan pagination
+        mainContent.innerHTML = '';
+        // Tampilkan kembali artikel beranda (jika perlu)
+        if (page === 1) {
+          loadMarkdown('beranda.md');
+        }
+        // Tampilkan artikel terbaru yang dipagination
+        displayPaginatedArticles(page);
       }
       // Tampilkan daftar artikel berdasarkan kategori
       function showCategoryArticles(categoryTitle) {
