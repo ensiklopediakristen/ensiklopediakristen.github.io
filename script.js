@@ -83,36 +83,70 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Fungsi untuk mengganti kata kunci dengan link secara otomatis (case-insensitive)
       function linkifyContent() {
-        const keywords = getKeywords();
-        const paragraphs = mainContent.querySelectorAll("p");
+  const keywords = getKeywords();
+  const paragraphs = mainContent.querySelectorAll("p");
 
-        // Urutkan kata kunci berdasarkan panjang (dari yang terpanjang ke terpendek)
-        const sortedKeywords = Object.entries(keywords).sort((a, b) => b[0].length - a[0].length);
+  // Urutkan kata kunci berdasarkan panjang (dari yang terpanjang ke terpendek)
+  const sortedKeywords = Object.entries(keywords).sort((a, b) => b[0].length - a[0].length);
 
-        paragraphs.forEach(paragraph => {
-          if (!paragraph.querySelector("img")) {
-            let text = paragraph.innerHTML;
+  const internalLinks = new Set(); // Set untuk menyimpan slug unik
 
-            // Lakukan replacement berdasarkan urutan yang sudah di-sort
-            sortedKeywords.forEach(([keyword, slug]) => {
-              const regex = new RegExp(`(?<!>)\\b${keyword}\\b(?!<)`, "gi");
-              text = text.replace(regex, `<a href="#${slug}" class="keyword-link">${keyword}</a>`);
-            });
+  paragraphs.forEach(paragraph => {
+    if (!paragraph.querySelector("img")) {
+      let text = paragraph.innerHTML;
 
-            paragraph.innerHTML = text;
-          }
-        });
+      // Lakukan replacement berdasarkan urutan yang sudah di-sort
+      sortedKeywords.forEach(([keyword, slug]) => {
+        const regex = new RegExp(`(?<!>)\\b${keyword}\\b(?!<)`, "gi");
+        const found = regex.test(text); // Cek apakah keyword ditemukan
+        if (found) {
+          internalLinks.add(slug); // Tambahkan slug ke Set, otomatis menghapus duplikat
+        }
+        text = text.replace(regex, `<a href="#${slug}" class="keyword-link">${keyword}</a>`);
+      });
 
-        const keywordLinks = mainContent.querySelectorAll(".keyword-link");
-        keywordLinks.forEach(link => {
-          link.addEventListener("click", function (event) {
-            event.preventDefault();
-            const slug = this.getAttribute("href").replace("#", "");
-            window.scrollTo(0, 0);
-            loadArticleBySlug(slug);
-          });
-        });
-      }
+      paragraph.innerHTML = text;
+    }
+  });
+
+  const keywordLinks = mainContent.querySelectorAll(".keyword-link");
+  keywordLinks.forEach(link => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const slug = this.getAttribute("href").replace("#", "");
+      window.scrollTo(0, 0);
+      loadArticleBySlug(slug);
+    });
+  });
+
+  displayInternalLinks(internalLinks); // Tampilkan daftar tautan internal di bawah artikel
+}
+
+function displayInternalLinks(internalLinks) {
+  if (internalLinks.size === 0) return; // Tidak ada tautan, tidak perlu menampilkan apa-apa
+
+  const internalLinksDiv = document.createElement("div");
+  internalLinksDiv.innerHTML = `<h3>Tautan Internal</h3>`;
+  const ul = document.createElement("ul");
+
+  internalLinks.forEach(slug => {
+    const keyword = Object.keys(getKeywords()).find(key => getKeywords()[key] === slug); // Temukan keyword berdasarkan slug
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = `#${slug}`;
+    a.textContent = keyword;
+    a.addEventListener("click", (event) => {
+      event.preventDefault();
+      loadArticleBySlug(slug);
+      window.scrollTo(0, 0);
+    });
+    li.appendChild(a);
+    ul.appendChild(li);
+  });
+
+  internalLinksDiv.appendChild(ul);
+  mainContent.appendChild(internalLinksDiv); // Tambahkan daftar tautan internal di bawah konten artikel
+}
 
       // Fungsi memuat artikel berdasarkan slug
       function loadArticleBySlug(slug) {
