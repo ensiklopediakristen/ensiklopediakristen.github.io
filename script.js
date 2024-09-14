@@ -315,8 +315,8 @@ function getRecentArticles() {
   // Urutkan artikel berdasarkan tanggal (dari yang terbaru)
   allArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-  // Ambil 3 artikel terbaru
-  return allArticles.slice(0, 3);
+  // Ambil 10 artikel terbaru
+  return allArticles.slice(0, 10);
 }
 
 
