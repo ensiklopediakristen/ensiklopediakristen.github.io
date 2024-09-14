@@ -1,6 +1,6 @@
 {
   "articles": [
-    { "title": "Beranda", "file": "markdown/beranda.md", "category": "Beranda", "slug": "beranda"}
+    { "title": "Beranda", "file": "beranda.md", "slug": "beranda", "date": "0000-00-00 00:00:00"}
   ],
   "categories": [
     {

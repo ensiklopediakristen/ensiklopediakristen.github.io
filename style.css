@@ -132,20 +132,14 @@ footer {
 
 /* ============================== */
 
-#main-content h1{
+#main-content h1,
+#main-content h2{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-#main-content h2{
-    margin-bottom: 1rem;
-}
-
+#main-content h4,
 #main-content h3{
-    margin-bottom: 1rem;
-}
-
-#main-content h4{
     margin-bottom: 1rem;
 }
 
@@ -206,6 +200,8 @@ footer {
     max-width: 400px;
     height: auto;
     margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 
@@ -293,4 +289,39 @@ footer {
   #search-button {
     padding: 8px 16px;
   }
+}
+
+.recent-articles li, .random-article{
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.recent-articles{
+    margin-left: -1.5rem;
+}
+
+.terbaru{
+    background: #eaffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recent-articles li h3{
+    font-size: 1rem;
+}
+
+.random-article h2{
+    background: #eaffff;
+    padding: 10px;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.random-article h3{
+    font-size: 1rem;
 }
