@@ -2,7 +2,7 @@
 
 ---
 
-![Ilustrasi Nama YHWH dalam Huruf Ibrani](img/YHWH.svg)
+![Ilustrasi Nama YHWH dalam Huruf Ibrani](img/yhwh.svg)
 
 | **Atribut** | **YHWH** |
 |---|---|
