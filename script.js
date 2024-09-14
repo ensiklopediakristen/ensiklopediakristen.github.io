@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   // Inisialisasi markdown-it
   const md = window.markdownit();
 
@@ -34,7 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
               }
             }
 
-            return { title, img, excerpt };
+            return {
+              title,
+              img,
+              excerpt
+            };
           });
       }
 
@@ -83,70 +87,70 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Fungsi untuk mengganti kata kunci dengan link secara otomatis (case-insensitive)
       function linkifyContent() {
-  const keywords = getKeywords();
-  const paragraphs = mainContent.querySelectorAll("p");
+        const keywords = getKeywords();
+        const paragraphs = mainContent.querySelectorAll("p");
 
-  // Urutkan kata kunci berdasarkan panjang (dari yang terpanjang ke terpendek)
-  const sortedKeywords = Object.entries(keywords).sort((a, b) => b[0].length - a[0].length);
+        // Urutkan kata kunci berdasarkan panjang (dari yang terpanjang ke terpendek)
+        const sortedKeywords = Object.entries(keywords).sort((a, b) => b[0].length - a[0].length);
 
-  const internalLinks = new Set(); // Set untuk menyimpan slug unik
+        const internalLinks = new Set(); // Set untuk menyimpan slug unik
 
-  paragraphs.forEach(paragraph => {
-    if (!paragraph.querySelector("img")) {
-      let text = paragraph.innerHTML;
+        paragraphs.forEach(paragraph => {
+          if (!paragraph.querySelector("img")) {
+            let text = paragraph.innerHTML;
 
-      // Lakukan replacement berdasarkan urutan yang sudah di-sort
-      sortedKeywords.forEach(([keyword, slug]) => {
-        const regex = new RegExp(`(?<!>)\\b${keyword}\\b(?!<)`, "gi");
-        const found = regex.test(text); // Cek apakah keyword ditemukan
-        if (found) {
-          internalLinks.add(slug); // Tambahkan slug ke Set, otomatis menghapus duplikat
-        }
-        text = text.replace(regex, `<a href="#${slug}" class="keyword-link">${keyword}</a>`);
-      });
+            // Lakukan replacement berdasarkan urutan yang sudah di-sort
+            sortedKeywords.forEach(([keyword, slug]) => {
+              const regex = new RegExp(`(?<!>)\\b${keyword}\\b(?!<)`, "gi");
+              const found = regex.test(text); // Cek apakah keyword ditemukan
+              if (found) {
+                internalLinks.add(slug); // Tambahkan slug ke Set, otomatis menghapus duplikat
+              }
+              text = text.replace(regex, `<a href="#${slug}" class="keyword-link">${keyword}</a>`);
+            });
 
-      paragraph.innerHTML = text;
-    }
-  });
+            paragraph.innerHTML = text;
+          }
+        });
 
-  const keywordLinks = mainContent.querySelectorAll(".keyword-link");
-  keywordLinks.forEach(link => {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      const slug = this.getAttribute("href").replace("#", "");
-      window.scrollTo(0, 0);
-      loadArticleBySlug(slug);
-    });
-  });
+        const keywordLinks = mainContent.querySelectorAll(".keyword-link");
+        keywordLinks.forEach(link => {
+          link.addEventListener("click", function(event) {
+            event.preventDefault();
+            const slug = this.getAttribute("href").replace("#", "");
+            window.scrollTo(0, 0);
+            loadArticleBySlug(slug);
+          });
+        });
 
-  displayInternalLinks(internalLinks); // Tampilkan daftar tautan internal di bawah artikel
-}
+        displayInternalLinks(internalLinks); // Tampilkan daftar tautan internal di bawah artikel
+      }
 
-function displayInternalLinks(internalLinks) {
-  if (internalLinks.size === 0) return; // Tidak ada tautan, tidak perlu menampilkan apa-apa
+      function displayInternalLinks(internalLinks) {
+        if (internalLinks.size === 0) return; // Tidak ada tautan, tidak perlu menampilkan apa-apa
 
-  const internalLinksDiv = document.createElement("div");
-  internalLinksDiv.innerHTML = `<h3>Tautan Internal</h3>`;
-  const ul = document.createElement("ul");
+        const internalLinksDiv = document.createElement("div");
+        internalLinksDiv.innerHTML = `<h3 class="tautan">Tautan Internal</h3>`;
+        const ul = document.createElement("ul");
 
-  internalLinks.forEach(slug => {
-    const keyword = Object.keys(getKeywords()).find(key => getKeywords()[key] === slug); // Temukan keyword berdasarkan slug
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    a.href = `#${slug}`;
-    a.textContent = keyword;
-    a.addEventListener("click", (event) => {
-      event.preventDefault();
-      loadArticleBySlug(slug);
-      window.scrollTo(0, 0);
-    });
-    li.appendChild(a);
-    ul.appendChild(li);
-  });
+        internalLinks.forEach(slug => {
+          const keyword = Object.keys(getKeywords()).find(key => getKeywords()[key] === slug); // Temukan keyword berdasarkan slug
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.href = `#${slug}`;
+          a.textContent = keyword;
+          a.addEventListener("click", (event) => {
+            event.preventDefault();
+            loadArticleBySlug(slug);
+            window.scrollTo(0, 0);
+          });
+          li.appendChild(a);
+          ul.appendChild(li);
+        });
 
-  internalLinksDiv.appendChild(ul);
-  mainContent.appendChild(internalLinksDiv); // Tambahkan daftar tautan internal di bawah konten artikel
-}
+        internalLinksDiv.appendChild(ul);
+        mainContent.appendChild(internalLinksDiv); // Tambahkan daftar tautan internal di bawah konten artikel
+      }
 
       // Fungsi memuat artikel berdasarkan slug
       function loadArticleBySlug(slug) {
@@ -248,9 +252,9 @@ function displayInternalLinks(internalLinks) {
         categoryTitle.addEventListener("click", () => {
           ulSublist.classList.toggle("hidden");
           liCategory.classList.toggle("expanded");
-          categoryTitle.textContent = liCategory.classList.contains("expanded")
-            ? `v ${category.title} (${categoryCounts[category.title]})`
-            : `> ${category.title} (${categoryCounts[category.title]})`;
+          categoryTitle.textContent = liCategory.classList.contains("expanded") ?
+            `v ${category.title} (${categoryCounts[category.title]})` :
+            `> ${category.title} (${categoryCounts[category.title]})`;
         });
       });
 
@@ -258,387 +262,387 @@ function displayInternalLinks(internalLinks) {
       headCategoryTitle.addEventListener("click", () => {
         ulCategoryList.classList.toggle("hidden");
         liHeadCategory.classList.toggle("expanded");
-        headCategoryTitle.textContent = liHeadCategory.classList.contains("expanded")
-          ? `v Kategori (${getTotalArticleCount()})`
-          : `> Kategori (${getTotalArticleCount()})`;
+        headCategoryTitle.textContent = liHeadCategory.classList.contains("expanded") ?
+          `v Kategori (${getTotalArticleCount()})` :
+          `> Kategori (${getTotalArticleCount()})`;
       });
 
       // Fungsi lazy load artikel
       function lazyLoadArticle(event) {
         event.preventDefault();
-        const { file, category, slug } = event.target.dataset;
+        const {
+          file,
+          category,
+          slug
+        } = event.target.dataset;
         window.scrollTo(0, 0);
         window.location.hash = slug;
         loadMarkdown(file, category);
       }
 
-  // Fungsi untuk mendapatkan artikel acak setiap hari
-function getRandomArticleForToday() {
-  const allArticles = [...articles];
+      // Fungsi untuk mendapatkan artikel acak setiap hari
+      function getRandomArticleForToday() {
+        const allArticles = [...articles];
 
-  // Gabungkan artikel dari kategori
-  categories.forEach(category => {
-    allArticles.push(...category.articles);
-  });
+        // Gabungkan artikel dari kategori
+        categories.forEach(category => {
+          allArticles.push(...category.articles);
+        });
 
-  // Filter untuk mengecualikan "beranda.md"
-  const filteredArticles = allArticles.filter(article => article.file !== "beranda.md");
+        // Filter untuk mengecualikan "beranda.md"
+        const filteredArticles = allArticles.filter(article => article.file !== "beranda.md");
 
-  // Gunakan seed random yang sama setiap hari
-  const today = new Date().toISOString().slice(0, 10); // Format: YYYY-MM-DD
-  const seed = today.split("-").reduce((acc, val) => acc + parseInt(val), 0);
+        // Gunakan seed random yang sama setiap hari
+        const today = new Date().toISOString().slice(0, 10); // Format: YYYY-MM-DD
+        const seed = today.split("-").reduce((acc, val) => acc + parseInt(val), 0);
 
-  // Fungsi untuk menghasilkan random berdasarkan seed
-  function seededRandom(seed) {
-    const x = Math.sin(seed) * 10000;
-    return x - Math.floor(x);
-  }
-
-  // Pilih artikel acak berdasarkan seed
-  const randomIndex = Math.floor(seededRandom(seed) * filteredArticles.length);
-  return filteredArticles[randomIndex];
-}
-
-// Fungsi untuk menampilkan artikel acak
-function displayRandomArticle() {
-  const randomArticle = getRandomArticleForToday();
-
-  // Dapatkan detail artikel
-  getArticleDetails(randomArticle.file).then(details => {
-    const randomArticleDiv = document.createElement("div");
-    randomArticleDiv.classList.add("random-article");
-
-    const titleElement = document.createElement("h2");
-    titleElement.textContent = "Artikel Pilihan Hari Ini";
-    randomArticleDiv.appendChild(titleElement);
-
-    const articleTitleElement = document.createElement("h3");
-    articleTitleElement.textContent = details.title;
-    randomArticleDiv.appendChild(articleTitleElement);
-
-    if (details.img) {
-      const imgElement = document.createElement("img");
-      imgElement.src = details.img;
-      imgElement.alt = details.title;
-      imgElement.style.width = "100px"; // Sesuaikan ukuran gambar
-      imgElement.style.margin = "0";
-      randomArticleDiv.appendChild(imgElement);
-    }
-
-    const excerptElement = document.createElement("p");
-    excerptElement.textContent = details.excerpt;
-    randomArticleDiv.appendChild(excerptElement);
-
-    const linkElement = document.createElement("a");
-    linkElement.textContent = "Baca Selengkapnya";
-    linkElement.href = `#${randomArticle.slug}`;
-    linkElement.addEventListener("click", (event) => {
-      event.preventDefault();
-      loadArticleBySlug(randomArticle.slug);
-      window.scrollTo(0, 0);
-    });
-    randomArticleDiv.appendChild(linkElement);
-
-    // Sisipkan artikel acak sebelum daftar artikel terbaru
-    mainContent.prepend(randomArticleDiv);
-  });
-}
-
-// Modifikasi fungsi loadMarkdown untuk memastikan artikel acak ditampilkan di bawah beranda dan di atas artikel terbaru
-function loadMarkdown(file, category) {
-  fetch(file)
-    .then(response => response.text())
-    .then(text => {
-      const renderedContent = md.render(text);
-      mainContent.innerHTML = renderedContent;
-      linkifyContent();
-
-      const articleTitle = mainContent.querySelector("h1") ? mainContent.querySelector("h1").textContent : file;
-
-      let articleDescription = "";
-      const firstH2 = mainContent.querySelector("h2");
-      if (firstH2) {
-        const nextParagraph = firstH2.nextElementSibling;
-        if (nextParagraph && nextParagraph.tagName.toLowerCase() === "p") {
-          articleDescription = nextParagraph.textContent.substring(0, 150);
+        // Fungsi untuk menghasilkan random berdasarkan seed
+        function seededRandom(seed) {
+          const x = Math.sin(seed) * 10000;
+          return x - Math.floor(x);
         }
+
+        // Pilih artikel acak berdasarkan seed
+        const randomIndex = Math.floor(seededRandom(seed) * filteredArticles.length);
+        return filteredArticles[randomIndex];
       }
 
-      const articleKeywords = category ? category : "artikel, ensiklopedia, istilah";
-      updateMetaTags(articleTitle, articleDescription, articleKeywords);
+      // Fungsi untuk menampilkan artikel acak
+      function displayRandomArticle() {
+        const randomArticle = getRandomArticleForToday();
 
-      // Tampilkan artikel terbaru jika di halaman Beranda
-      if (file === "beranda.md") {
-        // Tampilkan artikel acak di bawah konten beranda tetapi di atas artikel terbaru
-        displayRandomArticle()
-          .then(() => {
-            // Tampilkan artikel terbaru setelah artikel acak
-            const recentArticles = getRecentArticles();
-            const recentArticlesList = document.createElement("div");
-            recentArticlesList.innerHTML = `<h2 class="terbaru">Artikel Terbaru</h2>`;
+        // Dapatkan detail artikel
+        getArticleDetails(randomArticle.file).then(details => {
+          const randomArticleDiv = document.createElement("div");
+          randomArticleDiv.classList.add("random-article");
 
-            const ul = document.createElement("ul");
-            ul.classList.add("recent-articles"); // Menambahkan class pada elemen ul
+          const titleElement = document.createElement("h2");
+          titleElement.textContent = "Artikel Pilihan Hari Ini";
+          randomArticleDiv.appendChild(titleElement);
 
-            // Proses setiap artikel terbaru untuk mendapatkan detail
-            recentArticles.forEach(article => {
-              getArticleDetails(article.file).then(details => {
-                const li = document.createElement("li");
+          const articleTitleElement = document.createElement("h3");
+          articleTitleElement.textContent = details.title;
+          randomArticleDiv.appendChild(articleTitleElement);
 
-                const titleElement = document.createElement("h3");
-                titleElement.textContent = details.title;
-                li.appendChild(titleElement);
+          if (details.img) {
+            const imgElement = document.createElement("img");
+            imgElement.src = details.img;
+            imgElement.alt = details.title;
+            imgElement.style.width = "100px"; // Sesuaikan ukuran gambar
+            imgElement.style.margin = "0";
+            randomArticleDiv.appendChild(imgElement);
+          }
 
-                if (details.img) {
-                  const imgElement = document.createElement("img");
-                  imgElement.src = details.img;
-                  imgElement.alt = details.title;
-                  imgElement.style.width = "100px"; // Sesuaikan ukuran gambar
-                  imgElement.style.margin = "0";
-                  li.appendChild(imgElement);
-                }
+          const excerptElement = document.createElement("p");
+          excerptElement.textContent = details.excerpt;
+          randomArticleDiv.appendChild(excerptElement);
 
-                const excerptElement = document.createElement("p");
-                excerptElement.textContent = details.excerpt;
-                li.appendChild(excerptElement);
-
-                const linkElement = document.createElement("a");
-                linkElement.textContent = "Baca Selengkapnya";
-                linkElement.href = `#${article.slug}`;
-                linkElement.addEventListener("click", (event) => {
-                  event.preventDefault();
-                  loadArticleBySlug(article.slug);
-                  window.scrollTo(0, 0);
-                });
-                li.appendChild(linkElement);
-
-                ul.appendChild(li);
-              });
-            });
-
-            recentArticlesList.appendChild(ul);
-            mainContent.appendChild(recentArticlesList);
+          const linkElement = document.createElement("a");
+          linkElement.textContent = "Baca Selengkapnya";
+          linkElement.href = `#${randomArticle.slug}`;
+          linkElement.addEventListener("click", (event) => {
+            event.preventDefault();
+            loadArticleBySlug(randomArticle.slug);
+            window.scrollTo(0, 0);
           });
-      } else if (category) {
-        const categoryInfo = document.createElement("div");
-        categoryInfo.innerHTML = `kategori: <a href="#" class="category-link">${category}</a>`;
-        mainContent.appendChild(categoryInfo);
+          randomArticleDiv.appendChild(linkElement);
 
-        const categoryLink = categoryInfo.querySelector(".category-link");
-        categoryLink.addEventListener("click", (e) => {
-          e.preventDefault();
-          showCategoryArticles(category);
+          // Sisipkan artikel acak sebelum daftar artikel terbaru
+          mainContent.prepend(randomArticleDiv);
         });
+      }
+
+      // Modifikasi fungsi loadMarkdown untuk memastikan artikel acak ditampilkan di bawah beranda dan di atas artikel terbaru
+      function loadMarkdown(file, category) {
+        fetch(file)
+          .then(response => response.text())
+          .then(text => {
+            const renderedContent = md.render(text);
+            mainContent.innerHTML = renderedContent;
+            linkifyContent();
+
+            const articleTitle = mainContent.querySelector("h1") ? mainContent.querySelector("h1").textContent : file;
+
+            let articleDescription = "";
+            const firstH2 = mainContent.querySelector("h2");
+            if (firstH2) {
+              const nextParagraph = firstH2.nextElementSibling;
+              if (nextParagraph && nextParagraph.tagName.toLowerCase() === "p") {
+                articleDescription = nextParagraph.textContent.substring(0, 150);
+              }
+            }
+
+            const articleKeywords = category ? category : "artikel, ensiklopedia, istilah";
+            updateMetaTags(articleTitle, articleDescription, articleKeywords);
+
+            // Tampilkan artikel terbaru jika di halaman Beranda
+            if (file === "beranda.md") {
+              // Tampilkan artikel acak di bawah konten beranda tetapi di atas artikel terbaru
+              displayRandomArticle()
+                .then(() => {
+                  // Tampilkan artikel terbaru setelah artikel acak
+                  const recentArticles = getRecentArticles();
+                  const recentArticlesList = document.createElement("div");
+                  recentArticlesList.innerHTML = `<h2>Artikel Terbaru</h2>`;
+
+                  const ul = document.createElement("ul");
+                  ul.classList.add("recent-articles"); // Menambahkan class pada elemen ul
+
+                  // Proses setiap artikel terbaru untuk mendapatkan detail
+                  recentArticles.forEach(article => {
+                    getArticleDetails(article.file).then(details => {
+                      const li = document.createElement("li");
+
+                      const titleElement = document.createElement("h3");
+                      titleElement.textContent = details.title;
+                      li.appendChild(titleElement);
+
+                      if (details.img) {
+                        const imgElement = document.createElement("img");
+                        imgElement.src = details.img;
+                        imgElement.alt = details.title;
+                        imgElement.style.width = "100px"; // Sesuaikan ukuran gambar
+                        imgElement.style.margin = "0";
+                        li.appendChild(imgElement);
+                      }
+
+                      const excerptElement = document.createElement("p");
+                      excerptElement.textContent = details.excerpt;
+                      li.appendChild(excerptElement);
+
+                      const linkElement = document.createElement("a");
+                      linkElement.textContent = "Baca Selengkapnya";
+                      linkElement.href = `#${article.slug}`;
+                      linkElement.addEventListener("click", (event) => {
+                        event.preventDefault();
+                        loadArticleBySlug(article.slug);
+                        window.scrollTo(0, 0);
+                      });
+                      li.appendChild(linkElement);
+
+                      ul.appendChild(li);
+                    });
+                  });
+
+                  recentArticlesList.appendChild(ul);
+                  mainContent.appendChild(recentArticlesList);
+                });
+            } else if (category) {
+              const categoryInfo = document.createElement("div");
+              categoryInfo.classList = 'kategori-info'
+              categoryInfo.innerHTML = `Kategori: <a href="#" class="category-link">${category}</a>`;
+              mainContent.appendChild(categoryInfo);
+
+              const categoryLink = categoryInfo.querySelector(".category-link");
+              categoryLink.addEventListener("click", (e) => {
+                e.preventDefault();
+                showCategoryArticles(category);
+              });
+            }
+          })
+          .catch(error => console.error("Error loading markdown:", error));
+      }
+
+      // Fungsi untuk menampilkan artikel acak
+      function displayRandomArticle() {
+        return new Promise((resolve) => {
+          const randomArticle = getRandomArticleForToday();
+
+          // Dapatkan detail artikel
+          getArticleDetails(randomArticle.file).then(details => {
+            const randomArticleDiv = document.createElement("div");
+            randomArticleDiv.classList.add("random-article");
+
+            const titleElement = document.createElement("h2");
+            titleElement.textContent = "Artikel Pilihan Hari Ini";
+            randomArticleDiv.appendChild(titleElement);
+
+            const articleTitleElement = document.createElement("h3");
+            articleTitleElement.textContent = details.title;
+            randomArticleDiv.appendChild(articleTitleElement);
+
+            if (details.img) {
+              const imgElement = document.createElement("img");
+              imgElement.src = details.img;
+              imgElement.alt = details.title;
+              imgElement.style.width = "100px"; // Sesuaikan ukuran gambar
+              imgElement.style.margin = "0";
+              randomArticleDiv.appendChild(imgElement);
+            }
+
+            const excerptElement = document.createElement("p");
+            excerptElement.textContent = details.excerpt;
+            randomArticleDiv.appendChild(excerptElement);
+
+            const linkElement = document.createElement("a");
+            linkElement.textContent = "Baca Selengkapnya";
+            linkElement.href = `#${randomArticle.slug}`;
+            linkElement.addEventListener("click", (event) => {
+              event.preventDefault();
+              loadArticleBySlug(randomArticle.slug);
+              window.scrollTo(0, 0);
+            });
+            randomArticleDiv.appendChild(linkElement);
+
+            // Sisipkan artikel acak di bawah konten beranda tetapi di atas artikel terbaru
+            mainContent.appendChild(randomArticleDiv);
+            resolve();
+          });
+        });
+      }
+
+      // Fungsi untuk menampilkan artikel acak
+      function displayRandomArticle() {
+        return new Promise((resolve) => {
+          const randomArticle = getRandomArticleForToday();
+
+          // Dapatkan detail artikel
+          getArticleDetails(randomArticle.file).then(details => {
+            const randomArticleDiv = document.createElement("div");
+            randomArticleDiv.classList.add("random-article");
+
+            const titleElement = document.createElement("h2");
+            titleElement.textContent = "Artikel Pilihan Hari Ini";
+            randomArticleDiv.appendChild(titleElement);
+
+            const articleTitleElement = document.createElement("h3");
+            articleTitleElement.textContent = details.title;
+            randomArticleDiv.appendChild(articleTitleElement);
+
+            if (details.img) {
+              const imgElement = document.createElement("img");
+              imgElement.src = details.img;
+              imgElement.alt = details.title;
+              imgElement.style.width = "100px"; // Sesuaikan ukuran gambar
+              imgElement.style.margin = "0";
+              randomArticleDiv.appendChild(imgElement);
+            }
+
+            const excerptElement = document.createElement("p");
+            excerptElement.textContent = details.excerpt;
+            randomArticleDiv.appendChild(excerptElement);
+
+            const linkElement = document.createElement("a");
+            linkElement.textContent = "Baca Selengkapnya";
+            linkElement.href = `#${randomArticle.slug}`;
+            linkElement.addEventListener("click", (event) => {
+              event.preventDefault();
+              loadArticleBySlug(randomArticle.slug);
+              window.scrollTo(0, 0);
+            });
+            randomArticleDiv.appendChild(linkElement);
+
+            // Sisipkan artikel acak di bawah konten beranda tetapi di atas artikel terbaru
+            mainContent.appendChild(randomArticleDiv);
+            resolve();
+          });
+        });
+      }
+
+      function getRecentArticles() {
+        const allArticles = [...articles];
+
+        // Gabungkan artikel dari kategori
+        categories.forEach(category => {
+          allArticles.push(...category.articles);
+        });
+
+        // Filter untuk mengecualikan "beranda.md"
+        const filteredArticles = allArticles.filter(article => article.file !== "beranda.md");
+
+        // Urutkan artikel berdasarkan tanggal (dari yang terbaru)
+        filteredArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        // Ambil 10 artikel terbaru
+        return filteredArticles.slice(0, 10);
+      }
+
+      // Tampilkan daftar artikel berdasarkan kategori
+      function showCategoryArticles(categoryTitle) {
+        mainContent.innerHTML = `<h2>Daftar Artikel dalam Kategori: ${categoryTitle}</h2>`;
+        const ulCategoryArticles = document.createElement("ul");
+
+        categories.forEach(category => {
+          if (category.title === categoryTitle) {
+            category.articles.forEach(article => {
+              ulCategoryArticles.appendChild(createArticleItem(article, category.title));
+            });
+          }
+        });
+
+        mainContent.appendChild(ulCategoryArticles);
+      }
+
+      // Fungsi untuk menangani pencarian artikel
+      function searchArticles(query) {
+        const results = [];
+
+        // Cari di artikel tanpa kategori
+        articles.forEach(article => {
+          if (article.title.toLowerCase().includes(query.toLowerCase())) {
+            results.push(article);
+          }
+        });
+
+        // Cari di kategori
+        categories.forEach(category => {
+          category.articles.forEach(article => {
+            if (article.title.toLowerCase().includes(query.toLowerCase())) {
+              results.push(article);
+            }
+          });
+        });
+
+        return results;
+      }
+
+      // Fungsi untuk menampilkan hasil pencarian
+      function displaySearchResults(query) {
+        const searchResults = document.getElementById("search-results");
+        const results = searchArticles(query);
+        searchResults.innerHTML = ""; // Kosongkan hasil pencarian sebelumnya
+
+        if (results.length === 0) {
+          searchResults.innerHTML = `<p>Tidak ada artikel yang ditemukan.</p>`;
+        } else {
+          const ul = document.createElement("ul");
+          results.forEach(article => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.textContent = article.title;
+            a.href = `#${article.slug}`;
+            a.addEventListener("click", (event) => {
+              event.preventDefault();
+              loadArticleBySlug(article.slug);
+              searchResults.classList.add("hidden"); // Sembunyikan hasil setelah artikel dibuka
+            });
+            li.appendChild(a);
+            ul.appendChild(li);
+          });
+          searchResults.appendChild(ul);
+        }
+
+        searchResults.classList.remove("hidden");
+      }
+
+      // Event listener untuk pencarian saat pengguna mengetik
+      document.getElementById("search-input").addEventListener("input", () => {
+        const query = document.getElementById("search-input").value;
+        if (query.length > 2) {
+          displaySearchResults(query);
+        } else {
+          document.getElementById("search-results").classList.add("hidden");
+        }
+      });
+
+      // Muat artikel berdasarkan hash di URL
+      const currentHash = window.location.hash.replace("#", "");
+      if (currentHash) {
+        loadArticleBySlug(currentHash);
+      } else {
+        window.location.hash = "beranda";
+        loadMarkdown("beranda.md");
       }
     })
-    .catch(error => console.error("Error loading markdown:", error));
-}
-
-// Fungsi untuk menampilkan artikel acak
-function displayRandomArticle() {
-  return new Promise((resolve) => {
-    const randomArticle = getRandomArticleForToday();
-
-    // Dapatkan detail artikel
-    getArticleDetails(randomArticle.file).then(details => {
-      const randomArticleDiv = document.createElement("div");
-      randomArticleDiv.classList.add("random-article");
-
-      const titleElement = document.createElement("h2");
-      titleElement.textContent = "Artikel Pilihan Hari Ini";
-      randomArticleDiv.appendChild(titleElement);
-
-      const articleTitleElement = document.createElement("h3");
-      articleTitleElement.textContent = details.title;
-      randomArticleDiv.appendChild(articleTitleElement);
-
-      if (details.img) {
-        const imgElement = document.createElement("img");
-        imgElement.src = details.img;
-        imgElement.alt = details.title;
-        imgElement.style.width = "100px"; // Sesuaikan ukuran gambar
-        imgElement.style.margin = "0";
-        randomArticleDiv.appendChild(imgElement);
-      }
-
-      const excerptElement = document.createElement("p");
-      excerptElement.textContent = details.excerpt;
-      randomArticleDiv.appendChild(excerptElement);
-
-      const linkElement = document.createElement("a");
-      linkElement.textContent = "Baca Selengkapnya";
-      linkElement.href = `#${randomArticle.slug}`;
-      linkElement.addEventListener("click", (event) => {
-        event.preventDefault();
-        loadArticleBySlug(randomArticle.slug);
-        window.scrollTo(0, 0);
-      });
-      randomArticleDiv.appendChild(linkElement);
-
-      // Sisipkan artikel acak di bawah konten beranda tetapi di atas artikel terbaru
-      mainContent.appendChild(randomArticleDiv);
-      resolve();
-    });
-  });
-}
-
-// Fungsi untuk menampilkan artikel acak
-function displayRandomArticle() {
-  return new Promise((resolve) => {
-    const randomArticle = getRandomArticleForToday();
-
-    // Dapatkan detail artikel
-    getArticleDetails(randomArticle.file).then(details => {
-      const randomArticleDiv = document.createElement("div");
-      randomArticleDiv.classList.add("random-article");
-
-      const titleElement = document.createElement("h2");
-      titleElement.textContent = "Artikel Pilihan Hari Ini";
-      randomArticleDiv.appendChild(titleElement);
-
-      const articleTitleElement = document.createElement("h3");
-      articleTitleElement.textContent = details.title;
-      randomArticleDiv.appendChild(articleTitleElement);
-
-      if (details.img) {
-        const imgElement = document.createElement("img");
-        imgElement.src = details.img;
-        imgElement.alt = details.title;
-        imgElement.style.width = "100px"; // Sesuaikan ukuran gambar
-        imgElement.style.margin = "0";
-        randomArticleDiv.appendChild(imgElement);
-      }
-
-      const excerptElement = document.createElement("p");
-      excerptElement.textContent = details.excerpt;
-      randomArticleDiv.appendChild(excerptElement);
-
-      const linkElement = document.createElement("a");
-      linkElement.textContent = "Baca Selengkapnya";
-      linkElement.href = `#${randomArticle.slug}`;
-      linkElement.addEventListener("click", (event) => {
-        event.preventDefault();
-        loadArticleBySlug(randomArticle.slug);
-        window.scrollTo(0, 0);
-      });
-      randomArticleDiv.appendChild(linkElement);
-
-      // Sisipkan artikel acak di bawah konten beranda tetapi di atas artikel terbaru
-      mainContent.appendChild(randomArticleDiv);
-      resolve();
-    });
-  });
-}
-
-  function getRecentArticles() {
-    const allArticles = [...articles];
-
-    // Gabungkan artikel dari kategori
-    categories.forEach(category => {
-      allArticles.push(...category.articles);
-    });
-
-    // Filter untuk mengecualikan "beranda.md"
-    const filteredArticles = allArticles.filter(article => article.file !== "beranda.md");
-
-    // Urutkan artikel berdasarkan tanggal (dari yang terbaru)
-    filteredArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-    // Ambil 10 artikel terbaru
-    return filteredArticles.slice(0, 10);
-    
-    
-    
-  }
-  
-  
-
-  // Tampilkan daftar artikel berdasarkan kategori
-  function showCategoryArticles(categoryTitle) {
-    mainContent.innerHTML = `<h2>Daftar Artikel dalam Kategori: ${categoryTitle}</h2>`;
-    const ulCategoryArticles = document.createElement("ul");
-
-    categories.forEach(category => {
-      if (category.title === categoryTitle) {
-        category.articles.forEach(article => {
-          ulCategoryArticles.appendChild(createArticleItem(article, category.title));
-        });
-      }
-    });
-
-    mainContent.appendChild(ulCategoryArticles);
-  }
-
-  // Fungsi untuk menangani pencarian artikel
-  function searchArticles(query) {
-    const results = [];
-
-    // Cari di artikel tanpa kategori
-    articles.forEach(article => {
-      if (article.title.toLowerCase().includes(query.toLowerCase())) {
-        results.push(article);
-      }
-    });
-
-    // Cari di kategori
-    categories.forEach(category => {
-      category.articles.forEach(article => {
-        if (article.title.toLowerCase().includes(query.toLowerCase())) {
-          results.push(article);
-        }
-      });
-    });
-
-    return results;
-  }
-
-  // Fungsi untuk menampilkan hasil pencarian
-  function displaySearchResults(query) {
-    const searchResults = document.getElementById("search-results");
-    const results = searchArticles(query);
-    searchResults.innerHTML = ""; // Kosongkan hasil pencarian sebelumnya
-
-    if (results.length === 0) {
-      searchResults.innerHTML = `<p>Tidak ada artikel yang ditemukan.</p>`;
-    } else {
-      const ul = document.createElement("ul");
-      results.forEach(article => {
-        const li = document.createElement("li");
-        const a = document.createElement("a");
-        a.textContent = article.title;
-        a.href = `#${article.slug}`;
-        a.addEventListener("click", (event) => {
-          event.preventDefault();
-          loadArticleBySlug(article.slug);
-          searchResults.classList.add("hidden"); // Sembunyikan hasil setelah artikel dibuka
-        });
-        li.appendChild(a);
-        ul.appendChild(li);
-      });
-      searchResults.appendChild(ul);
-    }
-
-    searchResults.classList.remove("hidden");
-  }
-
-  // Event listener untuk pencarian saat pengguna mengetik
-  document.getElementById("search-input").addEventListener("input", () => {
-    const query = document.getElementById("search-input").value;
-    if (query.length > 2) {
-      displaySearchResults(query);
-    } else {
-      document.getElementById("search-results").classList.add("hidden");
-    }
-  });
-
-  // Muat artikel berdasarkan hash di URL
-  const currentHash = window.location.hash.replace("#", "");
-  if (currentHash) {
-    loadArticleBySlug(currentHash);
-  } else {
-    window.location.hash = "beranda";
-    loadMarkdown("beranda.md");
-  }
-})
     .catch(error => console.error("Error loading data:", error));
 });

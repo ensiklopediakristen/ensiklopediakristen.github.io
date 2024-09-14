@@ -209,6 +209,14 @@ footer {
     color: #6b0028;
 }
 
+#main-content ul{
+    margin-bottom: 1rem;
+}
+
+#main-content ol{
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
 
 /* ============================== */
 
@@ -334,4 +342,9 @@ footer {
 
 .recent-articles li p, .random-article p{
     margin-top: 10px;
+}
+
+.kategori-info{
+    margin-top: 10px;
+    font-weight: bold;
 }
