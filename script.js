@@ -316,7 +316,7 @@ function getRecentArticles() {
   allArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
 
   // Ambil 10 artikel terbaru
-  return allArticles.slice(0, 10);
+  return allArticles.slice(0, 5);
 }
 
 
