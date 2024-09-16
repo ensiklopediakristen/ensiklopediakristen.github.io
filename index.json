@@ -14,6 +14,7 @@
       "title": "Alkitab",
       "articles": [
         { "title": "Alkitab", "file": "markdown/alkitab.md", "slug": "alkitab", "date": "2024-05-16 14:48:40" },
+        { "title": "Ringkasan Alkitab", "file": "markdown/ringkasan_alkitab.md", "slug": "ringkasanalkitab", "date": "2024-06-16 21:15:32" },
         { "title": "Kitab Ayub", "file": "markdown/kitab_ayub.md", "slug": "kitabayub", "date": "2024-05-15 01:35:50" }
       ]
     },
