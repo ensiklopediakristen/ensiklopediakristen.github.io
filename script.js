@@ -237,112 +237,102 @@ document.addEventListener("DOMContentLoaded", async function() {
     mainContent.appendChild(recentArticlesList);
     displayPagination(page, totalPages);
   }
-  
   //menampilkan pagination
   function displayPagination(currentPage, totalPages) {
     const paginationDiv = document.createElement("div");
     paginationDiv.classList.add("pagination");
-
     const maxPageLinks = 10; // Maksimal 10 nomor halaman di tengah
-
     // Tombol "Sebelumnya"
     if (currentPage > 1) {
-        const prevLink = document.createElement("a");
-        prevLink.textContent = "sebelumnya";
-        prevLink.href = `#page-${currentPage - 1}`;
-        prevLink.addEventListener("click", (event) => {
-            event.preventDefault();
-            displayArticlesByPage(currentPage - 1);
-            window.scrollTo(0, 0);
-        });
-        paginationDiv.appendChild(prevLink);
+      const prevLink = document.createElement("a");
+      prevLink.textContent = "sebelumnya";
+      prevLink.href = `#page-${currentPage - 1}`;
+      prevLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        displayArticlesByPage(currentPage - 1);
+        window.scrollTo(0, 0);
+      });
+      paginationDiv.appendChild(prevLink);
     }
-
     // Tautan halaman pertama
     const firstPageLink = document.createElement("a");
     firstPageLink.textContent = 1;
     firstPageLink.href = `#page-1`;
     if (currentPage === 1) {
-        firstPageLink.classList.add("active");
-        firstPageLink.style.fontWeight = "bold";
+      firstPageLink.classList.add("active");
+      firstPageLink.style.fontWeight = "bold";
     }
     firstPageLink.addEventListener("click", (event) => {
-        event.preventDefault();
-        displayArticlesByPage(1);
-        window.scrollTo(0, 0);
+      event.preventDefault();
+      displayArticlesByPage(1);
+      window.scrollTo(0, 0);
     });
     paginationDiv.appendChild(firstPageLink);
-
     // Tampilkan "..." jika ada gap antara halaman 1 dan halaman pertama dalam rentang
     if (currentPage > Math.floor(maxPageLinks / 2) + 1) {
-        const dotsLink = document.createElement("span");
-        dotsLink.textContent = "...";
-        paginationDiv.appendChild(dotsLink);
+      const dotsLink = document.createElement("span");
+      dotsLink.textContent = "...";
+      paginationDiv.appendChild(dotsLink);
     }
-
     // Hitung rentang halaman yang akan ditampilkan di tengah
     let startPage = Math.max(2, currentPage - Math.floor(maxPageLinks / 2));
     let endPage = Math.min(totalPages - 1, currentPage + Math.floor(maxPageLinks / 2));
-
     // Pastikan jumlah halaman yang ditampilkan tidak melebihi maxPageLinks
     if (currentPage <= Math.floor(maxPageLinks / 2)) {
-        endPage = Math.min(totalPages - 1, maxPageLinks);
+      endPage = Math.min(totalPages - 1, maxPageLinks);
     } else if (currentPage + Math.floor(maxPageLinks / 2) >= totalPages) {
-        startPage = Math.max(2, totalPages - maxPageLinks);
+      startPage = Math.max(2, totalPages - maxPageLinks);
     }
-
     // Tautan halaman di tengah
     for (let i = startPage; i <= endPage; i++) {
-        const pageLink = document.createElement("a");
-        pageLink.textContent = i;
-        pageLink.href = `#page-${i}`;
-        if (i === currentPage) {
-            pageLink.classList.add("active");
-            pageLink.style.fontWeight = "bold";
-        }
-        pageLink.addEventListener("click", (event) => {
-            event.preventDefault();
-            displayArticlesByPage(i);
-            window.scrollTo(0, 0);
-        });
-        paginationDiv.appendChild(pageLink);
+      const pageLink = document.createElement("a");
+      pageLink.textContent = i;
+      pageLink.href = `#page-${i}`;
+      if (i === currentPage) {
+        pageLink.classList.add("active");
+        pageLink.style.fontWeight = "bold";
+      }
+      pageLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        displayArticlesByPage(i);
+        window.scrollTo(0, 0);
+      });
+      paginationDiv.appendChild(pageLink);
     }
     // Tampilkan "..." jika ada gap antara halaman terakhir dalam rentang dan halaman terakhir secara keseluruhan
     if (endPage < totalPages - 1) {
-        const dotsLink = document.createElement("span");
-        dotsLink.textContent = "...";
-        paginationDiv.appendChild(dotsLink);
+      const dotsLink = document.createElement("span");
+      dotsLink.textContent = "...";
+      paginationDiv.appendChild(dotsLink);
     }
     // Tautan halaman terakhir
     const lastPageLink = document.createElement("a");
     lastPageLink.textContent = totalPages;
     lastPageLink.href = `#page-${totalPages}`;
     if (currentPage === totalPages) {
-        lastPageLink.classList.add("active");
-        lastPageLink.style.fontWeight = "bold";
+      lastPageLink.classList.add("active");
+      lastPageLink.style.fontWeight = "bold";
     }
     lastPageLink.addEventListener("click", (event) => {
-        event.preventDefault();
-        displayArticlesByPage(totalPages);
-        window.scrollTo(0, 0);
+      event.preventDefault();
+      displayArticlesByPage(totalPages);
+      window.scrollTo(0, 0);
     });
     paginationDiv.appendChild(lastPageLink);
-
     // Tombol "Berikutnya"
     if (currentPage < totalPages) {
-        const nextLink = document.createElement("a");
-        nextLink.textContent = "berikutnya";
-        nextLink.href = `#page-${currentPage + 1}`;
-        nextLink.addEventListener("click", (event) => {
-            event.preventDefault();
-            displayArticlesByPage(currentPage + 1);
-            window.scrollTo(0, 0);
-        });
-        paginationDiv.appendChild(nextLink);
+      const nextLink = document.createElement("a");
+      nextLink.textContent = "berikutnya";
+      nextLink.href = `#page-${currentPage + 1}`;
+      nextLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        displayArticlesByPage(currentPage + 1);
+        window.scrollTo(0, 0);
+      });
+      paginationDiv.appendChild(nextLink);
     }
-
     mainContent.appendChild(paginationDiv);
-}
+  }
   // Fungsi untuk mendapatkan semua artikel kecuali beranda
   function getAllArticlesExcludingHome() {
     const allArticles = [...articles];
@@ -434,56 +424,49 @@ document.addEventListener("DOMContentLoaded", async function() {
         `> Kategori (${totalArticles})`;
     });
     // Fungsi untuk menangani pencarian artikel
-function searchArticles(query) {
-  const lowerCaseQuery = query.toLowerCase();
-  
-  // Gabungkan semua artikel dari artikel tanpa kategori dan kategori
-  const allArticles = [...articles, ...categories.flatMap(category => category.articles)];
-  
-  // Cari artikel yang judulnya mengandung query
-  return allArticles.filter(article => article.title.toLowerCase().includes(lowerCaseQuery));
-}
-
-// Fungsi untuk menampilkan hasil pencarian
-function displaySearchResults(query) {
-  const searchResults = document.getElementById("search-results");
-  const results = searchArticles(query);
-
-  // Kosongkan hasil pencarian sebelumnya
-  searchResults.innerHTML = "";
-
-  if (results.length === 0) {
-    searchResults.innerHTML = `<p>Tidak ada artikel yang ditemukan.</p>`;
-  } else {
-    const ul = document.createElement("ul");
-    results.forEach(article => {
-      const li = document.createElement("li");
-      const a = document.createElement("a");
-      a.textContent = article.title;
-      a.href = `#${article.slug}`;
-      a.addEventListener("click", (event) => {
-        event.preventDefault();
-        loadArticleBySlug(article.slug);
-        searchResults.classList.add("hidden"); // Sembunyikan hasil setelah artikel dibuka
-      });
-      li.appendChild(a);
-      ul.appendChild(li);
+    function searchArticles(query) {
+      const lowerCaseQuery = query.toLowerCase();
+      // Gabungkan semua artikel dari artikel tanpa kategori dan kategori
+      const allArticles = [...articles, ...categories.flatMap(category => category.articles)];
+      // Cari artikel yang judulnya mengandung query
+      return allArticles.filter(article => article.title.toLowerCase().includes(lowerCaseQuery));
+    }
+    // Fungsi untuk menampilkan hasil pencarian
+    function displaySearchResults(query) {
+      const searchResults = document.getElementById("search-results");
+      const results = searchArticles(query);
+      // Kosongkan hasil pencarian sebelumnya
+      searchResults.innerHTML = "";
+      if (results.length === 0) {
+        searchResults.innerHTML = `<p>Tidak ada artikel yang ditemukan.</p>`;
+      } else {
+        const ul = document.createElement("ul");
+        results.forEach(article => {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.textContent = article.title;
+          a.href = `#${article.slug}`;
+          a.addEventListener("click", (event) => {
+            event.preventDefault();
+            loadArticleBySlug(article.slug);
+            searchResults.classList.add("hidden"); // Sembunyikan hasil setelah artikel dibuka
+          });
+          li.appendChild(a);
+          ul.appendChild(li);
+        });
+        searchResults.appendChild(ul);
+      }
+      searchResults.classList.remove("hidden");
+    }
+    // Event listener untuk pencarian saat pengguna mengetik
+    document.getElementById("search-input").addEventListener("input", function(event) {
+      const query = event.target.value.trim(); // Trim untuk menghapus spasi berlebih
+      if (query.length > 2) {
+        displaySearchResults(query);
+      } else {
+        document.getElementById("search-results").classList.add("hidden"); // Sembunyikan hasil pencarian jika input kosong
+      }
     });
-    searchResults.appendChild(ul);
-  }
-
-  searchResults.classList.remove("hidden");
-}
-
-// Event listener untuk pencarian saat pengguna mengetik
-document.getElementById("search-input").addEventListener("input", function(event) {
-  const query = event.target.value.trim(); // Trim untuk menghapus spasi berlebih
-  if (query.length > 2) {
-    displaySearchResults(query);
-  } else {
-    document.getElementById("search-results").classList.add("hidden"); // Sembunyikan hasil pencarian jika input kosong
-  }
-});
   }
   // Mulai memuat data setelah halaman siap
   await loadData();
