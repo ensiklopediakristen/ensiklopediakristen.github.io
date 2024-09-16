@@ -13,8 +13,9 @@
     {
       "title": "Alkitab",
       "articles": [
-        { "title": "Alkitab", "file": "markdown/alkitab.md", "slug": "alkitab", "date": "2024-05-16 14:48:40" },
-        { "title": "Ringkasan Alkitab", "file": "markdown/ringkasan_alkitab.md", "slug": "ringkasanalkitab", "date": "2024-06-16 21:15:32" },
+        { "title": "Alkitab", "file": "markdown/alkitab.md", "slug": "alkitab", "date": "2024-09-16 14:48:40" },
+        { "title": "Ringkasan Alkitab", "file": "markdown/ringkasan_alkitab.md", "slug": "ringkasanalkitab", "date": "2024-09-16 15:15:32" },
+        { "title": "Alkitab Perjanjian Lama", "file": "markdown/alkitab_perjanjian_lama.md", "slug": "perjanjianlama", "date": "2024-09-16 16:09:24" },
         { "title": "Kitab Ayub", "file": "markdown/kitab_ayub.md", "slug": "kitabayub", "date": "2024-05-15 01:35:50" }
       ]
     },
@@ -50,7 +51,7 @@
         { "title": "Hashem", "file": "markdown/hashem.md", "slug": "hashem", "date": "2024-04-08 08:20:18" },
         { "title": "Tetragrammaton", "file": "markdown/tetragrammaton.md", "slug": "tetragrammaton", "date": "2024-04-25 21:41:35" },
         { "title": "Yahweh", "file": "markdown/yahweh.md", "slug": "yahweh", "date": "2024-06-21 23:40:21" },
-        { "title": "YHWH", "file": "markdown/yhwh.md", "slug": "yhwh", "date": "2024-09-22 07:18:20" }
+        { "title": "YHWH", "file": "markdown/yhwh.md", "slug": "yhwh", "date": "2024-08-22 07:18:20" }
       ]
     }
   ]

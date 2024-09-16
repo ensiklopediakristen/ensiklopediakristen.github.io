@@ -5,24 +5,27 @@ document.addEventListener("DOMContentLoaded", async function() {
   const articleList = document.getElementById("article-list");
   const mainContent = document.getElementById("main-content");
   async function loadData() {
-    try {
-      const response = await fetch('index.json');
-      const data = await response.json();
-      articles = data.articles;
-      categories = data.categories;
-      populateArticleList();
-      // Cek apakah ada hash di URL (misalnya #slug)
-      const currentHash = window.location.hash.replace("#", "") || "beranda";
-      // Muat artikel berdasarkan hash, atau default ke beranda
-      loadArticleBySlug(currentHash);
-      window.addEventListener("hashchange", () => {
-        const slug = window.location.hash.replace("#", "");
-        loadArticleBySlug(slug);
-      });
-    } catch (error) {
-      console.error("Error loading data:", error);
-    }
+  try {
+    const response = await fetch('index.json');
+    const data = await response.json();
+    
+    articles = data.articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+    categories = data.categories.map(category => {
+      category.articles = category.articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+      return category;
+    });
+    
+    populateArticleList();
+    const currentHash = window.location.hash.replace("#", "") || "beranda";
+    loadArticleBySlug(currentHash);
+    window.addEventListener("hashchange", () => {
+      const slug = window.location.hash.replace("#", "");
+      loadArticleBySlug(slug);
+    });
+  } catch (error) {
+    console.error("Error loading data:", error);
   }
+}
   function getArticleDetails(file) {
     return fetch(file)
       .then(response => response.text())
@@ -162,16 +165,19 @@ document.addEventListener("DOMContentLoaded", async function() {
   }
   // Fungsi untuk menampilkan artikel terbaru dengan pagination
   function getRecentArticles(page = 1, articlesPerPage = 15) {
-    const allArticles = getAllArticlesExcludingHome();
-    const filteredArticles = allArticles.filter(article => article.file !== "beranda.md");
-    filteredArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
-    const startIndex = (page - 1) * articlesPerPage;
-    const endIndex = startIndex + articlesPerPage;
-    return {
-      articles: filteredArticles.slice(startIndex, endIndex),
-      totalPages: Math.ceil(filteredArticles.length / articlesPerPage),
-    };
-  }
+  const allArticles = getAllArticlesExcludingHome();
+  const filteredArticles = allArticles.filter(article => article.file !== "beranda.md");
+
+  // Sort articles by date (newest first)
+  filteredArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  const startIndex = (page - 1) * articlesPerPage;
+  const endIndex = startIndex + articlesPerPage;
+  return {
+    articles: filteredArticles.slice(startIndex, endIndex),
+    totalPages: Math.ceil(filteredArticles.length / articlesPerPage),
+  };
+}
   async function displayArticlesByPage(page) {
     const {
       articles: recentArticles,
@@ -423,7 +429,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     });
     // Fungsi untuk menangani pencarian artikel
     function searchArticles(query) {
-      const lowerCaseQuery = query.toLowerCase();
+      const lowerCaseQuery =query.toLowerCase();
       // Gabungkan semua artikel dari artikel tanpa kategori dan kategori
       const allArticles = [...articles, ...categories.flatMap(category => category.articles)];
       // Cari artikel yang judulnya mengandung query
