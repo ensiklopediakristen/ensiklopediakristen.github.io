@@ -98,7 +98,7 @@ button a {
 
 #search-results ul li a {
   text-decoration: none;
-  color: #007BFF;
+  color: #6b0028;
 }
 
 #search-results ul li a:hover {
@@ -345,7 +345,7 @@ footer {
 
 .pagination a.active {
   background-color: honeydew; /* Warna background untuk halaman aktif */
-  color: white !importamt;     /* Warna teks untuk halaman aktif */
+  color: #004f75 !important;     /* Warna teks untuk halaman aktif */
   border-color: black;     /* Border untuk halaman aktif */
 }
 
@@ -360,10 +360,16 @@ footer {
 }
 
 .recent-articles li{
+  list-style-type: none;
   margin-left: -1.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   margin-top: 10px;
   padding: 10px;
-border-radius: 5px;
+  padding-left: -1.5;
+  border-radius: 5px;
+}
+
+.recent-articles p{
+    margin-top: 10px;
 }
