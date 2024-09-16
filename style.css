@@ -30,6 +30,11 @@ header input[type="text"] {
   border: none;
 }
 
+.logo{
+    width: 50px;
+    height: auto;
+}
+
 button {
   padding: 5px;
   border-radius: 5px;
@@ -321,44 +326,40 @@ footer {
   }
 }
 
-.recent-articles li,
-.random-article {
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* Agar elemen pagination berada di tengah */
+  margin-top: 20px;         /* Tambahkan jarak di atas pagination */
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #333 !important;              /* Warna teks pagination */
+  padding: 3px 3px;       /* Tambahkan padding untuk memperbesar area klik */
+  margin: 5px;            /* Jarak antar link pagination */
+  border: 1px solid #ddd;   /* Tambahkan border */
+  border-radius: 3px;       /* Tambahkan border-radius untuk sudut melengkung */
+  font-size: 0.7;
+}
+
+.pagination a.active {
+  background-color: honeydew; /* Warna background untuk halaman aktif */
+  color: white !importamt;     /* Warna teks untuk halaman aktif */
+  border-color: black;     /* Border untuk halaman aktif */
+}
+
+.pagination a:hover {
+  background-color: #f0f0f0; /* Warna background saat di-hover */
+  border-color: #ccc;        /* Border saat di-hover */
+}
+
+.recent-articles{
+  padding-left: 0;
   list-style-type: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
 }
 
-.recent-articles {
+.recent-articles li{
+  background: yellow;
   margin-left: -1.5rem;
-}
-
-.terbaru {
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.recent-articles li h3 {
-  font-size: 1rem;
-}
-
-.random-article h2 {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.random-article h3 {
-  font-size: 1rem;
-}
-
-.recent-articles li p,
-.random-article p {
-  margin-top: 10px;
-}
-
-.kategori-info {
-  margin-top: 10px;
-  font-weight: bold;
 }
