@@ -139,6 +139,12 @@ header a {
   margin-bottom: 1rem;
 }
 
+blockquote{
+    border-left: solid #e3e3e3 5px;
+    padding-left: 1rem;
+    margin-left: 0;
+}
+
 #main-content img {
   display: block;
   width: 60%;
