@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", async function() {
       console.error("Error loading data:", error);
     }
   }
-
   function getArticleDetails(file) {
     return fetch(file)
       .then(response => response.text())
@@ -59,7 +58,6 @@ document.addEventListener("DOMContentLoaded", async function() {
       updateMeta(name, name === 'description' ? description : keywords);
     });
   }
-
   function updateMeta(name, content) {
     let metaTag = document.querySelector(`meta[name='${name}']`);
     if (!metaTag) {
@@ -142,7 +140,7 @@ document.addEventListener("DOMContentLoaded", async function() {
       const response = await fetch(file);
       const text = await response.text();
       mainContent.innerHTML = md.render(text);
-      linkifyContent();
+      linkifyContent();      
       if (slug !== "beranda" && category) {
         const categoryInfo = document.createElement("div");
         categoryInfo.innerHTML = `Artikel ini dalam kategori: <a href="#" class="category-link">${category}</a>`;
