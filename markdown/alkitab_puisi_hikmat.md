@@ -16,13 +16,13 @@
 
 ## Pengertian Kitab Puisi dan Hikmat
 
-Kitab-kitab Puisi dan Hikmat dalam Perjanjian Lama terdiri dari lima kitab yang berfokus pada tema-tema kehidupan manusia, pencarian akan hikmat, dan hubungan pribadi dengan Allah. Kitab-kitab ini berisi puisi-puisi indah, nasihat kehidupan, serta refleksi mendalam tentang keberadaan manusia di dunia yang diciptakan Allah. Melalui pengajaran moral dan spiritual, kitab-kitab ini menolong pembaca untuk menemukan kebijaksanaan, mengatasi penderitaan, dan memahami kasih yang sejati.
+Kitab Puisi dan Hikmat dalam Perjanjian Lama terdiri dari lima kitab yang berfokus pada tema-tema kehidupan manusia, pencarian akan hikmat, dan hubungan pribadi dengan Allah. Kitab-kitab ini berisi puisi-puisi indah, nasihat kehidupan, serta refleksi mendalam tentang keberadaan manusia di dunia yang diciptakan Allah. Melalui pengajaran moral dan spiritual, kitab-kitab ini menolong pembaca untuk menemukan kebijaksanaan, mengatasi penderitaan, dan memahami kasih yang sejati.
 
 ---
 
-## Daftar Kitab-Kitab Puisi dan Hikmat
+## Daftar Kitab Puisi dan Hikmat
 
-### 1. **Ayub**
+### 1. **Kitab Ayub**
    Kitab Ayub adalah kisah tentang penderitaan seorang yang saleh bernama Ayub. Kitab ini menggali pertanyaan mendalam tentang keadilan Allah dan makna penderitaan manusia.
    > *"Dengan telanjang aku keluar dari kandungan ibuku, dengan telanjang juga aku akan kembali ke dalamnya; TUHAN yang memberi, TUHAN yang mengambil, terpujilah nama TUHAN!"* — **Ayub 1:21 (TB)**
 
@@ -34,7 +34,7 @@ Kitab-kitab Puisi dan Hikmat dalam Perjanjian Lama terdiri dari lima kitab yang 
    Amsal berisi nasihat-nasihat bijak tentang kehidupan yang baik, bagaimana menjalani hidup yang penuh hikmat, takut akan TUHAN, dan bagaimana menghindari kebodohan.
    > *"Takut akan TUHAN adalah permulaan pengetahuan, tetapi orang bodoh menghina hikmat dan didikan."* — **Amsal 1:7 (TB)**
 
-### 4. **Pengkhotbah**
+### 4. **Kitab Pengkhotbah**
    Kitab Pengkhotbah merenungkan kefanaan hidup dan usaha manusia mencari makna di tengah kesia-siaan dunia. Pengkhotbah menawarkan refleksi mendalam tentang kehidupan yang bersandar kepada Allah.
    > *"Akhir kata dari segala yang didengar ialah: Takutlah akan Allah dan berpeganglah pada perintah-perintah-Nya, karena ini adalah kewajiban setiap orang."* — **Pengkhotbah 12:13 (TB)**
 
@@ -50,7 +50,7 @@ Kitab-kitab Puisi dan Hikmat dalam Perjanjian Lama terdiri dari lima kitab yang 
    Kitab Ayub dan beberapa Mazmur mengeksplorasi pertanyaan tentang penderitaan manusia dan bagaimana Allah hadir dalam penderitaan tersebut. Meskipun ada rasa putus asa, kitab-kitab ini juga menawarkan penghiburan dan pengharapan dalam Allah.
 
 ### 2. **Hikmat dan Kebodohan**
-   Amsal, Pengkhotbah, dan Mazmur menyoroti pentingnya hikmat dan takut akan Allah sebagai landasan kehidupan yang bijaksana. Hikmat diperlihatkan sebagai anugerah dari Allah, sementara kebodohan adalah jalan menuju kehancuran.
+   Kitab Amsal, Pengkhotbah, dan Mazmur menyoroti pentingnya hikmat dan takut akan Allah sebagai landasan kehidupan yang bijaksana. Hikmat diperlihatkan sebagai anugerah dari Allah, sementara kebodohan adalah jalan menuju kehancuran.
 
 ### 3. **Kehidupan dan Kesia-siaan**
    Kitab Pengkhotbah mengeksplorasi kekosongan usaha manusia untuk mencari makna tanpa Allah. Dalam pandangan penulis, segala sesuatu di bawah matahari adalah kesia-siaan, kecuali jika seseorang hidup dengan takut akan Allah.
@@ -71,6 +71,3 @@ Kitab-kitab ini mengajarkan bahwa hidup penuh dengan tantangan, kebingungan, dan
 Kitab-kitab Puisi dan Hikmat dalam Alkitab Perjanjian Lama memberikan pandangan yang mendalam tentang kehidupan manusia dan hubungan dengan Allah. Mereka mengajarkan bahwa hikmat, penghiburan, dan kasih hanya dapat ditemukan dalam hubungan yang benar dengan Allah. Dari penderitaan Ayub hingga pengajaran hikmat dalam Amsal, dan dari pujian Mazmur hingga cinta dalam Kidung Agung, kitab-kitab ini mengingatkan pembaca bahwa Allah hadir di setiap aspek kehidupan. Dengan hikmat yang berasal dari Allah, manusia dapat menemukan arti yang lebih dalam dalam hidup ini.
 
 ---
-
-### Alt Gambar untuk SEO:
-"Ilustrasi Kitab Puisi dan Hikmat dalam Alkitab - Refleksi Kehidupan, Hikmat, dan Kasih dalam Perjanjian Lama"

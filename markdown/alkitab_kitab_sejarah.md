@@ -23,21 +23,21 @@
 
 ## Daftar Kitab-Kitab Sejarah
 
-### 1. Yosua
+### 1. Kitab Yosua
 
 Kitab ini menceritakan kepemimpinan Yosua setelah Musa, penaklukan Tanah Kanaan, dan pembagian tanah kepada suku-suku Israel.
 
 > * Kuatkan dan teguhkanlah hatimu, sebab engkaulah yang akan memimpin bangsa ini memiliki negeri yang Kujanjikan dengan bersumpah kepada nenek moyang mereka untuk diberikan kepada mereka. ,*
 > — **Yosua 1:6 (TB)**
 
-### 2. Hakim-Hakim
+### 2. Kitab Hakim-Hakim
 
 Mengisahkan periode hakim-hakim, di mana Israel berulang kali meninggalkan Allah, ditindas oleh musuh, lalu diselamatkan oleh para hakim yang diangkat oleh Allah.
 
 > *Pada zaman itu tidak ada raja di antara orang Israel; setiap orang berbuat apa yang benar menurut pandangannya sendiri.* 
 > — **Hakim-Hakim 21:25 (TB)**
 
-### 3. Rut
+### 3. Kitab Rut
 
 Menceritakan kisah kesetiaan Rut, seorang wanita Moab, yang akhirnya menjadi nenek moyang Raja Daud, melalui pernikahannya dengan Boas.
 
@@ -65,21 +65,21 @@ Kitab ini menyoroti sejarah Israel dari sudut pandang rohani, khususnya garis ke
 > *Kemudian duduklah Salomo sebagai raja menggantikan Daud, ayahnya, di atas takhta yang ditetapkan TUHAN; ia mendapat kemujuran, sehingga setiap orang Israel mendengarkan perkataannya.* 
 > — **1 Tawarikh 29:23 (TB)**
 
-### 7. Ezra
+### 7. Kitab Ezra
 
 Mengisahkan kembalinya umat Israel dari pembuangan Babel, serta usaha Ezra untuk mengajarkan hukum Allah dan memulihkan kehidupan rohani umat Israel.
 
 > *Sebab Ezra telah bertekad untuk meneliti Taurat TUHAN dan melakukannya serta mengajar ketetapan dan peraturan di antara orang Israel.*
 > — **Ezra 7:10 (TB)**
 
-### 8. Nehemia
+### 8. Kitab Nehemia
 
 Berfokus pada usaha Nehemia untuk membangun kembali tembok Yerusalem, dan pemulihan sosial serta keagamaan umat Israel setelah pembuangan.
 
 > *kataku: "Ya, TUHAN, Allah semesta langit, Allah yang maha besar dan dahsyat, yang berpegang pada perjanjian dan kasih setia-Nya terhadap orang yang kasih kepada-Nya dan tetap mengikuti perintah-perintah-Nya*
 > — **Nehemia 1:5 (TB)**
 
-### 9. Ester
+### 9. Kitab Ester
 
 Menceritakan bagaimana Ester, seorang wanita Yahudi, menjadi ratu di Persia dan menyelamatkan bangsanya dari pemusnahan oleh musuh mereka, Haman.
 

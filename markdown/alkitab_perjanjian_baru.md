@@ -26,17 +26,17 @@ Perjanjian Baru merupakan bagian kedua dari Alkitab Kristen yang berisi 27 kitab
 
 Perjanjian Baru terdiri dari beberapa bagian utama yang mengandung tema-tema teologis berbeda, namun semuanya berfokus pada Yesus Kristus sebagai inti dari keselamatan.
 
-### 1. Injil (Matius, Markus, Lukas, Yohanes)
+### 1. Injil (Injil Matius, Injil Markus, Injil Lukas, Injil Yohanes)
 
 Keempat kitab Injil memberikan catatan kehidupan dan ajaran Yesus Kristus. Setiap Injil memiliki sudut pandang yang unik:
 
-- **Matius**: Ditulis untuk orang Yahudi, menekankan Yesus sebagai Raja Mesianik yang menggenapi nubuat Perjanjian Lama.
+- **Injil Matius**: Ditulis untuk orang Yahudi, menekankan Yesus sebagai Raja Mesianik yang menggenapi nubuat Perjanjian Lama.
 
-- **Markus**: Injil yang paling singkat dan langsung, menekankan Yesus sebagai Hamba yang penuh kuasa.
+- **Injil Markus**: Injil yang paling singkat dan langsung, menekankan Yesus sebagai Hamba yang penuh kuasa.
 
-- **Lukas**: Ditujukan untuk pembaca non-Yahudi, dengan fokus pada belas kasih Yesus dan peran Roh Kudus.
+- **Injil Lukas**: Ditujukan untuk pembaca non-Yahudi, dengan fokus pada belas kasih Yesus dan peran Roh Kudus.
 
-- **Yohanes**: Menekankan keilahian Yesus dan hubungan-Nya dengan Allah Bapa.
+- **Injil Yohanes**: Menekankan keilahian Yesus dan hubungan-Nya dengan Allah Bapa.
 
 ### 2. Kisah Para Rasul
 
@@ -48,7 +48,7 @@ Rasul Paulus menulis sebagian besar surat dalam Perjanjian Baru, yang ditujukan 
 
 - **Roma**: Keadilan Allah dan keselamatan melalui iman kepada Yesus.
 
-- **1 dan 2 Korintus**: Instruksi tentang masalah gerejawi dan penegasan kasih sebagai dasar kehidupan Kristen.
+- **1 Korintus dan 2 Korintus**: Instruksi tentang masalah gerejawi dan penegasan kasih sebagai dasar kehidupan Kristen.
 
 - **Galatia**: Pembelaan atas Injil dan peringatan terhadap legalisme.
 
@@ -58,13 +58,13 @@ Rasul Paulus menulis sebagian besar surat dalam Perjanjian Baru, yang ditujukan 
 
 - **Kolose**: Keutamaan Kristus dalam segala hal.
 
-- **1 dan 2 Tesalonika**: Harapan akan kedatangan Yesus yang kedua kali.
+- **1 Tesalonika dan 2 Tesalonika**: Harapan akan kedatangan Yesus yang kedua kali.
 
-- **1 dan 2 Timotius, Titus, Filemon**: Instruksi untuk para pemimpin gereja dan tentang hubungan Kristen.
+- **1 Timotius dan 2 Timotius, Titus, Filemon**: Instruksi untuk para pemimpin gereja dan tentang hubungan Kristen.
 
 ### 4. Surat-Surat Umum (Yakobus, 1-2 Petrus, 1-3 Yohanes, Yudas)
 
-Surat-surat ini ditulis oleh berbagai Rasul dan memiliki fokus yang berbeda-beda. Misalnya, **Yakobus** menekankan iman yang diwujudkan dalam perbuatan, sementara **1 Yohanes** menekankan kasih sebagai bukti hubungan dengan Allah.
+Surat-surat ini ditulis oleh berbagai Rasul dan memiliki fokus yang berbeda-beda. Misalnya, **Surat Yakobus** menekankan iman yang diwujudkan dalam perbuatan, sementara **1 Yohanes** menekankan kasih sebagai bukti hubungan dengan Allah.
 
 ### 5. Kitab Wahyu
 

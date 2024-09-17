@@ -1,4 +1,4 @@
-# Alkitab Perjanjian Lama: Struktur, Isi, dan Makna dalam Sejarah
+# Alkitab Perjanjian Lama: Dasar dari Kisah Alkitab
 
 ---
 
@@ -38,7 +38,7 @@ Kitab-kitab ini mencakup sejarah penciptaan dunia, kejatuhan manusia, pemanggila
 > — **Kejadian 1:1 (TB)**
 
 ### 2. Kitab Sejarah
-- **Yosua** hingga **Ester**.
+- **Kitab Yosua** hingga **Kitab Ester**.
    
 Kitab-kitab ini menggambarkan sejarah bangsa Israel dari penaklukan Tanah Perjanjian hingga pembuangan di Babel. Ini mencakup masa para hakim, kerajaan Israel dan Yehuda, serta periode pasca-pembuangan.
 
@@ -58,7 +58,7 @@ Kitab-kitab ini berisi puisi, nyanyian, doa, dan ajaran hikmat yang mencakup tem
 > — **Mazmur 23:1 (TB)**
 
 ### 4. Kitab Nabi-Nabi
-- **Yesaya** hingga **Maleakhi**.
+- **Kitab Yesaya** hingga **Kitab Maleakhi**.
    
 Kitab-kitab nubuat ini berisi pesan dari para nabi yang memperingatkan bangsa Israel tentang dosa, memanggil mereka kembali kepada Allah, serta menubuatkan kedatangan Mesias dan kerajaan Allah.
 

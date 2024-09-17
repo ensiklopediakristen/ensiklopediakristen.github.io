@@ -17,7 +17,7 @@
 
 ## Apa itu Alkitab?
 
-**Alkitab** adalah kitab suci bagi umat Kristen, yang terdiri dari dua bagian utama: **Perjanjian Lama** dan **Perjanjian Baru**. Alkitab dipercaya sebagai firman Allah yang diwahyukan kepada umat manusia melalui para nabi, rasul, dan tokoh-tokoh yang dipilih oleh Allah. Alkitab tidak hanya berisi sejarah dan hukum-hukum, tetapi juga pengajaran moral, nubuatan, puisi, dan kisah hidup Yesus Kristus, yang menjadi pusat iman Kristen.
+**Alkitab** adalah kitab suci bagi umat Kristen, yang terdiri dari dua bagian utama: **Alkitab Perjanjian Lama** dan **Alkitab Perjanjian Baru**. Alkitab dipercaya sebagai firman Allah yang diwahyukan kepada umat manusia melalui para nabi, rasul, dan tokoh-tokoh yang dipilih oleh Allah. Alkitab tidak hanya berisi sejarah dan hukum-hukum, tetapi juga pengajaran moral, nubuatan, puisi, dan kisah hidup Yesus Kristus, yang menjadi pusat iman Kristen.
 
 Dalam tradisi Kristen Protestan, Alkitab terdiri dari **66 kitab**—39 kitab dalam Perjanjian Lama dan 27 kitab dalam Perjanjian Baru. Sedangkan dalam tradisi Katolik, terdapat **73 kitab**, termasuk beberapa kitab deuterokanonika yang tidak terdapat dalam Alkitab Protestan.
 
@@ -27,11 +27,14 @@ Dalam tradisi Kristen Protestan, Alkitab terdiri dari **66 kitab**—39 kitab da
 
 ### 1. Perjanjian Lama
 
-Perjanjian Lama berisi sejarah penciptaan dunia, hubungan Allah dengan bangsa Israel, serta hukum-hukum dan nubuatan yang mengarahkan kepada kedatangan Mesias. Secara garis besar, Perjanjian Lama terbagi dalam beberapa bagian:
+Alkitab Perjanjian Lama berisi sejarah penciptaan dunia, hubungan Allah dengan bangsa Israel, serta hukum-hukum dan nubuatan yang mengarahkan kepada kedatangan Mesias. Secara garis besar, Perjanjian Lama terbagi dalam beberapa bagian:
 
 - **Kitab Taurat (Pentateukh)**: Berisi lima kitab pertama yang ditulis oleh Musa, yakni Kejadian, Keluaran, Imamat, Bilangan, dan Ulangan.
+
 - **Kitab Sejarah**: Menceritakan perjalanan bangsa Israel dan tokoh-tokoh penting seperti Yosua, Daud, dan Salomo.
+
 - **Kitab Hikmat dan Puisi**: Seperti Ayub, Mazmur, Amsal, dan Pengkhotbah yang berisi ajaran moral dan kebijaksanaan.
+
 - **Kitab Para Nabi**: Nubuatan-nubuatan tentang masa depan Israel dan kedatangan Mesias, seperti Yesaya, Yeremia, dan Yehezkiel.
 
 ### 2. Perjanjian Baru
