@@ -438,7 +438,7 @@ function lazyLoadArticle(event) {
     // Hitung jumlah total artikel
     const totalArticles = articles.length - 1 + categories.reduce((sum, {
       articles
-    }) => sum + articles.length, 0);
+    }) => sum + articles.length, 0) - 1;
     // Tambahkan artikel lain di bawah artikel beranda
     articles
       .filter(({
