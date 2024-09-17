@@ -14,7 +14,7 @@
       "title": "Alkitab",
       "articles": [
         { "title": "Alkitab", "file": "markdown/alkitab.md", "slug": "alkitab", "date": "2024-09-16 14:48:40" },
-        { "title": "Kitab Taurat (Pentateukh)", "file": "markdown/alkitab_pentateukh.md", "slug": "pentateukh", "date": "2024-09-16 19:06:21" },
+        { "title": "Kitab Taurat (Pentateukh)", "file": "markdown/alkitab_taurat.md", "slug": "taurat", "date": "2024-09-16 19:06:21" },
         { "title": "Alkitab Perjanjian Baru", "file": "markdown/alkitab_perjanjian_baru.md", "slug": "perjanjianbaru", "date": "2024-09-16 17:23:43" },
         { "title": "Alkitab Perjanjian Lama", "file": "markdown/alkitab_perjanjian_lama.md", "slug": "perjanjianlama", "date": "2024-09-16 16:09:24" },
         { "title": "Kitab Puisi dan Hikmat", "file": "markdown/alkitab_puisi_hikmat.md", "slug": "kitabpuisihikmat", "date": "2024-09-17 17:32:11" },
