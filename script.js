@@ -237,9 +237,8 @@ function lazyLoadArticle(event) {
 }
   // Fungsi untuk menampilkan artikel terbaru dengan pagination
   function getRecentArticles(page = 1, articlesPerPage = 15) {
-    const allArticles = getAllArticlesExcludingHome();
+    const allArticles = getAllArticlesExcludingHome(); // pastikan beranda tidak ada di sini
     const filteredArticles = allArticles.filter(article => article.file !== "beranda.md");
-    // Sort articles by date (newest first)
     filteredArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
     const startIndex = (page - 1) * articlesPerPage;
     const endIndex = startIndex + articlesPerPage;
@@ -247,7 +246,7 @@ function lazyLoadArticle(event) {
       articles: filteredArticles.slice(startIndex, endIndex),
       totalPages: Math.ceil(filteredArticles.length / articlesPerPage),
     };
-  }  
+}
   async function displayArticlesByPage(page) {
     const {
       articles: recentArticles,
@@ -438,7 +437,7 @@ function lazyLoadArticle(event) {
     // Hitung jumlah total artikel
     const totalArticles = articles.length - 1 + categories.reduce((sum, {
       articles
-    }) => sum + articles.length, 0) - 1;
+    }) => sum + articles.length, 0);
     // Tambahkan artikel lain di bawah artikel beranda
     articles
       .filter(({
