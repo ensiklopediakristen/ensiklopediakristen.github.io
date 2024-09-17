@@ -2,7 +2,7 @@
 
 ---
 
-![Gambar ilustrasi Ayub berbicara dengan sahabat-sahabatnya.)](img/kitab_ayub.jpg)
+![Gambar ilustrasi Ayub berbicara dengan sahabat-sahabatnya.)](img/alkitab_kitab_ayub.jpg)
 
 | **Atribut** | Kitab Ayub |
 |---|---|
