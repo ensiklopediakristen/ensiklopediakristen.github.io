@@ -48,7 +48,7 @@ Kitab-kitab ini menggambarkan sejarah bangsa Israel dari penaklukan Tanah Perjan
 > — **Yosua 24:15 (TB)**
 
 ### 3. **Kitab Puisi dan Hikmat**
-- **Ayub**, **Mazmur**, **Amsal**, **Pengkhotbah**, **Kidung Agung**.
+- **Kitab Ayub**, **Mazmur**, **Amsal**, **Pengkhotbah**, **Kidung Agung**.
    
 Kitab-kitab ini berisi puisi, nyanyian, doa, dan ajaran hikmat yang mencakup tema-tema seperti penderitaan manusia, pujian kepada Allah, serta petunjuk untuk hidup yang bijak.
 

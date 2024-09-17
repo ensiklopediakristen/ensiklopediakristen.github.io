@@ -44,21 +44,21 @@ Menceritakan kisah kesetiaan Rut, seorang wanita Moab, yang akhirnya menjadi nen
 > *Tetapi kata Rut: "Janganlah desak aku meninggalkan engkau dan pulang dengan tidak mengikuti engkau; sebab ke mana engkau pergi, ke situ jugalah aku pergi, dan di mana engkau bermalam, di situ jugalah aku bermalam: bangsamulah bangsaku dan Allahmulah Allahku; "* 
 > — **Rut 1:16 (TB)**
 
-### 4. 1 & 2 Samuel
+### 4. 1 Samuel dan 2 Samuel
 
 Mengisahkan kelahiran kerajaan Israel, dimulai dari kehidupan Samuel sebagai nabi terakhir, masa pemerintahan Saul, hingga kebangkitan Daud sebagai raja yang dipilih Allah.
 
 > *Samuel mengambil tabung tanduk yang berisi minyak itu dan mengurapi Daud di tengah-tengah saudara-saudaranya. Sejak hari itu dan seterusnya berkuasalah Roh TUHAN atas Daud. Lalu berangkatlah Samuel menuju Rama.*
 > * — **1 Samuel 16:13 (TB)**
 
-### 5. 1 & 2 Raja-Raja
+### 5. 1 Raja-Raja dan 2 Raja-Raja
 
 Menceritakan kisah para raja Israel dan Yehuda setelah Daud, mulai dari Salomo hingga kehancuran kerajaan-kerajaan dan pembuangan ke Babel.
 
 > *Hal itu terjadi, karena orang Israel telah berdosa kepada TUHAN, Allah mereka, yang telah menuntun mereka dari tanah Mesir dari kekuasaan Firaun, raja Mesir, dan karena mereka telah menyembah allah lain, [...] sampai TUHAN menjauhkan orang Israel dari hadapan-Nya seperti yang telah difirmankan-Nya dengan perantaraan semua hamba-Nya, para nabi. Orang Israel diangkut dari tanahnya ke Asyur ke dalam pembuangan. Demikianlah sampai hari ini.*
 >  — **2 Raja-raja 17:7-23 (TB)**
 
-### 6. 1 & 2 Tawarikh
+### 6. 1 Tawarikh dan 2 Tawarikh
 
 Kitab ini menyoroti sejarah Israel dari sudut pandang rohani, khususnya garis keturunan Daud dan ibadah di Bait Allah.
  

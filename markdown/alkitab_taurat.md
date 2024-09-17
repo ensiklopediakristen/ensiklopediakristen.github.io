@@ -18,9 +18,9 @@
 
 ---
 
-## Pengertian Pentateukh
+## Pengertian Taurat (Pentateukh)
 
-**Pentateukh** atau **Lima Kitab Musa** merupakan kumpulan lima kitab pertama dalam Alkitab yang dianggap sebagai tulisan-tulisan Musa. Dalam tradisi Yahudi, kelima kitab ini disebut **Torah**, yang berarti "ajaran" atau "hukum." Pentateukh mencakup narasi penciptaan, sejarah awal umat manusia, panggilan Abraham, dan pembentukan bangsa Israel. Kitab-kitab ini juga berisi hukum-hukum yang mengatur kehidupan Israel sebagai umat pilihan Allah.
+**Taurat** (**Pentateukh**) atau **Lima Kitab Musa** merupakan kumpulan lima kitab pertama dalam Alkitab yang dianggap sebagai tulisan-tulisan Musa. Dalam tradisi Yahudi, kelima kitab ini disebut *Torah* (**תּוֹרָה**), yang berarti "*ajaran*" atau "*hukum.*" Pentateukh mencakup narasi penciptaan, sejarah awal umat manusia, panggilan Abraham, dan pembentukan bangsa Israel. Kitab-kitab ini juga berisi hukum-hukum yang mengatur kehidupan Israel sebagai umat pilihan Allah.
 
 ### 1. Kitab Kejadian (Genesis)
 
@@ -78,14 +78,14 @@ Kitab-kitab ini menunjukkan bagaimana ketaatan kepada Allah mendatangkan berkat,
 
 ---
 
-## Makna Teologis Pentateukh
+## Makna Teologis Taurat (Pentateukh)
 
-Pentateukh menekankan **kedaulatan Allah** sebagai pencipta dan penguasa alam semesta, serta pentingnya **ketaatan umat** terhadap hukum-Nya. Kitab-kitab ini mengajarkan bahwa hubungan dengan Allah berdasarkan **perjanjian** yang memerlukan iman dan ketaatan. Pentateukh juga mengungkapkan keadilan Allah dalam menghukum dosa, sekaligus kasih karunia-Nya dalam menebus umat-Nya.
+Taurat (Pentateukh) menekankan **kedaulatan Allah** sebagai pencipta dan penguasa alam semesta, serta pentingnya **ketaatan umat** terhadap hukum-Nya. Kitab-kitab ini mengajarkan bahwa hubungan dengan Allah berdasarkan **perjanjian** yang memerlukan iman dan ketaatan. Pentateukh juga mengungkapkan keadilan Allah dalam menghukum dosa, sekaligus kasih karunia-Nya dalam menebus umat-Nya.
 
 ---
 
 ## Kesimpulan
 
-Pentateukh merupakan fondasi dari seluruh Alkitab, memberikan konteks sejarah, teologi, dan hukum yang menjadi pedoman bagi umat Israel dan umat Kristen. Melalui lima kitab ini, kita melihat bagaimana Allah membentuk, memelihara, dan memimpin umat-Nya menuju penggenapan janji-Nya, dengan ketaatan kepada hukum-Nya sebagai dasar bagi kehidupan yang diberkati.
+Taurat merupakan fondasi dari seluruh Alkitab, memberikan konteks sejarah, teologi, dan hukum yang menjadi pedoman bagi umat Israel dan umat Kristen. Melalui lima kitab ini, kita melihat bagaimana Allah membentuk, memelihara, dan memimpin umat-Nya menuju penggenapan janji-Nya, dengan ketaatan kepada hukum-Nya sebagai dasar bagi kehidupan yang diberkati.
 
 ---
