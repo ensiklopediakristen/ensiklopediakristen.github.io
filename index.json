@@ -17,6 +17,7 @@
         { "title": "Alkitab: Lima Kitab Musa", "file": "markdown/alkitab_pentateukh.md", "slug": "pentateukh", "date": "2024-09-16 19:06:21" },
         { "title": "Alkitab Perjanjian Baru", "file": "markdown/alkitab_perjanjian_baru.md", "slug": "perjanjianbaru", "date": "2024-09-16 17:23:43" },
         { "title": "Alkitab Perjanjian Lama", "file": "markdown/alkitab_perjanjian_lama.md", "slug": "perjanjianlama", "date": "2024-09-16 16:09:24" },
+        { "title": "Alkitab: Kitab Puisi & Hikmat", "file": "markdown/alkitab_puisi_hikmat.md", "slug": "kitabpuisihikmat", "date": "2024-09-17 17:32:11" },
         { "title": "Alkitab: Kitab-Kitab Sejarah", "file": "markdown/alkitab_kitab_sejarah.md", "slug": "kitabsejarah", "date": "2024-09-17 15:21:49" },
         { "title": "Kitab Ayub", "file": "markdown/kitab_ayub.md", "slug": "kitabayub", "date": "2024-05-15 01:35:50" },
         { "title": "Ringkasan Alkitab", "file": "markdown/ringkasan_alkitab.md", "slug": "ringkasanalkitab", "date": "2024-09-16 15:15:32" }
