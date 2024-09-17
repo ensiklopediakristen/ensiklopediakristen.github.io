@@ -27,7 +27,7 @@
 
 Kitab ini menceritakan kepemimpinan Yosua setelah Musa, penaklukan Tanah Kanaan, dan pembagian tanah kepada suku-suku Israel.
 
-> * Kuatkan dan teguhkanlah hatimu, sebab engkaulah yang akan memimpin bangsa ini memiliki negeri yang Kujanjikan dengan bersumpah kepada nenek moyang mereka untuk diberikan kepada mereka. ,*
+> * Kuatkan dan teguhkanlah hatimu, sebab engkaulah yang akan memimpin bangsa ini memiliki negeri yang Kujanjikan dengan bersumpah kepada nenek moyang mereka untuk diberikan kepada mereka.*
 > — **Yosua 1:6 (TB)**
 
 ### 2. Kitab Hakim-Hakim
@@ -41,7 +41,7 @@ Mengisahkan periode hakim-hakim, di mana Israel berulang kali meninggalkan Allah
 
 Menceritakan kisah kesetiaan Rut, seorang wanita Moab, yang akhirnya menjadi nenek moyang Raja Daud, melalui pernikahannya dengan Boas.
 
-> *Tetapi kata Rut: "Janganlah desak aku meninggalkan engkau dan pulang dengan tidak mengikuti engkau; sebab ke mana engkau pergi, ke situ jugalah aku pergi, dan di mana engkau bermalam, di situ jugalah aku bermalam: bangsamulah bangsaku dan Allahmulah Allahku; * 
+> *Tetapi kata Rut: "Janganlah desak aku meninggalkan engkau dan pulang dengan tidak mengikuti engkau; sebab ke mana engkau pergi, ke situ jugalah aku pergi, dan di mana engkau bermalam, di situ jugalah aku bermalam: bangsamulah bangsaku dan Allahmulah Allahku; "* 
 > — **Rut 1:16 (TB)**
 
 ### 4. 1 & 2 Samuel
