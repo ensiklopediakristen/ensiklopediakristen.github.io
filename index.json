@@ -1,6 +1,6 @@
 {
   "articles": [
-    { "title": "Beranda", "file": "beranda.md", "slug": "beranda", "date": "0000-00-00 00:00:00"}
+    { "title": "Beranda", "file": "beranda.md", "slug": "beranda", "date": "2024-01-01 01:01:01"}
   ],
   "categories": [
     {
@@ -14,7 +14,7 @@
       "title": "Alkitab",
       "articles": [
         { "title": "Alkitab", "file": "markdown/alkitab.md", "slug": "alkitab", "date": "2024-09-16 14:48:40" },
-        { "title": "Alkitab: 5 Kitab Musa", "file": "markdown/alkitab_pentateukh.md", "slug": "pentateukh", "date": "2024-09-16 19:06:21" },
+        { "title": "Alkitab: Lima Kitab Musa", "file": "markdown/alkitab_pentateukh.md", "slug": "pentateukh", "date": "2024-09-16 19:06:21" },
         { "title": "Alkitab Perjanjian Baru", "file": "markdown/alkitab_perjanjian_baru.md", "slug": "perjanjianbaru", "date": "2024-09-16 17:23:43" },
         { "title": "Alkitab Perjanjian Lama", "file": "markdown/alkitab_perjanjian_lama.md", "slug": "perjanjianlama", "date": "2024-09-16 16:09:24" },
         { "title": "Alkitab: Kitab-Kitab Sejarah", "file": "markdown/alkitab_kitab_sejarah.md", "slug": "kitabsejarah", "date": "2024-09-17 15:21:49" },
