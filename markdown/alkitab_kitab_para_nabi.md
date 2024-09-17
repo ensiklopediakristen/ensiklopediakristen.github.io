@@ -2,7 +2,7 @@
 
 ---
 
-![Ilustrasi Kitab Para Nabi dalam Alkitab, menampilkan seorang nabi yang berbicara kepada bangsa Israel dengan latar belakang kota kuno dan cahaya surgawi, menggambarkan pesan ilahi yang disampaikan melalui para nabi](img/kitab_para_nabi.jpg)
+![Ilustrasi Kitab Para Nabi dalam Alkitab, menampilkan seorang nabi yang berbicara kepada bangsa Israel dengan latar belakang kota kuno dan cahaya surgawi, menggambarkan pesan ilahi yang disampaikan melalui para nabi](img/alkitab_kitab_para_nabi.jpg)
 
 | **Atribut** | **Kitab Para Nabi** |
 |---|---|
