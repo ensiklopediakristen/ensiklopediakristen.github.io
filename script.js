@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function() {
   const md = window.markdownit();
   let articles = [],
     categories = [];
-  //  const categories = data.categories;
+//  const categories = data.categories;
   const articleList = document.getElementById("article-list");
   const mainContent = document.getElementById("main-content");
   async function loadData() {
@@ -72,42 +72,43 @@ document.addEventListener("DOMContentLoaded", async function() {
     metaTag.content = content;
   }
   // Fungsi untuk mengganti kata kunci dengan link secara otomatis
-  function linkifyContent() {
-    const keywords = getKeywords();
-    const sortedKeywords = Object.entries(keywords).sort((a, b) => b[0].length - a[0].length);
-    const paragraphs = mainContent.querySelectorAll("p:not(:has(img))");
-    const linksSet = new Set();
-    // Buat ekspresi reguler untuk semua kata kunci
-    const regexMap = new Map();
-    sortedKeywords.forEach(([keyword, slug]) => {
-      const regex = new RegExp(`(?<!>)\\b${keyword}\\b(?!<)`, "gi");
-      regexMap.set(keyword, {
-        regex,
-        slug
-      });
+function linkifyContent() {
+  const keywords = getKeywords();
+  const sortedKeywords = Object.entries(keywords).sort((a, b) => b[0].length - a[0].length);
+  const paragraphs = mainContent.querySelectorAll("p:not(:has(img))");
+  const linksSet = new Set();
+
+  // Buat ekspresi reguler untuk semua kata kunci
+  const regexMap = new Map();
+  sortedKeywords.forEach(([keyword, slug]) => {
+    const regex = new RegExp(`(?<!>)\\b${keyword}\\b(?!<)`, "gi");
+    regexMap.set(keyword, { regex, slug });
+  });
+
+  paragraphs.forEach(paragraph => {
+    let text = paragraph.innerHTML;
+
+    regexMap.forEach(({ regex, slug }, keyword) => {
+      if (regex.test(text)) linksSet.add(`${keyword}#${slug}`);
+      text = text.replace(regex, `<a href="#${slug}" class="keyword-link">${keyword}</a>`);
     });
-    paragraphs.forEach(paragraph => {
-      let text = paragraph.innerHTML;
-      regexMap.forEach(({
-        regex,
-        slug
-      }, keyword) => {
-        if (regex.test(text)) linksSet.add(`${keyword}#${slug}`);
-        text = text.replace(regex, `<a href="#${slug}" class="keyword-link">${keyword}</a>`);
-      });
-      paragraph.innerHTML = text;
+
+    paragraph.innerHTML = text;
+  });
+
+  displayInternalLinks(linksSet);
+
+  // Tambahkan event listener setelah modifikasi selesai
+  document.querySelectorAll(".keyword-link").forEach(link => {
+    link.addEventListener("click", event => {
+      event.preventDefault();
+      loadArticleBySlug(link.getAttribute("href").replace("#", ""));
     });
-    displayInternalLinks(linksSet);
-    // Tambahkan event listener setelah modifikasi selesai
-    document.querySelectorAll(".keyword-link").forEach(link => {
-      link.addEventListener("click", event => {
-        event.preventDefault();
-        loadArticleBySlug(link.getAttribute("href").replace("#", ""));
-      });
-    });
-    // Pindahkan window scroll ke luar loop
-    window.scrollTo(0, 0);
-  }
+  });
+
+  // Pindahkan window scroll ke luar loop
+  window.scrollTo(0, 0);
+}
   // Fungsi untuk menampilkan tautan internal di bawah artikel
   function displayInternalLinks(linksSet) {
     if (linksSet.size > 0) {
@@ -143,79 +144,97 @@ document.addEventListener("DOMContentLoaded", async function() {
     }
   }
   // Fungsi untuk mendapatkan semua kata kunci dari artikel dan membangun peta slug ke artikel
-  function buildKeywordMap() {
-    const keywordMap = new Map();
-    articles.forEach(article => {
+function buildKeywordMap() {
+  const keywordMap = new Map();
+  
+  articles.forEach(article => {
+    keywordMap.set(article.slug, article);
+  });
+  
+  categories.forEach(category => {
+    category.articles.forEach(article => {
       keywordMap.set(article.slug, article);
     });
-    categories.forEach(category => {
-      category.articles.forEach(article => {
-        keywordMap.set(article.slug, article);
-      });
-    });
-    return keywordMap;
+  });
+
+  return keywordMap;
+}
+
+// Fungsi untuk mendapatkan kata kunci dan slug
+function getKeywords() {
+  const keywords = {};
+  const keywordMap = buildKeywordMap();
+  
+  keywordMap.forEach((article, slug) => {
+    keywords[article.title] = slug;
+  });
+
+  return keywords;
+}
+
+// Fungsi untuk memuat artikel berdasarkan slug
+async function loadArticleBySlug(slug) {
+  const keywordMap = buildKeywordMap();
+  const article = keywordMap.get(slug);
+
+  if (article) {
+    await loadMarkdown(article.file, article.title, article.category, slug);
+    // Set hash in the URL to the article slug
+    window.location.hash = slug;
+  } else {
+    mainContent.innerHTML = `<h2>Artikel tidak ditemukan</h2>`;
+    updateMetaTags("Artikel tidak ditemukan", "Artikel tidak ditemukan", "404, tidak ditemukan");
   }
-  // Fungsi untuk mendapatkan kata kunci dan slug
-  function getKeywords() {
-    const keywords = {};
-    const keywordMap = buildKeywordMap();
-    keywordMap.forEach((article, slug) => {
-      keywords[article.title] = slug;
-    });
-    return keywords;
-  }
-  // Fungsi untuk memuat artikel berdasarkan slug
-  async function loadArticleBySlug(slug) {
-    const keywordMap = buildKeywordMap();
-    const article = keywordMap.get(slug);
-    if (article) {
-      await loadMarkdown(article.file, article.title, article.category, slug);
-      // Set hash in the URL to the article slug
-      window.location.hash = slug;
-    } else {
-      mainContent.innerHTML = `<h2>Artikel tidak ditemukan</h2>`;
-      updateMetaTags("Artikel tidak ditemukan", "Artikel tidak ditemukan", "404, tidak ditemukan");
-    }
-  }
+}
   // Fungsi untuk memuat dan menampilkan markdown
-  async function loadMarkdown(file, title, category, slug) {
-    try {
-      const response = await fetch(file);
-      const text = await response.text();
-      mainContent.innerHTML = md.render(text);
-      linkifyContent();
-      const description = text.split('\n')[0].substring(0, 50);
-      updateMetaTags(title, description, `${title}, ${category}`);
-      // Jika halaman beranda, tampilkan artikel terbaru dengan pagination
-      if (file === "beranda.md") {
-        displayArticlesByPage(1); // Tampilkan artikel terbaru di halaman 1
-      }
-    } catch (error) {
-      console.error("Error loading markdown:", error);
+async function loadMarkdown(file, title, category, slug) {
+  try {
+    const response = await fetch(file);
+    const text = await response.text();
+    mainContent.innerHTML = md.render(text);
+    linkifyContent();
+    const description = text.split('\n')[0].substring(0, 50);
+    updateMetaTags(title, description, `${title}, ${category}`);
+    // Jika halaman beranda, tampilkan artikel terbaru dengan pagination
+    if (file === "beranda.md") {
+      displayArticlesByPage(1); // Tampilkan artikel terbaru di halaman 1
     }
+  } catch (error) {
+    console.error("Error loading markdown:", error);
   }
-  // Fungsi untuk menampilkan daftar artikel berdasarkan kategori
-  function showCategoryArticles(categoryTitle) {
-    mainContent.innerHTML = `<h2>Daftar Artikel dalam Kategori: ${categoryTitle}</h2>`;
-    const ulCategoryArticles = document.createElement("ul");
-    // Cari kategori yang sesuai dan tampilkan artikel-artikelnya
-    const category = categories.find(cat => cat.title === categoryTitle);
-    if (category) {
-      category.articles.forEach(article => {
-        ulCategoryArticles.appendChild(createArticleItem(article, categoryTitle));
-      });
-    } else {
-      ulCategoryArticles.innerHTML = `<li>Tidak ada artikel dalam kategori ini</li>`;
-    }
-    mainContent.appendChild(ulCategoryArticles);
+}
+
+// Fungsi untuk menampilkan daftar artikel berdasarkan kategori
+function showCategoryArticles(categoryTitle) {
+  mainContent.innerHTML = `<h2>Daftar Artikel dalam Kategori: ${categoryTitle}</h2>`;
+  const ulCategoryArticles = document.createElement("ul");
+
+  // Cari kategori yang sesuai dan tampilkan artikel-artikelnya
+  const category = categories.find(cat => cat.title === categoryTitle);
+  if (category) {
+    category.articles.forEach(article => {
+      ulCategoryArticles.appendChild(createArticleItem(article, categoryTitle));
+    });
+  } else {
+    ulCategoryArticles.innerHTML = `<li>Tidak ada artikel dalam kategori ini</li>`;
   }
-  // Fungsi untuk membuat item daftar artikel
-  function createArticleItem(article, category) {
-    const li = document.createElement("li");
-    li.innerHTML = `<a href="#${article.slug}" data-file="${article.file}" data-category="${category}" data-slug="${article.slug}">${article.title}</a>`;
-    li.querySelector("a").addEventListener("click", lazyLoadArticle);
-    return li;
-  }
+
+  mainContent.appendChild(ulCategoryArticles);
+}
+// Fungsi untuk membuat item daftar artikel
+function createArticleItem(article, category) {
+  const li = document.createElement("li");
+  li.innerHTML = `<a href="#${article.slug}" data-file="${article.file}" data-category="${category}" data-slug="${article.slug}">${article.title}</a>`;
+  li.querySelector("a").addEventListener("click", lazyLoadArticle);
+  return li;
+}
+// Fungsi untuk lazy load artikel
+function lazyLoadArticle(event) {
+  event.preventDefault();
+  const link = event.target;
+  const slug = link.getAttribute('data-slug');
+  loadArticleBySlug(slug);
+}
   // Fungsi untuk menampilkan artikel terbaru dengan pagination
   function getRecentArticles(page = 1, articlesPerPage = 15) {
     const allArticles = getAllArticlesExcludingHome();
@@ -228,7 +247,7 @@ document.addEventListener("DOMContentLoaded", async function() {
       articles: filteredArticles.slice(startIndex, endIndex),
       totalPages: Math.ceil(filteredArticles.length / articlesPerPage),
     };
-  }
+  }  
   async function displayArticlesByPage(page) {
     const {
       articles: recentArticles,
@@ -387,7 +406,7 @@ document.addEventListener("DOMContentLoaded", async function() {
       paginationDiv.appendChild(nextLink);
     }
     mainContent.appendChild(paginationDiv);
-  }
+  }  
   // Fungsi untuk mendapatkan semua artikel kecuali beranda
   function getAllArticlesExcludingHome() {
     const allArticles = [...articles];
@@ -404,21 +423,50 @@ document.addEventListener("DOMContentLoaded", async function() {
     return li;
   }
   // Fungsi untuk mengisi daftar artikel
-  // Only one populateArticleList function
   function populateArticleList() {
+    // Kosongkan daftar artikel sebelum diisi
     articleList.innerHTML = "";
+    // Buat fragment untuk menyimpan elemen secara sementara
     const fragment = document.createDocumentFragment();
-    articles.forEach(article => fragment.appendChild(createArticleItem(article, article.category)));
+    // Muat artikel beranda di bagian atas
+    const homeArticle = articles.find(({
+      slug
+    }) => slug === "beranda");
+    if (homeArticle) {
+      fragment.appendChild(createArticleItem(homeArticle, homeArticle.category));
+    }
+    // Hitung jumlah total artikel
+    const totalArticles = articles.length - 1 + categories.reduce((sum, {
+      articles
+    }) => sum + articles.length, 0);
+    // Tambahkan artikel lain di bawah artikel beranda
+    articles
+      .filter(({
+        slug
+      }) => slug !== "beranda") // Artikel selain beranda
+      .forEach(article => fragment.appendChild(createArticleItem(article, article.category)));
+    // Tambahkan fragment ke dalam articleList
     articleList.appendChild(fragment);
-    const totalArticles = articles.length + categories.reduce((sum, category) => sum + category.articles.length, 0) - 1;
+    // Atur daftar kategori
     setupCategoryList(totalArticles);
-  }
-  // lazyLoadArticle function
+  }  
+  // Fungsi untuk lazy load artikel
   function lazyLoadArticle(event) {
     event.preventDefault();
-    const link = event.target;
-    const slug = link.getAttribute('data-slug');
-    loadArticleBySlug(slug);
+    const {
+      file,
+      category,
+      slug
+    } = event.target.dataset;
+    window.scrollTo(0, 0);
+    window.location.hash = slug;
+    loadMarkdown(file, event.target.textContent, category, slug);
+  }
+  // Fungsi untuk mengisi daftar artikel
+  function populateArticleList() {
+    const totalArticles = articles.length + categories.reduce((sum, category) => sum + category.articles.length, 0) - 1;
+    articles.forEach(article => articleList.appendChild(createArticleItem(article, article.category)));
+    setupCategoryList(totalArticles);
   }
   // Fungsi untuk mengatur daftar kategori
   function setupCategoryList(totalArticles) {
