@@ -75,7 +75,9 @@ document.addEventListener("DOMContentLoaded", async function() {
 function linkifyContent() {
   const keywords = getKeywords();
   const sortedKeywords = Object.entries(keywords).sort((a, b) => b[0].length - a[0].length);
-  const paragraphs = mainContent.querySelectorAll("p:not(:has(img))");
+  
+  // Seleksi elemen yang termasuk dalam pencarian keyword
+  const elementsToSearch = mainContent.querySelectorAll("p:not(:has(img)), h3, h4, strong, em");
   const linksSet = new Set();
 
   // Buat ekspresi reguler untuk semua kata kunci
@@ -85,15 +87,15 @@ function linkifyContent() {
     regexMap.set(keyword, { regex, slug });
   });
 
-  paragraphs.forEach(paragraph => {
-    let text = paragraph.innerHTML;
+  elementsToSearch.forEach(element => {
+    let text = element.innerHTML;
 
     regexMap.forEach(({ regex, slug }, keyword) => {
       if (regex.test(text)) linksSet.add(`${keyword}#${slug}`);
       text = text.replace(regex, `<a href="#${slug}" class="keyword-link">${keyword}</a>`);
     });
 
-    paragraph.innerHTML = text;
+    element.innerHTML = text;
   });
 
   displayInternalLinks(linksSet);
