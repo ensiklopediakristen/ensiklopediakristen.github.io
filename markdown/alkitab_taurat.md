@@ -20,7 +20,7 @@
 
 ## Pengertian Kitab Taurat (Pentateukh)
 
-**Kitab Taurat** (**Pentateukh**) atau **Lima Kitab Musa** merupakan kumpulan lima kitab pertama dalam Alkitab yang dianggap sebagai tulisan-tulisan Musa. Dalam tradisi Yahudi, kelima kitab ini disebut *Torah* (**תּוֹרָה**), yang berarti "*ajaran*" atau "*hukum.*" Pentateukh mencakup narasi penciptaan, sejarah awal umat manusia, panggilan Abraham, dan pembentukan bangsa Israel. Kitab-kitab ini juga berisi hukum-hukum yang mengatur kehidupan Israel sebagai umat pilihan Allah.
+**Kitab Taurat (Pentateukh)** atau **Lima Kitab Musa** merupakan kumpulan lima kitab pertama dalam Alkitab yang dianggap sebagai tulisan-tulisan Musa. Dalam tradisi Yahudi, kelima kitab ini disebut *Torah* (**תּוֹרָה**), yang berarti "*ajaran*" atau "*hukum.*" Pentateukh mencakup narasi penciptaan, sejarah awal umat manusia, panggilan Abraham, dan pembentukan bangsa Israel. Kitab-kitab ini juga berisi hukum-hukum yang mengatur kehidupan Israel sebagai umat pilihan Allah.
 
 ### 1. Kitab Kejadian (Genesis)
 
@@ -80,7 +80,7 @@ Kitab-kitab ini menunjukkan bagaimana ketaatan kepada Allah mendatangkan berkat,
 
 ## Makna Teologis Taurat (Pentateukh)
 
-Taurat (Pentateukh) menekankan **kedaulatan Allah** sebagai pencipta dan penguasa alam semesta, serta pentingnya **ketaatan umat** terhadap hukum-Nya. Kitab-kitab ini mengajarkan bahwa hubungan dengan Allah berdasarkan **perjanjian** yang memerlukan iman dan ketaatan. Pentateukh juga mengungkapkan keadilan Allah dalam menghukum dosa, sekaligus kasih karunia-Nya dalam menebus umat-Nya.
+Kitab Taurat (Pentateukh) menekankan **kedaulatan Allah** sebagai pencipta dan penguasa alam semesta, serta pentingnya **ketaatan umat** terhadap hukum-Nya. Kitab-kitab ini mengajarkan bahwa hubungan dengan Allah berdasarkan **perjanjian** yang memerlukan iman dan ketaatan. Pentateukh juga mengungkapkan keadilan Allah dalam menghukum dosa, sekaligus kasih karunia-Nya dalam menebus umat-Nya.
 
 ---
 
