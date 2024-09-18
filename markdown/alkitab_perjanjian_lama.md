@@ -27,7 +27,8 @@ Perjanjian Lama menyajikan berbagai tema penting seperti penciptaan, kejatuhan m
 
 Perjanjian Lama dibagi menjadi beberapa kategori berdasarkan jenis tulisannya:
 
-### 1. Kitab Hukum (Taurat/Pentateukh)
+### 1. Kitab Taurat  (Pentateukh) / Kitab Hukum
+
 - **Kejadian**, **Keluaran**, **Imamat**, **Bilangan**, dan **Ulangan**.
    
 Kitab-kitab ini mencakup sejarah penciptaan dunia, kejatuhan manusia, pemanggilan Abraham, hingga pembentukan bangsa Israel. Ini juga mencatat perintah-perintah hukum yang diberikan Allah kepada Musa di Gunung Sinai.
@@ -38,6 +39,7 @@ Kitab-kitab ini mencakup sejarah penciptaan dunia, kejatuhan manusia, pemanggila
 > — **Kejadian 1:1 (TB)**
 
 ### 2. Kitab Sejarah
+
 - **Kitab Yosua** hingga **Kitab Ester**.
    
 Kitab-kitab ini menggambarkan sejarah bangsa Israel dari penaklukan Tanah Perjanjian hingga pembuangan di Babel. Ini mencakup masa para hakim, kerajaan Israel dan Yehuda, serta periode pasca-pembuangan.
@@ -47,7 +49,8 @@ Kitab-kitab ini menggambarkan sejarah bangsa Israel dari penaklukan Tanah Perjan
 > *Tetapi jika kamu anggap tidak baik untuk beribadah kepada TUHAN, pilihlah pada hari ini kepada siapa kamu akan beribadah; allah yang kepadanya nenek moyangmu beribadah di seberang sungai Efrat, atau allah orang Amori yang negerinya kamu diami ini. Tetapi aku dan seisi rumahku, kami akan beribadah kepada TUHAN!"*
 > — **Yosua 24:15 (TB)**
 
-### 3. **Kitab Puisi dan Hikmat**
+### 3. Kitab Puisi dan Hikmat
+
 - **Kitab Ayub**, **Mazmur**, **Amsal**, **Pengkhotbah**, **Kidung Agung**.
    
 Kitab-kitab ini berisi puisi, nyanyian, doa, dan ajaran hikmat yang mencakup tema-tema seperti penderitaan manusia, pujian kepada Allah, serta petunjuk untuk hidup yang bijak.
@@ -57,15 +60,20 @@ Kitab-kitab ini berisi puisi, nyanyian, doa, dan ajaran hikmat yang mencakup tem
 > *Mazmur Daud. TUHAN adalah gembalaku, takkan kekurangan aku.*  
 > — **Mazmur 23:1 (TB)**
 
-### 4. Kitab Nabi-Nabi
+### 4. Kitab Para Nabi / Kitab Nabi-Nabi
+
 - **Kitab Yesaya** hingga **Kitab Maleakhi**.
    
 Kitab-kitab nubuat ini berisi pesan dari para nabi yang memperingatkan bangsa Israel tentang dosa, memanggil mereka kembali kepada Allah, serta menubuatkan kedatangan Mesias dan kerajaan Allah.
 
-**Contoh Ayat:**
-
 > *Sebab seorang anak telah lahir untuk kita, seorang putera telah diberikan untuk kita; lambang pemerintahan ada di atas bahunya, dan namanya disebutkan orang: Penasihat Ajaib, Allah yang Perkasa, Bapa yang Kekal, Raja Damai.*
 > — **Yesaya 9:5 (TB)**
+
+Kitab Para Nabi terbagi menjadi dua bagian yaitu Kitab Nabi Besar dan Kitab Nabi Kecil, Kategorisasi ini bukan berdasarkan pentingnya pesan yang mereka sampaikan, melainkan karena panjang kitabnya:
+
+- **Kitab Nabi Besar**: Kitab Yesaya, Kitab Yeremia, Kitab Ratapan, Kitab Yehezkiel, dan Kitab Daniel.
+
+- **Kitab Nabi Kecil**: Kitab Hosea, Kitab Yoel, Kitab Amos, Kitab Obaja, Kitab Yunus, Kitab Mikha, Kitab Nahum, Kitab Habakuk, Kitab Zefanya, Kitab Hagai, Kitab Zakharia, dan Kitab Maleakhi.
 
 ---
 

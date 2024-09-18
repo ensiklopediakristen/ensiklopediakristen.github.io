@@ -22,41 +22,60 @@ Kitab Puisi dan Hikmat dalam Perjanjian Lama terdiri dari lima kitab yang berfok
 
 ## Daftar Kitab Puisi dan Hikmat
 
-### 1. **Kitab Ayub**
-   Kitab Ayub adalah kisah tentang penderitaan seorang yang saleh bernama Ayub. Kitab ini menggali pertanyaan mendalam tentang keadilan Allah dan makna penderitaan manusia.
-   > *"Dengan telanjang aku keluar dari kandungan ibuku, dengan telanjang juga aku akan kembali ke dalamnya; TUHAN yang memberi, TUHAN yang mengambil, terpujilah nama TUHAN!"* — **Ayub 1:21 (TB)**
+### 1. Kitab Ayub
 
-### 2. **Mazmur**
-   Kitab Mazmur terdiri dari 150 puisi dan doa yang mencerminkan pengalaman hidup orang percaya, dari kesedihan hingga sukacita. Mazmur juga digunakan sebagai nyanyian ibadah dalam kehidupan rohani bangsa Israel.
-   > *"TUHAN adalah gembalaku, takkan kekurangan aku."* — **Mazmur 23:1 (TB)**
+Kitab Ayub adalah kisah tentang penderitaan seorang yang saleh bernama Ayub. Kitab ini menggali pertanyaan mendalam tentang keadilan Allah dan makna penderitaan manusia.
 
-### 3. **Amsal**
-   Amsal berisi nasihat-nasihat bijak tentang kehidupan yang baik, bagaimana menjalani hidup yang penuh hikmat, takut akan TUHAN, dan bagaimana menghindari kebodohan.
-   > *"Takut akan TUHAN adalah permulaan pengetahuan, tetapi orang bodoh menghina hikmat dan didikan."* — **Amsal 1:7 (TB)**
+> *katanya: "Dengan telanjang aku keluar dari kandungan ibuku, dengan telanjang juga aku akan kembali ke dalamnya. TUHAN yang memberi, TUHAN yang mengambil, terpujilah nama TUHAN!"* 
+> — **Ayub 1:21 (TB)**
 
-### 4. **Kitab Pengkhotbah**
-   Kitab Pengkhotbah merenungkan kefanaan hidup dan usaha manusia mencari makna di tengah kesia-siaan dunia. Pengkhotbah menawarkan refleksi mendalam tentang kehidupan yang bersandar kepada Allah.
-   > *"Akhir kata dari segala yang didengar ialah: Takutlah akan Allah dan berpeganglah pada perintah-perintah-Nya, karena ini adalah kewajiban setiap orang."* — **Pengkhotbah 12:13 (TB)**
+### 2. Mazmur
 
-### 5. **Kidung Agung**
-   Kidung Agung adalah puisi cinta yang menggambarkan hubungan romantis antara dua kekasih, namun juga dipahami sebagai alegori tentang kasih Allah kepada umat-Nya.
-   > *"Taruhlah aku seperti meterai pada hatimu, seperti meterai pada lenganmu, karena cinta kuat seperti maut, kegairahan gigih seperti dunia orang mati..."* — **Kidung Agung 8:6-7 (TB)**
+Kitab Mazmur terdiri dari 150 puisi dan doa yang mencerminkan pengalaman hidup orang percaya, dari kesedihan hingga sukacita. Mazmur juga digunakan sebagai nyanyian ibadah dalam kehidupan rohani bangsa Israel.
+
+> *Mazmur Daud. TUHAN adalah gembalaku, takkan kekurangan aku.* 
+> — **Mazmur 23:1 (TB)**
+
+### 3. Amsal
+
+Amsal berisi nasihat-nasihat bijak tentang kehidupan yang baik, bagaimana menjalani hidup yang penuh hikmat, takut akan TUHAN, dan bagaimana menghindari kebodohan.
+
+> *Takut akan TUHAN adalah permulaan pengetahuan, tetapi orang bodoh menghina hikmat dan didikan.* 
+> — **Amsal 1:7 (TB)**
+
+### 4. Kitab Pengkhotbah
+
+Kitab Pengkhotbah merenungkan kefanaan hidup dan usaha manusia mencari makna di tengah kesia-siaan dunia. Pengkhotbah menawarkan refleksi mendalam tentang kehidupan yang bersandar kepada Allah.
+
+> *Akhir kata dari segala yang didengar ialah: takutlah akan Allah dan berpeganglah pada perintah-perintah-Nya, karena ini adalah kewajiban setiap orang.* 
+* — **Pengkhotbah 12:13 (TB)**
+
+### 5. Kidung Agung
+
+Kidung Agung adalah puisi cinta yang menggambarkan hubungan romantis antara dua kekasih, namun juga dipahami sebagai alegori tentang kasih Allah kepada umat-Nya.
+
+> *Taruhlah aku seperti meterai pada hatimu, seperti meterai pada lenganmu, karena cinta kuat seperti maut, kegairahan gigih seperti dunia orang mati, nyalanya adalah nyala api, seperti nyala api TUHAN! Air yang banyak tak dapat memadamkan cinta, sungai-sungai tak dapat menghanyutkannya. Sekalipun orang memberi segala harta benda rumahnya untuk cinta, namun ia pasti akan dihina.* 
+> — **Kidung Agung 8:6-7 (TB)**
 
 ---
 
 ## Tema Utama dalam Kitab Puisi dan Hikmat
 
-### 1. **Penderitaan dan Penghiburan**
-   Kitab Ayub dan beberapa Mazmur mengeksplorasi pertanyaan tentang penderitaan manusia dan bagaimana Allah hadir dalam penderitaan tersebut. Meskipun ada rasa putus asa, kitab-kitab ini juga menawarkan penghiburan dan pengharapan dalam Allah.
+### 1. Penderitaan dan Penghiburan
 
-### 2. **Hikmat dan Kebodohan**
-   Kitab Amsal, Pengkhotbah, dan Mazmur menyoroti pentingnya hikmat dan takut akan Allah sebagai landasan kehidupan yang bijaksana. Hikmat diperlihatkan sebagai anugerah dari Allah, sementara kebodohan adalah jalan menuju kehancuran.
+Kitab Ayub dan beberapa Mazmur mengeksplorasi pertanyaan tentang penderitaan manusia dan bagaimana Allah hadir dalam penderitaan tersebut. Meskipun ada rasa putus asa, kitab-kitab ini juga menawarkan penghiburan dan pengharapan dalam Allah.
 
-### 3. **Kehidupan dan Kesia-siaan**
-   Kitab Pengkhotbah mengeksplorasi kekosongan usaha manusia untuk mencari makna tanpa Allah. Dalam pandangan penulis, segala sesuatu di bawah matahari adalah kesia-siaan, kecuali jika seseorang hidup dengan takut akan Allah.
+### 2. Hikmat dan Kebodohan
 
-### 4. **Kasih dan Hubungan**
-   Kidung Agung merayakan kasih dalam bentuk hubungan yang intim antara dua kekasih, namun juga dapat dipahami sebagai gambaran kasih Allah yang mendalam kepada umat-Nya. Kitab ini menunjukkan keindahan kasih dalam konteks komitmen dan kesetiaan.
+Kitab Amsal, Pengkhotbah, dan Mazmur menyoroti pentingnya hikmat dan takut akan Allah sebagai landasan kehidupan yang bijaksana. Hikmat diperlihatkan sebagai anugerah dari Allah, sementara kebodohan adalah jalan menuju kehancuran.
+
+### 3. Kehidupan dan Kesia-siaan
+
+Kitab Pengkhotbah mengeksplorasi kekosongan usaha manusia untuk mencari makna tanpa Allah. Dalam pandangan penulis, segala sesuatu di bawah matahari adalah kesia-siaan, kecuali jika seseorang hidup dengan takut akan Allah.
+
+### 4. Kasih dan Hubungan
+
+Kidung Agung merayakan kasih dalam bentuk hubungan yang intim antara dua kekasih, namun juga dapat dipahami sebagai gambaran kasih Allah yang mendalam kepada umat-Nya. Kitab ini menunjukkan keindahan kasih dalam konteks komitmen dan kesetiaan.
 
 ---
 

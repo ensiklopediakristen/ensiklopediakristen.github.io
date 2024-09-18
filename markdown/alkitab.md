@@ -41,7 +41,7 @@ Alkitab Perjanjian Lama berisi sejarah penciptaan dunia, hubungan Allah dengan b
 
 Perjanjian Baru berfokus pada kehidupan, kematian, kebangkitan, dan ajaran Yesus Kristus. Bagian ini juga mencakup perkembangan gereja mula-mula melalui pelayanan para rasul.
 
-- **Kitab Injil**: Menceritakan kehidupan dan pelayanan Yesus Kristus dalam empat kitab, yaitu Injil Matius, Markus, Lukas, dan Yohanes.
+- **Kitab Injil**: Menceritakan kehidupan dan pelayanan Yesus Kristus dalam empat kitab, yaitu Injil Matius, Injil Markus, Injil Lukas, dan Injil Yohanes.
 
 - **Kitab Sejarah Gereja**: Kisah Para Rasul menggambarkan kelahiran dan penyebaran gereja mula-mula setelah kebangkitan Yesus.
 
@@ -61,7 +61,7 @@ Alkitab aslinya ditulis dalam tiga bahasa utama:
 
 - **Bahasa Yunani**: Perjanjian Baru ditulis dalam bahasa Yunani Koine, bahasa umum pada zaman gereja mula-mula.
 
-Seiring waktu, Alkitab diterjemahkan ke dalam berbagai bahasa untuk menyebarkan firman Allah kepada umat manusia di seluruh dunia. Salah satu terjemahan paling terkenal adalah **Alkitab Latin Vulgata** oleh St. Hieronimus pada abad ke-4. Di Indonesia, terjemahan Alkitab yang umum digunakan adalah **Terjemahan Baru** yang diterbitkan oleh Lembaga Alkitab Indonesia (LAI).
+Seiring waktu, Alkitab diterjemahkan ke dalam berbagai bahasa untuk menyebarkan firman Allah kepada umat manusia di seluruh dunia. Salah satu terjemahan paling terkenal adalah **Alkitab Latin Vulgata** oleh St. Hieronimus pada abad ke-4. Di Indonesia, terjemahan Alkitab yang umum digunakan adalah **Alkitab Terjemahan Baru** yang diterbitkan oleh Lembaga Alkitab Indonesia (LAI).
 
 ---
 
