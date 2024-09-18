@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function() {
   const md = window.markdownit();
   let articles = [],
     categories = [];
-//  const categories = data.categories;
+  //  const categories = data.categories;
   const articleList = document.getElementById("article-list");
   const mainContent = document.getElementById("main-content");
   async function loadData() {
@@ -27,32 +27,30 @@ document.addEventListener("DOMContentLoaded", async function() {
   }
 
   function getArticleDetails(file) {
-    return fetch(file)
-      .then(response => response.text())
-      .then(text => {
-        const renderedContent = md.render(text);
-        const tempDiv = document.createElement("div");
-        tempDiv.innerHTML = renderedContent;
-        // Ambil judul (h1)
-        const title = tempDiv.querySelector("h1") ? tempDiv.querySelector("h1").textContent : "Judul tidak tersedia";
-        // Ambil gambar pertama (img)
-        const img = tempDiv.querySelector("img") ? tempDiv.querySelector("img").src : null;
-        // Ambil excerpt (15 kata dari paragraf pertama di bawah h2)
-        let excerpt = "";
-        const firstH2 = tempDiv.querySelector("h2");
-        if (firstH2) {
-          const nextParagraph = firstH2.nextElementSibling;
-          if (nextParagraph && nextParagraph.tagName.toLowerCase() === "p") {
-            const words = nextParagraph.textContent.split(" ").slice(0, 15).join(" ");
-            excerpt = words + "...";
-          }
+    return fetch(file).then(response => response.text()).then(text => {
+      const renderedContent = md.render(text);
+      const tempDiv = document.createElement("div");
+      tempDiv.innerHTML = renderedContent;
+      // Ambil judul (h1)
+      const title = tempDiv.querySelector("h1") ? tempDiv.querySelector("h1").textContent : "Judul tidak tersedia";
+      // Ambil gambar pertama (img)
+      const img = tempDiv.querySelector("img") ? tempDiv.querySelector("img").src : null;
+      // Ambil excerpt (15 kata dari paragraf pertama di bawah h2)
+      let excerpt = "";
+      const firstH2 = tempDiv.querySelector("h2");
+      if(firstH2) {
+        const nextParagraph = firstH2.nextElementSibling;
+        if(nextParagraph && nextParagraph.tagName.toLowerCase() === "p") {
+          const words = nextParagraph.textContent.split(" ").slice(0, 15).join(" ");
+          excerpt = words + "...";
         }
-        return {
-          title,
-          img,
-          excerpt
-        };
-      });
+      }
+      return {
+        title,
+        img,
+        excerpt
+      };
+    });
   }
   // Fungsi untuk memperbarui atau menambahkan meta tag SEO
   function updateMetaTags(title, description, keywords) {
@@ -64,7 +62,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 
   function updateMeta(name, content) {
     let metaTag = document.querySelector(`meta[name='${name}']`);
-    if (!metaTag) {
+    if(!metaTag) {
       metaTag = document.createElement("meta");
       metaTag.name = name;
       document.head.appendChild(metaTag);
@@ -72,48 +70,61 @@ document.addEventListener("DOMContentLoaded", async function() {
     metaTag.content = content;
   }
   // Fungsi untuk mengganti kata kunci dengan link secara otomatis
-function linkifyContent() {
-  const keywords = getKeywords();
-  const sortedKeywords = Object.entries(keywords).sort((a, b) => b[0].length - a[0].length);
-  
-  // Seleksi elemen yang termasuk dalam pencarian keyword
-  const elementsToSearch = mainContent.querySelectorAll("p:not(:has(img)), h3, h4, strong, em");
-  const linksSet = new Set();
-
-  // Buat ekspresi reguler untuk semua kata kunci
-  const regexMap = new Map();
-  sortedKeywords.forEach(([keyword, slug]) => {
-    const regex = new RegExp(`(?<!>)\\b${keyword}\\b(?!<)`, "gi");
-    regexMap.set(keyword, { regex, slug });
-  });
-
-  elementsToSearch.forEach(element => {
-    let text = element.innerHTML;
-
-    regexMap.forEach(({ regex, slug }, keyword) => {
-      if (regex.test(text)) linksSet.add(`${keyword}#${slug}`);
-      text = text.replace(regex, `<a href="#${slug}" class="keyword-link">${keyword}</a>`);
+  function linkifyContent() {
+    const keywords = getKeywords();
+    const sortedKeywords = Object.entries(keywords).sort((a, b) => b[0].length - a[0].length);
+    // Seleksi elemen yang termasuk dalam pencarian keyword
+    const elementsToSearch = mainContent.querySelectorAll("p:not(:has(img)), h3, h4, strong, em");
+    const linksSet = new Set();
+    // Buat ekspresi reguler untuk semua kata kunci, mengizinkan tanda baca di sekitar kata kunci
+    const regexMap = new Map();
+    sortedKeywords.forEach(([keyword, slug]) => {
+      const escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // Escape special characters
+      // Buat regex yang mengizinkan tanda baca di sekitar keyword, namun tetap mencocokkan kata
+      const regex = new RegExp(`(?<!>)(${escapedKeyword})(?![^<>]*>)`, "gi");
+      regexMap.set(keyword, {
+        regex,
+        slug
+      });
     });
-
-    element.innerHTML = text;
-  });
-
-  displayInternalLinks(linksSet);
-
-  // Tambahkan event listener setelah modifikasi selesai
-  document.querySelectorAll(".keyword-link").forEach(link => {
-    link.addEventListener("click", event => {
-      event.preventDefault();
-      loadArticleBySlug(link.getAttribute("href").replace("#", ""));
+    elementsToSearch.forEach(element => {
+      // Rekursif untuk memproses setiap node teks di dalam elemen, tanpa mengganggu tag <strong> atau <em>
+      function processNode(node) {
+        if(node.nodeType === Node.TEXT_NODE) {
+          let text = node.textContent;
+          regexMap.forEach(({
+            regex,
+            slug
+          }, keyword) => {
+            if(regex.test(text)) linksSet.add(`${keyword}#${slug}`);
+            // Mengganti teks dengan hyperlink, termasuk jika ada tanda baca di sekitarnya
+            text = text.replace(regex, `<a href="#${slug}" class="keyword-link">$1</a>`);
+          });
+          // Ganti node teks dengan HTML yang dimodifikasi
+          const newNode = document.createElement('span');
+          newNode.innerHTML = text;
+          node.replaceWith(newNode);
+        } else if(node.nodeType === Node.ELEMENT_NODE && node.tagName !== 'A' && node.tagName !== 'IMG') {
+          // Jika node adalah elemen lain (selain <a> atau <img>), rekursif ke childNodes
+          Array.from(node.childNodes).forEach(processNode);
+        }
+      }
+      processNode(element);
     });
-  });
-
-  // Pindahkan window scroll ke luar loop
-  window.scrollTo(0, 0);
-}
+    displayInternalLinks(linksSet);
+    // Tambahkan event listener setelah modifikasi selesai
+    document.querySelectorAll(".keyword-link").forEach(link => {
+      link.addEventListener("click", event => {
+        event.preventDefault();
+        loadArticleBySlug(link.getAttribute("href").replace("#", ""));
+      });
+    });
+    // Pindahkan window scroll ke luar loop
+    window.scrollTo(0, 0);
+  }
   // Fungsi untuk menampilkan tautan internal di bawah artikel
   function displayInternalLinks(linksSet) {
-    if (linksSet.size > 0) {
+    if(linksSet.size > 0) {
       // Buat fragment untuk efisiensi DOM
       const fragment = document.createDocumentFragment();
       // Container tautan internal
@@ -146,97 +157,86 @@ function linkifyContent() {
     }
   }
   // Fungsi untuk mendapatkan semua kata kunci dari artikel dan membangun peta slug ke artikel
-function buildKeywordMap() {
-  const keywordMap = new Map();
-  
-  articles.forEach(article => {
-    keywordMap.set(article.slug, article);
-  });
-  
-  categories.forEach(category => {
-    category.articles.forEach(article => {
+  function buildKeywordMap() {
+    const keywordMap = new Map();
+    articles.forEach(article => {
       keywordMap.set(article.slug, article);
     });
-  });
-
-  return keywordMap;
-}
-
-// Fungsi untuk mendapatkan kata kunci dan slug
-function getKeywords() {
-  const keywords = {};
-  const keywordMap = buildKeywordMap();
-  
-  keywordMap.forEach((article, slug) => {
-    keywords[article.title] = slug;
-  });
-
-  return keywords;
-}
-
-// Fungsi untuk memuat artikel berdasarkan slug
-async function loadArticleBySlug(slug) {
-  const keywordMap = buildKeywordMap();
-  const article = keywordMap.get(slug);
-
-  if (article) {
-    await loadMarkdown(article.file, article.title, article.category, slug);
-    // Set hash in the URL to the article slug
-    window.location.hash = slug;
-  } else {
-    mainContent.innerHTML = `<h2>Artikel tidak ditemukan</h2>`;
-    updateMetaTags("Artikel tidak ditemukan", "Artikel tidak ditemukan", "404, tidak ditemukan");
-  }
-}
-  // Fungsi untuk memuat dan menampilkan markdown
-async function loadMarkdown(file, title, category, slug) {
-  try {
-    const response = await fetch(file);
-    const text = await response.text();
-    mainContent.innerHTML = md.render(text);
-    linkifyContent();
-    const description = text.split('\n')[0].substring(0, 50);
-    updateMetaTags(title, description, `${title}, ${category}`);
-    // Jika halaman beranda, tampilkan artikel terbaru dengan pagination
-    if (file === "beranda.md") {
-      displayArticlesByPage(1); // Tampilkan artikel terbaru di halaman 1
-    }
-  } catch (error) {
-    console.error("Error loading markdown:", error);
-  }
-}
-
-// Fungsi untuk menampilkan daftar artikel berdasarkan kategori
-function showCategoryArticles(categoryTitle) {
-  mainContent.innerHTML = `<h2>Daftar Artikel dalam Kategori: ${categoryTitle}</h2>`;
-  const ulCategoryArticles = document.createElement("ul");
-
-  // Cari kategori yang sesuai dan tampilkan artikel-artikelnya
-  const category = categories.find(cat => cat.title === categoryTitle);
-  if (category) {
-    category.articles.forEach(article => {
-      ulCategoryArticles.appendChild(createArticleItem(article, categoryTitle));
+    categories.forEach(category => {
+      category.articles.forEach(article => {
+        keywordMap.set(article.slug, article);
+      });
     });
-  } else {
-    ulCategoryArticles.innerHTML = `<li>Tidak ada artikel dalam kategori ini</li>`;
+    return keywordMap;
   }
-
-  mainContent.appendChild(ulCategoryArticles);
-}
-// Fungsi untuk membuat item daftar artikel
-function createArticleItem(article, category) {
-  const li = document.createElement("li");
-  li.innerHTML = `<a href="#${article.slug}" data-file="${article.file}" data-category="${category}" data-slug="${article.slug}">${article.title}</a>`;
-  li.querySelector("a").addEventListener("click", lazyLoadArticle);
-  return li;
-}
-// Fungsi untuk lazy load artikel
-function lazyLoadArticle(event) {
-  event.preventDefault();
-  const link = event.target;
-  const slug = link.getAttribute('data-slug');
-  loadArticleBySlug(slug);
-}
+  // Fungsi untuk mendapatkan kata kunci dan slug
+  function getKeywords() {
+    const keywords = {};
+    const keywordMap = buildKeywordMap();
+    keywordMap.forEach((article, slug) => {
+      keywords[article.title] = slug;
+    });
+    return keywords;
+  }
+  // Fungsi untuk memuat artikel berdasarkan slug
+  async function loadArticleBySlug(slug) {
+    const keywordMap = buildKeywordMap();
+    const article = keywordMap.get(slug);
+    if(article) {
+      await loadMarkdown(article.file, article.title, article.category, slug);
+      // Set hash in the URL to the article slug
+      window.location.hash = slug;
+    } else {
+      mainContent.innerHTML = `<h2>Artikel tidak ditemukan</h2>`;
+      updateMetaTags("Artikel tidak ditemukan", "Artikel tidak ditemukan", "404, tidak ditemukan");
+    }
+  }
+  // Fungsi untuk memuat dan menampilkan markdown
+  async function loadMarkdown(file, title, category, slug) {
+    try {
+      const response = await fetch(file);
+      const text = await response.text();
+      mainContent.innerHTML = md.render(text);
+      linkifyContent();
+      const description = text.split('\n')[0].substring(0, 50);
+      updateMetaTags(title, description, `${title}, ${category}`);
+      // Jika halaman beranda, tampilkan artikel terbaru dengan pagination
+      if(file === "beranda.md") {
+        displayArticlesByPage(1); // Tampilkan artikel terbaru di halaman 1
+      }
+    } catch (error) {
+      console.error("Error loading markdown:", error);
+    }
+  }
+  // Fungsi untuk menampilkan daftar artikel berdasarkan kategori
+  function showCategoryArticles(categoryTitle) {
+    mainContent.innerHTML = `<h2>Daftar Artikel dalam Kategori: ${categoryTitle}</h2>`;
+    const ulCategoryArticles = document.createElement("ul");
+    // Cari kategori yang sesuai dan tampilkan artikel-artikelnya
+    const category = categories.find(cat => cat.title === categoryTitle);
+    if(category) {
+      category.articles.forEach(article => {
+        ulCategoryArticles.appendChild(createArticleItem(article, categoryTitle));
+      });
+    } else {
+      ulCategoryArticles.innerHTML = `<li>Tidak ada artikel dalam kategori ini</li>`;
+    }
+    mainContent.appendChild(ulCategoryArticles);
+  }
+  // Fungsi untuk membuat item daftar artikel
+  function createArticleItem(article, category) {
+    const li = document.createElement("li");
+    li.innerHTML = `<a href="#${article.slug}" data-file="${article.file}" data-category="${category}" data-slug="${article.slug}">${article.title}</a>`;
+    li.querySelector("a").addEventListener("click", lazyLoadArticle);
+    return li;
+  }
+  // Fungsi untuk lazy load artikel
+  function lazyLoadArticle(event) {
+    event.preventDefault();
+    const link = event.target;
+    const slug = link.getAttribute('data-slug');
+    loadArticleBySlug(slug);
+  }
   // Fungsi untuk menampilkan artikel terbaru dengan pagination
   function getRecentArticles(page = 1, articlesPerPage = 15) {
     const allArticles = getAllArticlesExcludingHome(); // pastikan beranda tidak ada di sini
@@ -248,7 +248,7 @@ function lazyLoadArticle(event) {
       articles: filteredArticles.slice(startIndex, endIndex),
       totalPages: Math.ceil(filteredArticles.length / articlesPerPage),
     };
-}
+  }
   async function displayArticlesByPage(page) {
     const {
       articles: recentArticles,
@@ -257,9 +257,9 @@ function lazyLoadArticle(event) {
     // Clear main content area
     mainContent.innerHTML = "";
     // Tampilkan konten beranda hanya pada halaman 1
-    if (page === 1) {
+    if(page === 1) {
       const homeArticle = articles.find(article => article.slug === "beranda");
-      if (homeArticle) {
+      if(homeArticle) {
         try {
           const response = await fetch(homeArticle.file);
           const homeMarkdown = await response.text();
@@ -285,7 +285,7 @@ function lazyLoadArticle(event) {
         const titleElement = document.createElement("h3");
         titleElement.textContent = details.title;
         li.appendChild(titleElement);
-        if (details.img) {
+        if(details.img) {
           const imgElement = document.createElement("img");
           imgElement.src = details.img;
           imgElement.alt = details.title;
@@ -318,7 +318,7 @@ function lazyLoadArticle(event) {
     paginationDiv.classList.add("pagination");
     const maxPageLinks = 10; // Maksimal 10 nomor halaman di tengah
     // Tombol "Sebelumnya"
-    if (currentPage > 1) {
+    if(currentPage > 1) {
       const prevLink = document.createElement("a");
       prevLink.textContent = "sebelumnya";
       prevLink.href = `#page-${currentPage - 1}`;
@@ -333,7 +333,7 @@ function lazyLoadArticle(event) {
     const firstPageLink = document.createElement("a");
     firstPageLink.textContent = 1;
     firstPageLink.href = `#page-1`;
-    if (currentPage === 1) {
+    if(currentPage === 1) {
       firstPageLink.classList.add("active");
       firstPageLink.style.fontWeight = "bold";
     }
@@ -344,7 +344,7 @@ function lazyLoadArticle(event) {
     });
     paginationDiv.appendChild(firstPageLink);
     // Tampilkan "..." jika ada gap antara halaman 1 dan halaman pertama dalam rentang
-    if (currentPage > Math.floor(maxPageLinks / 2) + 1) {
+    if(currentPage > Math.floor(maxPageLinks / 2) + 1) {
       const dotsLink = document.createElement("span");
       dotsLink.textContent = "...";
       paginationDiv.appendChild(dotsLink);
@@ -353,17 +353,17 @@ function lazyLoadArticle(event) {
     let startPage = Math.max(2, currentPage - Math.floor(maxPageLinks / 2));
     let endPage = Math.min(totalPages - 1, currentPage + Math.floor(maxPageLinks / 2));
     // Pastikan jumlah halaman yang ditampilkan tidak melebihi maxPageLinks
-    if (currentPage <= Math.floor(maxPageLinks / 2)) {
+    if(currentPage <= Math.floor(maxPageLinks / 2)) {
       endPage = Math.min(totalPages - 1, maxPageLinks);
-    } else if (currentPage + Math.floor(maxPageLinks / 2) >= totalPages) {
+    } else if(currentPage + Math.floor(maxPageLinks / 2) >= totalPages) {
       startPage = Math.max(2, totalPages - maxPageLinks);
     }
     // Tautan halaman di tengah
-    for (let i = startPage; i <= endPage; i++) {
+    for(let i = startPage; i <= endPage; i++) {
       const pageLink = document.createElement("a");
       pageLink.textContent = i;
       pageLink.href = `#page-${i}`;
-      if (i === currentPage) {
+      if(i === currentPage) {
         pageLink.classList.add("active");
         pageLink.style.fontWeight = "bold";
       }
@@ -375,7 +375,7 @@ function lazyLoadArticle(event) {
       paginationDiv.appendChild(pageLink);
     }
     // Tampilkan "..." jika ada gap antara halaman terakhir dalam rentang dan halaman terakhir secara keseluruhan
-    if (endPage < totalPages - 1) {
+    if(endPage < totalPages - 1) {
       const dotsLink = document.createElement("span");
       dotsLink.textContent = "...";
       paginationDiv.appendChild(dotsLink);
@@ -384,7 +384,7 @@ function lazyLoadArticle(event) {
     const lastPageLink = document.createElement("a");
     lastPageLink.textContent = totalPages;
     lastPageLink.href = `#page-${totalPages}`;
-    if (currentPage === totalPages) {
+    if(currentPage === totalPages) {
       lastPageLink.classList.add("active");
       lastPageLink.style.fontWeight = "bold";
     }
@@ -395,7 +395,7 @@ function lazyLoadArticle(event) {
     });
     paginationDiv.appendChild(lastPageLink);
     // Tombol "Berikutnya"
-    if (currentPage < totalPages) {
+    if(currentPage < totalPages) {
       const nextLink = document.createElement("a");
       nextLink.textContent = "berikutnya";
       nextLink.href = `#page-${currentPage + 1}`;
@@ -407,7 +407,7 @@ function lazyLoadArticle(event) {
       paginationDiv.appendChild(nextLink);
     }
     mainContent.appendChild(paginationDiv);
-  }  
+  }
   // Fungsi untuk mendapatkan semua artikel kecuali beranda
   function getAllArticlesExcludingHome() {
     const allArticles = [...articles];
@@ -433,7 +433,7 @@ function lazyLoadArticle(event) {
     const homeArticle = articles.find(({
       slug
     }) => slug === "beranda");
-    if (homeArticle) {
+    if(homeArticle) {
       fragment.appendChild(createArticleItem(homeArticle, homeArticle.category));
     }
     // Hitung jumlah total artikel
@@ -441,8 +441,7 @@ function lazyLoadArticle(event) {
       articles
     }) => sum + articles.length, 0);
     // Tambahkan artikel lain di bawah artikel beranda
-    articles
-      .filter(({
+    articles.filter(({
         slug
       }) => slug !== "beranda") // Artikel selain beranda
       .forEach(article => fragment.appendChild(createArticleItem(article, article.category)));
@@ -450,7 +449,7 @@ function lazyLoadArticle(event) {
     articleList.appendChild(fragment);
     // Atur daftar kategori
     setupCategoryList(totalArticles);
-  }  
+  }
   // Fungsi untuk lazy load artikel
   function lazyLoadArticle(event) {
     event.preventDefault();
@@ -488,17 +487,13 @@ function lazyLoadArticle(event) {
       liCategory.querySelector("span").addEventListener("click", () => {
         ulSublist.classList.toggle("hidden");
         liCategory.classList.toggle("expanded");
-        liCategory.querySelector("span").textContent = liCategory.classList.contains("expanded") ?
-          `v ${category.title} (${category.articles.length})` :
-          `> ${category.title} (${category.articles.length})`;
+        liCategory.querySelector("span").textContent = liCategory.classList.contains("expanded") ? `v ${category.title} (${category.articles.length})` : `> ${category.title} (${category.articles.length})`;
       });
     });
     liHeadCategory.querySelector("span").addEventListener("click", () => {
       ulCategoryList.classList.toggle("hidden");
       liHeadCategory.classList.toggle("expanded");
-      liHeadCategory.querySelector("span").textContent = liHeadCategory.classList.contains("expanded") ?
-        `v Kategori (${totalArticles})` :
-        `> Kategori (${totalArticles})`;
+      liHeadCategory.querySelector("span").textContent = liHeadCategory.classList.contains("expanded") ? `v Kategori (${totalArticles})` : `> Kategori (${totalArticles})`;
     });
     // Fungsi untuk menangani pencarian artikel
     function searchArticles(query) {
@@ -514,7 +509,7 @@ function lazyLoadArticle(event) {
       const results = searchArticles(query);
       // Kosongkan hasil pencarian sebelumnya
       searchResults.innerHTML = "";
-      if (results.length === 0) {
+      if(results.length === 0) {
         searchResults.innerHTML = `<p>Tidak ada artikel yang ditemukan.</p>`;
       } else {
         const ul = document.createElement("ul");
@@ -538,7 +533,7 @@ function lazyLoadArticle(event) {
     // Event listener untuk pencarian saat pengguna mengetik
     document.getElementById("search-input").addEventListener("input", function(event) {
       const query = event.target.value.trim(); // Trim untuk menghapus spasi berlebih
-      if (query.length > 2) {
+      if(query.length > 2) {
         displaySearchResults(query);
       } else {
         document.getElementById("search-results").classList.add("hidden"); // Sembunyikan hasil pencarian jika input kosong
