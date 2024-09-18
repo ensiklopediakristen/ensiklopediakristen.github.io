@@ -30,22 +30,29 @@ Dalam tradisi Kristen Protestan, Alkitab terdiri dari **66 kitab**—39 kitab da
 Alkitab Perjanjian Lama berisi sejarah penciptaan dunia, hubungan Allah dengan bangsa Israel, serta hukum-hukum dan nubuatan yang mengarahkan kepada kedatangan Mesias. Secara garis besar, Perjanjian Lama terbagi dalam beberapa bagian:
 
 - **Kitab Taurat (Pentateukh)**: Berisi lima kitab pertama yang ditulis oleh Musa, yakni Kejadian, Keluaran, Imamat, Bilangan, dan Ulangan.
+(Kejadian, Keluaran, Imamat, Bilangan Ulangan)
 
 - **Kitab Sejarah**: Menceritakan perjalanan bangsa Israel dan tokoh-tokoh penting seperti Yosua, Daud, dan Salomo.
+(Kitab Yosua, Hakim-hakim, Kitab Rut, 1 Samuel, 2 Samuel, 1 Raja-raja, 2 Raja, 1 Tawarikh, 2 Tawarikh, Kitab Ezra, Kitab Nehemia, Kitab Ester)
 
-- **Kitab Hikmat dan Puisi**: Seperti Ayub, Mazmur, Amsal, dan Pengkhotbah yang berisi ajaran moral dan kebijaksanaan.
+- **Kitab Hikmat dan Puisi**: Berisi ajaran moral dan kebijaksanaan.
+(Kitab Ayub, Mazmur, Amsal, Kitab Pengkhotbah, Kidung Agung)
 
-- **Kitab Para Nabi**: Nubuatan-nubuatan tentang masa depan Israel dan kedatangan Mesias, seperti Yesaya, Yeremia, dan Yehezkiel.
+- **Kitab Para Nabi**: Nubuatan-nubuatan tentang masa depan Israel dan kedatangan Mesias.
+(**Kitab Nabi Besar**: Kitab Yesaya, Kitab Yeremia, Kitab Ratapan, Kitab Yehezkiel, dan Kitab Daniel, **Kitab Nabi Kecil**: Kitab Hosea, Kitab Yoel, Kitab Amos, Kitab Obaja, Kitab Yunus, Kitab Mikha, Kitab Nahum, Kitab Habakuk, Kitab Zefanya, Kitab Hagai, Kitab Zakharia, dan Kitab Maleakhi)
 
 ### 2. Perjanjian Baru
 
 Perjanjian Baru berfokus pada kehidupan, kematian, kebangkitan, dan ajaran Yesus Kristus. Bagian ini juga mencakup perkembangan gereja mula-mula melalui pelayanan para rasul.
 
-- **Kitab Injil**: Menceritakan kehidupan dan pelayanan Yesus Kristus dalam empat kitab, yaitu Injil Matius, Injil Markus, Injil Lukas, dan Injil Yohanes.
+- **Kitab Injil**: Menceritakan kehidupan dan pelayanan Yesus Kristus dalam empat kitab
+(Injil Matius, Injil Markus, Injil Lukas, dan Injil Yohanes)
 
-- **Kitab Sejarah Gereja**: Kisah Para Rasul menggambarkan kelahiran dan penyebaran gereja mula-mula setelah kebangkitan Yesus.
+- **Kitab Sejarah Gereja**: menggambarkan kelahiran dan penyebaran gereja mula-mula setelah kebangkitan Yesus.
+(Kisah Para Rasul)
 
 - **Surat-Surat Rasul**: Tulisan dari Paulus, Petrus, Yohanes, dan rasul lainnya yang berisi ajaran dan nasihat bagi gereja-gereja.
+(**Surat Paulus**: Roma, 1 Korintus, 2 Korintus, Galatia, Efesus, Filipi, Kolose, 1 Tesalonika, 2 Tesalonika, 1 Timotius, 2 Timotius, Titus, Filemon, Ibrani, **Yakobus**, **1 Petrus**, **1 Yohanes**, **2 Yohanes**, **3 Yohanes**, **Surat Yudas**)
 
 - **Kitab Wahyu**: Menceritakan penglihatan Yohanes tentang akhir zaman dan kedatangan Yesus Kristus yang kedua kali.
 
