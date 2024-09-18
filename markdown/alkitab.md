@@ -25,7 +25,7 @@ Dalam tradisi Kristen Protestan, Alkitab terdiri dari **66 kitab**—39 kitab da
 
 ## Struktur Alkitab
 
-### 1. Perjanjian Lama
+### 1. Alkitab Perjanjian Lama
 
 Alkitab Perjanjian Lama berisi sejarah penciptaan dunia, hubungan Allah dengan bangsa Israel, serta hukum-hukum dan nubuatan yang mengarahkan kepada kedatangan Mesias. Secara garis besar, Perjanjian Lama terbagi dalam beberapa bagian:
 
@@ -41,7 +41,7 @@ Alkitab Perjanjian Lama berisi sejarah penciptaan dunia, hubungan Allah dengan b
 - **Kitab Para Nabi**: Nubuatan-nubuatan tentang masa depan Israel dan kedatangan Mesias.
 (**Kitab Nabi Besar**: Kitab Yesaya, Kitab Yeremia, Kitab Ratapan, Kitab Yehezkiel, dan Kitab Daniel, **Kitab Nabi Kecil**: Kitab Hosea, Kitab Yoel, Kitab Amos, Kitab Obaja, Kitab Yunus, Kitab Mikha, Kitab Nahum, Kitab Habakuk, Kitab Zefanya, Kitab Hagai, Kitab Zakharia, dan Kitab Maleakhi)
 
-### 2. Perjanjian Baru
+### 2. Alkitab Perjanjian Baru
 
 Perjanjian Baru berfokus pada kehidupan, kematian, kebangkitan, dan ajaran Yesus Kristus. Bagian ini juga mencakup perkembangan gereja mula-mula melalui pelayanan para rasul.
 
@@ -52,7 +52,7 @@ Perjanjian Baru berfokus pada kehidupan, kematian, kebangkitan, dan ajaran Yesus
 (Kisah Para Rasul)
 
 - **Surat-Surat Rasul**: Tulisan dari Paulus, Petrus, Yohanes, dan rasul lainnya yang berisi ajaran dan nasihat bagi gereja-gereja.
-(**Surat Paulus**: Roma, 1 Korintus, 2 Korintus, Galatia, Efesus, Filipi, Kolose, 1 Tesalonika, 2 Tesalonika, 1 Timotius, 2 Timotius, Titus, Filemon, Ibrani, **Yakobus**, **1 Petrus**, **1 Yohanes**, **2 Yohanes**, **3 Yohanes**, **Surat Yudas**)
+(**Surat-Surat Paulus**: Roma, 1 Korintus, 2 Korintus, Galatia, Efesus, Filipi, Kolose, 1 Tesalonika, 2 Tesalonika, 1 Timotius, 2 Timotius, Titus, Filemon, Ibrani, **Yakobus**, **1 Petrus**, **1 Yohanes**, **2 Yohanes**, **3 Yohanes**, **Surat Yudas**)
 
 - **Kitab Wahyu**: Menceritakan penglihatan Yohanes tentang akhir zaman dan kedatangan Yesus Kristus yang kedua kali.
 
