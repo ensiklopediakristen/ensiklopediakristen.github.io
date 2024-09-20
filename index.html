@@ -7,7 +7,6 @@
   <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
   <title>Ensiklopedia Kristen - Pengetahuan Seputar Iman dan Sejarah Kristen</title>
   <meta name="description" content="Ensiklopedia Kristen menyajikan artikel lengkap tentang iman, ajaran, dan sejarah Kristen. Temukan informasi yang Anda butuhkan di sini.">
-  <link rel="stylesheet" href="style.css">
 
   <!-- Schema.org markup for Google+ -->
   <meta itemprop="name" content="Ensiklopedia Kristen">
@@ -35,13 +34,14 @@
         "query-input": "required name=search_term_string"
       }
     }
-  </script>
+  </script>  <link rel="stylesheet" href="styles.css">
   <script src="markdown-it.min.js"></script>
-
+  <script src="linkify.min.js"></script>
+  <script src="linkify-html.min.js"></script>
 </head>
 
 <body>
-
+    
   <header>
     <a href="index.html">
       <div>
@@ -52,37 +52,38 @@
     <div>
     </div>
   </header>
+  
+  <main>
+    <div id="heroSection" class="hero-section"></div> 
 
-  <section id="wrapper">
+    <!-- Search and Filter Section -->
+    <div class="filter-section">
+      <input type="text" id="searchInput" placeholder="Cari artikel..." oninput="filterArticles()" />
+    
+      <select id="categorySelect" onchange="filterArticles()">
+        <option value="all">Semua Kategori</option>
+      </select>
+  
+    </div>
+  
+    <button id="backToList" style="display:none;" onclick="backToList()">Kembali ke Daftar Artikel</button>
 
-    <!-- Konten -->
-    <main id="content">
+    <div id="articleDisplay" style="display:none;"></div>
+    
+    <!-- Article List Section -->
+    <div id="articleList" class="article-list"></div>
 
-      <div>
-        <input type="text" id="search-input" placeholder="Cari artikel...">
-        <div id="search-results" class="hidden"></div>
-      </div>      
-
-      <section id="main-content">
-        <!-- Konten markdown akan dimuat di sini -->
-      </section>
-
-    </main>
-
-    <aside id="sidebar">
-      <h3>Daftar Artikel</h3>
-      <ul id="article-list">
-        <!-- Sidebar Links akan diisi oleh wiki.js -->
-      </ul>
-    </aside>
-  </section>
-
+    <!-- Pagination Section -->
+    <div class="pagination" id="pagination"></div>
+                    
+  </main>
+  
   <footer>
     <p>Ensiklopedia Kristen &copy; 2024</p>
   </footer>
-
-  <script type="module" src="script.js"></script>
-
+  
+  <script src="scripts.js"></script>
+    
 </body>
 
 </html>
