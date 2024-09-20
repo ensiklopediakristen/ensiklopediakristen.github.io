@@ -1,0 +1,42 @@
+{ 
+  "Aliran dan Tradisi": [
+    { "file": "data/articles/kabbalah.md", "date": "2024-04-01 13:05:05" },
+    { "file": "data/articles/yahudi_mesianik.md", "date": "2024-06-21 10:26:30" }
+  ],
+  "Alkitab": [
+    { "file": "data/articles/alkitab.md", "date": "2024-09-16 14:48:40" },
+    { "file": "data/articles/alkitab_perjanjian_baru.md", "date": "2024-09-16 17:23:43" },
+    { "file": "data/articles/alkitab_perjanjian_lama.md", "date": "2024-09-16 16:09:24" },
+    { "file": "data/articles/alkitab_kitab_ayub.md", "date": "2024-05-15 01:35:50" },
+    { "file": "data/articles/alkitab_kitab_para_nabi.md", "date": "2024-09-18 07:33:01" },
+    { "file": "data/articles/alkitab_puisi_hikmat.md", "date": "2024-09-17 17:32:11" },
+    { "file": "data/articles/alkitab_kitab_sejarah.md", "date": "2024-09-17 15:21:49" },
+    { "file": "data/articles/alkitab_taurat.md", "date": "2024-09-16 19:06:21" },
+    { "file": "data/articles/alkitab_ringkasan.md", "date": "2024-09-16 15:15:32" }
+  ],
+  "Entitas": [
+    { "file": "data/articles/behemoth.md", "date": "2024-06-26 15:46:12" },
+    { "file": "data/articles/kerub.md", "date": "2024-07-01 01:10:21" },
+    { "file": "data/articles/lewiatan.md", "date": "2024-04-27 21:01:43" },
+    { "file": "data/articles/melkisedek.md", "date": "2024-08-11 19:46:10" },
+    { "file": "data/articles/mesias.md", "date": "2024-01-01 12:18:05" },
+    { "file": "data/articles/naga.md", "date": "2024-03-11 00:07:05" },
+    { "file": "data/articles/sidang_ilahi.md", "date": "2024-08-11 09:20:10" },
+    { "file": "data/articles/ziz.md", "date": "2024-09-01 14:24:53" }
+  ],
+  "Istilah": [
+    { "file": "data/articles/dosa.md", "date": "2024-04-30 14:15:20" },
+    { "file": "data/articles/inkarnasi.md", "date": "2024-09-01 01:06:23" },
+    { "file": "data/articles/kekudusan.md", "date": "2024-08-17 15:39:18" },
+    { "file": "data/articles/kekudusan_tuhan.md", "date": "2024-06-11 09:01:00" },
+    { "file": "data/articles/trinitas.md", "date": "2024-03-24 01:20:21" }
+  ],
+  "Nama Tuhan": [
+    { "file": "data/articles/allah.md", "date": "2024-07-12 12:30:08" },
+    { "file": "data/articles/elohim.md", "date": "2024-03-01 19:27:30" },
+    { "file": "data/articles/hashem.md", "date": "2024-04-08 08:20:18" },
+    { "file": "data/articles/tetragrammaton.md", "date": "2024-04-25 21:41:35" },
+    { "file": "data/articles/yahweh.md", "date": "2024-06-21 23:40:21" },
+    { "file": "data/articles/yhwh.md", "date": "2024-08-22 07:18:20" }
+  ]
+}
