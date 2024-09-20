@@ -22,9 +22,9 @@ Kitab Para Nabi dalam Perjanjian Lama mencakup 17 kitab yang terdiri dari dua ka
 
 ## Daftar Kitab-Kitab Para Nabi
 
-### 1. Kitab Nabi Besar
+### 1. Kitab Nabi-Nabi Besar
 
-Kitab-kitab Nabi Besar berisi pesan-pesan nubuat yang lebih panjang dan lebih mendetail. Mereka mencakup masa-masa penindasan, kehancuran Israel, hingga janji pemulihan dan kedatangan Mesias.
+Kitab Nabi-Nabi Besar berisi pesan-pesan nubuat yang lebih panjang dan lebih mendetail. Mereka mencakup masa-masa penindasan, kehancuran Israel, hingga janji pemulihan dan kedatangan Mesias.
 
 - **Kitab Yesaya**: Yesaya dikenal sebagai nabi yang bernubuat tentang kedatangan Mesias, termasuk penderitaan-Nya demi menebus dosa manusia.
 
@@ -51,9 +51,9 @@ Kitab-kitab Nabi Besar berisi pesan-pesan nubuat yang lebih panjang dan lebih me
 > *Aku terus melihat dalam penglihatan malam itu, tampak datang dengan awan-awan dari langit seorang seperti anak manusia; datanglah ia kepada Yang Lanjut Usianya itu, dan ia dibawa ke hadapan-Nya. Lalu diberikan kepadanya kekuasaan dan kemuliaan dan kekuasaan sebagai raja, maka orang-orang dari segala bangsa, suku bangsa dan bahasa mengabdi kepadanya. Kekuasaannya ialah kekuasaan yang kekal, yang tidak akan lenyap, dan kerajaannya ialah kerajaan yang tidak akan musnah.* 
 > — **Daniel 7:13-14 (TB)**
 
-### 2. Kitab Nabi Kecil
+### 2. Kitab Nabi-Nabi Kecil
 
-Kitab-kitab Nabi Kecil memiliki pesan yang lebih singkat tetapi tetap kuat. Mereka berisi nubuat tentang penghakiman atas bangsa Israel dan bangsa-bangsa lain, serta panggilan untuk bertobat dan janji pemulihan.
+Kitab Nabi-Nabi Kecil memiliki pesan yang lebih singkat tetapi tetap kuat. Mereka berisi nubuat tentang penghakiman atas bangsa Israel dan bangsa-bangsa lain, serta panggilan untuk bertobat dan janji pemulihan.
 
 - **Kitab Hosea**: Nabi Hosea menggambarkan hubungan Allah dengan umat Israel melalui perumpamaan tentang pernikahan, menunjukkan kasih setia Allah meski umat-Nya sering berkhianat.
 

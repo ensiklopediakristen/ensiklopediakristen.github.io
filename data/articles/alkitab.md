@@ -39,7 +39,7 @@ Alkitab Perjanjian Lama berisi sejarah penciptaan dunia, hubungan Allah dengan b
 (Kitab Ayub, Mazmur, Amsal, Kitab Pengkhotbah, Kidung Agung)
 
 - **Kitab Para Nabi**: Nubuatan-nubuatan tentang masa depan Israel dan kedatangan Mesias.
-(**Kitab Nabi Besar**: Kitab Yesaya, Kitab Yeremia, Kitab Ratapan, Kitab Yehezkiel, dan Kitab Daniel, **Kitab Nabi Kecil**: Kitab Hosea, Kitab Yoel, Kitab Amos, Kitab Obaja, Kitab Yunus, Kitab Mikha, Kitab Nahum, Kitab Habakuk, Kitab Zefanya, Kitab Hagai, Kitab Zakharia, dan Kitab Maleakhi)
+(**Kitab Nabi-Nabi Besar**: Kitab Yesaya, Kitab Yeremia, Kitab Ratapan, Kitab Yehezkiel, dan Kitab Daniel, **Kitab Nabi-Nabi Kecil**: Kitab Hosea, Kitab Yoel, Kitab Amos, Kitab Obaja, Kitab Yunus, Kitab Mikha, Kitab Nahum, Kitab Habakuk, Kitab Zefanya, Kitab Hagai, Kitab Zakharia, dan Kitab Maleakhi)
 
 ### 2. Alkitab Perjanjian Baru
 

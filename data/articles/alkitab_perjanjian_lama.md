@@ -27,7 +27,7 @@ Perjanjian Lama menyajikan berbagai tema penting seperti penciptaan, kejatuhan m
 
 Perjanjian Lama dibagi menjadi beberapa kategori berdasarkan jenis tulisannya:
 
-### 1. Kitab Taurat  (Pentateukh) / Kitab Hukum
+### 1. Kitab Taurat (Pentateukh) / Kitab Hukum
 
 - **Kejadian**, **Keluaran**, **Imamat**, **Bilangan**, dan **Ulangan**.
    
@@ -71,9 +71,9 @@ Kitab-kitab nubuat ini berisi pesan dari para nabi yang memperingatkan bangsa Is
 
 Kitab Para Nabi terbagi menjadi dua bagian yaitu Kitab Nabi Besar dan Kitab Nabi Kecil, Kategorisasi ini bukan berdasarkan pentingnya pesan yang mereka sampaikan, melainkan karena panjang kitabnya:
 
-- **Kitab Nabi Besar**: Kitab Yesaya, Kitab Yeremia, Kitab Ratapan, Kitab Yehezkiel, dan Kitab Daniel.
+- **Kitab Nabi-Nabi Besar**: Kitab Yesaya, Kitab Yeremia, Kitab Ratapan, Kitab Yehezkiel, dan Kitab Daniel.
 
-- **Kitab Nabi Kecil**: Kitab Hosea, Kitab Yoel, Kitab Amos, Kitab Obaja, Kitab Yunus, Kitab Mikha, Kitab Nahum, Kitab Habakuk, Kitab Zefanya, Kitab Hagai, Kitab Zakharia, dan Kitab Maleakhi.
+- **Kitab Nabi-Nabi Kecil**: Kitab Hosea, Kitab Yoel, Kitab Amos, Kitab Obaja, Kitab Yunus, Kitab Mikha, Kitab Nahum, Kitab Habakuk, Kitab Zefanya, Kitab Hagai, Kitab Zakharia, dan Kitab Maleakhi.
 
 ---
 
