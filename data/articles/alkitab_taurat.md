@@ -4,7 +4,7 @@
 
 ![Ilustrasi Lima Kitab Musa atau Pentateukh yang menggambarkan kitab-kitab Kejadian, Keluaran, Imamat, Bilangan, dan Ulangan sebagai dasar hukum dan ajaran dalam Perjanjian Lama.](data/img/alkitab_taurat.jpg)
 
-| **Atribut** | **Lima Kitab Musa (Pentateukh)** |
+| **Atribut** | **Kitab Taurat (Pentateukh)** |
 |---|---|
 | **Nama Ibrani** | **תּוֹרָה** (*Torah*) |
 | **Nama Yunani** | **Πεντάτευχος** (*Pentateukh*) |
