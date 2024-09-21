@@ -1,4 +1,4 @@
-# Kitab Kejadian
+# Kejadian
 
 ---
 

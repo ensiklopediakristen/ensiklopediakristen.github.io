@@ -1,4 +1,4 @@
-# Kitab Taurat (Pentateukh)
+# Kitab Taurat
 
 ---
 
