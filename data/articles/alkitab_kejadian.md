@@ -2,7 +2,7 @@
 
 ---
 
-![Ilustrasi Penciptaan dalam Kitab Kejadian](data/img/alkitab_kitab_kejadian.jpg)
+![Ilustrasi Penciptaan dalam Kitab Kejadian](data/img/alkitab_kejadian.jpg)
 
 | **Atribut** | **Kitab Kejadian** |
 | --- | --- |
