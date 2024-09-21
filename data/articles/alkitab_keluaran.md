@@ -2,7 +2,7 @@
 
 ---
 
-![Ilustrasi hitam putih tentang Musa dan bangsa Israel yang sedang melewati Laut Teberau yang terbelah serta pemberian Hukum Taurat di Gunung Sinai.](data/img/alkitab_kitab_keluaran.jpg)
+![Ilustrasi hitam putih tentang Musa dan bangsa Israel yang sedang melewati Laut Teberau yang terbelah serta pemberian Hukum Taurat di Gunung Sinai.](data/img/alkitab_keluaran.jpg)
 
 | **Atribut** | **Kitab Keluaran** |
 | --- | --- |
