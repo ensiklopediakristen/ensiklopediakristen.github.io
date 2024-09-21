@@ -7,7 +7,7 @@
 | **Atribut** | **Kitab-Kitab Sejarah** |
 |---|---|
 | **Jumlah Kitab** | 12 |
-| **Kitab-Kitab** | Yosua, Hakim-Hakim, Rut, 1 & 2 Samuel, 1 & 2 Raja-Raja, 1 & 2 Tawarikh, Ezra, Nehemia, Ester |
+| **Kitab-Kitab** | Kitab Yosua, Hakim-Hakim, Rut, 1 & 2 Samuel, 1 & 2 Raja-Raja, 1 & 2 Tawarikh, Kitab Ezra, Kitab Nehemia, Kitab Ester |
 | **Periode** | Dari masuknya Israel ke Kanaan hingga periode pembuangan dan pemulihan |
 | **Tema Utama** | Kepemimpinan Allah, ketaatan, ketidaktaatan, dan janji pemulihan |
 | **Referensi Utama** | Yosua 1:6-9, 1 Samuel 16:13, 2 Raja-raja 17:7-23, Ezra 7:10 |

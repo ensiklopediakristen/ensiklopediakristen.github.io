@@ -6,7 +6,7 @@
 
 | **Atribut** | **Alkitab Perjanjian Lama** |
 |-------------|------------------------------|
-| **Bahasa Asli** | Ibrani (עִבְרִית, *Ivrit*), Aram (אֲרָמִית, *Aramit*) |
+| **Bahasa Asli** | Ibrani (**עִבְרִית**, *Ivrit*), Aram (**אֲרָמִית**, *Aramit*) |
 | **Jumlah Kitab** | 39 (dalam kanon Protestan) |
 | **Kategori** | Hukum, Sejarah, Puisi, dan Nubuat |
 | **Periode Penulisan** | Sekitar 1400–400 SM |
