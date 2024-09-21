@@ -110,10 +110,20 @@ function filterArticles() {
   const selectedCategory = document.getElementById('categorySelect').value;
   filteredArticles = applyFilter(searchTerm, selectedCategory);
   currentPage = 1;
+  
   // Jika artikel sedang dibuka, tutup artikel dan kembali ke daftar
-  if(isArticleOpen) {
+  if (isArticleOpen) {
     backToList();
   }
+
+  // Sembunyikan hero section saat pencarian
+  const heroSection = document.getElementById('heroSection');
+  if (searchTerm) {
+    heroSection.style.display = 'none';
+  } else if (currentPage === 1 && selectedCategory === 'all' && !isArticleOpen) {
+    heroSection.style.display = 'block';
+  }
+
   renderArticles();
   renderPagination();
 }
@@ -424,5 +434,13 @@ document.getElementById('searchInput').addEventListener('input', () => {
   debounceTimeout = setTimeout(() => {
     filterArticles();
     backToList();
+    
+    // Sembunyikan hero section saat ada input pencarian
+    const heroSection = document.getElementById('heroSection');
+    if (document.getElementById('searchInput').value) {
+      heroSection.style.display = 'none';
+    } else if (!isArticleOpen && currentPage === 1 && document.getElementById('categorySelect').value === 'all') {
+      heroSection.style.display = 'block';
+    }
   }, 300); // Tunda pencarian selama 300 ms setelah input terakhir
 });
