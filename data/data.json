@@ -18,7 +18,8 @@
     { "file": "data/articles/alkitab_perjanjian_lama.md", "date": "2024-09-16 16:09:24" },
     { "file": "data/articles/alkitab_puisi_hikmat.md", "date": "2024-09-17 17:32:11" },
     { "file": "data/articles/alkitab_ringkasan.md", "date": "2024-09-16 15:15:32" },
-    { "file": "data/articles/alkitab_taurat.md", "date": "2024-09-16 19:06:21" }
+    { "file": "data/articles/alkitab_taurat.md", "date": "2024-09-16 19:06:21" },
+    { "file": "data/articles/alkitab_ulangan.md", "date": "2024-09-21 15:39:11" }
   ],
   "Entitas": [
     { "file": "data/articles/behemoth.md", "date": "2024-06-26 15:46:12" },
