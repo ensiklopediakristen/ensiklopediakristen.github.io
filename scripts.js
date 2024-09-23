@@ -167,9 +167,11 @@ async function renderArticles() {
       <a href="#" class="article-link" data-file="${article.file}">
         <div class="article-content">
           <img class="list-img" src="${article.image}" alt="${article.title}">
-          <h3>${article.title}</h3>
+          <div class="article-info">
+            <h3>${article.title}</h3>
+            <p>${article.excerpt}</p>
+          </div>
         </div>
-        <p>${article.excerpt}</p>
       </a>
     `;
     articleItem.querySelector('a.article-link').addEventListener('click', (event) => {

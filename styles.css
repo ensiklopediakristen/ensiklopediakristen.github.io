@@ -72,7 +72,6 @@ main{
 }
 
 .article-item {
-  display: flex;
   background-color: #fff;
   border-radius: 5px;
   padding: 15px;
@@ -80,9 +79,13 @@ main{
   margin: 0 0 15px 0;
 }
 
-.article-item .article-content {
+.article-item .article-content{
   display: flex;
   align-items: center;
+}
+
+.article-info{
+  
 }
 
 .article-item h1 {
