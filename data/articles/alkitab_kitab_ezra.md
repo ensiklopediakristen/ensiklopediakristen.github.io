@@ -1,5 +1,4 @@
-# Ezra
-### Kitab Ezra
+# Kitab Ezra
 
 ---
 
@@ -155,6 +154,8 @@ Kembali ke Yerusalem adalah simbol pemulihan identitas umat Israel sebagai umat 
 4. **Pembaruan Spiritual**  
 
 Proses pengakuan dosa dan pembaruan perjanjian yang dipimpin oleh Ezra menunjukkan bahwa pemulihan bukan hanya tentang fisik, tetapi juga tentang aspek spiritual. Kitab ini mengajak pembaca untuk merenungkan komitmen mereka kepada Allah dan pentingnya pertobatan dalam kehidupan beriman.
+
+---
 
 ## Kesimpulan
 
