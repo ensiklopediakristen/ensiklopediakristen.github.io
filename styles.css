@@ -84,10 +84,6 @@ main{
   align-items: center;
 }
 
-.article-info{
-  
-}
-
 .article-item h1 {
   margin: 0;
   font-size: 24px;
@@ -208,6 +204,11 @@ blockquote{
     color: #5e5e5e;
 }
 
+
+#internalLinks ul{
+  text-transform: capitalize;
+}
+
 footer {
   position: absolute;
   left: 0;
@@ -219,7 +220,7 @@ footer {
   color: white;
 }
 
-#internalLinks ul{
-  text-transform: capitalize;
+footer p a{
+  text-decoration: none;
+  color: honeydew;
 }
-
