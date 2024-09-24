@@ -40,7 +40,7 @@ Kitab-kitab ini mencakup sejarah penciptaan dunia, kejatuhan manusia, pemanggila
 
 ### 2. Kitab-Kitab Sejarah
 
-- **Kitab Yosua** hingga **Kitab Ester**.
+- **Kitab Yosua**, **Hakim-Hakim**, **Kitab Rut**, **1 Samuel**, **2 Samuel**, **1 Raja-Raja**, **2 Raja-Daja**, **1 Tawarikh**, **2 Tawarikh**, **Kitab Ezra**, **Kitab Nehemia**, dan **Kitab Ester**.
    
 Kitab-kitab ini menggambarkan sejarah bangsa Israel dari penaklukan Tanah Perjanjian hingga pembuangan di Babel. Ini mencakup masa para hakim, kerajaan Israel dan Yehuda, serta periode pasca-pembuangan.
 
