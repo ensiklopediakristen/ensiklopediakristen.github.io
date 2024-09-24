@@ -20,7 +20,7 @@
 
 ## 1. Pengantar Kitab Ayub
 
-**Kitab Ayub** adalah salah satu dari kitab-kitab Hikmat dalam Perjanjian Lama, bersama dengan Amsal dan Pengkhotbah. Kitab ini membahas tema yang mendalam tentang *penderitaan*, *keadilan Allah*, dan *iman*. Dalam narasi ini, tokoh utama, Ayub, menghadapi penderitaan ekstrem yang tampaknya tidak adil, meskipun dia adalah orang yang saleh dan taat kepada Allah.
+**Kitab Ayub** adalah salah satu dari kitab-kitab Puisi dan Hikmat dalam Alkitab Perjanjian Lama, bersama dengan Amsal dan Pengkhotbah. Kitab ini membahas tema yang mendalam tentang *penderitaan*, *keadilan Allah*, dan *iman*. Dalam narasi ini, tokoh utama, Ayub, menghadapi penderitaan ekstrem yang tampaknya tidak adil, meskipun dia adalah orang yang saleh dan taat kepada Allah.
 
 Kitab Ayub sering dianggap sebagai salah satu karya sastra paling luar biasa dalam Alkitab, karena kedalaman filosofisnya dan kompleksitas dialog antara Ayub, teman-temannya, dan Allah.
 

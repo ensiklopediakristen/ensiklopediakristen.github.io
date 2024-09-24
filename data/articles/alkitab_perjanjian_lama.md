@@ -29,7 +29,7 @@ Perjanjian Lama dibagi menjadi beberapa kategori berdasarkan jenis tulisannya:
 
 ### 1. Kitab Taurat (Pentateukh) / Kitab Hukum
 
-- **Kejadian**, **Keluaran**, **Imamat**, **Bilangan**, dan **Ulangan**.
+- **Kitab Kejadian**, **Kitab Keluaran**, **Kitab Imamat**, **Kitab Bilangan**, dan **Kitab Ulangan**.
    
 Kitab-kitab ini mencakup sejarah penciptaan dunia, kejatuhan manusia, pemanggilan Abraham, hingga pembentukan bangsa Israel. Ini juga mencatat perintah-perintah hukum yang diberikan Allah kepada Musa di Gunung Sinai.
 
@@ -40,7 +40,7 @@ Kitab-kitab ini mencakup sejarah penciptaan dunia, kejatuhan manusia, pemanggila
 
 ### 2. Kitab-Kitab Sejarah
 
-- **Kitab Yosua**, **Hakim-Hakim**, **Kitab Rut**, **1 Samuel**, **2 Samuel**, **1 Raja-Raja**, **2 Raja-Raja**, **1 Tawarikh**, **2 Tawarikh**, **Kitab Ezra**, **Kitab Nehemia**, dan **Kitab Ester**.
+- **Kitab Yosua** hingga **Kitab Ester**.
    
 Kitab-kitab ini menggambarkan sejarah bangsa Israel dari penaklukan Tanah Perjanjian hingga pembuangan di Babel. Ini mencakup masa para hakim, kerajaan Israel dan Yehuda, serta periode pasca-pembuangan.
 
@@ -51,7 +51,7 @@ Kitab-kitab ini menggambarkan sejarah bangsa Israel dari penaklukan Tanah Perjan
 
 ### 3. Kitab Puisi dan Hikmat
 
-- **Kitab Ayub**, **Mazmur**, **Amsal**, **Pengkhotbah**, **Kidung Agung**.
+- **Kitab Ayub**, **Kitab Mazmur**, **Amsal**, **Pengkhotbah**, **Kidung Agung**.
    
 Kitab-kitab ini berisi puisi, nyanyian, doa, dan ajaran hikmat yang mencakup tema-tema seperti penderitaan manusia, pujian kepada Allah, serta petunjuk untuk hidup yang bijak.
 
