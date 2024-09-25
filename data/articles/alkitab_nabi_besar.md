@@ -7,7 +7,7 @@
 | **Atribut** | **Kitab Nabi Besar** |
 | --- | --- |
 | **Nama Ibrani** | **נְבִיאִים גְּדוֹלִים** (*Nevi'im Gedolim*) |
-| **Kitab Utama** | Yesaya, Yeremia, Ratapan, Yehezkiel, Daniel |
+| **Kitab Utama** | Kitab Yesaya, Kitab Yeremia, Ratapan, Kitab Yehezkiel, Kitab Daniel |
 | **Pesan Utama** | Penghakiman, pemulihan, pengharapan eskatologis |
 | **Penulis** | Nabi-nabi besar Israel yang dipilih oleh Allah |
 | **Latar Belakang** | Periode sebelum, selama, dan sesudah pembuangan Israel |
