@@ -16,7 +16,7 @@
 
 ## Pendahuluan
 
-**Kitab Yesaya** adalah salah satu dari kitab nabi besar dalam Alkitab Perjanjian Lama dalam Kitab Para Nabi yaitu Kitab Nabi-Nabi Besar dan mencakup nubuat penting tentang penghakiman, pengharapan, dan kedatangan seorang Mesias. Nama Yesaya, dalam bahasa Ibrani, berarti "*keselamatan dari Tuhan*," yang sesuai dengan tema-tema besar kitab ini: penghakiman akibat dosa, tetapi juga janji pemulihan dan keselamatan dari Tuhan.
+**Kitab Yesaya** adalah salah satu dari Kitab Nabi-Nabi Besar dalam Alkitab Perjanjian Lama pada Kitab Para Nabi dan mencakup nubuat penting tentang penghakiman, pengharapan, dan kedatangan seorang Mesias. Nama Yesaya, dalam bahasa Ibrani, berarti "*keselamatan dari Tuhan*," yang sesuai dengan tema-tema besar kitab ini: penghakiman akibat dosa, tetapi juga janji pemulihan dan keselamatan dari Tuhan.
 
 Kitab ini berperan penting dalam tradisi Yahudi dan Kristen karena nubuat-nubuatnya tentang seorang Mesias yang akan membawa keselamatan bagi umat manusia. Nubuat mengenai *Hamba yang Menderita* dalam Yesaya 53 dianggap dalam tradisi Kristen sebagai merujuk pada Yesus Kristus.
 
