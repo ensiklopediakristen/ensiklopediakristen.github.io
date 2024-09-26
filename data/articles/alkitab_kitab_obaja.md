@@ -15,7 +15,7 @@
 
 ## Pendahuluan
 
-**Kitab Obaja** adalah kitab terpendek dalam Perjanjian Lama, hanya terdiri dari satu pasal. Kitab ini ditulis oleh nabi Obaja, yang namanya berarti "hamba Tuhan." Kitab ini menyoroti penghakiman Tuhan atas Edom, sebuah bangsa yang berasal dari keturunan Esau, serta janji pemulihan bagi Israel. Dalam konteks sejarahnya, Kitab Obaja memberikan wawasan tentang dinamika antara Israel dan Edom, serta pentingnya keadilan Tuhan dalam menghadapi ketidakadilan.
+**Kitab Obaja** adalah kitab terpendek dalam Alkitab Perjanjian Lama pada Kategori Kitab Para Nabi dalam Kitab Nabi-nabi Kecil, hanya terdiri dari satu pasal. Kitab ini ditulis oleh nabi Obaja, yang namanya berarti "hamba Tuhan." Kitab ini menyoroti penghakiman Tuhan atas Edom, sebuah bangsa yang berasal dari keturunan Esau, serta janji pemulihan bagi Israel. Dalam konteks sejarahnya, Kitab Obaja memberikan wawasan tentang dinamika antara Israel dan Edom, serta pentingnya keadilan Tuhan dalam menghadapi ketidakadilan.
 
 ---
 
