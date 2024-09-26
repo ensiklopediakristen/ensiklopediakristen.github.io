@@ -7,7 +7,7 @@
 | **Atribut** | **Kitab Nabi-Nabi Kecil** |
 | --- | --- |
 | **Nama Ibrani** | **תרי עשר** (*Trei Asar*) |
-| **Kitab Utama** | Hosea, Yoel, Amos, Obaja, Yunus, Mikha, Nahum, Habakuk, Zefanya, Hagai, Zakharia, Maleakhi |
+| **Kitab Utama** | Kitab Hosea, Kitab Yoel, Kitab Amos, Kitab Obaja, Kitab Yunus, Kitab Mikha, Kitab Nahum, Kitab Habakuk, Kitab Zefanya, Kitab Hagai, Kitab Zakharia, Kitab Maleakhi |
 | **Pesan Utama** | Penghakiman, panggilan pertobatan, dan harapan pemulihan |
 | **Penulis** | Nabi-nabi kecil dari Israel dan Yehuda |
 | **Latar Belakang** | Periode sebelum, selama, dan setelah pembuangan Israel |

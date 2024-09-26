@@ -7,7 +7,7 @@
 | **Atribut** | **Kitab Para Nabi** |
 |---|---|
 | **Jumlah Kitab** | 17 |
-| **Kitab-Kitab** | Nabi Besar (Yesaya, Yeremia, Ratapan, Yehezkiel, Daniel), Nabi Kecil (Hosea, Yoel, Amos, Obaja, Yunus, Mikha, Nahum, Habakuk, Zefanya, Hagai, Zakharia, Maleakhi) |
+| **Kitab-Kitab** | Nabi Besar (Kitab Yesaya, Kitab Yeremia, Ratapan, Kitab Yehezkiel, Kitab Daniel), Nabi Kecil (Kitab Hosea, Kitab Yoel, Kitab Amos, Kitab Obaja, Kitab Yunus, Kitab Mikha, Kitab Nahum, Kitab Habakuk, Kitab Zefanya, Kitab Hagai, Kitab Zakharia, Kitab Maleakhi) |
 | **Tema Utama** | Nubuat, penghukuman, penghiburan, pertobatan, dan harapan akan kedatangan Mesias |
 | **Referensi Utama** | Yesaya 53:5, Yeremia 29:11, Yehezkiel 36:26, Daniel 7:13-14, Amos 5:24 |
 | **Makna Teologis** | Panggilan untuk kembali kepada Allah, penghakiman atas dosa, janji pemulihan, dan nubuat tentang kedatangan Mesias |
