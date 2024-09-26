@@ -29,10 +29,10 @@ Dalam tradisi Kristen Protestan, Alkitab terdiri dari **66 kitab**—39 kitab da
 
 Alkitab Perjanjian Lama berisi sejarah penciptaan dunia, hubungan Allah dengan bangsa Israel, serta hukum-hukum dan nubuatan yang mengarahkan kepada kedatangan Mesias. Secara garis besar, Perjanjian Lama terbagi dalam beberapa bagian:
 
-- **Taurat (Pentateukh)**: Berisi lima kitab pertama yang ditulis oleh Musa, yakni Kejadian, Keluaran, Imamat, Bilangan, dan Ulangan.
+- **Taurat (Pentateukh)**: Berisi lima kitab pertama yang ditulis oleh Musa, yakni Kejadian, Keluaran, Imamat, Bilangan, dan Kitab Ulangan.
 
 - **Kitab-Kitab Sejarah**: Menceritakan perjalanan bangsa Israel dan tokoh-tokoh penting seperti Yosua, Daud, dan Salomo.
-(Kitab Yosua, Hakim-hakim, Kitab Rut, 1 Samuel, 2 Samuel, 1 Raja-raja, 2 Raja, 1 Tawarikh, 2 Tawarikh, Kitab Ezra, Kitab Nehemia, Kitab Ester)
+(Kitab Yosua, Hakim-hakim, Kitab Rut, 1 Samuel, 2 Samuel, 1 Raja-raja, 2 Raja-raja, 1 Tawarikh, 2 Tawarikh, Kitab Ezra, Kitab Nehemia, Kitab Ester)
 
 - **Kitab Hikmat dan Puisi**: Berisi ajaran moral dan kebijaksanaan.
 (Kitab Ayub, Mazmur, Amsal, Kitab Pengkhotbah, Kidung Agung)
