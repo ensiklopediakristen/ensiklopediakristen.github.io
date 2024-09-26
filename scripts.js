@@ -6,39 +6,52 @@ let articleContentCache = {}; // Cache untuk menyimpan konten markdown
 let currentPage = 1;
 const articlesPerPage = 15;
 // Fungsi untuk menangani perubahan hash URL
-window.addEventListener('hashchange', () => {
-  const hash = window.location.hash.substring(1); // Hilangkan tanda '#' dari hash
-  if(hash) {
-    // Cari file artikel berdasarkan hash (slug harus cocok sepenuhnya)
-    const articleFile = Object.keys(articleData).find(file => {
-      const slug = file.split('/').pop().replace('.md', ''); // Ambil slug dari nama file
-      return slug === hash; // Cocokkan slug dengan hash
-    });
-    if(articleFile) {
-      renderArticleContent(articleFile); // Tampilkan artikel yang sesuai dengan hash
-    }
-  } else {
-    backToList(); // Jika hash kosong, kembali ke daftar artikel
-  }
-});
-// Fungsi untuk memuat data pada saat halaman diload
 window.addEventListener('DOMContentLoaded', async () => {
   await loadData();
-  // Periksa apakah ada hash di URL saat halaman diload
-  const hash = window.location.hash.substring(1); // Hilangkan tanda '#' dari hash
-  if(hash) {
-    // Cek apakah artikel yang sesuai dengan hash tersedia
-    const articleFile = Object.keys(articleData).find(file => {
-      const slug = file.split('/').pop().replace('.md', ''); // Ambil slug dari nama file
-      return slug === hash; // Cocokkan slug dengan hash
-    });
-    if(articleFile) {
-      renderArticleContent(articleFile); // Tampilkan artikel yang sesuai dengan hash
-    }
-  }
+  handleHashChange(); // Tambahkan fungsi untuk menangani perubahan hash
 });
+window.addEventListener('hashchange', handleHashChange);
+function handleHashChange() {
+  const hash = window.location.hash.substring(1);
+  if (hash) {
+    const articleFile = Object.keys(articleData).find(file => file.includes(hash));
+    if (articleFile) {
+      if (!articleContentCache[articleFile]) {
+        loadArticleData(articleData[articleFile]).then(() => {
+          renderArticleContent(articleFile);
+        });
+      } else {
+        renderArticleContent(articleFile);
+      }
+    }
+  } else {
+    backToList();
+  }
+}
+let isArticleOpen = false; // Tambahkan variabel global
+function renderHero() {
+  const heroSection = document.getElementById('heroSection');
+  const selectedCategory = document.getElementById('categorySelect').value;
+  // Hero hanya ditampilkan di halaman pertama, saat kategori 'All', dan saat artikel tidak dibuka
+  if (currentPage === 1 && selectedCategory === 'all' && !isArticleOpen) {
+    heroSection.style.display = 'block';
+    heroSection.innerHTML = `
+      <div class="hero-content">
+        <h2>Selamat Datang di</h2>
+        <h1>Ensiklopedia Kristen</h1>
+        <h3>Pengetahuan Seputar Iman dan Sejarah Kristen</h3>
+        <p><strong>Ensiklopedia Kristen</strong> adalah platform pengetahuan yang terbuka untuk memperdalam wawasan Anda tentang iman dan sejarah Kristen. Jelajahi artikel-artikel untuk memperkaya pemahaman bersama tentang ajaran dan tradisi Kristen.</p>
+      </div>
+    `;
+  } else {
+    heroSection.style.display = 'none'; // Sembunyikan hero jika artikel dibuka, kategori dipilih, atau bukan di page 1
+  }
+}
 // Inisialisasi Markdown-It
-const md = window.markdownit();
+const md = window.markdownit({
+  linkify: true,
+  typographer: true
+});
 // Fungsi untuk mengambil data dari file JSON
 async function loadData() {
   try {
@@ -61,7 +74,8 @@ async function loadData() {
 // Fungsi untuk mengambil semua artikel secara paralel
 async function loadAllArticles(filePaths) {
   try {
-    await Promise.all(filePaths.map(article => loadArticleData(article)));
+    const fetchPromises = filePaths.map(article => loadArticleData(article));
+    await Promise.all(fetchPromises);
   } catch (error) {
     console.error("Gagal memuat artikel:", error);
   }
@@ -110,12 +124,10 @@ function filterArticles() {
   const selectedCategory = document.getElementById('categorySelect').value;
   filteredArticles = applyFilter(searchTerm, selectedCategory);
   currentPage = 1;
-  
   // Jika artikel sedang dibuka, tutup artikel dan kembali ke daftar
   if (isArticleOpen) {
     backToList();
   }
-
   // Sembunyikan hero section saat pencarian
   const heroSection = document.getElementById('heroSection');
   if (searchTerm) {
@@ -123,63 +135,47 @@ function filterArticles() {
   } else if (currentPage === 1 && selectedCategory === 'all' && !isArticleOpen) {
     heroSection.style.display = 'block';
   }
-
   renderArticles();
   renderPagination();
-}
-let isArticleOpen = false; // Tambahkan variabel global
-function renderHero() {
-  const heroSection = document.getElementById('heroSection');
-  const selectedCategory = document.getElementById('categorySelect').value;
-  // Hero hanya ditampilkan di halaman pertama, saat kategori 'All', dan saat artikel tidak dibuka
-  if(currentPage === 1 && selectedCategory === 'all' && !isArticleOpen) {
-    heroSection.style.display = 'block';
-    heroSection.innerHTML = `
-      <div class="hero-content">
-        <h2>Selamat Datang di</h2>
-        <h1>Ensiklopedia Kristen</h1>
-        <h3>Pengetahuan Seputar Iman dan Sejarah Kristen</h3>
-        <p><strong>Ensiklopedia Kristen</strong> adalah platform pengetahuan yang terbuka untuk memperdalam wawasan Anda tentang iman dan sejarah Kristen. Jelajahi artikel-artikel untuk memperkaya pemahaman bersama tentang ajaran dan tradisi Kristen.</p>
-      </div>
-    `;
-  } else {
-    heroSection.style.display = 'none'; // Sembunyikan hero jika artikel dibuka, kategori dipilih, atau bukan di page 1
-  }
 }
 // Render articles on the current page
 async function renderArticles() {
   const articleList = document.getElementById('articleList');
-  if(!articleList) return;
+  if (!articleList) return;
   articleList.innerHTML = '';
   const sortedArticles = filteredArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
   const start = (currentPage - 1) * articlesPerPage;
   const end = start + articlesPerPage;
   const currentArticles = sortedArticles.slice(start, end);
   renderHero();
-  // Muat artikel secara lazy jika belum dimuat sebelumnya
-  await Promise.all(currentArticles.map(async article => {
-    if(!articleContentCache[article.file]) {
-      await loadArticleData(article); // Muat data artikel jika belum ada di cache
+  // Lazy load articles
+  const lazyLoadPromises = currentArticles.map(article => {
+    if (!articleContentCache[article.file]) {
+      return loadArticleData(article); // Muat data artikel jika belum ada di cache
     }
+    return Promise.resolve();
+  });
+  await Promise.all(lazyLoadPromises);
+  currentArticles.forEach(article => {
     const articleItem = document.createElement('div');
     articleItem.classList.add('article-item');
     articleItem.innerHTML = `
-      <a href="#" class="article-link" data-file="${article.file}">
-        <div class="article-content">
-          <img class="list-img" src="${article.image}" alt="${article.title}">
-          <div class="article-info">
-            <h3>${article.title}</h3>
-            <p>${article.excerpt}</p>
-          </div>
-        </div>
-      </a>
-    `;
+         <a href="#" class="article-link" data-file="${article.file}">
+            <div class="article-content">
+               <img class="list-img" src="${article.image}" alt="${article.title}">
+               <div class="article-info">
+                  <h3>${article.title}</h3>
+                  <p>${article.excerpt}</p>
+               </div>
+            </div>
+         </a>
+      `;
     articleItem.querySelector('a.article-link').addEventListener('click', (event) => {
       event.preventDefault();
       renderArticleContent(article.file);
     });
     articleList.appendChild(articleItem);
-  }));
+  });
 }
 // Fungsi untuk kembali ke daftar artikel
 function backToList() {
@@ -199,10 +195,10 @@ function backToList() {
 // Render pagination buttons
 function renderPagination() {
   const pagination = document.getElementById('pagination');
-  if(!pagination) return;
+  if (!pagination) return;
   pagination.innerHTML = ''; // Kosongkan pagination
   const totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
-  if(totalPages <= 1) return; // Tidak perlu pagination jika hanya ada 1 halaman
+  if (totalPages <= 1) return; // Tidak perlu pagination jika hanya ada 1 halaman
   // Fungsi pembantu untuk membuat tombol
   const createButton = (text, disabled, onclick) => {
     const button = document.createElement('button');
@@ -219,21 +215,21 @@ function renderPagination() {
     window.scrollTo(0, 0); // Scroll ke atas halaman setelah berpindah halaman
   }));
   // Tambahkan tombol halaman pertama jika tidak di halaman pertama
-  if(currentPage > 4) {
+  if (currentPage > 4) {
     pagination.appendChild(createButton('1', false, () => {
       currentPage = 1;
       renderArticles();
       renderPagination();
       window.scrollTo(0, 0);
     }));
-    if(currentPage > 5) {
+    if (currentPage > 5) {
       const dots = document.createElement('span');
       dots.textContent = '...';
       pagination.appendChild(dots); // Tambahkan '...' jika ada lebih dari 5 halaman sebelum halaman saat ini
     }
   }
   // Tambahkan tombol halaman di sekitar halaman saat ini
-  for(let i = Math.max(1, currentPage - 3); i <= Math.min(totalPages, currentPage + 3); i++) {
+  for (let i = Math.max(1, currentPage - 3); i <= Math.min(totalPages, currentPage + 3); i++) {
     pagination.appendChild(createButton(i, i === currentPage, () => {
       currentPage = i;
       renderArticles();
@@ -242,13 +238,13 @@ function renderPagination() {
     }));
   }
   // Tambahkan '...' sebelum halaman terakhir jika ada banyak halaman setelah halaman saat ini
-  if(currentPage < totalPages - 4) {
+  if (currentPage < totalPages - 4) {
     const dots = document.createElement('span');
     dots.textContent = '...';
     pagination.appendChild(dots);
   }
   // Tambahkan tombol halaman terakhir jika tidak di halaman terakhir
-  if(currentPage < totalPages - 3) {
+  if (currentPage < totalPages - 3) {
     pagination.appendChild(createButton(totalPages, false, () => {
       currentPage = totalPages;
       renderArticles();
@@ -275,7 +271,7 @@ function filterByCategory(category) {
 // Fungsi untuk menerapkan filter pada artikel berdasarkan pencarian dan kategori
 function applyFilter(searchTerm, selectedCategory) {
   return Object.values(articleData).filter(article => {
-    const matchSearch = article.title.toLowerCase().includes(searchTerm) || article.excerpt.toLowerCase().includes(searchTerm);
+    const matchSearch = article.title.toLowerCase().includes(searchTerm); // Hanya cocokkan dengan judul
     const matchCategory = selectedCategory === 'all' || article.category === selectedCategory;
     return matchSearch && matchCategory;
   });
@@ -288,17 +284,13 @@ document.getElementById('categorySelect').addEventListener('change', () => {
   filterArticles();
   backToList(); // Tutup artikel jika kategori dipilih
 });
-// Fungsi untuk memuat data pada saat halaman diload
-window.addEventListener('DOMContentLoaded', () => {
-  loadData();
-});
 // Fungsi untuk menangani perubahan hash URL
 window.addEventListener('hashchange', async () => {
   const hash = window.location.hash.substring(1);
-  if(hash) {
+  if (hash) {
     const articleFile = Object.keys(articleData).find(file => file.includes(hash));
-    if(articleFile) {
-      if(!articleContentCache[articleFile]) {
+    if (articleFile) {
+      if (!articleContentCache[articleFile]) {
         await loadArticleData(articleData[articleFile]); // Muat artikel jika belum di-cache
       }
       renderArticleContent(articleFile);
@@ -313,49 +305,44 @@ function linkifyContent(htmlContent) {
     const slug = article.file.split('/').pop().replace('.md', '');
     return [slug, article.title];
   });
-
   // Urutkan berdasarkan panjang string (agar slug yang lebih panjang diprioritaskan)
   const sortedSlugsAndTitles = slugsAndTitles.sort((a, b) => b.length - a.length);
   const parser = new DOMParser();
   const doc = parser.parseFromString(htmlContent, 'text/html');
   const uniqueLinks = new Set();
-
   function escapeRegexCharacters(str) {
     // Escape semua karakter khusus yang bisa mempengaruhi regex
     return str.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
   }
-
   function linkifyTextNode(node) {
     const parentElement = node.parentElement;
     const text = node.textContent;
     const escapedSlugsAndTitles = sortedSlugsAndTitles.map(item => escapeRegexCharacters(item));
-    
     const regex = new RegExp(`(${escapedSlugsAndTitles.join('|')})`, 'gi');
     if (regex.test(text)) {
-        const replacedText = text.replace(regex, (match) => {
-            const matchedArticle = Object.values(articleData).find(article => {
-                const articleSlug = article.file.split('/').pop().replace('.md', '');
-                return articleSlug.toLowerCase() === match.toLowerCase() || article.title.toLowerCase() === match.toLowerCase();
-            });
-            if (matchedArticle) {
-                const encodedSlug = encodeURIComponent(matchedArticle.file.split('/').pop().replace('.md', ''));
-                uniqueLinks.add(match.toLowerCase());
-                return `<a href="#${encodedSlug}" class="linkify">${match}</a>`;
-            }
-            return match;
+      const replacedText = text.replace(regex, (match) => {
+        const matchedArticle = Object.values(articleData).find(article => {
+          const articleSlug = article.file.split('/').pop().replace('.md', '');
+          return articleSlug.toLowerCase() === match.toLowerCase() || article.title.toLowerCase() === match.toLowerCase();
         });
-        const span = document.createElement('span');
-        span.innerHTML = replacedText;
-        parentElement.replaceChild(span, node);
+        if (matchedArticle) {
+          const encodedSlug = encodeURIComponent(matchedArticle.file.split('/').pop().replace('.md', ''));
+          uniqueLinks.add(match.toLowerCase());
+          return `<a href="#${encodedSlug}" class="linkify">${match}</a>`;
+        }
+        return match;
+      });
+      const span = document.createElement('span');
+      span.innerHTML = replacedText;
+      parentElement.replaceChild(span, node);
     }
   }
-
   function processElement(element) {
-    if(element.tagName !== 'H1' && element.tagName !== 'H2' && element.tagName !== 'TH' && element.tagName !== 'IMG' && element.tagName !== 'BLOCKQUOTE') {
+    if (element.tagName !== 'H1' && element.tagName !== 'H2' && element.tagName !== 'TH' && element.tagName !== 'IMG' && element.tagName !== 'BLOCKQUOTE') {
       Array.from(element.childNodes).forEach(child => {
-        if(child.nodeType === Node.TEXT_NODE) {
+        if (child.nodeType === Node.TEXT_NODE) {
           linkifyTextNode(child);
-        } else if(child.nodeType === Node.ELEMENT_NODE) {
+        } else if (child.nodeType === Node.ELEMENT_NODE) {
           processElement(child);
         }
       });
@@ -367,36 +354,40 @@ function linkifyContent(htmlContent) {
     links: [...uniqueLinks]
   };
 }
-
 // Fungsi untuk linkify list tautan internal
 function linkifyInternalLinks(links) {
   const linksHtml = links.map(link => `<li>${link}</li>`).join('');
-  const { html } = linkifyContent(`<ul>${linksHtml}</ul>`);
+  const {
+    html
+  } = linkifyContent(`<ul>${linksHtml}</ul>`);
   return html;
 }
-
 // Fungsi untuk menampilkan konten artikel yang dirender berdasarkan file markdown
 async function renderArticleContent(file) {
   try {
-    const response = await fetch(file);
-    const markdownContent = await response.text();
-    const { html, links } = linkifyContent(md.render(markdownContent));
+    let markdownContent;
+    if (articleContentCache[file]) {
+      markdownContent = articleContentCache[file];
+    } else {
+      const response = await fetch(file);
+      markdownContent = await response.text();
+      articleContentCache[file] = markdownContent; // Simpan ke cache
+    }
+    const {
+      html,
+      links
+    } = linkifyContent(md.render(markdownContent));
     const article = articleData[file];
-
-    // Update meta tags
-    document.title = article.title; // Update title
+    document.title = article.title;
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", article.excerpt); // Update description
+      metaDescription.setAttribute("content", article.excerpt);
     }
     const metaKeywords = document.querySelector('meta[name="keywords"]');
     if (metaKeywords) {
-      metaKeywords.setAttribute("content", article.category); // Update keywords
+      metaKeywords.setAttribute("content", article.category);
     }
-
-    // Linkify internal links
     const internalLinksHtml = linkifyInternalLinks(links);
-
     const articleDisplay = document.getElementById('articleDisplay');
     articleDisplay.innerHTML = `
       ${html}
@@ -418,7 +409,6 @@ async function renderArticleContent(file) {
     history.pushState(null, null, `#${slug}`);
     window.scrollTo(0, 0);
     isArticleOpen = true;
-
     const categoryLink = document.getElementById('categoryLink');
     if (categoryLink) {
       categoryLink.addEventListener('click', (event) => {
@@ -436,13 +426,39 @@ document.getElementById('searchInput').addEventListener('input', () => {
   debounceTimeout = setTimeout(() => {
     filterArticles();
     backToList();
-    
-    // Sembunyikan hero section saat ada input pencarian
     const heroSection = document.getElementById('heroSection');
     if (document.getElementById('searchInput').value) {
       heroSection.style.display = 'none';
     } else if (!isArticleOpen && currentPage === 1 && document.getElementById('categorySelect').value === 'all') {
       heroSection.style.display = 'block';
     }
-  }, 300); // Tunda pencarian selama 300 ms setelah input terakhir
+  }, 500); // Interval debounce lebih lama untuk optimasi
 });
+const worker = new Worker('worker.js');
+worker.onmessage = function(event) {
+  const {
+    article,
+    content
+  } = event.data;
+  if (content) {
+    // Process and cache content
+    articleContentCache[article.file] = content;
+    renderArticles();
+  }
+};
+function loadArticleDataWithWorker(article) {
+  worker.postMessage(article);
+}
+async function preloadNextArticles() {
+  const nextPage = currentPage + 1;
+  const start = nextPage * articlesPerPage;
+  const end = start + articlesPerPage;
+  const nextArticles = filteredArticles.slice(start, end);
+  const preloadPromises = nextArticles.map(article => {
+    if (!articleContentCache[article.file]) {
+      return loadArticleData(article);
+    }
+    return Promise.resolve();
+  });
+  await Promise.all(preloadPromises);
+}
