@@ -73,41 +73,48 @@ Mikha menyampaikan pesan tentang keadilan, kasih setia, dan pengharapan. Kitab i
 Nahum membawa pesan penghakiman Allah terhadap Niniwe, ibu kota Asyur, yang sebelumnya telah menerima belas kasihan Allah tetapi kemudian jatuh ke dalam kejahatan lagi.
 
 
-### 8. **Habakuk**
+### 8. Kitab Habakuk
 Habakuk adalah kitab yang memperlihatkan pergulatan seorang nabi dengan pertanyaan-pertanyaan sulit tentang kejahatan dan penderitaan. Habakuk menantang Allah dengan pertanyaan mengapa Ia membiarkan kejahatan merajalela, tetapi akhirnya dia percaya kepada hikmat dan keadilan Allah.
 
-> *Tetapi orang yang benar akan hidup oleh percayanya.*  
+> *Sesungguhnya, orang yang membusungkan dada, tidak lurus hatinya, tetapi orang yang benar itu akan hidup oleh percayanya.*
 > — **Habakuk 2:4 (TB)**
 
-### 9. **Zefanya**
+### 9. Kitab Zefanya
+
 Kitab Zefanya memperingatkan bangsa Yehuda tentang hari penghakiman Allah yang segera datang, tetapi juga membawa harapan bahwa Allah akan memulihkan umat-Nya dan membawa mereka kembali ke dalam hubungan dengan-Nya.
 
-### 10. **Hagai**
+### 10. Hagai
+
 Hagai melayani setelah bangsa Israel kembali dari pembuangan Babel. Dia mendorong bangsa itu untuk membangun kembali Bait Suci yang telah dihancurkan. Pesan kitab Hagai menekankan pentingnya menempatkan Allah sebagai prioritas utama dalam kehidupan.
 
-### 11. **Zakharia**
+### 11. Zakharia
+
 Zakharia adalah kitab yang penuh dengan penglihatan-penglihatan simbolis tentang masa depan Israel dan kedatangan Mesias. Zakharia menyerukan pertobatan dan mendorong pembangunan kembali Bait Suci, sambil memberikan janji pengharapan tentang Raja yang akan datang.
 
-> *Bersorak-sorailah dengan nyaring, hai puteri Sion, bersorak-sorailah, hai puteri Yerusalem! Lihat, rajamu datang kepadamu; ia adil dan jaya.*  
+> *Bersorak-soraklah dengan nyaring, hai puteri Sion, bersorak-sorailah, hai puteri Yerusalem! Lihat, rajamu datang kepadamu; ia adil dan jaya. Ia lemah lembut dan mengendarai seekor keledai, seekor keledai beban yang muda.*
 > — **Zakharia 9:9 (TB)**
 
-### 12. **Maleakhi**
+### 12. Maleakhi
+
 Maleakhi adalah nabi terakhir dalam Perjanjian Lama. Kitab ini menegur umat Israel karena sikap apatis mereka terhadap perjanjian dengan Allah, terutama dalam hal persembahan dan penyembahan. Maleakhi menubuatkan kedatangan utusan yang akan mempersiapkan jalan bagi Tuhan, yang dipenuhi oleh Yohanes Pembaptis dalam Perjanjian Baru.
 
-> *Sesungguhnya, Aku menyuruh utusan-Ku, supaya ia mempersiapkan jalan di hadapan-Ku. Dengan mendadak Tuhan yang kamu cari itu akan masuk ke bait-Nya!*  
+> *Lihat, Aku menyuruh utusan-Ku, supaya ia mempersiapkan jalan di hadapan-Ku! Dengan mendadak Tuhan yang kamu cari itu akan masuk ke bait-Nya! Malaikat Perjanjian yang kamu kehendaki itu, sesungguhnya, Ia datang, firman TUHAN semesta alam.*
 > — **Maleakhi 3:1 (TB)**
 
 ---
 
 ## Tema Utama Kitab Nabi-Nabi Kecil
 
-### 1. **Panggilan untuk Pertobatan**
+### 1. Panggilan untuk Pertobatan
+
 Salah satu tema utama dalam kitab nabi-nabi kecil adalah panggilan kepada bangsa Israel dan Yehuda untuk bertobat dari dosa-dosa mereka, baik itu dosa penyembahan berhala, ketidakadilan sosial, atau pelanggaran moral lainnya. Para nabi menekankan bahwa hanya dengan kembali kepada Allah, bangsa itu dapat menemukan keselamatan.
 
-### 2. **Penghakiman yang Adil**
+### 2. Penghakiman yang Adil
+
 Kitab-kitab ini sering kali berisi peringatan tentang penghakiman Allah yang adil atas dosa-dosa umat-Nya dan bangsa-bangsa lain. Penghakiman ini diuraikan sebagai konsekuensi dari pemberontakan dan kejahatan yang terus berlanjut.
 
-### 3. **Janji Pengharapan dan Pemulihan**
+### 3. Janji Pengharapan dan Pemulihan
+
 Meskipun banyak pesan yang keras, nabi-nabi kecil juga membawa janji pengharapan. Allah tidak melupakan umat-Nya, dan di masa depan, Dia akan memulihkan mereka. Pesan ini mencakup janji kedatangan Mesias yang akan membawa keselamatan dan pembaruan.
 
 ---
