@@ -17,7 +17,7 @@
 
 ## Pendahuluan
 
-**Kitab Maleakhi** merupakan kitab terakhir dalam kanon Perjanjian Lama dan menutup bagian kitab nabi-nabi kecil. Maleakhi, dalam bahasa Ibrani (**מַלְאָכִי**, *Mal'akhi*), yang berarti "*utusan-Ku*," membawa pesan dari Allah kepada bangsa Israel setelah mereka kembali dari pembuangan Babel. Kitab ini berisi teguran keras kepada bangsa Israel atas sikap mereka yang acuh tak acuh terhadap perjanjian dengan Tuhan. Maleakhi menyerukan pertobatan dan memperingatkan penghakiman bagi mereka yang tidak setia, namun juga menjanjikan pemulihan bagi mereka yang setia kepada Tuhan.
+**Kitab Maleakhi** merupakan kitab terakhir dalam kanon Alkitab Perjanjian Lama dan menutup bagian kitab nabi-nabi kecil dan dalam kitab para nabi. Maleakhi, dalam bahasa Ibrani (**מַלְאָכִי**, *Mal'akhi*), yang berarti "*utusan-Ku*," membawa pesan dari Allah kepada bangsa Israel setelah mereka kembali dari pembuangan Babel. Kitab ini berisi teguran keras kepada bangsa Israel atas sikap mereka yang acuh tak acuh terhadap perjanjian dengan Tuhan. Maleakhi menyerukan pertobatan dan memperingatkan penghakiman bagi mereka yang tidak setia, namun juga menjanjikan pemulihan bagi mereka yang setia kepada Tuhan.
 
 ---
 
