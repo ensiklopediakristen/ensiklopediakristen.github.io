@@ -16,7 +16,7 @@
 
 ## Pengertian Kitab Para Nabi
 
-Kitab Para Nabi dalam Perjanjian Lama mencakup 17 kitab yang terdiri dari dua kategori: **Kitab Nabi Besar** dan **Kitab Nabi Kecil**. Kategorisasi ini bukan berdasarkan pentingnya pesan yang mereka sampaikan, melainkan karena panjang kitabnya. Para nabi adalah utusan Allah yang dipilih untuk menyampaikan pesan-pesan-Nya kepada bangsa Israel dan bangsa-bangsa lain. Pesan mereka sering kali berisi panggilan untuk bertobat, penghakiman atas dosa, serta janji pemulihan dan keselamatan.
+Kitab Para Nabi dalam Perjanjian Lama mencakup 17 kitab yang terdiri dari dua kategori: **Kitab Nabi-Nabi Besar** dan **Kitab Nabi-Nabi Kecil**. Kategorisasi ini bukan berdasarkan pentingnya pesan yang mereka sampaikan, melainkan karena panjang kitabnya. Para nabi adalah utusan Allah yang dipilih untuk menyampaikan pesan-pesan-Nya kepada bangsa Israel dan bangsa-bangsa lain. Pesan mereka sering kali berisi panggilan untuk bertobat, penghakiman atas dosa, serta janji pemulihan dan keselamatan.
 
 ---
 
